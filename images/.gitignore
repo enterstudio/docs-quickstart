@@ -1,0 +1,12 @@
+.DS_Store
+*.xpr
+.idea
+
+# Build results
+html/
+
+# Editors
+*~
+.*.swp
+.bak
+/.project
