@@ -1,3 +1,7 @@
+.. code-block:: csharp
+
+.. code-block:: java
+
 .. code-block:: javascript
 
   pkgcloud = require('pkgcloud');
@@ -17,3 +21,15 @@
         'username' => '{username}',
         'apiKey'   => '{apiKey}'
     ));
+
+.. code-block:: python
+
+.. code-block:: ruby
+
+  require 'fog'
+
+  @client = Fog::Rackspace::LoadBalancers.new(
+    :rackspace_username => '{username}',
+    :rackspace_api_key => '{apiKey}',
+    :rackspace_region => '{region}'
+  )
