@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+  $queues = $queuesService->listQueues();
+
 .. code-block:: python
 
   pyrax.queues.list()

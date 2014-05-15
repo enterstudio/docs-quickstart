@@ -6,6 +6,10 @@
 
 .. code-block:: php
 
+    $snapshots = $volumeService->snapshotList(array(
+        'volume_id' => $volume->id()
+    ));
+
 .. code-block:: python
 
     snaps = vol.list_snapshots()

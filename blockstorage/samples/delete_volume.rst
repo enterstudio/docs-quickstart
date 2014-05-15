@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $volume->delete();
+
 .. code-block:: python
 
     cbs.delete(vol)

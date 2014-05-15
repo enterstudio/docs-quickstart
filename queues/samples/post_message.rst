@@ -6,6 +6,12 @@
 
 .. code-block:: php
 
+  // Post a message to the queue with a life of 900 seconds.
+  $queue->createMessage(array(
+      'body' => 'Message body',
+      'ttl'  => 900
+  ));
+
 .. code-block:: python
 
   queue = pyrax.queues.get("sample_queue")

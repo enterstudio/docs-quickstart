@@ -6,6 +6,12 @@
 
 .. code-block:: php
 
+  // Obtain an Object Store service object from the client.
+  $region = 'DFW';
+  $queuesService = $client->queuesService(null, $region);
+
+  $queue = $queuesService->createQueue('sample_queue');
+
 .. code-block:: python
 
   queue = pyrax.queues.create("sample_queue")

@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $snapshot->delete();
+
 .. code-block:: python
 
     snap.delete()

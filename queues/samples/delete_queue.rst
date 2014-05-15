@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+  $queue->delete();
+
 .. code-block:: python
 
   pyrax.queues.delete("sample_queue")

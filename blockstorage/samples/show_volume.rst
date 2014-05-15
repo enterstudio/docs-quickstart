@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $volume = $volumeService->volume(getenv('RAX_VOLUME_ID'));
+
 .. code-block:: python
 
     vol = cbs.get({volume_id})

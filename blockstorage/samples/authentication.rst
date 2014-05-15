@@ -6,6 +6,18 @@
 
 .. code-block:: php
 
+    require 'vendor/autoload.php';
+
+    use OpenCloud\Rackspace;
+
+    // Instantiate a Rackspace client.
+    $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
+        'username' => '{username}',
+        'apiKey'   => '{apiKey}'
+    ));
+
+    $volumeService = $client->volumeService();
+
 .. code-block:: python
 
   import pyrax

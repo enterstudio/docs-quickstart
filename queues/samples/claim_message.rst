@@ -6,6 +6,14 @@
 
 .. code-block:: php
 
+  // Claim the 4 oldest messages in the queue. Keep the claim for 900 seconds (i.e. the claim TTL). Extend the life 
+  // of these messages to 120 seconds past the claim TTL.
+  $claimedMessages = $queue->claimMessages(array(
+      'limit' => 4,
+      'ttl'   => 900,
+      'grace' => 120
+  ));
+
 .. code-block:: python
 
   # Claims require the following parameters:

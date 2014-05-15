@@ -10,7 +10,7 @@ Key Concepts
 Volume
 --------
 
-A volume is a detachable block storage device. You can think of it as a USB hard drive. You can attach a volume to one instance at a time
+A volume is a detachable block storage device. You can think of it as a USB hard drive. You can attach a volume to one instance at a time.
 
 Snapshot
 ----------

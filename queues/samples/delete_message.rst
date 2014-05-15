@@ -6,6 +6,12 @@
 
 .. code-block:: php
 
+   // Delete claimed messages.               
+   foreach ($claimedMessages as $claimedMessage) {
+       $claimId = $claimedMessage->getClaimIdFromHref();
+       $claimedMessage->delete($claimId);
+   }
+
 .. code-block:: python
 
   queue = pyrax.queues.get("sample_queue")

@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $volumes = $volumeService->volumeList();
+    
 .. code-block:: python
 
    vols = cbs.list()

@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $snapshot = $volumeService->snapshot({snap_id});
+
 .. code-block:: python
 
     snap = cbs.get_snapshot({snap_id})
