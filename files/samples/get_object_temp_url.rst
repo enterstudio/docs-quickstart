@@ -63,3 +63,26 @@
   directory = @client.directories.get('sample-container-test')
   file = directory.files.get('somefile.txt')
   temp_url = file.url(Time.now.to_i + 600)
+  
+.. code-block:: curl
+    # To create a TempURL, first set the X-Account-Meta-Temp-Url-Key metadata 
+    # header on your Cloud Files account to a key that only you know. 
+    $ curl -i -X POST $publicUrlFiles -H "X-Auth-Token: $token" \
+        -H "X-Account-Meta-Temp-Url-Key: {arbitraryKey}"
+    #
+    # Create the temp_url_sig and temp_url query parameter values. OpenStack 
+    # Object Storage provides the swift-temp-url script that auto-generates 
+    # the temp_url_sig and temp_url_expires query parameters. For example, 
+    # you might run this command:
+    $ bin/swift-temp-url GET 3600 $publicUrlFiles/{containerName}/{objectName} {arbitraryKey}
+    #
+    # To create the temporary URL, prefix this path that is returned by the swift-temp-url
+    # command with the storage host name. For example, prefix the path with 
+    # https://swift-cluster.example.com, as follows:
+    #
+    https://swift-cluster.example.com/$publicUrlFiles/{containerName}/{objectName}
+    ?temp_url_sig=5c4cc8886f36a9d0919d708ade98bf0cc71c9e91
+    &temp_url_expires=1374497657
+    # NOTE: {arbitraryKey}, {containerName}, and {objectName} are placeholders: 
+    # Replace them with actual values and do not enclose them with {}.
+    
