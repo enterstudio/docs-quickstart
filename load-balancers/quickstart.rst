@@ -15,6 +15,21 @@ In order to work with the Load Balancer service, you must authenticate:
 Setting up your Load Balancer
 =============================
 
+Create a Load Balancer
+----------------------
+
+When creating a load balancer, there are a few mandatory parameters that you need
+to provide. You will need to specify a **name**, a **protocol** (e.g. HTTP, FTP,
+SMTP) and the types of IP you want to use (v4 or v6). Here is an example:
+
+.. include:: samples/create_lb.rst
+
+Once this operation is executed, the API will asynchronously provision a Load
+Balancer based on your configuration. Some SDKs allow you to query its progress:
+
+.. include:: samples/query_lb_progress.rst
+
+
 Select the servers you want as nodes
 ------------------------------------
 
@@ -32,21 +47,6 @@ Now you have your servers, you can create your nodes:
 .. include:: samples/create_nodes.rst
 
 Once this is done, you're ready to create your Load Balancer.
-
-
-Create a Load Balancer
-----------------------
-
-When creating a load balancer, there are a few mandatory parameters that you need
-to provide. You will need to specify a **name**, a **protocol** (e.g. HTTP, FTP,
-SMTP) and the types of IP you want to use (v4 or v6). Here is an example:
-
-.. include:: samples/create_lb.rst
-
-Once this operation is executed, the API will asynchronously provision a Load
-Balancer based on your configuration. Some SDKs allow you to query its progress:
-
-.. include:: samples/query_lb_progress.rst
 
 
 Monitoring the health of your nodes
