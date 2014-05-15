@@ -73,5 +73,5 @@
         "name" : "api-test-server-1", \
         "imageRef" : "3afe97b2-26dc-49c5-a2cc-a2fc8d80c001", \
         "flavorRef" : "2" \        
-    }\
-  } -H "X-Auth-Token: $token" | python -m json.tool
+      }\
+    } -H "X-Auth-Token: $token" | python -m json.tool
