@@ -1,9 +1,15 @@
+.. code-block:: csharp
+
+.. code-block:: java
+
+.. code-block:: javascript
+
 .. code-block:: php
 
-    // Get an empty LB object
+    // Get an empty Load Balancer object
     $loadBalancer = $service->loadBalancer();
 
-    // Add the IP types that your LB will support
+    // Add the IP types that your Load Balancer will support
     $loadBalancer->addVirtualIp('PUBLIC', 4);
     $loadBalancer->addVirtualIp('PUBLIC', 6);
 
@@ -13,3 +19,15 @@
         'port'     => 80,
         'protocol' => 'HTTP'
     ));
+
+.. code-block:: python
+
+.. code-block:: ruby
+
+  @balancer = @client.load_balancers.create(
+    :name => 'balanced',
+    :protocol => 'HTTP',
+    :port => 8080,
+    :virtual_ips => [{ :type => 'PUBLIC' }],
+    :nodes => []
+  )
