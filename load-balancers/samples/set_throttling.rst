@@ -1,3 +1,9 @@
+.. code-block:: csharp
+
+.. code-block:: java
+
+.. code-block:: javascript
+
 .. code-block:: php
 
     $throttle = $loadBalancer->connectionThrottle();
@@ -12,3 +18,22 @@
         'maxConnectionRate' => 10000,
         'rateInterval'      => 5
     ));
+
+.. code-block:: python
+
+.. code-block:: ruby
+
+  # Arguments, in order:
+  #
+  #  max_connections: Maximum simultaneous connections to allow from a single IP
+  #                   within the rate interval. 0 means unlimited; otherwise,
+  #                   between 1 and 100000.
+  #  min_connections: Allow at least this many connections per IP before throttling.
+  #                   0 means unlimited; otherwise, between 1 and 1000.
+  #  max_connection_rate: Maximum connections from a single IP within a given
+  #                       rate_interval. 0 means unlimited; otherwise, between 1
+  #                       and 100000.
+  #  rate_interval: Frequency, in seconds, at which max_connection_rate is assessed.
+  #                 Between 1 and 3600.
+  #
+  @balancer.enable_connection_throttling(5000, 2, 10000, 5)
