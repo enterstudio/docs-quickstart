@@ -30,21 +30,18 @@
 
 .. code-block:: ruby
 
-# Example 1: Blacklist a specific IP
+  # Example 1: Blacklist a specific IP
 
   @balancer.access_rules.create(
     :type => 'DENY',
     :address => '206.160.165.0/24'
   )
+  @balancer.wait_for { ready? }
 
   # Example 2: Allow access to 1 IP, and blacklist everything else
 
-  @balancer.access_rules.create(
-    :type => 'ALLOW',
-    :address => '206.160.166.0/24'
-  )
-
-  @balancer.access_rules.create(
-    :type => 'DENY',
-    :address => '0.0.0.0/0'
-  )
+  @balancer.access_rules = [
+    { :type => 'ALLOW', :address => '206.160.166.0/24' },
+    { :type => 'DENY', :address => '0.0.0.0/0' }
+  ]
+  @balancer.wait_for { ready? }

@@ -29,3 +29,4 @@
   #  attempts_before_deactivation: Number of monitor failures to tolerate before
   #                                removing a node from rotation. Between 1 and 10.
   @balancer.enable_health_monitor('CONNECT', 10, 10, 3)
+  @balancer.wait_for { ready? }

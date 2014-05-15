@@ -26,6 +26,8 @@
 
   # To enable content caching
   @balancer.enable_content_caching
+  @balancer.wait_for { ready? }
 
   # To disable caching
   @balancer.disable_content_caching
+  @balancer.wait_for { ready? }

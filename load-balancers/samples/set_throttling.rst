@@ -37,3 +37,4 @@
   #                 Between 1 and 3600.
   #
   @balancer.enable_connection_throttling(5000, 2, 10000, 5)
+  @balancer.wait_for { ready? }

@@ -24,15 +24,16 @@
 
 .. code-block:: ruby
 
-  # Create the nodes
   @server_one_node = @balancer.nodes.create(
     :address => @server_one.addresses['private'][0]['addr'],
     :port => 8080,
     :condition => 'ENABLED'
   )
+  @balancer.wait_for { ready? }
 
   @server_two_node = @balancer.nodes.create(
     :address => @server_two.addresses['private'][0]['addr'],
     :port => 8080,
     :condition => 'ENABLED'
   )
+  @balancer.wait_for { ready? }
