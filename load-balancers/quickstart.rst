@@ -83,7 +83,6 @@ other traffic, and items with the ``DENY`` type will have their traffic rejected
 
 .. include:: samples/blacklist_ips.rst
 
-
 Caching content for performance
 ===============================
 
