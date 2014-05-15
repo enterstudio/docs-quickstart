@@ -42,12 +42,10 @@ The above sample retrieves two Cloud Servers using their unique IDs. If you
 do not know their IDs, you can follow the steps outlined in the Compute Getting
 Started Guide for retrieving servers based on arbitrary properties.
 
-Now you have your servers, you can create your nodes:
+Now you have your servers, you can create your nodes and add them to the load
+balancer:
 
 .. include:: samples/create_nodes.rst
-
-Once this is done, you're ready to create your Load Balancer.
-
 
 Monitoring the health of your nodes
 -----------------------------------
