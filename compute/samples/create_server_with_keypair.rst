@@ -53,11 +53,12 @@
 
 .. code-block:: shell
 
-    $ curl -X POST $endpoint -d { \
-    "server" : { \
-        "name" : "api-test-server-1", \
-        "imageRef" : "3afe97b2-26dc-49c5-a2cc-a2fc8d80c001", \
-        "flavorRef" : "2", \
-        "key_name" : "{nameOfKeyPair}" \         
-      }\
-    } -H "X-Auth-Token: $token" | python -m json.tool
+    $ curl -X POST $endpoint -d \
+    '{
+    "server" : {
+        "name" : "{serverName}",
+        "imageRef" : "{imageRefId}",
+        "flavorRef" : "{flavorRefNumber}",
+        "key_name" : "{nameOfKeyPair}"        
+      }
+    }' -H "X-Auth-Token: $token" | python -m json.tool

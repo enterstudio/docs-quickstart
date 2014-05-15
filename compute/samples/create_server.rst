@@ -68,10 +68,12 @@
 
 .. code-block:: shell
 
-  $ curl -X POST $endpoint -d { \
-    "server" : { \
-        "name" : "api-test-server-1", \
-        "imageRef" : "3afe97b2-26dc-49c5-a2cc-a2fc8d80c001", \
-        "flavorRef" : "2" \        
-      }\
-    } -H "X-Auth-Token: $token" | python -m json.tool
+  #reminder: all {variableNames} are placeholders only. Must be replaced by actual and valid values
+  $ curl -X POST $endpoint -d \
+  '{
+    "server" : {
+        "name" : "{serverName}",
+        "imageRef" : "{imageRefName}",
+        "flavorRef" : "{flavorRefNumber}"       
+      }
+    }' -H "X-Auth-Token: $token" | python -m json.tool

@@ -42,5 +42,5 @@
 .. code-block:: shell
   
   $ curl -X POST $endpoint/os-keypairs -d \
-    {"keypair":{"name":"{keyPairName}"} } \
+    '{"keypair":{"name":"{keyPairName}"} }' \
     -H "X-Auth-Token: $token" | python -m json.tool
