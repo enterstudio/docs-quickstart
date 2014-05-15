@@ -23,5 +23,6 @@
     :rackspace_region => '{region}'
   )
 
-  @server0 = compute.servers.get('{serverId0}')
-  @server1 = compute.servers.get('{serverId1}')
+  @servers = []
+  @servers << compute.servers.get('{serverId0}')
+  @servers << compute.servers.get('{serverId1}')
