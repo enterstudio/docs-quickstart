@@ -23,3 +23,12 @@
 
   directory.public = true
   directory.save
+  
+.. code-block:: curl
+    # To CDN-enable a storage container:
+    $ curl -i -X PUT $publicUrlCDN/{containerName} /
+        -H "X-Auth-Token: $token" \
+        -H "X-CDN-Enabled: True" \
+        -H "X-TTL: 604800"
+    # NOTE: {containerName} is a placeholder: Replace it with 
+    # an actual value and do not enclose it with {}.
