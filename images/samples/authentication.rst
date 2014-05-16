@@ -1,4 +1,8 @@
-.. code-block:: node
+.. code-block:: csharp
+
+.. code-block:: java
+
+.. code-block:: javascript
 
   pkgcloud = require('pkgcloud');
   var rackspace = pkgcloud.dns.createClient({
@@ -17,3 +21,9 @@
         'username' => '{username}',
         'apiKey'   => '{apiKey}'
     ));
+
+.. code-block:: python
+
+.. code-block:: ruby
+
+  # N/A

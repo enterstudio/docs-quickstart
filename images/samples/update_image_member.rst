@@ -7,7 +7,9 @@
 .. code-block:: php
 
     // To update an image member:
-    
+
 .. code-block:: python
 
 .. code-block:: ruby
+
+  # N/A

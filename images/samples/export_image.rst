@@ -7,7 +7,9 @@
 .. code-block:: php
 
     // To export an image:
-    
+
 .. code-block:: python
 
 .. code-block:: ruby
+
+  # N/A

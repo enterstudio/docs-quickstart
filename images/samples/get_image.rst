@@ -8,7 +8,9 @@
 
     $imageId = '{imageId}';
     $image = $service->image($imageId);
-    
+
 .. code-block:: python
 
 .. code-block:: ruby
+
+  # N/A
