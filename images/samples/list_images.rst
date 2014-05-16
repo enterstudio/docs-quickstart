@@ -1,23 +1,27 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+
+    # To list images:
+    $ curl -s $publicUrl/images -H "X-Auth-Token: $token" | python -m json.tool
+
 .. code-block:: java
 
 .. code-block:: javascript
 
 .. code-block:: php
 
-    // To retrieve all images:
+    # To retrieve all images:
     $images = $service->imageList();
 
-    // Choose the first image in the collection
+    # Choose the first image in the collection
     foreach ($images as $image) {
         $imageId = $image->id;
         break;
     }
 
 .. code-block:: python
-
-    // To retrieve all images:
+    # To retrieve all images:
     from __future__ import print_function
 
     import os

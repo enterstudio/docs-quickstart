@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+
 .. code-block:: java
 
 .. code-block:: javascript

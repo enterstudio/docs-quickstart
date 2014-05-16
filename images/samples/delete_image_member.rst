@@ -1,16 +1,23 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+    # To delete an image member:
+    $ curl -i $publicUrl/images/{imageId}/members/{memberId} -X DELETE \
+        -H "X-Auth-Token: $token"
+    # NOTE: {imageId} and {memberId} are placeholders:
+    # Replace them with actual values and do not enclose the values with {}.
+
 .. code-block:: java
 
 .. code-block:: javascript
 
 .. code-block:: php
 
-    // To delete an image member:
-
+    # To delete an image member:
+    
 .. code-block:: python
 
-    // To delete an image member:
+    # To delete an image member:
     from __future__ import print_function
 
     import os

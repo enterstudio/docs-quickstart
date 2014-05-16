@@ -1,5 +1,16 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+
+    # Export your publicURL to the publicUrl variable:
+    $ export publicUrl="https://identity.api.rackspacecloud.com/v2.0/"
+    # To authenticate, use your Rackspace Cloud Account user name and API key:
+    $ curl -s $publicUrl/tokens -X 'POST' \
+    -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
+    -H "Content-Type: application/json" | python -m json.tool
+    # NOTE: {username} and {apiKey} are placeholders:
+    # Replace them with actual values and do not enclose the values with {}.
+
 .. code-block:: java
 
 .. code-block:: javascript
@@ -51,24 +62,3 @@
   # If you're a UK customer, specify a :rackspace_auth_url of "Fog::Rackspace::UK_AUTH_ENDPOINT" as well, and use the
   # :lon (London) region.
   
-.. code-block:: curl
-    # Export the publicURL for Identity to the publicUrl variable:
-    $ export publicUrl="https:#iad.images.api.rackspacecloud.com/v2/123456"
-    #
-    # To authenticate, use your Rackspace Cloud Account user name and API key:
-    $ curl -s $publicUrl/tokens -X 'POST' \
-        -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-        -H "Content-Type: application/json" | python -m json.tool
-    # NOTE: {username} and {apiKey} are placeholders: 
-    # Replace them with actual values and do not enclose the values with {}.
-    #
-    # Export your authentication token to the token environment variable.
-    $ export token="101010101010101010101010"
-    #
-    # To perform Cloud Files operations, export the publicURL for cloudFiles 
-    # to the publicUrlFiles variable:
-    $ export publicUrlFiles="https://storage101.dfw1.clouddrive.com/v1/123456"
-    #
-    # To perform Cloud Files CDN operations, export the publicURL for 
-    # cloudFilesCDN to the publicUrlCDN variable:
-    $ export publicUrlCDN="https://cdn1.clouddrive.com/v1/123456"
