@@ -1,3 +1,9 @@
+.. code-block:: csharp
+
+.. code-block:: java
+
+.. code-block:: javascript
+
 .. code-block:: php
 
     // Write a callback which outputs the name, status and progress of a LB
@@ -18,3 +24,9 @@
     // Poll the resource until it reaches an ACTIVE state, with a 600s (5 min) timeout
     // Please be aware this is a blocking operation
     $server->waitFor('ACTIVE', 300, $callback);
+
+.. code-block:: python
+
+.. code-block:: ruby
+
+  @balancer.wait_for { ready? }

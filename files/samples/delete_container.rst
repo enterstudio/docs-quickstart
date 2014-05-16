@@ -29,3 +29,10 @@
 .. code-block:: ruby
 
   directory.destroy
+  
+.. code-block:: curl
+    # To delete a storage container:
+    $ curl -i -X DELETE $publicUrlFiles/{containerName} -H "X-Auth-Token: $token" 
+    # NOTE: {containerName} is a placeholder: Replace it with 
+    # an actual value and do not enclose it with {}.
+  

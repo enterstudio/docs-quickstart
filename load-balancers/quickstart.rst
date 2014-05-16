@@ -15,25 +15,6 @@ In order to work with the Load Balancer service, you must authenticate:
 Setting up your Load Balancer
 =============================
 
-Select the servers you want as nodes
-------------------------------------
-
-In order for a load balancer to distribute traffic, it needs to be aware of the
-servers or databases you want guarded - these are known as Nodes.
-
-.. include:: samples/select_servers.rst
-
-The above sample retrieves two Cloud Servers using their unique IDs. If you
-do not know their IDs, you can follow the steps outlined in the Compute Getting
-Started Guide for retrieving servers based on arbitrary properties.
-
-Now you have your servers, you can create your nodes:
-
-.. include:: samples/create_nodes.rst
-
-Once this is done, you're ready to create your Load Balancer.
-
-
 Create a Load Balancer
 ----------------------
 
@@ -48,6 +29,23 @@ Balancer based on your configuration. Some SDKs allow you to query its progress:
 
 .. include:: samples/query_lb_progress.rst
 
+
+Select the servers you want as nodes
+------------------------------------
+
+In order for a load balancer to distribute traffic, it needs to be aware of the
+servers or databases you want guarded - these are known as Nodes.
+
+.. include:: samples/select_servers.rst
+
+The above sample retrieves two Cloud Servers using their unique IDs. If you
+do not know their IDs, you can follow the steps outlined in the Compute Getting
+Started Guide for retrieving servers based on arbitrary properties.
+
+Now you have your servers, you can create your nodes and add them to the load
+balancer:
+
+.. include:: samples/create_nodes.rst
 
 Monitoring the health of your nodes
 -----------------------------------
@@ -84,7 +82,6 @@ Items that are configured with the ``ALLOW`` type will take precedence over all
 other traffic, and items with the ``DENY`` type will have their traffic rejected.
 
 .. include:: samples/blacklist_ips.rst
-
 
 Caching content for performance
 ===============================
