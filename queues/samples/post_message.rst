@@ -28,3 +28,13 @@
   # The 'ttl' parameter sets the life of the message (in seconds).
 
   queue.enqueue("Message body", 900)
+
+.. code-block:: shell
+
+  $ curl -X POST POST {$endpoint}/queues/{queueName}/messages -d \
+  '[{"ttl": 300,"body": {"event": "BackupStarted"}},{"ttl": 60,"body": {"play": "hockey"}}]' \
+  -H "Content-type: application/json" \
+  -H "Client-ID: {clientId}" \
+  -H "X-Auth-Token: {$token}" \
+  -H "Accept: application/json" \ 
+  -H "X-Project-Id: {projectId}"

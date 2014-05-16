@@ -15,3 +15,11 @@
 .. code-block:: ruby
 
   queue.destroy
+
+.. code-block:: shell
+
+  $ curl -X DELETE {$endpoint}/queues/{queue_name} \ 
+  -H "Content-type: application/json" \ 
+  -H "X-Auth-Token: {$token}" \
+  -H "Accept: application/json" \
+  -H "X-Project-Id: {projectId}"

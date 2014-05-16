@@ -19,3 +19,10 @@
 .. code-block:: ruby
 
   queue = @client.queues.create(:name => 'sample_queue')
+
+.. code-block:: shell
+
+  $ curl -X PUT {$endpoint}/queues/{queueName} \
+  -H "X-Auth-Token: {$token}" \
+  -H "Accept: application/json" \
+  -H "X-Project-Id: {projectId}"
