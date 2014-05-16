@@ -56,7 +56,7 @@
     $ export publicUrl="https:#iad.images.api.rackspacecloud.com/v2/123456"
     #
     # To authenticate, use your Rackspace Cloud Account user name and API key:
-    $ curl -s $publicUrl/TOKENs -X 'POST' \
+    $ curl -s $publicUrl/token -X 'POST' \
         -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
         -H "Content-Type: application/json" | python -m json.tool
     # NOTE: {username} and {apiKey} are placeholders: 

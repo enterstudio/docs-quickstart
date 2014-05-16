@@ -48,7 +48,7 @@
   
   # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
-  $ curl -s https://identity.api.rackspacecloud.com/v2.0/TOKENs -X POST \
+  $ curl -s https://identity.api.rackspacecloud.com/v2.0/token -X POST \
      -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
      -H "Content-Type: application/json" | python -m json.tool
 
