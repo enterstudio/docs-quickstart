@@ -7,7 +7,9 @@
 .. code-block:: php
 
     // To import an image:
-    
+
 .. code-block:: python
 
 .. code-block:: ruby
+
+  # N/A

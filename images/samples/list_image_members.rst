@@ -7,7 +7,7 @@
 .. code-block:: php
 
     // To list image members:
-    
+
 .. code-block:: python
 
     // To list image members:
@@ -29,13 +29,13 @@
 
 
     print("This will loop through all your private images and list the members for "
-    
+
         "each.")
 
     images = imgs.list(visibility="private")
 
     if not images:
-   
+
      print("No images exist.")
          exit()
 
@@ -49,3 +49,5 @@
             print(" %s (%s)" % (member.id, member.status))
 
 .. code-block:: ruby
+
+ # N/A

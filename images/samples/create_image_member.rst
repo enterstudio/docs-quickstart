@@ -7,8 +7,8 @@
 .. code-block:: php
 
     // To create an image member:
-    
-    
+
+
 .. code-block:: python
     // To create an image member:
     from __future__ import print_function
@@ -57,3 +57,5 @@
     print(" Created at: %s" % member.created_at)
 
 .. code-block:: ruby
+
+  # N/A

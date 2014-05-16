@@ -7,7 +7,7 @@
 .. code-block:: php
 
     // To delete an image member:
-    
+
 .. code-block:: python
 
     // To delete an image member:
@@ -64,3 +64,5 @@
     print('RES', res)
 
 .. code-block:: ruby
+
+  # N/A

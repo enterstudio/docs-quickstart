@@ -7,7 +7,9 @@
 .. code-block:: php
 
     // To show image member details:
-    
+
 .. code-block:: python
 
 .. code-block:: ruby
+
+  # N/A

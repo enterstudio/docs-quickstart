@@ -14,8 +14,9 @@
         $imageId = $image->id;
         break;
     }
-    
+
 .. code-block:: python
+
     // To retrieve all images:
     from __future__ import print_function
 
@@ -37,3 +38,5 @@
         print("  (%s) %s (ID=%s)" % (image.visibility, image.name, image.id))
 
 .. code-block:: ruby
+
+  # N/A
