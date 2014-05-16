@@ -54,6 +54,6 @@
 
   # From the resulting json, set three environment variables: tenant, token and endpoint
 
-  $ export tenant="{tenantId}"
-  $ export token="{tokenId}"
-  $ export endpoint={publicUrl} #for desired service
+  $ export TENANT="{tenantId}"
+  $ export TOKEN="{tokenId}"
+  $ export ENDPOINT={publicUrl} #for compute service

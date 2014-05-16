@@ -23,9 +23,9 @@
 
 .. code-block:: shell
 
-  $ curl -X DELETE DELETE {$endpoint}/queues/{queueName}/claims/{claimId} \ 
-  -H "Content-type: application/json" \ 
-  -H "X-Auth-Token: {$token}" \ 
-  -H "Client-ID: {clientId}"  \
-  -H "Accept: application/json" \
-  -H "X-Project-Id: {projectId}"
+  $ curl -X DELETE DELETE $ENDPOINT/queues/{queueName}/claims/{claimId} \ 
+    -H "Content-type: application/json" \ 
+    -H "X-Auth-Token: $TOKEN" \ 
+    -H "Client-ID: {clientId}"  \
+    -H "Accept: application/json" \
+    -H "X-Project-Id: {projectId}"

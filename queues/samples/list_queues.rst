@@ -18,8 +18,8 @@
 
 .. code-block:: shell
 
-  $ curl -X GET {$endpoint}/queues \
-  -H "Content-type: application/json" \ 
-  -H "X-Auth-Token: {$token}" \
-  -H "Accept: application/json" \
-  -H "X-Project-Id: {projectId}"
+  $ curl -X GET $ENDPOINT/queues \
+    -H "Content-type: application/json" \ 
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "X-Project-Id: {projectId}"

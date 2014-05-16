@@ -22,7 +22,7 @@
 
 .. code-block:: shell
 
-  $ curl -X PUT {$endpoint}/queues/{queueName} \
-  -H "X-Auth-Token: {$token}" \
-  -H "Accept: application/json" \
-  -H "X-Project-Id: {projectId}"
+  $ curl -X PUT $ENDPOINT/queues/{queueName} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "X-Project-Id: {projectId}"

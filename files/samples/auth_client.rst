@@ -63,7 +63,7 @@
     # Replace them with actual values and do not enclose the values with {}.
     #
     # Export your authentication token to the token environment variable.
-    $ export token="101010101010101010101010"
+    $ export TOKEN="101010101010101010101010"
     #
     # To perform Cloud Files operations, export the publicURL for cloudFiles 
     # to the publicUrlFiles variable:

@@ -57,3 +57,8 @@
 .. code-block:: ruby
 
     @client.flavors.all
+
+.. code-block:: shell
+
+    $curl -X GET $endpoint/flavors \
+    -H "X-Auth-Token: $token" | python -m json.tool
