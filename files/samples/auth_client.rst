@@ -52,23 +52,15 @@
   # :lon (London) region.
   
 .. code-block:: curl
-    # Export the publicURL for Identity to the publicUrl variable:
-    $ export publicUrl="https:#iad.images.api.rackspacecloud.com/v2/123456"
-    #
-    # To authenticate, use your Rackspace Cloud Account user name and API key:
-    $ curl -s $publicUrl/token -X 'POST' \
-        -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-        -H "Content-Type: application/json" | python -m json.tool
-    # NOTE: {username} and {apiKey} are placeholders: 
-    # Replace them with actual values and do not enclose the values with {}.
-    #
-    # Export your authentication TOKEN to the TOKEN environment variable.
-    $ export TOKEN="101010101010101010101010"
-    #
-    # To perform Cloud Files operations, export the publicURL for cloudFiles 
-    # to the publicUrlFiles variable:
-    $ export publicUrlFiles="https://storage101.dfw1.clouddrive.com/v1/123456"
-    #
-    # To perform Cloud Files CDN operations, export the publicURL for 
-    # cloudFilesCDN to the publicUrlCDN variable:
-    $ export publicUrlCDN="https://cdn1.clouddrive.com/v1/123456"
+    
+    # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
+
+    $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
+       -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
+       -H "Content-Type: application/json" | python -m json.tool
+
+    # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
+
+    $ export TENANT="{tenantId}"
+    $ export TOKEN="{TokenId}"
+    $ export ENDPOINT={publicUrl} #for cloud files service
