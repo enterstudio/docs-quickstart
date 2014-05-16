@@ -50,3 +50,15 @@
       :flavor_id => flavor.id,
       :key_name => 'my_keypair'
     )
+
+.. code-block:: shell
+
+    $ curl -X POST $ENDPOINT -d \
+      '{
+      "server" : {
+          "name" : "{serverName}",
+          "imageRef" : "{imageRefId}",
+          "flavorRef" : "{flavorRefNumber}",
+          "key_name" : "{nameOfKeyPair}"        
+        }
+      }' -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool

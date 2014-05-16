@@ -49,3 +49,14 @@
       :name => 'my_keypair',
       :public_key => File.read('~/.ssh/my_server.pub')
     )
+
+.. code-block:: shell
+  
+  $ curl -X POST $ENDPOINT/os-keypairs -d \
+    '{
+    "keypair":{
+        "name":"{keyPairName}",
+        "public_key":"ssh-rsa AAAAB3Nz ..."
+      } 
+    }' \
+    -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool

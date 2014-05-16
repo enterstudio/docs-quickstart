@@ -44,6 +44,6 @@
     '{"ttl": 300,"grace":300}' \
     -H "Content-type: application/json" \ 
     -H "Client-ID: {clientId}" \ 
-    -H "X-Auth-Token: $TOKEN" \
+    -H "X-Auth-TOKEN: $TOKEN" \
     -H "Accept: application/json" \
     -H "X-Project-Id: {projectId}"

@@ -23,7 +23,7 @@
 .. code-block:: curl
     # To update object metadata:
     $ curl -i -X POST $publicUrlFiles/{containerName}/{objectName} \
-        -H "X-Auth-Token: $token" \
+        -H "X-Auth-TOKEN: $TOKEN" \
         -H "X-Object-Meta-ImageType: png" \
         -H "X-Object-Meta-ImageSize: 400 MB"
     # NOTE: {containerName} and {objectName} are placeholders: Replace them 

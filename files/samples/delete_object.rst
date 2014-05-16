@@ -25,6 +25,6 @@
 .. code-block:: curl
     # To delete an object:
     $ curl -i -X DELETE $publicUrlFiles/{containerName}/{objectName} \
-        -H "X-Auth-Token: $token"
+        -H "X-Auth-TOKEN: $TOKEN"
     # NOTE: {containerName} and {objectName} are placeholders: Replace them 
     # with actual values and do not enclose them with {}.

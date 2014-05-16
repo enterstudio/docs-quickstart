@@ -60,5 +60,5 @@
 
 .. code-block:: shell
 
-    $curl -X GET $endpoint/flavors \
-    -H "X-Auth-Token: $token" | python -m json.tool
+    $curl -X GET $ENDPOINT/flavors \
+      -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool

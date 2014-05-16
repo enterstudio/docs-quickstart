@@ -58,7 +58,7 @@ Before you jump in, it helps to understand these core Images service concepts:
 Image entity
 ------------
 
-An image entity is represented by a JSON-encoded data structure and its raw binary data. An image entity has an identifier (ID) that is guaranteed to be unique within its endpoint. The ID is used as a token in request URIs to interact with that specific image. An image is always guaranteed to have the following attributes: ``id``,
+An image entity is represented by a JSON-encoded data structure and its raw binary data. An image entity has an identifier (ID) that is guaranteed to be unique within its endpoint. The ID is used as a TOKEN in request URIs to interact with that specific image. An image is always guaranteed to have the following attributes: ``id``,
 ``status``,
 ``visibility``,
 ``protected``,

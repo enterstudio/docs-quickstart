@@ -34,3 +34,8 @@
 .. code-block:: ruby
 
     image = @client.images.get('{imageId}')
+
+.. code-block:: shell
+
+    $curl -X GET $ENDPOINT/images/{imageId} \
+      -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool

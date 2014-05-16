@@ -25,3 +25,7 @@
 .. code-block:: ruby
 
     server.destroy
+
+.. code-block:: shell
+
+    $ curl -X DELETE $ENDPOINT/{serverId} -H "X-Auth-TOKEN: $TOKEN"

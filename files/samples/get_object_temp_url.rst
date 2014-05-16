@@ -67,7 +67,7 @@
 .. code-block:: curl
     # To create a TempURL, first set the X-Account-Meta-Temp-Url-Key metadata 
     # header on your Cloud Files account to a key that only you know. 
-    $ curl -i -X POST $publicUrlFiles -H "X-Auth-Token: $token" \
+    $ curl -i -X POST $publicUrlFiles -H "X-Auth-TOKEN: $TOKEN" \
         -H "X-Account-Meta-Temp-Url-Key: {arbitraryKey}"
     #
     # Create the temp_url_sig and temp_url query parameter values. OpenStack 

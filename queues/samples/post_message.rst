@@ -35,6 +35,6 @@
   '[{"ttl": 300,"body": {"event": "BackupStarted"}},{"ttl": 60,"body": {"play": "hockey"}}]' \
     -H "Content-type: application/json" \
     -H "Client-ID: {clientId}" \
-    -H "X-Auth-Token: $TOKEN" \
+    -H "X-Auth-TOKEN: $TOKEN" \
     -H "Accept: application/json" \ 
     -H "X-Project-Id: {projectId}"

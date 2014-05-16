@@ -16,3 +16,9 @@
 .. code-block:: ruby
 
     server.wait_for { ready? }
+
+.. code-block:: shell
+
+    # from resulting json below see "status"
+    $curl -X GET $ENDPOINT/{serverId} \
+      -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool

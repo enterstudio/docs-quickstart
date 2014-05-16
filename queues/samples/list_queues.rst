@@ -20,6 +20,6 @@
 
   $ curl -X GET $ENDPOINT/queues \
     -H "Content-type: application/json" \ 
-    -H "X-Auth-Token: $TOKEN" \
+    -H "X-Auth-TOKEN: $TOKEN" \
     -H "Accept: application/json" \
     -H "X-Project-Id: {projectId}"

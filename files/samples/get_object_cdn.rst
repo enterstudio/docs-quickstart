@@ -24,6 +24,6 @@
 .. code-block:: curl
     # To view CDN-enabled container details:
     $ curl -i -X HEAD $publicUrlCDN/{containerName} /
-        -H "X-Auth-Token: $token" 
+        -H "X-Auth-TOKEN: $TOKEN" 
     # NOTE: {containerName} is a placeholder: Replace it 
     # with an actual value and do not enclose it with {}.

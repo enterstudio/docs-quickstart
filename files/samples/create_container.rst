@@ -37,6 +37,6 @@
 .. code-block:: curl
     # To create a storage container:
     $ curl -i -X PUT $publicUrlFiles/{containerName} \
-        -H "X-Auth-Token: $token" 
+        -H "X-Auth-TOKEN: $TOKEN" 
     # NOTE: {containerName} is a placeholder: Replace it with 
     # an actual value and do not enclose it with {}.

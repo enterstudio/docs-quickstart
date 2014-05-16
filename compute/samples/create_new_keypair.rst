@@ -40,5 +40,7 @@
     @client.key_pairs.create(:name => 'my_keypair')
 
 .. code-block:: shell
-
   
+  $ curl -X POST $ENDPOINT/os-keypairs -d \
+    '{"keypair":{"name":"{keyPairName}"} }' \
+    -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool

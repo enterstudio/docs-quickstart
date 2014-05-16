@@ -34,3 +34,8 @@
 .. code-block:: ruby
 
     flavor = @client.flavor.get('{flavorId}')
+
+.. code-block:: shell
+
+    $curl -X GET $ENDPOINT/flavors/{flavorId} \
+        -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool

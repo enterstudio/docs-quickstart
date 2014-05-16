@@ -56,7 +56,7 @@
 .. code-block:: curl
     # To upload an object:
     $ curl -i -X PUT $publicUrlFiles/{containerName}/{objectName} /
-        -H "X-Auth-Token: $token" \
+        -H "X-Auth-TOKEN: $TOKEN" \
         -H "Content-Type: image/jpeg" \
         -H "Content-Length: 0"
     # NOTE: {containerName} and {objectName} are placeholders: Replace 

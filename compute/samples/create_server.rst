@@ -65,3 +65,15 @@
       :image_id => image.id,
       :flavor_id => flavor.id
     )
+
+.. code-block:: shell
+
+  #reminder: all {variableNames} are placeholders only. Must be replaced by actual and valid values
+  $ curl -X POST $ENDPOINT -d \
+    '{
+      "server" : {
+          "name" : "{serverName}",
+          "imageRef" : "{imageRefName}",
+          "flavorRef" : "{flavorRefNumber}"       
+        }
+      }' -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool

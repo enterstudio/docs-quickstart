@@ -27,7 +27,7 @@
 .. code-block:: curl
     # To CDN-enable a storage container:
     $ curl -i -X PUT $publicUrlCDN/{containerName} /
-        -H "X-Auth-Token: $token" \
+        -H "X-Auth-TOKEN: $TOKEN" \
         -H "X-CDN-Enabled: True" \
         -H "X-TTL: 604800"
     # NOTE: {containerName} is a placeholder: Replace it with 
