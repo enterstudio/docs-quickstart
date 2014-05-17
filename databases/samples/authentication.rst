@@ -1,5 +1,22 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+
+   # Export your publicURL to the publicUrl variable:
+   $ export publicUrl="https://identity.api.rackspacecloud.com/v2.0/"
+   # To authenticate, use your Rackspace Cloud Account user name and API key:
+   $ curl -s $publicUrl/tokens -X 'POST' \
+       -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
+       -H "Content-Type: application/json" | python -m json.tool
+   # NOTE: {username} and {apiKey} are placeholders:
+   # Replace them with actual values and do not enclose the values with {}.
+   #
+   # Export the publicURL for cloudDatabases to the publicUrl variable,
+   # and your authentication token to the token variable.
+   $ export publicUrl="https://syd.databases.api.rackspacecloud.com/v1.0/{account}"
+   $ export token="{token}"
+   # NOTE: {account} and {token} are placeholders:
+   # Replace them with actual values and do not enclose the values with {}.
 
 .. code-block:: java
 

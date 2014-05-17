@@ -1,5 +1,44 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+
+   # To create a database instance named myrackinstance with the 512 MB
+   # instance flavor, a volume size of 2 GB, a simplestUser user
+   # with password password and a database named sampledb
+   # with a utf8 character set and utf8_general_ci collation:
+   $ curl -s -X POST -d '{
+      "instance": {
+         "databases": [
+            {
+               "character_set": "utf8",
+               "collate": "utf8_general_ci",
+               "name": "sampledb"
+            }
+         ],
+         "flavorRef": "https://ord.databases.api.rackspacecloud.com/v1.0/{account}/flavors/1",
+         "name": "myrackinstance",
+         "users": [
+            {
+               "databases": [
+                  {
+                  "name": "sampledb"
+                   }
+                ],
+            "name": "simplestUser",
+            "password": "password"
+            }
+         ],
+         "volume":
+            {
+               "size": 2
+            }
+         }
+      }' \
+         -H "X-Auth-Token: $token" \
+         -H "Content-Type: application/json" \
+         $publicUrl/instances | python -m json.tool
+   # NOTE: {account} is a placeholder:
+   # Replace it with an actual value and do not enclose it with {}.
 
 .. code-block:: java
 

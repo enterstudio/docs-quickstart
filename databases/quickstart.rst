@@ -14,8 +14,8 @@ Before we can use the API, we need to authenticate and create an instance of the
 .. include:: samples/authentication.rst
 
 
-Working with instances
-======================
+Work with instances
+===================
 
 An instance is an isolated environment which your databases run on. It is similar
 to the virtualized instances found with Cloud Servers (they both utilize
@@ -30,10 +30,10 @@ ground-up with two primary features in mind:
 
 * *Reliability*. We use fault-tolerant components, such as: RAID levels for individual drives, multi-tenant environments across different nodes, as well as dedicated power supplies and network adapters. This means you have redundancy both from a hardware level and a software level.
 
-Create a new instance
----------------------
+Create an instance
+------------------
 
-To create a new instance you first need to decide on the hardware type, or Flavor, you want to use:
+To create an instance, you must decide on the hardware type, or flavor, that you want to use:
 
 .. include:: samples/get_flavor.rst
 
@@ -41,12 +41,12 @@ Alternatively, you can traverse through the standard list Rackspace provides:
 
 .. include:: samples/list_flavors.rst
 
-Once you have this Flavor, you can use it to create your instance:
+Once you have this flavor, you can use it to create your instance:
 
 .. include:: samples/create_instance.rst
 
-Resizing
---------
+Resize an instance
+------------------
 
 As with creating an instance, in order to resize one, you need to know which
 Flavor to use. Once you've decided on a new Flavor, you can use it to resize
@@ -63,15 +63,15 @@ need to enable root:
 
 .. include:: samples/enable_root_user.rst
 
-This operation will then return the root password for your use. If you're not sure
-whether you've already done this, you can easily query whether root is enabled or not:
+This operation returns the root password for your use. If you're not sure
+whether you've already done this, you can easily query whether root is enabled:
 
 .. include:: samples/check_root_status.rst
 
-Restarting
-----------
+Restart an instance
+-------------------
 
-In order to restart your instance:
+To restart your instance:
 
 .. include:: samples/restart_instance.rst
 
@@ -85,7 +85,7 @@ is very easy:
 .. include:: samples/create_db.rst
 
 
-Create a new user
+Create a user
 =================
 
 To allocate a new user to a database, you need to run:
@@ -96,13 +96,13 @@ The user is granted all privileges on this database. Please bear in mind that ``
 is a reserved name and cannot be used.
 
 
-Backups
-=======
+Create a backup
+===============
 
 Create backup
 -------------
 
-In order to create a backup for your instance, just run:
+To create a backup for your instance, just run:
 
 .. include:: samples/create_backup.rst
 

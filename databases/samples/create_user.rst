@@ -1,5 +1,14 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+
+   # To create a user for a specified database instance:
+   $ curl -s -H "X-Auth-Token: $token" -H "Accept: application/json" \
+      -H "Content-Type: application/json" -X POST \
+      -d '{"users": [{"databases": [{"name": "databaseA"}],"name": "dbuser1","password": "password"}]}' \
+      $publicUrl/instances/{instanceId}/users | python -m json.tool
+   # NOTE: {instanceId} is a placeholder:
+   # Replace it with an actual value and do not enclose it with {}.
 
 .. code-block:: java
 

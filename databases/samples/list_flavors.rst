@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+   # To list flavors:
+   $ curl -s -H "X-Auth-Token: $token" -H "Accept: application/json" \
+       $publicUrl/flavors | python -m json.tool
 
 .. code-block:: java
 

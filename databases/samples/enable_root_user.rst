@@ -1,6 +1,14 @@
 .. code-block:: csharp
 
+.. code-block:: curl
 
+   # To enable the root user for the specified database instance and
+   # return the root password:
+   $ curl -s -H "X-Auth-Token: $token" -H "Accept: application/json" -X POST \
+      $publicUrl/instances/{instanceId}/root | python -m json.tool
+   # NOTE: {instanceId} is a placeholder:
+   # Replace it with an actual value and do not enclose it with {}.
+   
 .. code-block:: java
 
     InstanceApi instanceApi = troveApi.getInstanceApiForZone("{region}");

@@ -10,6 +10,13 @@
     -H "Content-Type: application/json" | python -m json.tool
     # NOTE: {username} and {apiKey} are placeholders:
     # Replace them with actual values and do not enclose the values with {}.
+    #
+    # Export the publicURL for cloudFiles to the publicUrl variable,
+    # and your authentication token to the token variable.
+    $ export publicUrl="https://storage101.dfw1.clouddrive.com/v1/{account}"
+    $ export token="{token}"
+    # NOTE: {account} and {token} are placeholders:
+    # Replace them with actual values and do not enclose the values with {}.
 
 .. code-block:: java
 

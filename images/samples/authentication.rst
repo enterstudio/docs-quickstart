@@ -13,8 +13,10 @@
     #
     # Export the publicURL for cloudImages to the publicUrl variable,
     # and your authentication token to the token variable.
-    $ export publicUrl="https://iad.images.api.rackspacecloud.com/v2/123456"
-    $ export token="101010101010101010101010"
+    $ export publicUrl="https://iad.images.api.rackspacecloud.com/v2/{account}"
+    $ export token="{token}"
+    # NOTE: {account} and {token} are placeholders:
+    # Replace them with actual values and do not enclose the values with {}.
 
 .. code-block:: java
 

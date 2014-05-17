@@ -1,5 +1,15 @@
 .. code-block:: csharp
 
+.. code-block:: curl
+
+   # To create a database:
+   $ curl -s -H "X-Auth-Token: $token" -H "Accept: application/json" \
+      -H "Content-Type: application/json" -X POST \
+      -d '{"databases": [{"character_set": "utf8","collate": "utf8_general_ci",
+         "name": "testingdb"},{"name": "anotherdb"},{"name": "oneMoreDB"}]}' \
+      $publicUrl/instances/{instanceId}/databases | python -m json.tool
+   # NOTE: {instanceId} is a placeholder:
+   # Replace it with an actual value and do not enclose it with {}.
 
 .. code-block:: java
 
