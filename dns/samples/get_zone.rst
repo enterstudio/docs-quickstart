@@ -40,3 +40,10 @@
 .. code-block:: ruby
 
     zone = service.zones.all.find { |z| z.name == 'domain.com' }
+
+.. code-block:: shell
+
+  $ curl -X GET -d \
+    -H 'X-Auth-Token: $TOKEN' \
+    -H 'Content-Type: application/json' \
+    $ENDPOINT/domains/{domainId} | python -m json.tool

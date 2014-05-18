@@ -32,3 +32,17 @@
     zone.email = 'changed@domain.com'
     zone.ttl = 3600
     zone.save
+
+.. code-block:: shell
+
+.. code-block:: shell
+
+  $ curl -X PUT -d \
+    '{
+        "comment" : "{updatedComment}",
+        "ttl" : 300,
+        "emailAddress" : "{updatedEMailAddress}"
+    }' \
+    -H 'X-Auth-Token: $TOKEN' \
+    -H 'Content-Type: application/json' \
+    $ENDPOINT/domains | python -m json.tool

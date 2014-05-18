@@ -23,3 +23,10 @@
 .. code-block:: ruby
 
    record.destroy
+
+.. code-block:: shell
+
+  $ curl -X DELETE -d \
+    -H 'X-Auth-Token: $TOKEN' \
+    -H 'Content-Type: application/json' \
+    $ENDPOINT/domains/{domainId}/records/{recordId} | python -m json.tool
