@@ -51,7 +51,8 @@
   # If you're a UK customer, specify a :rackspace_auth_url of "Fog::Rackspace::UK_AUTH_ENDPOINT" as well, and use the
   # :lon (London) region.
   
-.. code-block:: curl
+
+.. code-block:: shell
     
     # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
@@ -64,3 +65,4 @@
     $ export TENANT="{tenantId}"
     $ export TOKEN="{TokenId}"
     $ export ENDPOINT={publicUrl} #for cloud files service
+
