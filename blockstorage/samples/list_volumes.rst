@@ -6,12 +6,12 @@
 
 .. code-block:: php
 
-    $volumes = $volumeService->volumeList();
-    
+  $volumes = $volumeService->volumeList();
+
 .. code-block:: python
 
-   vols = cbs.list()
+  volumes = cbs.list()
 
 .. code-block:: ruby
 
-  @client.volumes.all
+  volumes = @client.volumes.all

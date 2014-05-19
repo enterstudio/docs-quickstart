@@ -9,20 +9,29 @@
     // To create a snapshot for a volume, the volume should be detached from
     // any server. You must supply a name for the snapshot, and may provide
     // an optional description.
+
     $snapshot = $volumeService->snapshot();
     $snapshot->create(array(
-        'display_name' => '{name}',
-        'display_description' => '{description}',
+        'display_name' => 'name-here',
+        'display_description' => 'This is the description',
         'volume_id' => $volume->id()
     ));
 
 .. code-block:: python
 
-    # To create a snapshot for a volume, the volume should be detached from
-    # any server. You must supply a name for the snapshot, and may provide
-    # an optional description.
-    snap = vol.create_snapshot({name}, {description})
+  # To create a snapshot for a volume, the volume should be detached from
+  # any server. You must supply a name for the snapshot, and may provide
+  # an optional description.
+
+  snap = vol.create_snapshot('name-here', 'This is the description')
 
 .. code-block:: ruby
 
-  snapshot = volume.create_snapshot
+  # To create a snapshot for a volume, the volume should be detached from
+  # any server. You must supply a name for the snapshot, and may provide
+  # an optional description.
+
+  snapshot = volume.create_snapshot(
+    :display_name => 'name-here',
+    :display_description => 'This is the description'
+  )

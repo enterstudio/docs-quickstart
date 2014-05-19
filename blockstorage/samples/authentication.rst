@@ -6,22 +6,22 @@
 
 .. code-block:: php
 
-    require 'vendor/autoload.php';
+  require 'vendor/autoload.php';
 
-    use OpenCloud\Rackspace;
+  use OpenCloud\Rackspace;
 
-    // Instantiate a Rackspace client.
-    $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
-        'username' => '{username}',
-        'apiKey'   => '{apiKey}'
-    ));
+  // Instantiate a Rackspace client.
+  $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
+      'username' => '{username}',
+      'apiKey'   => '{apiKey}'
+  ));
 
-    $volumeService = $client->volumeService();
+  $volumeService = $client->volumeService();
 
 .. code-block:: python
 
   import pyrax
-  pyrax.set_credentials({username}, {api_key}, region={REGION})
+  pyrax.set_credentials("{username}", "{apiKey}", region="{region}")
   cbs = pyrax.cloud_blockstorage
 
 .. code-block:: ruby
