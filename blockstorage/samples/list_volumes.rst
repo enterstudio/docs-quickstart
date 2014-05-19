@@ -15,3 +15,9 @@
 .. code-block:: ruby
 
   @client.volumes.all
+
+.. code-block:: shell
+
+  $ curl -X GET $ENDPOINT/volumes \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" | python -m json.tool

@@ -19,3 +19,16 @@
 .. code-block:: ruby
 
   # N/A
+
+.. code-block:: shell
+
+ $ curl -X PUT -d \
+   '{
+    "snapshot":{
+        "display_name":"{name}",
+        "display_description":"{description}"
+        }
+    }'\
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/snapshots/{snapshotId} | python -m json.tool 

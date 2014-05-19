@@ -26,3 +26,17 @@
 .. code-block:: ruby
 
   snapshot = volume.create_snapshot
+
+.. code-block:: shell
+
+  $ curl -X POST -d \
+    '{
+    "snapshot": {
+        "display_name": "{name}",
+        "display_description": "{description}",
+        "volume_id": "{volumeId}"
+      }
+    }'\    
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/snapshots | python -m json.tool

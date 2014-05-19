@@ -15,3 +15,9 @@
 .. code-block:: ruby
 
   @client.snapshots.get('{snapshotId}')
+
+ .. code-block:: shell
+
+    $ curl -X GET $ENDPOINT/snapshots/{snapshotId}
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" | python -m json.tool 

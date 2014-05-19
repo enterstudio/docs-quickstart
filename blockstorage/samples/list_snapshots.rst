@@ -20,3 +20,9 @@
 
   # To fetch only snapshots associated with a given volume:
   volume.snapshots
+
+.. code-block:: shell
+
+  $ curl -X GET $ENDPOINT/snapshots \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" | python -m json.tool

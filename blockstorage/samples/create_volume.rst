@@ -29,3 +29,16 @@
 
   volume = @client.volumes.create(:size => '100')
   volume.wait_for { ready? }
+
+.. code-block:: shell
+
+  $ curl -X POST -d \
+    '{
+    "volume": {
+        "display_name": "{name}",
+        "size": 100
+     }
+    }'\    
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/volumes | python -m json.tool

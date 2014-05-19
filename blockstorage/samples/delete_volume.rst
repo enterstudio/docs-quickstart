@@ -17,3 +17,9 @@
 .. code-block:: ruby
 
   volume.destroy
+
+.. code-block:: shell
+
+  $ curl -X DELETE $ENDPOINT/volumes/{volumeId} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" | python -m json.tool

@@ -17,3 +17,9 @@
 .. code-block:: ruby
 
   snapshot.destroy
+
+.. code-block:: shell
+
+  $ curl -X DELETE $ENDPOINT/snapshots/{snapshotId} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" | python -m json.tool
