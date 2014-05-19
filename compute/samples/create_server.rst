@@ -2,78 +2,64 @@
 
 .. code-block:: java
 
-    ServerApi serverApi = novaApi.getServerApiForZone("{region}");
-    ServerCreated serverCreated = serverApi.create("My new server", "{imageId}", "{flavorId}");
+  ServerApi serverApi = novaApi.getServerApiForZone("{region}");
+  ServerCreated serverCreated = serverApi.create("My new server", "{imageId}", "{flavorId}");
 
 .. code-block:: javascript
 
-    client.createServer({
-      name: 'My new server',
-      image: imageId,
-      flavor: flavorId
-    }, function(err, server) {
-      if (err) {
-        // TODO handle as appropriate
-        return;
-      }
+  client.createServer({
+    name: 'My new server',
+    image: imageId,
+    flavor: flavorId
+  }, function(err, server) {
+    if (err) {
+      // TODO handle as appropriate
+      return;
+    }
 
-      // TODO use your server here
-    });
+    // TODO use your server here
+  });
 
 .. code-block:: php
 
-    use Guzzle\Http\Exception\BadResponseException;
+  use Guzzle\Http\Exception\BadResponseException;
 
-    $server = $compute->server();
+  $server = $compute->server();
 
-    try {
-        $response = $server->create(array(
-            'name'     => 'My new server',
-            'imageId'  => $imageId,
-            'flavorId' => $flavorId
-        ));
-    } catch (BadResponseException $e) {
-        // No! Something failed. Let's find out:
-        printf("Request: %s\n\nResponse: %s", (string) $e->getRequest(), (string) $e->getResponse());
-    }
+  try {
+      $response = $server->create(array(
+          'name'     => 'My new server',
+          'imageId'  => $imageId,
+          'flavorId' => $flavorId
+      ));
+  } catch (BadResponseException $e) {
+      // No! Something failed. Let's find out:
+      printf("Request: %s\n\nResponse: %s", (string) $e->getRequest(), (string) $e->getResponse());
+  }
 
 .. code-block:: python
 
-  import os
-  import pyrax
-
   cs = pyrax.cloudservers
-  server_name = "f20-webserver"
-  image_name = [img for img in cs.images.list()
-      if "Fedora 20" in img.name][0]
-  flavor_1GB_perf = [flavor for flavor in cs.flavors.list()
-      if flavor.name == "1 GB Performance"][0]
-
-  # Creates the server with the selected image and flavor
-  server = cs.servers.create(server_name, image_name.id, flavor_1GB_perf)
-
-  # Shows you the launched server information so you can use SSH to connect
-  pyrax.utils.wait_for_build(server, verbose=True)
-  print("ID:", server.id)
-  print("Admin Password:", server.adminPass)
-  print("Networks:", server.networks)
+  server = cs.servers.create('My new server', image.id, flavor.id)
 
 .. code-block:: ruby
 
-    server = @client.servers.create(
-      :name => 'My new server',
-      :image_id => image.id,
-      :flavor_id => flavor.id
-    )
+  server = @client.servers.create(
+    :name => 'My new server',
+    :image_id => image.id,
+    :flavor_id => flavor.id
+  )
 
 .. code-block:: shell
 
-  #reminder: all {variableNames} are placeholders only. Must be replaced by actual and valid values
-  $ curl -X POST $ENDPOINT -d \
+  # Reminder: all {variableNames} are placeholders only. Must be replaced by actual and valid values
+  curl -X POST $ENDPOINT -d \
     '{
       "server" : {
-          "name" : "{serverName}",
-          "imageRef" : "{imageRefName}",
-          "flavorRef" : "{flavorRefNumber}"       
+          "name" : "My new server",
+          "imageRef" : $IMAGE_ID,
+          "flavorRef" : $FLAVOR_ID
         }
-      }' -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool
+      }' -H "X-Auth-Token: $TOKEN" | python -m json.tool
+
+  export SERVER_ID="{serverId}"
