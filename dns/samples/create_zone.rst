@@ -61,5 +61,5 @@
     } ]
     }' \
     -H "X-Auth-Token: $TOKEN" \
-    -H 'Content-Type: application/json' \
+    -H "Content-Type: application/json" \
     $ENDPOINT/domains | python -m json.tool
