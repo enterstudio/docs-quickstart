@@ -22,9 +22,7 @@ Code blocks go in this order::
   .. code-block:: shell
 
 
-If there's a new language you want to add to the code samples, append it to the end::
-
-  .. code-block:: babbagedifferenceenginescript
+If there's a new language you want to add code samples for, insert it where it fits alphabetically. 
 
 
 If starting a new narrative/code section, be sure to add all the code block sections to each `.rst` you create for PR sanity.
