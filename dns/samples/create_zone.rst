@@ -5,31 +5,32 @@
 .. code-block:: javascript
 
   var details = {
-  name: 'domain.com',
-  email: 'admin@domain.com',
-  ttl: 300,
-  comment: 'root level for domain.com'
+    name: 'domain.com',
+    email: 'admin@domain.com',
+    ttl: 300,
+    comment: 'Root level for domain.com'
   };
 
   rackspace.createZone(details, function (err, zone) {
     if (err) {
-      console.dir(err);
+      // TODO handle appropriately
       return;
     }
-    console.log(zone.id + ' ' + zone.name + ' ' + zone.ttl);
+
+    // TODO use the created zone
   });
 
 .. code-block:: php
 
-    $dnsService = $client->dnsService();
+  $dnsService = $client->dnsService();
 
-    $domain = $dnsService->domain();
-    $domain->create(array(
-        'name'         => 'domain.com',
-        'emailAddress' => 'admin@domain.com',
-        'ttl'          => 300,
-        'comment'      => 'Root level for domain.com'
-    ));
+  $domain = $dnsService->domain();
+  $domain->create(array(
+      'name'         => 'domain.com',
+      'emailAddress' => 'admin@domain.com',
+      'ttl'          => 300,
+      'comment'      => 'Root level for domain.com'
+  ));
 
 .. code-block:: python
 
@@ -39,26 +40,26 @@
 
 .. code-block:: ruby
 
-    zone = @client.zones.create(
-      :domain => 'domain.com',
-      :email => 'admin@domain.com',
-      :ttl => 300,
-      :comment => 'root level for domain.com'
-    )
+  zone = @client.zones.create(
+    :domain => 'domain.com',
+    :email => 'admin@domain.com',
+    :ttl => 300,
+    :comment => 'Root level for domain.com'
+  )
 
 .. code-block:: shell
 
-  $ curl -X POST -d \
+  curl -X POST -d \
     '{
         "domains" : [ {
             "name" : "domain.com",
-            "comment" : "Optional domain comment...",
+            "comment" : "Root level for domain.com",
             "subdomains" : {
                 "domains" : []
             },
             "ttl" : 300,
             "emailAddress" : "admin@domain.com"
-    } ]
+        } ]
     }' \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \

@@ -13,43 +13,42 @@
 
 .. code-block:: php
 
-    require 'vendor/autoload.php';
+  require 'vendor/autoload.php';
 
-    use OpenCloud\Rackspace;
+  use OpenCloud\Rackspace;
 
-    $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
-        'username' => '{username}',
-        'apiKey'   => '{apiKey}'
-    ));
+  $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
+      'username' => '{username}',
+      'apiKey'   => '{apiKey}'
+  ));
 
 .. code-block:: python
 
   import pyrax
-  pyrax.set_setting("identity_type", "rackspace")
-  pyrax.set_credentials({username}, {apiKey})
+
+  pyrax.set_setting('identity_type', 'rackspace')
+  pyrax.set_credentials('{username}', '{apiKey}')
 
 .. code-block:: ruby
 
-    require 'fog'
+  require 'fog'
 
-    @client = Fog::DNS.new(
-      :provider => 'rackspace',
-      :rackspace_username => '{username}',
-      :rackspace_api_key => '{apiKey}'
-    )
-
-
+  @client = Fog::DNS.new(
+    :provider => 'rackspace',
+    :rackspace_username => '{username}',
+    :rackspace_api_key => '{apiKey}'
+  )
 
 .. code-block:: shell
-  
+
   # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
-  $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
+  curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
      -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
      -H "Content-Type: application/json" | python -m json.tool
 
   # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
 
-  $ export TENANT="{tenantId}"
-  $ export TOKEN="{TokenId}"
-  $ export ENDPOINT={publicUrl} #for cloud DNS service
+  export TENANT="{tenantId}"
+  export TOKEN="{tokenId}"
+  export ENDPOINT="{publicUrl}" # For cloud DNS service

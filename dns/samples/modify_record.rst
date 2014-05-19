@@ -10,22 +10,23 @@
       console.dir(err);
       return;
     }
-    console.log('Record ' + myRec.name + ' was successfully modified.');
+
+    // The record was successfully modified.
   });
 
 .. code-block:: php
 
-	// Let's decrease its TTL by an hour:
-	$record->ttl -= 60;
+  // Let's decrease its TTL by an hour:
+  $record->ttl -= 60;
 
-	// And change its data value:
-	$record->data = '192.168.1.1';
+  // And change its data value:
+  $record->data = '192.168.1.1';
 
-	$record->update();
+  $record->update();
 
 .. code-block:: python
 
-  record.update(data="192.168.5.6")
+  record.update(data="192.168.1.1")
 
 .. code-block:: ruby
 
@@ -39,10 +40,10 @@
 
 .. code-block:: shell
 
-  $ curl -X PUT -d \
+  curl -X PUT -d \
     '{
         "type" : "A",
-        "data" : "{updatedIPv4Address}",
+        "data" : "192.168.1.1",
         "ttl" : 3600
     }' \
     -H "X-Auth-Token: $TOKEN" \

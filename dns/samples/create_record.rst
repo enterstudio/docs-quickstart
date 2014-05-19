@@ -5,8 +5,8 @@
 .. code-block:: javascript
 
   var recDetails = {
-    name: 'subdomain',
-    data: '127.0.0.1',
+    name: 'app.domain.com',
+    data: '192.168.1.1',
     type: 'A'
   };
 
@@ -20,15 +20,15 @@
 
 .. code-block:: php
 
-    // Add a CNAME record
-    $record = $domain->record(array(
-        'type' => 'CNAME',
-        'name' => 'www.domain.com',
-        'ttl'  => 3600,
-        'data' => 'domain.com'
-    ));
+  // Add an A record
+  $record = $domain->record(array(
+      'type' => 'A',
+      'name' => 'app.domain.com',
+      'ttl'  => 3600,
+      'data' => '192.168.1.1'
+  ));
 
-    $record->create();
+  $record->create();
 
 .. code-block:: python
 
@@ -39,21 +39,22 @@
 
 .. code-block:: ruby
 
-    record = zone.records.create(
-      :name => 'subdomain',
-      :value => '127.0.0.1',
-      :type => 'A'
-    )
+  record = zone.records.create(
+    :type => 'A',
+    :name => 'app.domain.com',
+    :ttl => 3600,
+    :value => '192.168.1.1'
+  )
 
 .. code-block:: shell
 
-  $ curl -X POST -s -d \
+  curl -X POST -s -d \
     '{
         "records": [
             {
                 "name" : "app.domain.com",
                 "type" : "A",
-                "data" : "{IPv4Address}",
+                "data" : "192.168.1.1",
                 "ttl" : 3600
             }
         ]

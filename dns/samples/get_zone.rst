@@ -9,29 +9,29 @@
       console.dir(err);
       return;
     }
-    console.log('Zone ID: ' + zones[0] + '\n');
-    console.log('Zone admin email: ' + zones[0] + '\n');
+
+    // TODO use the zones.
   });
 
 .. code-block:: php
 
-    $dnsService = $client->dnsService();
+  $dnsService = $client->dnsService();
 
-    // First define your domain's ID
-    $domainId = '{domainId}';
+  // First define your domain's ID
+  $domainId = '{domainId}';
 
-    // Alternatively, if you do not know your domain ID:
-    $domains = $dnsService->domainList(array(
-        'name' => 'domain.com'
-    ));
+  // Alternatively, if you do not know your domain ID:
+  $domains = $dnsService->domainList(array(
+      'name' => 'domain.com'
+  ));
 
-    foreach ($domains as $domain) {
-        $domainId = $domain->id;
-        break;
-    }
+  foreach ($domains as $domain) {
+      $domainId = $domain->id;
+      break;
+  }
 
-    // Now, to get the full domain object:
-    $domain = $dnsService->domain($domainId);
+  // Now, to get the full domain object:
+  $domain = $dnsService->domain($domainId);
 
 .. code-block:: python
 
@@ -39,11 +39,11 @@
 
 .. code-block:: ruby
 
-    zone = service.zones.all.find { |z| z.name == 'domain.com' }
+  zone = service.zones.all.find { |z| z.name == 'domain.com' }
 
 .. code-block:: shell
 
-  $ curl -X GET -d \
+  curl -X GET -d \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
     $ENDPOINT/domains/{domainId} | python -m json.tool
