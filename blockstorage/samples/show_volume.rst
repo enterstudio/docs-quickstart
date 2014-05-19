@@ -19,5 +19,5 @@
  .. code-block:: shell
 
     $ curl -X GET $ENDPOINT/volumes/{volumeId}
-    -H "X-Auth-Token: $TOKEN" \
-    -H "Content-Type: application/json" | python -m json.tool 
+      -H "X-Auth-Token: $TOKEN" \
+      -H "Content-Type: application/json" | python -m json.tool 
