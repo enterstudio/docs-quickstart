@@ -37,3 +37,5 @@
     :condition => 'ENABLED'
   )
   @balancer.wait_for { ready? }
+
+.. code-block:: shell
