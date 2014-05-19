@@ -18,8 +18,8 @@
 
 .. code-block:: shell
 
-  $ curl -X DELETE $ENDPOINT/queues/{queue_name} \ 
-    -H "Content-type: application/json" \ 
-    -H "X-Auth-TOKEN: $TOKEN" \
+  curl -X DELETE $ENDPOINT/queues/{queueName} \
+    -H "Content-type: application/json" \
+    -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
     -H "X-Project-Id: {projectId}"

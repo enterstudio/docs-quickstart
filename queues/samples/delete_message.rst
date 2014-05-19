@@ -6,11 +6,11 @@
 
 .. code-block:: php
 
-   // Delete claimed messages.               
-   foreach ($claimedMessages as $claimedMessage) {
-       $claimId = $claimedMessage->getClaimIdFromHref();
-       $claimedMessage->delete($claimId);
-   }
+  // Delete claimed messages.
+  foreach ($claimedMessages as $claimedMessage) {
+     $claimId = $claimedMessage->getClaimIdFromHref();
+     $claimedMessage->delete($claimId);
+  }
 
 .. code-block:: python
 
@@ -27,10 +27,10 @@
   message.destroy
 
 .. code-block:: shell
-  
-  $curl -X DELETE $ENDPOINT/queues/{queueName}/messages/{messageId} \ 
+
+  curl -X DELETE $ENDPOINT/queues/{queueName}/messages/{messageId} \
     -H "Content-type: application/json" \
-    -H "X-Auth-TOKEN: $TOKEN" \ 
+    -H "X-Auth-Token: $TOKEN" \
     -H "Client-ID: {clientId}" \
     -H "Accept: application/json" \
     -H "X-Project-Id: {projectId}"
