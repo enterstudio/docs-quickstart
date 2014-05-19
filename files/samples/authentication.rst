@@ -4,42 +4,39 @@
 
 .. code-block:: javascript
 
-   pkgcloud = require('pkgcloud');
+  pkgcloud = require('pkgcloud');
 
-    // each client is bound to a specific service and provider
-    var client = pkgcloud.storage.createClient({
-      provider: 'rackspace',
-      username: '{username}',
-      apiKey: '{apiKey}',
-      region: '{region}'
-    });
+  // each client is bound to a specific service and provider
+  var client = pkgcloud.storage.createClient({
+    provider: 'rackspace',
+    username: '{username}',
+    apiKey: '{apiKey}',
+    region: '{region}'
+  });
 
 .. code-block:: php
 
-    require 'vendor/autoload.php';
+  require 'vendor/autoload.php';
 
-    use OpenCloud\Rackspace;
+  use OpenCloud\Rackspace;
 
-    // Instantiate a Rackspace client.
-    $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
-        'username' => '{username}',
-        'apiKey'   => '{apiKey}'
-    ));
+  // Instantiate a Rackspace client.
+  $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
+      'username' => '{username}',
+      'apiKey'   => '{apiKey}'
+  ));
 
 .. code-block:: python
 
   import pyrax
+
   pyrax.set_setting("identity_type", "rackspace")
-  pyrax.set_default_region({region})
-  pyrax.set_credentials({username}, {apiKey})
+  pyrax.set_default_region('{region}')
+  pyrax.set_credentials('{username}', '{apiKey}')
 
 .. code-block:: ruby
 
   require 'fog'
-
-  # ":rackspace_region" determines which geographic region your data will be
-  # stored in. Valid choices include :dfw (Dallas), :ord (Chicago), :iad
-  # (Virginia), :syd (Sydney), and :hkg (Hong Kong).
 
   @client = Fog::Storage.new(
     :provider => 'rackspace',
@@ -48,21 +45,17 @@
     :rackspace_region => '{region}'
   )
 
-  # If you're a UK customer, specify a :rackspace_auth_url of "Fog::Rackspace::UK_AUTH_ENDPOINT" as well, and use the
-  # :lon (London) region.
-  
-
 .. code-block:: shell
-    
-    # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
-    $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
-       -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-       -H "Content-Type: application/json" | python -m json.tool
+  # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
-    # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
+  curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
+     -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
+     -H "Content-Type: application/json" | python -m json.tool
 
-    $ export TENANT="{tenantId}"
-    $ export TOKEN="{TokenId}"
-    $ export ENDPOINT={publicUrl} #for cloud files service
+  # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
 
+  export TENANT="{tenantId}"
+  export TOKEN="{TokenId}"
+  export ENDPOINT="{publicUrl}" # For the cloud files service
+  export CDN_ENDPOINT="{cdnEndpoint}" # Also from the cloud files service

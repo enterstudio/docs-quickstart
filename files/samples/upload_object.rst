@@ -53,11 +53,12 @@
     :body => 'Rackspace is awesome!'
   )
 
-.. code-block:: curl
-    # To upload an object:
-    $ curl -i -X PUT $publicUrlFiles/{containerName}/{objectName} /
-        -H "X-Auth-TOKEN: $TOKEN" \
-        -H "Content-Type: image/jpeg" \
-        -H "Content-Length: 0"
-    # NOTE: {containerName} and {objectName} are placeholders: Replace 
-    # them with actual values and do not enclose them with {}.
+.. code-block:: shell
+
+  curl -i -X PUT $ENDPOINT/{containerName}/{objectName} /
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: image/jpeg" \
+    -H "Content-Length: 0"
+
+  # NOTE: {containerName} and {objectName} are placeholders: Replace
+  # them with actual values and do not enclose them with {}.

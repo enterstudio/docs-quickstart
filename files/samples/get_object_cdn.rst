@@ -14,16 +14,18 @@
 
   import urllib
   import urlparse
+
   encoded_name = urllib.quote(obj.name)
   cdn_url = urlparse.urljoin(container.cdn_uri, encoded_name)
 
 .. code-block:: ruby
 
   file.public_url
-  
-.. code-block:: curl
-    # To view CDN-enabled container details:
-    $ curl -i -X HEAD $publicUrlCDN/{containerName} /
-        -H "X-Auth-TOKEN: $TOKEN" 
-    # NOTE: {containerName} is a placeholder: Replace it 
-    # with an actual value and do not enclose it with {}.
+
+.. code-block:: shell
+
+  curl -i -X HEAD $CDN_ENDPOINT/{containerName}/{objectName} /
+      -H "X-Auth-Token: $TOKEN"
+
+  # NOTE: {containerName} and {objectName} are placeholders: Replace them
+  # with actual values and do not enclose them with {}.
