@@ -6,7 +6,7 @@ These docs are written in a narrative format with the same use cases across all 
 .. _examples from Mailgun's documention: http://documentation.mailgun.com/quickstart.html#sending-messages
 
 Code blocks go in this order::
-
+```
   .. code-block:: csharp
 
   .. code-block:: java
@@ -20,11 +20,11 @@ Code blocks go in this order::
   .. code-block:: ruby
 
   .. code-block:: shell
-
+```
 If there's a new language you want to add to the code samples, append it to the end:
-
- .. code-block:: babbagedifferenceenginescript
-
+```
+  .. code-block:: babbagedifferenceenginescript
+```
 If starting a new narrative/code section, be sure to add all the code block sections to each `.rst` you create for PR sanity.
 
 Use neutral language instead of gerunds:
