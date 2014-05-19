@@ -10,4 +10,4 @@
 
 .. code-block:: ruby
 
-  my_group = service.groups.get '{group_id}'
+  my_group = service.groups.get '{groupId}'

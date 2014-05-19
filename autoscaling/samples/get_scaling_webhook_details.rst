@@ -10,4 +10,4 @@
 
 .. code-block:: ruby
 
-  my_webhook = my_policy.webhooks.get '{webhook_id}'
+  my_webhook = my_policy.webhooks.get '{webhookId}'
