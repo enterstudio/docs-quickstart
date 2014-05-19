@@ -27,7 +27,7 @@
 
 .. code-block:: python
 
-  pyrax.utils.wait_until(load_balancer, "status", "ACTIVE",interval=1,
+  pyrax.utils.wait_until(load_balancer, "status", "ACTIVE", interval=1,
                          attempts=30)
 
 .. code-block:: ruby
