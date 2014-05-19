@@ -43,6 +43,6 @@
         "ttl" : 300,
         "emailAddress" : "{updatedEMailAddress}"
     }' \
-    -H 'X-Auth-Token: $TOKEN' \
+    -H "X-Auth-Token: $TOKEN" \
     -H 'Content-Type: application/json' \
     $ENDPOINT/domains | python -m json.tool

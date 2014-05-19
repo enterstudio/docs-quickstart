@@ -60,6 +60,6 @@
             "emailAddress" : "admin@domain.com"
     } ]
     }' \
-    -H 'X-Auth-Token: $TOKEN' \
+    -H "X-Auth-Token: $TOKEN" \
     -H 'Content-Type: application/json' \
     $ENDPOINT/domains | python -m json.tool
