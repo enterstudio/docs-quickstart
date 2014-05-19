@@ -19,6 +19,12 @@ Code blocks go in this order::
 
   .. code-block:: ruby
 
+  .. code-block:: shell
+
+
+If there's a new language you want to add code samples for, insert it where it fits alphabetically. 
+
+
 If starting a new narrative/code section, be sure to add all the code block sections to each `.rst` you create for PR sanity.
 
 Use neutral language instead of gerunds:
@@ -50,3 +56,4 @@ Databases
 ``{instanceName}``
 ``{flavorId}``
 
+Additionally, for curl commands, all env vars should be UPPERCASE (i.e. ENDPOINT, TOKEN, etc.) and all headers should be surrounded by double quotes.
