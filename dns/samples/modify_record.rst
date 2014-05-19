@@ -36,3 +36,15 @@
   record.value = '192.168.1.1'
 
   record.save
+
+.. code-block:: shell
+
+  $ curl -X PUT -d \
+    '{
+        "type" : "A",
+        "data" : "{updatedIPv4Address}",
+        "ttl" : 3600
+    }' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/domains/{domainId}/records/{recordId} | python -m json.tool

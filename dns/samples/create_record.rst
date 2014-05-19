@@ -44,3 +44,20 @@
       :value => '127.0.0.1',
       :type => 'A'
     )
+
+.. code-block:: shell
+
+  $ curl -X POST -s -d \
+    '{
+        "records": [
+            {
+                "name" : "app.domain.com",
+                "type" : "A",
+                "data" : "{IPv4Address}",
+                "ttl" : 3600
+            }
+        ]
+    }' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/domains/{domainId}/records | python -m json.tool

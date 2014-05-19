@@ -45,3 +45,21 @@
       :ttl => 300,
       :comment => 'root level for domain.com'
     )
+
+.. code-block:: shell
+
+  $ curl -X POST -d \
+    '{
+        "domains" : [ {
+            "name" : "domain.com",
+            "comment" : "Optional domain comment...",
+            "subdomains" : {
+                "domains" : []
+            },
+            "ttl" : 300,
+            "emailAddress" : "admin@domain.com"
+    } ]
+    }' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/domains | python -m json.tool

@@ -33,9 +33,16 @@
 
 .. code-block:: python
 
-  record = domain.get_record('{domain_id}', '{record_id}'')
+  record = domain.get_record('{domainId}', '{domainId}'')
 
 
 .. code-block:: ruby
 
     record = my_zone.records.get('{recordId}')
+
+.. code-block:: shell
+
+  $ curl -X GET -d \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/domains/{domainId}/records/{recordId} | python -m json.tool
