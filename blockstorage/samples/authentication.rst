@@ -36,8 +36,6 @@
 
 .. code-block:: shell
 
-  .. code-block:: shell
-
   # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
   $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
