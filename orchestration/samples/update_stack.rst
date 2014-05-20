@@ -25,4 +25,4 @@
     }' \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
-    $ENDPOINT//stacks/{stack_name}/{stack_id} | python -m json.tool
+    $ENDPOINT/stacks/{stack_name}/{stack_id} | python -m json.tool
