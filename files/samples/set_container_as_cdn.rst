@@ -12,7 +12,6 @@
 
 .. code-block:: php
 
-  // Enable CDN for the container.
   $container->enableCdn();
 
 .. code-block:: python
@@ -23,12 +22,13 @@
 
   directory.public = true
   directory.save
-  
+
 .. code-block:: curl
-    # To CDN-enable a storage container:
-    $ curl -i -X PUT $publicUrlCDN/{containerName} /
-        -H "X-Auth-TOKEN: $TOKEN" \
-        -H "X-CDN-Enabled: True" \
-        -H "X-TTL: 604800"
-    # NOTE: {containerName} is a placeholder: Replace it with 
-    # an actual value and do not enclose it with {}.
+
+  curl -i -X PUT $ENDPOINT/{containerName} /
+    -H "X-Auth-Token: $TOKEN" \
+    -H "X-CDN-Enabled: True" \
+    -H "X-TTL: 604800"
+
+  # NOTE: {containerName} is a placeholder: Replace it with
+  # an actual value and do not enclose it with {}.
