@@ -6,15 +6,15 @@
 
 .. code-block:: php
 
-    $snapshot->rename(array(
-        'display_name' => '{new_display_name}',
-        'display_description' => '{new_display_description}'
-    ));
-    
+  $snapshot->rename(array(
+    'display_name' => 'new_snapshot_name',
+    'display_description' => 'This is the new description'
+  ));
+
 .. code-block:: python
 
-   snap.update(display_name={new_display_name},
-        display_description={new_display_description})
+  snap.update(display_name='new_snapshot_name',
+              display_description='This is the new description')
 
 .. code-block:: ruby
 

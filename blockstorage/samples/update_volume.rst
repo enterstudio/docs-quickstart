@@ -6,15 +6,15 @@
 
 .. code-block:: php
 
-    $volume->rename(array(
-        'display_name' => '{new_display_name}',
-        'display_description' => '{new_display_description}'
-    ));
-    
+  $volume->rename(array(
+      'display_name' => 'new_volume_name',
+      'display_description' => 'This is the new volume description'
+  ));
+
 .. code-block:: python
 
-   vol.update(display_name={new_display_name},
-        display_description={new_display_description})
+  vol.update(display_name='new_volume_name',
+             display_description='This is the new volume description')
 
 .. code-block:: ruby
 
