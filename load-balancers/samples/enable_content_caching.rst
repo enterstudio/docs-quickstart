@@ -6,16 +6,16 @@
 
 .. code-block:: php
 
-    // To check whether caching is enabled
-    if (true === $loadBalancer->hasContentCaching()) {
-        // it does
-    }
+  // To check whether caching is enabled
+  if (true === $loadBalancer->hasContentCaching()) {
+      // it does
+  }
 
-    // To enable caching
-    $loadBalancer->enableContentCaching(true);
+  // To enable caching
+  $loadBalancer->enableContentCaching(true);
 
-    // To disable caching
-    $loadBalancer->enableContentCaching(false);
+  // To disable caching
+  $loadBalancer->enableContentCaching(false);
 
 .. code-block:: python
 
@@ -31,3 +31,5 @@
   # To disable caching
   @balancer.disable_content_caching
   @balancer.wait_for { ready? }
+
+.. code-block:: shell

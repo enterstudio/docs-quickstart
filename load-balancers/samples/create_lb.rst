@@ -6,19 +6,19 @@
 
 .. code-block:: php
 
-    // Get an empty Load Balancer object
-    $loadBalancer = $service->loadBalancer();
+  // Get an empty Load Balancer object
+  $loadBalancer = $service->loadBalancer();
 
-    // Add the IP types that your Load Balancer will support
-    $loadBalancer->addVirtualIp('PUBLIC', 4);
-    $loadBalancer->addVirtualIp('PUBLIC', 6);
+  // Add the IP types that your Load Balancer will support
+  $loadBalancer->addVirtualIp('PUBLIC', 4);
+  $loadBalancer->addVirtualIp('PUBLIC', 6);
 
-    // Send to the API
-    $loadBalancer->create(array(
-        'name'     => 'My Load Balancer',
-        'port'     => 80,
-        'protocol' => 'HTTP'
-    ));
+  // Send to the API
+  $loadBalancer->create(array(
+      'name'     => 'My Load Balancer',
+      'port'     => 80,
+      'protocol' => 'HTTP'
+  ));
 
 .. code-block:: python
 
@@ -31,3 +31,5 @@
     :virtual_ips => [{ :type => 'PUBLIC' }],
     :nodes => []
   )
+
+.. code-block:: shell
