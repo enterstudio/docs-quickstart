@@ -11,3 +11,9 @@
 .. code-block:: ruby
 
   # N/A
+
+.. code-block:: shell
+
+  $ curl -X DELETE $ENDPOINT/stacks/{stack_name}/{stack_id} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json"

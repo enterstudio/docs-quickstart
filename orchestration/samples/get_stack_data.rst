@@ -11,3 +11,9 @@
 .. code-block:: ruby
 
   # N/A
+
+.. code-block:: shell
+
+  $ curl -X GET $ENDPOINT/stacks/{stack_name}/{stack_id} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool
