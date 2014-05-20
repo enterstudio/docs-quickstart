@@ -1,22 +1,21 @@
 .. code-block:: csharp
 
-
 .. code-block:: java
 
-    Flavor flavor = flavorApi.get({flavorId});
+  Flavor flavor = flavorApi.get("{flavorId}");
 
 .. code-block:: javascript
 
-
 .. code-block:: php
 
-    $flavorId = '{flavorId}';
-    $flavor = $service->flavor($flavorId);
+  $flavor = $service->flavor('{flavorId}');
 
 .. code-block:: python
 
-    flavor = cdb.get_flavor(flavor_id)
+  flavor = cdb.get_flavor('{flavorId}')
 
 .. code-block:: ruby
 
-    flavor = @client.flavors.get('{flavorId}')
+  flavor = @client.flavors.get('{flavorId}')
+
+.. code-block:: shell
