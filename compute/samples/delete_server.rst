@@ -2,30 +2,27 @@
 
 .. code-block:: java
 
-    ServerApi serverApi = novaApi.getServerApiForZone("{region}");
-    serverApi.delete("{serverId}");
+  ServerApi serverApi = novaApi.getServerApiForZone("{region}");
+  serverApi.delete("{serverId}");
 
 .. code-block:: javascript
 
-    client.destroyServer(server, function(err) {
-      // TODO handle err as appropriate
-    });
+  client.destroyServer(server, function(err) {
+    // TODO handle err as appropriate
+  });
 
 .. code-block:: php
 
-    $server->delete();
+  $server->delete();
 
 .. code-block:: python
 
-    # Deletes server named "sacrifice"
-    print("Deleting 'sacrifice' server...", end=' ')
-    sacrifice.delete()
-    print("  Done!")
+  server.delete()
 
 .. code-block:: ruby
 
-    server.destroy
+  server.destroy
 
 .. code-block:: shell
 
-    $ curl -X DELETE $ENDPOINT/{serverId} -H "X-Auth-TOKEN: $TOKEN"
+  curl -X DELETE $ENDPOINT/$SERVER_ID -H "X-Auth-Token: $TOKEN"

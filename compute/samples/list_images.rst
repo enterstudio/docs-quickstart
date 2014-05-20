@@ -2,51 +2,44 @@
 
 .. code-block:: java
 
-    ImageApi imageApi = novaApi.getImageApiForZone("{region}");
-    ImmutableList<? extends Image> images = imageApi.listInDetail().concat().toList();
+  ImageApi imageApi = novaApi.getImageApiForZone("{region}");
+  ImmutableList<? extends Image> images = imageApi.listInDetail().concat().toList();
 
 .. code-block:: javascript
 
-    client.getImages(function(err, images) {
-      if (err) {
-        // TODO handle as appropriate
-        return;
-      }
+  client.getImages(function(err, images) {
+    if (err) {
+      // TODO handle as appropriate
+      return;
+    }
 
-      // TODO figure out which image to use
-      // just grab the first image id
-      var imageId = images[0].id;
-    });
+    // TODO decide on an image to use
+  });
 
 .. code-block:: php
 
-    // To retrieve all images:
-    $images = $service->imageList();
+  // To retrieve all images:
+  $images = $service->imageList();
 
-    // Choose the first image in the collection
-    foreach ($images as $image) {
-        $imageId = $image->id;
-        break;
-    }
+  // Choose the first image in the collection
+  foreach ($images as $image) {
+      $imageId = $image->id;
+      break;
+  }
 
 .. code-block:: python
 
-    import pyrax
-
-    img = pyrax.images
-    # Get a list of the images available to your account
-    image_list = img.list()
-    # Shows the number of images in the list
-    print("There are %s images:" % len(image_list))
-    # Shows the visibility, names, and IDs of your images
-    for img in image_list:
-        print("  (%s) %s (ID=%s)" % (img.visibility, img.name, img.id))
+  # Get a list of the images available to your account
+  image_list = pyrax.images.list()
 
 .. code-block:: ruby
 
-    @client.images.all
+  @client.images.all
 
 .. code-block:: shell
 
-    $curl -X GET $ENDPOINT/images \
-      -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool
+  curl -X GET $ENDPOINT/images \
+    -H "X-Auth-Token: $TOKEN" | python -m json.tool
+
+  # Choose an image from the list and note its id.
+  export IMAGE_ID="{imageId}"

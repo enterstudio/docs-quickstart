@@ -2,29 +2,31 @@
 
 .. code-block:: java
 
-    ServerApi serverApi = novaApi.getServerApiForZone("{region}");
-    serverApi.resize("{serverId}", "{flavorId}");
+  ServerApi serverApi = novaApi.getServerApiForZone("{region}");
+  serverApi.resize("{serverId}", "{flavorId}");
 
 .. code-block:: javascript
 
 .. code-block:: php
 
-    // Load your new flavor
-    $newFlavor = $compute->flavor('{newFlavorId}');
+  // Load your new flavor
+  $newFlavor = $compute->flavor('{newFlavorId}');
 
-    $server->resize($newFlavor);
+  $server->resize($newFlavor);
 
 .. code-block:: python
 
 .. code-block:: ruby
 
-.. .. code-block:: shell
+  server.resize('{newFlavorId}')
 
-    #first you should get the flavor ref number from flavor listing
-    $curl -X PUT $ENDPOINT/{serverId}/action \ -d \
-      '{
+.. code-block:: shell
+
+  # First, you'll need to note the flavor ref number from the flavor list.
+  curl -X PUT $ENDPOINT/{serverId}/action \ -d \
+    '{
       "resize" : {
-          "flavorRef" : "{flavorRefNumber}"
+        "flavorRef" : "{newFlavorId}"
        }
-      }' \
-      -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool
+    }' \
+    -H "X-Auth-Token: $TOKEN" | python -m json.tool

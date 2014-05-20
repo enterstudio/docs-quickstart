@@ -2,7 +2,7 @@
 
 .. code-block:: java
 
-    ServerPredicates.awaitActive(serverApi).apply(serverCreated.getId())
+  ServerPredicates.awaitActive(serverApi).apply(serverCreated.getId())
 
 .. code-block:: javascript
 
@@ -15,10 +15,10 @@
 
 .. code-block:: ruby
 
-    server.wait_for { ready? }
+  server.wait_for { ready? }
 
 .. code-block:: shell
 
-    # from resulting json below see "status"
-    $curl -X GET $ENDPOINT/{serverId} \
-      -H "X-Auth-TOKEN: $TOKEN" | python -m json.tool
+  # from resulting json below see "status"
+  curl -X GET $ENDPOINT/{serverId} \
+    -H "X-Auth-Token: $TOKEN" | python -m json.tool
