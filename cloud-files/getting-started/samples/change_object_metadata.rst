@@ -19,6 +19,11 @@
 
 .. code-block:: php
 
+  // Update object metadata.
+  $object->saveMetadata(array(
+      'Content-Type' => 'image/jpeg'
+  ));
+
 .. code-block:: python
 
   obj.change_content_type("application/json")
@@ -36,3 +41,11 @@
   file.save
 
 .. code-block:: sh
+
+  curl -i -X POST $ENDPOINT/{containerName}/{objectName} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -H "X-Object-Meta-Some-Key: some-value"
+
+  # NOTE: {containerName} and {objectName} are placeholders: Replace them
+  # with actual values and do not enclose them with {}.
