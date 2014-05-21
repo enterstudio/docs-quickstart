@@ -22,7 +22,10 @@
 
 .. code-block:: python
 
-  
+  server_one_node = clb.Node(address=server_one.accessIPv4, port=8080, condition="ENABLED")
+  server_two_node = clb.Node(address=server_two.accessIPv4, port=8080, condition="ENABLED")
+  load_balancer.add_nodes([server_one_node, server_two_node])
+  pyrax.utils.wait_until(load_balancer, "status", "ACTIVE", interval=1, attempts=30, verbose=True)
 
 .. code-block:: ruby
 

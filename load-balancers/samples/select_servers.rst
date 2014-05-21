@@ -14,7 +14,7 @@
 
 .. code-block:: python
 
-  cs = pyrax.cloudservers
+  pyrax.connect_to_cloudservers("{region}")
   server_one = cs.servers.get('{serverId1}')
   server_two = cs.servers.get('{serverId2}')
 
