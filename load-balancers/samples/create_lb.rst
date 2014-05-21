@@ -24,10 +24,9 @@
 
   clb = pyrax.cloud_loadbalancers
   virtual_ipv4 = clb.VirtualIP(type="PUBLIC", ipVersion='IPV4')
-  virtual_ipv6 = clb.VirtualIP(type="PUBLIC", ipVersion='IPV6')
 
   load_balancer = clb.create("balanced", port=80, protocol="HTTP",
-                             virtual_ips=[virtual_ipv4, virtual_ipv6])
+                             virtual_ips=[virtual_ipv4])
 
 .. code-block:: ruby
 
