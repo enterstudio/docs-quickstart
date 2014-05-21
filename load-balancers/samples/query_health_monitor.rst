@@ -17,6 +17,8 @@
 
 .. code-block:: python
 
+  load_balancer.get_health_monitor()
+
 .. code-block:: ruby
 
   @balancer.health_monitor

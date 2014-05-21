@@ -28,6 +28,8 @@
 
 .. code-block:: python
 
+
+
 .. code-block:: ruby
 
   # Example 1: Blacklist a specific IP

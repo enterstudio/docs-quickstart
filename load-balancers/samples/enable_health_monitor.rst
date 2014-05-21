@@ -13,6 +13,9 @@
 
 .. code-block:: python
 
+  load_balancer.add_health_monitor(type="CONNECT", delay=10, timeout=10,
+                                   attemptsBeforeDeactivation=3)
+
 .. code-block:: ruby
 
   # Arguments, in order:

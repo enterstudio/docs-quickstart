@@ -21,6 +21,21 @@
 
 .. code-block:: python
 
+  #  maxConnectionRate: Maximum connections from a single IP within a given
+  #                       rate_interval. 0 means unlimited; otherwise, between 1
+  #                       and 100000.
+  #  maxConnections: Maximum simultaneous connections to allow from a single IP
+  #                   within the rate interval. 0 means unlimited; otherwise,
+  #                   between 1 and 100000.
+  #  minConnections: Allow at least this many connections per IP before throttling.
+  #                   0 means unlimited; otherwise, between 1 and 1000.
+  #  rateInterval: Frequency, in seconds, at which max_connection_rate is assessed.
+  #                 Between 1 and 3600.
+  load_balancer.add_connection_throttle(maxConnectionRate=10000,
+                                        maxConnections=5000,
+                                        minConnections=2,
+                                        rateInterval=5)
+
 .. code-block:: ruby
 
   # Arguments, in order:
