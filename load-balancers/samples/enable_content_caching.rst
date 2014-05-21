@@ -19,6 +19,12 @@
 
 .. code-block:: python
 
+  # Check if content caching is enabled
+  load_balancer.content_caching
+
+  # Enable content_caching
+  load_balancer.content_caching = True
+
 .. code-block:: ruby
 
   # To check whether or not content caching is enabled
