@@ -28,7 +28,11 @@
 
 .. code-block:: python
 
-
+  load_balancer.add_access_list([
+      {"type": 'DENY', "address": "206.160.165.0/24"},
+      {"type": 'DENY', "address": "206.160.166.0/24"},
+      {"type": 'ALLOW', "address": "0.0.0.0/0"}
+  ])
 
 .. code-block:: ruby
 
