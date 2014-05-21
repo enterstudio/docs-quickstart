@@ -1,13 +1,5 @@
 .. code-block:: csharp
 
-.. code-block:: curl
-
-    # To list image members:
-    $ curl -s $publicUrl/images/{imageId}/members \
-        -H "X-Auth-Token: $token" | python -m json.tool
-    # NOTE: {imageId} is a placeholder: replace it with
-    # an actual value and do not enclose it with {}.
-
 .. code-block:: java
 
 .. code-block:: javascript
@@ -15,7 +7,7 @@
 .. code-block:: php
 
     # To list image members:
-    
+
 .. code-block:: python
 
     # To list image members:
@@ -58,4 +50,12 @@
 
 .. code-block:: ruby
 
- # N/A
+  # N/A
+
+.. code-block:: shell
+
+    curl -s $ENDPOINT/images/{imageId}/members \
+      -H "X-Auth-Token: $TOKEN" | python -m json.tool
+
+    # NOTE: {imageId} is a placeholder: replace it with
+    # an actual value and do not enclose it with {}.

@@ -1,13 +1,5 @@
 .. code-block:: csharp
 
-.. code-block:: curl
-
-    # To get image details:
-    $ curl -s $publicUrl/images/{imageId} \
-        -H "X-Auth-Token: $token" | python -m json.tool
-    # NOTE: {imageId} is a placeholder: Replace it with
-    # an actual value and do not enclose it with {}.
-
 .. code-block:: java
 
 .. code-block:: javascript
@@ -22,3 +14,11 @@
 .. code-block:: ruby
 
   # N/A
+
+.. code-block:: shell
+
+  curl -s $ENDPOINT/images/{imageId} \
+    -H "X-Auth-Token: $TOKEN" | python -m json.tool
+
+  # NOTE: {imageId} is a placeholder: Replace it with
+  # an actual value and do not enclose it with {}.
