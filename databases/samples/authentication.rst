@@ -1,6 +1,5 @@
 .. code-block:: csharp
 
-
 .. code-block:: java
 
   // The TroveApi will provide access to all database features, such as Instances or Users.
@@ -19,19 +18,20 @@
 
 .. code-block:: php
 
-    require 'vendor/autoload.php';
+  require 'vendor/autoload.php';
 
-    use OpenCloud\Rackspace;
+  use OpenCloud\Rackspace;
 
-    $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
-        'username' => '{username}',
-        'apiKey'   => '{apiKey}'
-    ));
+  $client = new Rackspace(Rackspace::US_IDENTITY_ENDPOINT, array(
+      'username' => '{username}',
+      'apiKey'   => '{apiKey}'
+  ));
 
 .. code-block:: python
 
   import pyrax
-  pyrax.set_credentials({username}, {api_key}, region={region})
+
+  pyrax.set_credentials('{username}', '{apiKey}', region='{region}')
   cdb = pyrax.cloud_databases
 
 .. code-block:: ruby
@@ -43,3 +43,5 @@
     :rackspace_api_key => '{apiKey}',
     :rackspace_region => '{region}'
   )
+
+.. code-block:: shell

@@ -6,13 +6,13 @@
 
 .. code-block:: php
 
-    $volume->delete();
+  $volume->delete();
 
 .. code-block:: python
 
-    cbs.delete(vol)
-    # - or -
-    vol.delete()
+  vol.delete()
+  # Or:
+  # cbs.delete(vol)
 
 .. code-block:: ruby
 

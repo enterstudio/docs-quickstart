@@ -5,7 +5,7 @@
 .. code-block:: javascript
 
   client.createContainer({
-    name: 'sample-container-test'
+    name: 'gallery'
   }, function (err, container) {
     if (err) {
       // TODO handle as appropriate
@@ -18,8 +18,7 @@
 .. code-block:: php
 
   // Obtain an Object Store service object from the client.
-  $region = 'DFW';
-  $objectStoreService = $client->objectStoreService(null, $region);
+  $objectStoreService = $client->objectStoreService(null, '{region}');
 
   // Create a container for your objects (also referred to as files).
   $container = $objectStoreService->createContainer('gallery');
@@ -32,11 +31,12 @@
 
   # Fog calls containers "directories."
 
-  directory = @client.directories.create(:key => 'sample-container-test')
-  
-.. code-block:: curl
-    # To create a storage container:
-    $ curl -i -X PUT $publicUrlFiles/{containerName} \
-        -H "X-Auth-TOKEN: $TOKEN" 
-    # NOTE: {containerName} is a placeholder: Replace it with 
-    # an actual value and do not enclose it with {}.
+  directory = @client.directories.create(:key => 'gallery')
+
+.. code-block:: shell
+
+  curl -i -X PUT $ENDPOINT/{containerName} \
+    -H "X-Auth-Token: $TOKEN"
+
+  # NOTE: {containerName} is a placeholder: Replace it with
+  # an actual value and do not enclose it with {}.

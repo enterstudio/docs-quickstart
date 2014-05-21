@@ -4,6 +4,16 @@
 
 .. code-block:: javascript
 
+  pkgcloud = require('pkgcloud');
+
+  // each client is bound to a specific service and provider
+  var client = pkgcloud.storage.createClient({
+    provider: 'rackspace',
+    username: '{username}',
+    apiKey: '{apiKey}',
+    region: '{region}'
+  });
+
 .. code-block:: php
 
   require 'vendor/autoload.php';
@@ -26,9 +36,12 @@
 
 .. code-block:: ruby
 
-  @client = Fog::Rackspace::Queues.new(
+  require 'fog'
+
+  @client = Fog::Storage.new(
+    :provider => 'rackspace',
     :rackspace_username => '{username}',
-    :rackspace_api_key => '{apikey}',
+    :rackspace_api_key => '{apiKey}',
     :rackspace_region => '{region}'
   )
 
@@ -37,11 +50,12 @@
   # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
   curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
-    -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-    -H "Content-Type: application/json" | python -m json.tool
+     -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
+     -H "Content-Type: application/json" | python -m json.tool
 
-  # From the resulting json, set three environment variables: TENANT, TOKEN and ENDPOINT.
+  # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
 
   export TENANT="{tenantId}"
-  export TOKEN="{tokenId}"
-  export ENDPOINT="{publicUrl}" # For the cloud queues service
+  export TOKEN="{TokenId}"
+  export ENDPOINT="{publicUrl}" # For the cloud files service
+  export CDN_ENDPOINT="{cdnEndpoint}" # Also from the cloud files service

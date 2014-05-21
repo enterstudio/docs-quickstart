@@ -1,22 +1,22 @@
 .. code-block:: csharp
 
-
 .. code-block:: java
 
-    // Currently not supported.
+  // This operation is currently not supported through the jclouds SDK.
 
 .. code-block:: javascript
 
-
 .. code-block:: php
 
-    $instance->restart();
+  $instance->restart();
 
 .. code-block:: python
 
-    inst.restart()
+  inst.restart()
 
 .. code-block:: ruby
 
-    instance.restart
-    instance.wait_for { ready? }
+  instance.restart
+  instance.wait_for { ready? }
+
+.. code-block:: shell

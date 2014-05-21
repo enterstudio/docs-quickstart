@@ -6,11 +6,11 @@
 
 .. code-block:: php
 
-    $volume = $volumeService->volume(getenv('RAX_VOLUME_ID'));
+  $volume = $volumeService->volume('{volumeId}');
 
 .. code-block:: python
 
-    vol = cbs.get({volume_id})
+  volume = cbs.get('{volumeId}')
 
 .. code-block:: ruby
 

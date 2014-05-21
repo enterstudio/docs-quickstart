@@ -4,7 +4,7 @@
 
 .. code-block:: javascript
 
-  client.removeFile('sample-container-test', 'somefile.txt', function(err) {
+  client.removeFile('gallery', 'somefile.txt', function(err) {
     if (err) {
       // TODO handle as appropriate
     }
@@ -22,9 +22,10 @@
 
   file.destroy
 
-.. code-block:: curl
-    # To delete an object:
-    $ curl -i -X DELETE $publicUrlFiles/{containerName}/{objectName} \
-        -H "X-Auth-TOKEN: $TOKEN"
-    # NOTE: {containerName} and {objectName} are placeholders: Replace them 
-    # with actual values and do not enclose them with {}.
+.. code-block:: shell
+
+  curl -i -X DELETE $ENDPOINT/{containerName}/{objectName} \
+    -H "X-Auth-Token: $TOKEN"
+
+  # NOTE: {containerName} and {objectName} are placeholders: Replace them
+  # with actual values and do not enclose them with {}.

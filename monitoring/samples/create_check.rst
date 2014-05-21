@@ -23,3 +23,20 @@
     :target_hostname => 'sample.hostname.com',
     :monitoring_zones_poll => ['{monitoringZoneId}']
   )
+
+.. code-block:: shell
+
+  $ curl -X POST -d \
+    '{
+      "label": "{checkLabel}",
+      "type": "remote.http",
+      "details": {
+          "url": "{remoteUrl}",
+          "method": "{httpMethod}"
+      },
+      "timeout": 30,
+      "period": 100,
+    }' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/entities/{entityId}/checks | python -m json.tool

@@ -6,7 +6,7 @@
 
 .. code-block:: php
 
-  // Claim the 4 oldest messages in the queue. Keep the claim for 900 seconds (i.e. the claim TTL). Extend the life 
+  // Claim the 4 oldest messages in the queue. Keep the claim for 900 seconds (i.e. the claim TTL). Extend the life
   // of these messages to 120 seconds past the claim TTL.
   $claimedMessages = $queue->claimMessages(array(
       'limit' => 4,
@@ -40,10 +40,10 @@
 
 .. code-block:: shell
 
-  $ curl -X POST $ENDPOINT/queues/{queueName}/claims -d \
+  curl -X POST $ENDPOINT/queues/{queueName}/claims -d \
     '{"ttl": 300,"grace":300}' \
-    -H "Content-type: application/json" \ 
-    -H "Client-ID: {clientId}" \ 
-    -H "X-Auth-TOKEN: $TOKEN" \
+    -H "Content-type: application/json" \
+    -H "Client-ID: {clientId}" \
+    -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
     -H "X-Project-Id: {projectId}"

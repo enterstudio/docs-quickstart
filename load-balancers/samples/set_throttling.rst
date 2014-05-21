@@ -6,18 +6,18 @@
 
 .. code-block:: php
 
-    $throttle = $loadBalancer->connectionThrottle();
+  $throttle = $loadBalancer->connectionThrottle();
 
-    // Allow 5,000 simultaneous connections
-    $throttle->create(array(
-        'maxConnections' => 5000
-    ));
+  // Allow 5,000 simultaneous connections
+  $throttle->create(array(
+      'maxConnections' => 5000
+  ));
 
-    // Or, allow 10,000 every 5 seconds
-    $throttle->create(array(
-        'maxConnectionRate' => 10000,
-        'rateInterval'      => 5
-    ));
+  // Or, allow 10,000 every 5 seconds
+  $throttle->create(array(
+      'maxConnectionRate' => 10000,
+      'rateInterval'      => 5
+  ));
 
 .. code-block:: python
 
@@ -38,3 +38,5 @@
   #
   @balancer.enable_connection_throttling(5000, 2, 10000, 5)
   @balancer.wait_for { ready? }
+
+.. code-block:: shell

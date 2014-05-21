@@ -11,3 +11,8 @@
 .. code-block:: ruby
 
   entity.destroy
+
+.. code-block:: shell
+
+  $ curl -X DELETE $ENDPOINT/entities/{entityId} \
+    -H "X-Auth-Token: $TOKEN"

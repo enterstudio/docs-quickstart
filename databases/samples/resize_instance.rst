@@ -1,22 +1,22 @@
 .. code-block:: csharp
 
-
 .. code-block:: java
 
-    // Currently not supported.
+  // This operation is currently not supported through the jclouds SDK.
 
 .. code-block:: javascript
 
-
 .. code-block:: php
 
-    $instance->resize($flavor);
+  $instance->resize($flavor);
 
 .. code-block:: python
 
-    inst.resize(new_flavor)
+  inst.resize(new_flavor)
 
 .. code-block:: ruby
 
-    instance.resize(new_flavor.id)
-    instance.wait_for { ready? }
+  instance.resize(new_flavor.id)
+  instance.wait_for { ready? }
+
+.. code-block:: shell

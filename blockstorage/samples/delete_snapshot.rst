@@ -6,13 +6,13 @@
 
 .. code-block:: php
 
-    $snapshot->delete();
+  $snapshot->delete();
 
 .. code-block:: python
 
-    snap.delete()
-    # - or -
-    cbs.delete_snapshot({snap_id})
+  snap.delete()
+  # Or:
+  # cbs.delete_snapshot('{snapId}')
 
 .. code-block:: ruby
 

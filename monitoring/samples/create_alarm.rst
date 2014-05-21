@@ -18,3 +18,15 @@
     :check => check,
     :notification_plan_id => '{notificationPlanId}'
   )
+
+.. code-block:: shell
+
+  $ curl -X POST -d \
+    '{
+      "check_id": "{checkId}",
+      "criteria": "{alarmCriteria}",
+      "notification_plan_id": "{notificationPlanId}"
+    }' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/entities/{entityId}/alarms | python -m json.tool

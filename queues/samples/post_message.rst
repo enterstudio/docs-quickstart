@@ -31,10 +31,10 @@
 
 .. code-block:: shell
 
-  $ curl -X POST POST $ENDPOINT/queues/{queueName}/messages -d \
-  '[{"ttl": 300,"body": {"event": "BackupStarted"}},{"ttl": 60,"body": {"play": "hockey"}}]' \
+  curl -X POST POST $ENDPOINT/queues/{queueName}/messages -d \
+    '[{"ttl": 300,"body": {"event": "BackupStarted"}},{"ttl": 60,"body": {"play": "hockey"}}]' \
     -H "Content-type: application/json" \
     -H "Client-ID: {clientId}" \
     -H "X-Auth-TOKEN: $TOKEN" \
-    -H "Accept: application/json" \ 
+    -H "Accept: application/json" \
     -H "X-Project-Id: {projectId}"

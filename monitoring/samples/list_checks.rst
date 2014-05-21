@@ -11,3 +11,9 @@
 .. code-block:: ruby
 
   entity.checks.all
+
+.. code-block:: shell
+
+  $ curl -X GET $ENDPOINT/entities/{entityId}/checks \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

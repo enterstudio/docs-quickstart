@@ -6,15 +6,15 @@
 
 .. code-block:: php
 
-    $snapshot = $volumeService->snapshot({snap_id});
+  $snapshot = $volumeService->snapshot('{snapshotId}');
 
 .. code-block:: python
 
-    snap = cbs.get_snapshot({snap_id})
+  snapshot = cbs.get_snapshot('{snapshotId}')
 
 .. code-block:: ruby
 
-  @client.snapshots.get('{snapshotId}')
+  snapshot @client.snapshots.get('{snapshotId}')
 
  .. code-block:: shell
 

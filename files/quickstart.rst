@@ -12,7 +12,7 @@ Authentication and client creation
 ----------------------------------
 First, we need to authenticate and create an instance of the appropriate API client.
 
-.. include:: samples/auth_client.rst
+.. include:: samples/authentication.rst
 
 Create Container
 -----------------

@@ -30,3 +30,5 @@
 .. code-block:: ruby
 
   @balancer.wait_for { ready? }
+
+.. code-block:: shell
