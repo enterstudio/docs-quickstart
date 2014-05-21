@@ -30,8 +30,8 @@
 
   load_balancer.add_access_list([
       {"type": 'DENY', "address": "206.160.165.0/24"},
-      {"type": 'DENY', "address": "206.160.166.0/24"},
-      {"type": 'ALLOW', "address": "0.0.0.0/0"}
+      {"type": 'ALLOW', "address": "206.160.166.0/24"},
+      {"type": 'DENY', "address": "0.0.0.0/0"}
   ])
 
 .. code-block:: ruby
@@ -46,13 +46,48 @@
 
   # Example 2: Allow access to 1 IP, and blacklist everything else
   @balancer.access_rules.create(
-    :type => 'DENY',
+    :type => 'ALLOW',
     :address => '206.160.166.0/24'
   )
   @balancer.wait_for { ready? }
 
   @balancer.access_rules.create(
-    :type => 'ALLOW',
+    :type => 'DENY',
     :address => '0.0.0.0/0'
   )
   @balancer.wait_for { ready? }
+
+.. code-block:: shell
+
+  # Example 1: Blacklist a specific IP
+
+  curl -X POST $ENDPOINT/{loadBalancerId}/accesslist \
+    -H "X-Auth-Token: $TOKEN" \
+    -H 'Content-Type: application/json' \
+    -d \
+      '{
+          "accessList": [
+              {
+                  "type": "DENY",
+                  "address" : "206.160.165.0/24"
+              }
+          ]
+      }'
+
+  # Example 2: Allow access to 1 IP, and blacklist everything else
+  curl -X POST $ENDPOINT/loadbalancers/{loadBalancerId}/accesslist \
+    -H "X-Auth-Token: $TOKEN" \
+    -H 'Content-Type: application/json' \
+    -d \
+      '{
+          "accessList": [
+              {
+                  "type": "ALLOW",
+                  "address" : "206.160.166.0/24"
+              },
+              {
+                  "type": "DENY",
+                  "address" : "0.0.0.0/0"
+              },
+          ]
+      }'

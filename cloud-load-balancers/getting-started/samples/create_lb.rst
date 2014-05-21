@@ -39,3 +39,18 @@
   )
 
 .. code-block:: shell
+
+  curl -s -X POST $ENDPOINT/loadbalancers \
+    -H "X-Auth-Token: $TOKEN"
+    -H "Content-Type: application/json" \
+    -d \
+      '{
+          "loadBalancer": {
+              "name": "balanced",
+              "port": 8080,
+              "protocol": "HTTP",
+              "virtualIps": [
+                { "type": "PUBLIC" }
+              ]
+          }
+      }' | python -m json.tool

@@ -44,3 +44,24 @@
   @balancer.wait_for { ready? }
 
 .. code-block:: shell
+
+  curl -X POST $ENDPOINT/loadbalancers/{loadBalancerId}/nodes \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -d \
+      '{
+          "nodes": [
+              {
+                  "address": "{serverOnePrivateAddress}",
+                  "port": 8080,
+                  "condition": "ENABLED",
+                  "type": "PRIMARY"
+              },
+              {
+                  "address": "{serverOnePrivateAddress}",
+                  "port": 8080,
+                  "condition": "ENABLED",
+                  "type": "PRIMARY"
+              }
+          ]
+      }' | python -m json.tool
