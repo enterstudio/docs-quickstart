@@ -11,3 +11,9 @@
 .. code-block:: ruby
 
   @client.list_monitoring_zones.body['values']
+
+.. code-block:: shell
+
+  $ curl -X GET $ENDPOINT/monitoring_zones \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

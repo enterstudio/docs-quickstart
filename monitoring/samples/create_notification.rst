@@ -18,3 +18,17 @@
     :type => 'email',
     :details => { :address => '{emailAddress}' }
   )
+
+.. code-block:: shell
+
+  $ curl -X POST -d \
+    '{
+      "label": "{webhookNotificationLabel}",
+      "type": "webhook",
+      "details": {
+        "url": "{webhookUrl}"
+      }
+    }' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/notifications | python -m json.tool

@@ -11,3 +11,8 @@
 .. code-block:: ruby
 
   check.destroy
+
+.. code-block:: shell
+
+  $ curl -X DELETE $ENDPOINT/entities/{entityId}/checks/{checkId} \
+    -H "X-Auth-Token: $TOKEN"
