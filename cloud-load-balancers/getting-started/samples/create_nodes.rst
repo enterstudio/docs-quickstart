@@ -45,7 +45,7 @@
 
 .. code-block:: shell
 
-  curl -X POST $ENDPOINT/loadbalancers/{loadBalancerId}/nodes \
+  curl -s -X POST $ENDPOINT/loadbalancers/{loadBalancerId}/nodes \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
     -d \

@@ -47,8 +47,9 @@
      -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
      -H "Content-Type: application/json" | python -m json.tool
 
-  # From the resulting json, set three environment variables: TENANT, TOKEN and ENDPOINT.
+  # From the resulting json, set environment variables with values you'll need later.
 
   export TENANT="{tenantId}"
   export TOKEN="{tokenId}"
   export ENDPOINT="{publicUrl}" # For the cloud load balancers service
+  export COMPUTE_ENDPOINT="{publicComputeUrl}" # For the compute service, used to find servers.

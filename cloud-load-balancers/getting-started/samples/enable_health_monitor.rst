@@ -31,3 +31,16 @@
   @balancer.wait_for { ready? }
 
 .. code-block:: shell
+
+  curl -X PUT $ENDPOINT/loadbalancers/{loadBalancerId}/healthmonitor \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -d \
+      '{
+          "healthMonitor": {
+              "type": "CONNECT",
+              "delay": 10,
+              "timeout": 10,
+              "attemptsBeforeDeactivation": 3
+          }
+      }'

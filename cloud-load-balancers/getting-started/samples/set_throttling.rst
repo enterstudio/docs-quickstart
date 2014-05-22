@@ -55,3 +55,29 @@
   @balancer.wait_for { ready? }
 
 .. code-block:: shell
+
+  # The arguments mean:
+  #
+  #  max_connections: Maximum simultaneous connections to allow from a single IP
+  #                   within the rate interval. 0 means unlimited; otherwise,
+  #                   between 1 and 100000.
+  #  min_connections: Allow at least this many connections per IP before throttling.
+  #                   0 means unlimited; otherwise, between 1 and 1000.
+  #  max_connection_rate: Maximum connections from a single IP within a given
+  #                       rate_interval. 0 means unlimited; otherwise, between 1
+  #                       and 100000.
+  #  rate_interval: Frequency, in seconds, at which max_connection_rate is assessed.
+  #                 Between 1 and 3600.
+
+  curl -X PUT $ENDPOINT/loadbalancers/{loadBalancerId}/connectionthrottle \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -d \
+      '{
+          "connectionThrottle": {
+              "maxConnections": 5000,
+              "minConnections": 2,
+              "maxConnectionRate": 10000,
+              "rateInterval": 5
+          }
+      }'

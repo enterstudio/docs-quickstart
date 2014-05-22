@@ -35,3 +35,9 @@
   @balancer.wait_for { ready? }
 
 .. code-block:: shell
+
+  curl -s -X GET $ENDPOINT/loadbalancers/{loadBalancerId} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool
+
+  # Watch for loadBalancer.status to become "ACTIVE"

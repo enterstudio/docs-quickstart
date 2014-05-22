@@ -24,3 +24,7 @@
   @balancer.health_monitor
 
 .. code-block:: shell
+
+  curl -s -X GET $ENDPOINT/loadbalancers/{loadBalancerId}/healthmonitor \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

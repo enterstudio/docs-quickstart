@@ -32,3 +32,14 @@
   @server_two = compute.servers.get('{serverId2}')
 
 .. code-block:: shell
+
+  # Retrieve servers using their UUIDs.
+  curl -s -X GET $COMPUTE_ENDPOINT/servers/{serverId1} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool
+
+  curl -s -X GET $COMPUTE_ENDPOINT/servers/{serverId1} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool
+
+  # Make a note of server.addresses.private.addr for each server.

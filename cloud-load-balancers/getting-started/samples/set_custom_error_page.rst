@@ -33,3 +33,17 @@
   @balancer.reset_error_page
 
 .. code-block:: shell
+
+  # To use a custom error page, specify the markup, up to a maximum of 65536 bytes:
+  curl -X PUT $ENDPOINT/loadbalancers/{loadBalancerId}/errorpage \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -d \
+      '{
+          "errorpage": {
+              "content": "&lt;html&gt;&lt;body&gt;Something went wrong...&lt;/body&gt;&lt;/html&gt;"
+          }
+      }'
+
+  # To delete your custom error page:
+  curl -X DELETE $ENDPOINT/loadbalancers/{loadBalancerId}/errorpage
