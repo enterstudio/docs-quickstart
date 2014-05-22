@@ -22,7 +22,8 @@
             key_name="MySSHKeyName")
     # Parameter explanations:
     #   sg_name: name of the scaling group
-    #   cooldown: period to wait between applications of scaling actions
+    #   cooldown: number of seconds to wait between applications of
+            scaling actions
     #   min_entities: the lower limit for scaling down
     #   max_entities: the upper limit for scaling up
     #   launch_config_type: Only option currently is 'launch_server'
