@@ -17,25 +17,9 @@
 
 .. code-block:: python
 
-  # To retrieve all images:
-  from __future__ import print_function
-
-  import os
-  import pyrax
-
-  pyrax.set_setting("identity_type", "rackspace")
-  creds_file = os.path.expanduser("~/.rackspace_cloud_credentials")
-  pyrax.set_credential_file(creds_file)
+  # After authenticating, get a reference to the client
   imgs = pyrax.images
-
-  images = imgs.list()
-
-  if not images:
-      print("No images exist.")
-      exit()
-  print("There are %s images:" % len(images))
-  for image in images:
-      print("  (%s) %s (ID=%s)" % (image.visibility, image.name, image.id))
+  all_images = imgs.list()
 
 .. code-block:: ruby
 

@@ -8,6 +8,13 @@
 
 .. code-block:: python
 
+  # After authenticating, get a reference to the client
+  imgs = pyrax.images
+  # `valueDict` is a dictionary of key/value pairs, where the key is the
+  # attribute to be updated, and the value is its new value.
+  imgs.update("{imageId}", {"someAttribute": "someValue",
+        "anotherAttribute": "anotherValue"})
+
 .. code-block:: ruby
 
   # N/A
