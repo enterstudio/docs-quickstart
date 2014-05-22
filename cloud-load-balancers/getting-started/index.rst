@@ -56,6 +56,10 @@ it is removed from rotation until the health monitor determines that it is
 functional. In addition to periodic checking, a check is performed against every
 node when added to your Load Balancer - ensuring that the Node can safely service traffic.
 
+To enable health monitoring on your Load Balancer:
+
+.. include:: samples/enable_health_monitor.rst
+
 To view the status of a health monitor:
 
 .. include:: samples/query_health_monitor.rst
