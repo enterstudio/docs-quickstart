@@ -11,6 +11,10 @@
 
 .. code-block:: python
 
+  # After authenticating, get a reference to the client
+  imgs = pyrax.images
+  img = imgs.get("{image_id}"
+
 .. code-block:: ruby
 
   # N/A

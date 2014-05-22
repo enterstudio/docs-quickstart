@@ -8,6 +8,12 @@
 
 .. code-block:: python
 
+  # After authenticating, get a reference to the client
+  imgs = pyrax.images
+  # `value_dict` is a dictionary of key/value pairs, where the key is the
+  # attribute to be updated, and the value is its new value.
+  imgs.update("{image_id}", {value_dict})
+
 .. code-block:: ruby
 
   # N/A

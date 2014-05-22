@@ -8,6 +8,11 @@
 
 .. code-block:: python
 
+  # After authenticating, get a reference to the client
+  imgs = pyrax.images
+  # {project_id} is the account ID of the member.
+  member = imgs.get_image_member("{image_id}", "{project_id}")
+
 .. code-block:: ruby
 
   # N/A
