@@ -13,7 +13,7 @@
 
   # After authenticating, get a reference to the client
   imgs = pyrax.images
-  img = imgs.get("{image_id}"
+  img = imgs.get("{imageId}"
 
 .. code-block:: ruby
 

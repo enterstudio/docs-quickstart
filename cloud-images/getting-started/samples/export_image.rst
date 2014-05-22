@@ -11,7 +11,7 @@
   # After authenticating, get a reference to the client
   imgs = pyrax.images
   # Create the export task
-  task = imgs.export_task("{image_id}")
+  task = imgs.export_task("{imageId}")
   # Wait for the task to complete
   pyrax.utils.utils.wait_for_build(task, verbose=True,
         desired=["success", "failure"])

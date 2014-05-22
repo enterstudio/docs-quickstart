@@ -25,7 +25,7 @@
 .. code-block:: python
 
   import pyrax
-  pyrax.set_credentials("{username}", "{api_key}")
+  pyrax.set_credentials("{username}", "{apiKey}")
 
 .. code-block:: ruby
 

@@ -10,9 +10,9 @@
 
   # After authenticating, get a reference to the client
   imgs = pyrax.images
-  # `value_dict` is a dictionary of key/value pairs, where the key is the
+  # `valueDict` is a dictionary of key/value pairs, where the key is the
   # attribute to be updated, and the value is its new value.
-  imgs.update("{image_id}", {value_dict})
+  imgs.update("{imageId}", {valueDict})
 
 .. code-block:: ruby
 

@@ -11,8 +11,8 @@
   # After authenticating, get a reference to the client
   imgs = pyrax.images
   # Call the `add_image_member()` method, passing in the ID of the image
-  # and the project_id of the member to add.
-  member = imgs.add_image_member("{image_id}", "{project_id}")
+  # and the project ID of the member to add.
+  member = imgs.add_image_member("{imageId}", "{projectId}")
 
 .. code-block:: ruby
 

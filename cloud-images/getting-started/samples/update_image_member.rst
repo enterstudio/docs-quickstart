@@ -17,7 +17,7 @@
   #    rejected
   # Any other value will result in an InvalidImageMemberStatus exception
   # being raised.
-  imgs.update_image_member("{image_id}", "{status}")
+  imgs.update_image_member("{imageId}", "{status}")
 
 .. code-block:: ruby
 
