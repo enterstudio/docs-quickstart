@@ -8,6 +8,10 @@
 
 .. code-block:: python
 
+    # After authenticating
+    au = pyrax.autoscale
+    policy = au.get_policy("{scalingGroupId}", "{policyId}")
+
 .. code-block:: ruby
 
   my_policy = my_group.policies.get '{policyId}'

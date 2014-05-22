@@ -8,6 +8,10 @@
 
 .. code-block:: python
 
+    # After authenticating
+    au = pyrax.autoscale
+    webhooks = au.list_webhooks("{scalingGroupId}", "{policyId}")
+
 .. code-block:: ruby
 
   my_policy.webhooks
