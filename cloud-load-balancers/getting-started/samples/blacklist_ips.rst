@@ -68,8 +68,8 @@
       '{
           "accessList": [
               {
-                  "type": "DENY",
-                  "address" : "206.160.165.0/24"
+                  "address" : "206.160.165.0/24",
+                  "type": "DENY"
               }
           ]
       }'
@@ -82,12 +82,12 @@
       '{
           "accessList": [
               {
-                  "type": "ALLOW",
-                  "address" : "206.160.166.0/24"
+                  "address" : "206.160.166.0/24",
+                  "type": "ALLOW"
               },
               {
-                  "type": "DENY",
-                  "address" : "0.0.0.0/0"
-              },
+                  "address" : "0.0.0.0/0",
+                  "type": "DENY"
+              }
           ]
       }'
