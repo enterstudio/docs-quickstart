@@ -10,7 +10,7 @@
 
     # After authenticating
     au = pyrax.autoscale
-    au.delete("{scaling_group_id}")
+    au.delete("{scalingGroupId}")
 
 .. code-block:: ruby
 

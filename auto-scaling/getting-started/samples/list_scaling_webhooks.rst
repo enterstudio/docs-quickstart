@@ -10,7 +10,7 @@
 
     # After authenticating
     au = pyrax.autoscale
-    webhooks = au.list_webhooks("{scaling_group_id}", "{policy_id}")
+    webhooks = au.list_webhooks("{scalingGroupId}", "{policyId}")
 
 .. code-block:: ruby
 

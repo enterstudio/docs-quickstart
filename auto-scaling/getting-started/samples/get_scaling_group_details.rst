@@ -10,7 +10,7 @@
 
     # After authenticating
     au = pyrax.autoscale
-    scaling_group = au.get("{scaling_group_id}")
+    scaling_group = au.get("{scalingGroupId}")
 
 .. code-block:: ruby
 

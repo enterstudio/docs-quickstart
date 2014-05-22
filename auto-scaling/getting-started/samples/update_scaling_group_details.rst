@@ -12,8 +12,8 @@
     au = pyrax.autoscale
     # The scaling group ID is required. You may include one or more of
     # the other parameters.
-    au.update("{scaling_group_id}", "{name}", {cooldown},
-            {min_entities}, {max_entities}, {metadata})
+    au.update("{scalingGroupId}", name="My Group", cooldown=120,
+            min_entities=1, max_entities=25, metadata={"someKey": "someValue"})
 
 .. code-block:: ruby
 

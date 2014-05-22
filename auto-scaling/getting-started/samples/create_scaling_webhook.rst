@@ -11,8 +11,8 @@
     # After authenticating
     au = pyrax.autoscale
     # Note: the `metadata` parameter is optional.
-    webhook = au.add_webhook("{scaling_group_id}", "{policy_id}",
-            "{name}", {metadata})
+    webhook = au.add_webhook("{scalingGroupId}", "{policyId}",
+            name="My Webhook", metadata={"someKey": "someValue"})
 
 .. code-block:: ruby
 

@@ -10,7 +10,7 @@
 
     # After authenticating
     au = pyrax.autoscale
-    au.delete_webhook("{scaling_group_id}", "{policy_id}", "{webhook_id}")
+    au.delete_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
 
 .. code-block:: ruby
 

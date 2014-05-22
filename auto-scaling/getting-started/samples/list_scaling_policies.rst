@@ -10,7 +10,7 @@
 
     # After authenticating
     au = pyrax.autoscale
-    policies = au.list_policies("{scaling_group_id}")
+    policies = au.list_policies("{scalingGroupId}")
 
 .. code-block:: ruby
 

@@ -10,11 +10,11 @@
 
     # After authenticating
     au = pyrax.autoscale
-    # The `scaling_group_id` and `policy_id` parameters are required. You may
+    # The `scalingGroupId` and `policyId` parameters are required. You may
     # include one or more of the remaining paramters.
-    au.update_policy("{scaling_group_id}", "{policy_id}", "{name}",
-            "{policy_type}", {cooldown}, {change}, {is_percent},
-            {desired_capacity})
+    au.update_policy("{scalingGroupId}", "{policyId}", name="My Policy",
+            policy_type="webhook", cooldown=120, change=10, is_percent=True,
+            desired_capacity=7)
 
 .. code-block:: ruby
 

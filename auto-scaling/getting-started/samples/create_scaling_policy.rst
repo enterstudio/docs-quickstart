@@ -10,10 +10,10 @@
 
     # After authenticating
     au = pyrax.autoscale
-    au.add_policy("{scaling_group_id}", "{policy_name}", {cooldown},
-            {change}, {is_percent}) 
+    au.add_policy("{scalingGroupId}", "My Policy", cooldown=60, change=2,
+            is_percent=False) 
     # Parameter explanations:
-    #   scaling_group_id: ID of the scaling group to which you are
+    #   scalingGroupId: ID of the scaling group to which you are
     #       adding the policy
     #   policy_name: Name for the new policy
     #   cooldown: period to wait between applications of scaling actions
