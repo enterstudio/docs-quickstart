@@ -8,6 +8,10 @@
 
 .. code-block:: python
 
+    # After authenticating
+    au = pyrax.autoscale
+    au.delete_webhook("{scaling_group_id}", "{policy_id}", "{webhook_id}")
+
 .. code-block:: ruby
 
   my_webhook.destroy

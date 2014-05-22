@@ -8,6 +8,10 @@
 
 .. code-block:: python
 
+    # After authenticating
+    au = pyrax.autoscale
+    au.delete_policy("{scaling_group_id}", "{policy_id}")
+
 .. code-block:: ruby
 
   my_policy.destroy

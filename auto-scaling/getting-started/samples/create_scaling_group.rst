@@ -8,6 +8,31 @@
 
 .. code-block:: python
 
+    # After authenticating
+    au = pyrax.autoscale
+    scaling_group = au.create("{sg_name}", {cooldown}, {min_entities},
+            {max_entities}, "{launch_config_type}", "{server_name}",
+            "{image_id}", "{flavor_id}", "{disk_config}", {metadata},
+            "{personality}", "{networks}", {load_balancers}, "{key_name}")
+    # Parameter explanations:
+    #   sg_name: name of the scaling group
+    #   cooldown: period to wait between applications of scaling actions
+    #   min_entities: the lower limit for scaling down
+    #   max_entities: the upper limit for scaling up
+    #   launch_config_type: Only option currently is 'launch_server'
+    #   server_name: The base name for servers created by autoscale
+    #   image_id: the ID of the image to be used for new servers
+    #   flavor_id: the ID of the flavor to be used for new servers
+    #   disk_config: either 'MANUAL' or 'AUTO'
+    #   metadata: Metadata key/value pairs to be applied to new servers
+    #   personality: Small text files that are created on the new servers
+    #   networks: The networks to which you want to attach new servers
+    #   load_balancers: Either a  list of (id, port) tuples or a single such
+    #       tuple, representing the loadbalancer(s) to add the new servers to
+    #   key_name: name of the SSH public key to be added to the new servers'
+    #       'authorized_keys' file.
+
+
 .. code-block:: ruby
 
     # A group builder is provided for you convenience.

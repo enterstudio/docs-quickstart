@@ -8,6 +8,10 @@
 
 .. code-block:: python
 
+    # After authenticating
+    au = pyrax.autoscale
+    policies = au.list_policies("{scaling_group_id}")
+
 .. code-block:: ruby
 
   my_group.policies
