@@ -68,7 +68,7 @@ Placeholders
 
 When using a value the developer needs to insert by referencing some out-of-band information, use a ``{placeholder}``.
 
-Our convention is to name these in lowercase with camelCasing, regardless of the underlying language idioms. Consistency among samples is important for us to be able to automate later with a simple find-and-replace. Also, we _want_ them to stand out, so it's obvious at a glance that a user needs to replace them with a real value.
+Our convention is to name these in lowercase with camelCasing, regardless of the underlying language idioms. Consistency among samples is important for us to be able to automate later with a simple find-and-replace. Also, we *want* them to stand out, so it's obvious at a glance that a user needs to replace them with a real value.
 
 Don't use ``{placeholders}`` for every parameter! A good rule of thumb is to use a ``{placeholder}`` if the developer is going to need to look something up elsewhere, like the web UI, to find a correct value. Authentication credentials, addresses, or UUIDs are good examples of appropriate ``{placeholder}`` usage.
 
