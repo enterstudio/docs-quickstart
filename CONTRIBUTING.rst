@@ -21,10 +21,12 @@ Code blocks go in this order::
 
   .. code-block:: sh
 
-
 If there's a new language you want to add code samples for, insert it where it fits alphabetically.
 
-If starting a new narrative/code section, be sure to add all the code block sections to each `.rst` you create for PR sanity.
+If starting a new narrative/code section, be sure to add all the code block sections to each `.rst` you create, to help ``git`` merge them later. You can copy and paste the section above into each sample file.
+
+Language
+--------
 
 Use active rather than passive voice.
 
@@ -55,28 +57,58 @@ Use neutral language instead of gerunds:
 * **GOOD**: Set up your xxxx.
 * **BAD**: Setting up your xxxx.
 
-Use comments in code samples when each sample comprises multiple steps.
+Use comments in code samples when each sample comprises multiple steps, to clarify the use of parameters that aren't obvious by name, or whenever something in your SDK behaves differently than the others.
 
-Use TODO in code samples instead of printing out strings.
+Use TODO comments in code samples instead of printing out strings or handling errors.
 
-Limit lines to 120 characters.
+Limit lines in sample files to 120 characters.
 
-When using a value the developer needs to input, surround the value in curly brackets. The convention is to name them as lowercased with camelCasing.
-Here are some that should be consistent in the different language examples:
+Placeholders
+------------
+
+When using a value the developer needs to insert by referencing some out-of-band information, use a ``{placeholder}``.
+
+Our convention is to name these in lowercase with camelCasing, regardless of the underlying language idioms. Consistency among samples is important for us to be able to automate later with a simple find-and-replace. Also, we _want_ them to stand out, so it's obvious at a glance that a user needs to replace them with a real value.
+
+Don't use ``{placeholders}`` for every parameter! A good rule of thumb is to use a ``{placeholder}`` if the developer is going to need to look something up elsewhere, like the web UI, to find a correct value. Authentication credentials, addresses, or UUIDs are good examples of appropriate ``{placeholder}`` usage.
+
+Try to use consistent placeholder names throughout the guides. Here are some placeholders that should be consistent in the different language examples:
 
 Authentication - all services
 
-``{username}``
-``{apiKey}``
-``{region}``
+ * ``{username}``
+ * ``{apiKey}``
+ * ``{region}``
 
 Databases
 
-``{dbUsername}``
-``{dbPassword}``
-``{dbName}``
-``{instanceId}``
-``{instanceName}``
-``{flavorId}``
+ * ``{dbUsername}``
+ * ``{dbPassword}``
+ * ``{dbName}``
+ * ``{instanceId}``
+ * ``{instanceName}``
+ * ``{flavorId}``
 
-Additionally, for curl commands, all env vars should be UPPERCASE (i.e. ENDPOINT, TOKEN, etc.) and all headers should be surrounded by double quotes.
+Literals
+--------
+
+If an SDK call has parameters that could be hardcoded as sensible values, use a real, but obviously temporary, literal value instead of a ``{placeholder}``. For example, ``"my_server"`` as a server name, ``10`` as an alerting threshold, or ``{ "some-key" => "another-value" }`` as example metadata.
+
+As much as possible, try to be consistent with the values chosen by other languages in that example. We don't want it to be too jarring when you're flipping between languages.
+
+Make sure that you clearly document what the literal values that you choose mean, especially if you don't have keyword parameters to clarify. Units are especially important. Also, be considerate, and don't use defaults that are going to rack someone up a high bill if they copy and paste without paying attention!
+
+Don't use literal values if there is a specific value that's needed for the call to succeed, like an API key or a valid server UUID! Use ``{placeholders}`` or variable references for those situations, instead.
+
+Variables
+---------
+
+For the most part, assume that the snippets you use within the samples of a single guide share some scope. This means that you can save a server to a ``server`` variable and then reference ``server.id`` in a later sample, because each snippet fits into a larger narrative flow.
+
+Variable names should also be made consistent across a sample's languages, but made to fit within the native language's prevailing idioms. For example, if Ruby introduces a ``@load_balancer``, Python can use ``self.load_balancer``, and Java could use ``loadBalancer``.
+
+Always make sure that you don't accidentally use a variable before it's declared, so a reader can use ctrl-f to discover where it came from, if they forget.
+
+If it's possible, try to distinguish in some way between variables that are "local" to the current snippet, and ones that are "shared" among many snippets, to provider readers a clue that this return value is something that should be remembered. In Ruby examples, I use ``@instance_variables`` for "shared" variables and ``temp_variables`` for "local" ones.
+
+For shell snippets, use ``UPPERCASE`` names for environment variables so they stand out clearly, and enclose all headers in double quotes.
