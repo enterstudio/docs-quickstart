@@ -11,11 +11,11 @@
   # After authenticating, get a reference to the client
   imgs = pyrax.images
   # Create the import task. This is the most basic format for the call.
-  task = imgs.import_task("{imageName}", "{container}")
+  task = imgs.import_task("My Image", "exportSwiftContainer")
   # You can optionally specify the format (default=VHD), and give the imported
   # image a new name
-  task = imgs.import_task("{imageName}", "{container}", img_format="{format}",
-          img_name = "{newName}"))
+  task = imgs.import_task("My Image", "exportSwiftContainer",
+        img_format="someOddFormat", img_name = "My New Image"))
   # Wait for the task to complete
   pyrax.utils.utils.wait_for_build(task, verbose=True,
         desired=["success", "failure"])
