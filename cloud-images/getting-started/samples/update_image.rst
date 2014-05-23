@@ -6,16 +6,10 @@
 
 .. code-block:: php
 
-    use OpenCloud\Common\Exceptions\ForbiddenOperationException;
-
-    try {
-        $image->update(array(
-            'name'        => 'foo',
-            'newProperty' => 'bar'
-        ));
-    } catch (ForbiddenOperationException $e) {
-        // A 403 Forbidden was returned
-    }
+    $image->update(array(
+        'name'        => 'foo',
+        'newProperty' => 'bar'
+    ));
 
 .. code-block:: python
 

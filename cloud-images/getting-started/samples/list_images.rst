@@ -6,7 +6,7 @@
 
 .. code-block:: php
 
-    $service = $client->imageService('cloudImages', 'IAD');
+    $service = $client->imageService('cloudImages', '{regionId}');
     $images  = $service->listImages();
 
     foreach ($images as $image) {

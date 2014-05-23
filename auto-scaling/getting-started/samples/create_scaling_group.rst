@@ -22,7 +22,7 @@
           'args' => (object) array(
              // Server properties
              'server' => (object) array(
-                'flavorRef' => '{flavorId},
+                'flavorRef' => '{flavorId}',
                 'name'      => 'My server name',
                 'imageRef'  => '{imageId}'
              ),
