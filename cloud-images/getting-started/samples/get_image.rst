@@ -6,8 +6,7 @@
 
 .. code-block:: php
 
-    $imageId = '{imageId}';
-    $image = $service->image($imageId);
+    $image = $service->getImage('{imageId}');
 
 .. code-block:: python
 

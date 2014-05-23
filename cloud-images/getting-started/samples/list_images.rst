@@ -6,14 +6,12 @@
 
 .. code-block:: php
 
-  # To retrieve all images:
-  $images = $service->imageList();
+    $service = $client->imageService('cloudImages', 'IAD');
+    $images  = $service->listImages();
 
-  # Choose the first image in the collection
-  foreach ($images as $image) {
-      $imageId = $image->id;
-      break;
-  }
+    foreach ($images as $image) {
+       /** @param $image OpenCloud\Image\Resource\Image */
+    }
 
 .. code-block:: python
 

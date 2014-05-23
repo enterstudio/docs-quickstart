@@ -6,7 +6,11 @@
 
 .. code-block:: php
 
-    # To list image members:
+    $members = $image->listMembers();
+
+    foreach ($members as $member) {
+        /** @param $member OpenCloud\Image\Resource\Member */
+    }
 
 .. code-block:: python
 

@@ -6,6 +6,12 @@
 
 .. code-block:: php
 
+    use OpenCloud\Images\Enum\MemberStatus;
+
+    /** @param $member OpenCloud\Image\Resource\Member */
+    $member = $image->getMember('{tenantId}');
+    $member->updateStatus(MemberStatus::ACCEPTED);
+
 .. code-block:: python
 
   # After authenticating, get a reference to the client

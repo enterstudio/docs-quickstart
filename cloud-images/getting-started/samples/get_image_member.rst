@@ -6,6 +6,9 @@
 
 .. code-block:: php
 
+    /** @param $member OpenCloud\Image\Resource\Member */
+    $member = $image->getMember('{tenantId}');
+
 .. code-block:: python
 
   # After authenticating, get a reference to the client
