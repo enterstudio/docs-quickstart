@@ -6,6 +6,12 @@
 
 .. code-block:: php
 
+    $webhook->update(array(
+        'metadata' => array(
+            'someKey' => 'someValue'
+        )
+    ));
+
 .. code-block:: python
 
     # After authenticating

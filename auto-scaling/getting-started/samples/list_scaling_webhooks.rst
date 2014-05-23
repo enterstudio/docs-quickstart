@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $webhooks = $policy->getWebhookList();
+
 .. code-block:: python
 
     # After authenticating

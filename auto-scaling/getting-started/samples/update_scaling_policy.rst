@@ -6,6 +6,11 @@
 
 .. code-block:: php
 
+    $policy->update(array(
+        'name'     => 'New name',
+        'cooldown' => 120
+    ));
+
 .. code-block:: python
 
     # After authenticating

@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $policy = $group->getPolicy('{policyId}');
+
 .. code-block:: python
 
     # After authenticating

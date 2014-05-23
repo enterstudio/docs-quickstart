@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $group->delete();
+
 .. code-block:: python
 
     # After authenticating

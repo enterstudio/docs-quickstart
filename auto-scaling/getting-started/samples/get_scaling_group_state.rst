@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $state = $group->getState();
+
 .. code-block:: python
 
     # After authenticating

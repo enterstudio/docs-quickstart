@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $policy->execute();
+
 .. code-block:: python
 
     # After authenticating

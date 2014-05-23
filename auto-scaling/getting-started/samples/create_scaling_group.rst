@@ -6,6 +6,40 @@
 
 .. code-block:: php
 
+    $service = $client->autoscaleService();
+
+    $object = (object) array(
+       // Config which determines the autoscale group's behaviour
+       'groupConfiguration' => (object) array(
+          'name'        => 'New autoscale group',
+          'minEntities' => 5,
+          'maxEntities' => 25,
+          'cooldown'    => 60
+       ),
+       // Specify what's going to launch - in this case a server
+       'launchConfiguration' => (object) array(
+          'type' => 'launch_server',
+          'args' => (object) array(
+             // Server properties
+             'server' => (object) array(
+                'flavorRef' => '{flavorId},
+                'name'      => 'My server name',
+                'imageRef'  => '{imageId}'
+             ),
+             // LB properties
+             'loadBalancer' => array(
+                (object) array(
+                   'loadBalancerId' => '{loadBalancerId}',
+                   'port'           => 80
+                )
+             )
+          )
+       )
+    );
+
+    $group = $service->group();
+    $group->create($object);
+
 .. code-block:: python
 
     # After authenticating
@@ -73,4 +107,3 @@
     }
 
     my_group = Fog::Rackspace::AutoScale::GroupBuilder.build(service, attributes)
-    

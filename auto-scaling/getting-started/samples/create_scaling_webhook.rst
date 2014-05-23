@@ -6,6 +6,17 @@
 
 .. code-block:: php
 
+    $webook = $policy->getWebhook();
+    $webhook->create(array(
+        (object) array(
+            'name'     => 'My webhook',
+            'metadata' => array(
+                'firstKey'  => 'foo',
+                'secondKey' => 'bar'
+            )
+        )
+    ));
+
 .. code-block:: python
 
     # After authenticating

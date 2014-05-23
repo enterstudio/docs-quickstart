@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $webhook->delete();
+
 .. code-block:: python
 
     # After authenticating

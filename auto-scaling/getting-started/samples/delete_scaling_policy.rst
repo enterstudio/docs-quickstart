@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $policy->delete();
+
 .. code-block:: python
 
     # After authenticating

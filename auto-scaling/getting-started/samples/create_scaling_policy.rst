@@ -6,6 +6,16 @@
 
 .. code-block:: php
 
+    $policy = $group->getPolicy();
+    $policy->create(array(
+        (object) array(
+            'name'     => 'My policy',
+            'change'   => 1,
+            'type'     => 'webhook',
+            'cooldown' => 60
+        )
+    ));
+
 .. code-block:: python
 
     # After authenticating

@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+    $groups = $service->groupList();
+
 .. code-block:: python
 
     # After authenticating
