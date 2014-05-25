@@ -17,3 +17,9 @@
 .. code-block:: ruby
 
   my_webhook = my_policy.webhooks.get '{webhookId}'
+
+.. code-block:: sh
+
+  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
+  $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks \
+  | python -m json.tool

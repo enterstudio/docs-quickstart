@@ -17,3 +17,8 @@
 .. code-block:: ruby
 
   my_group = service.groups.get '{groupId}'
+
+.. code-block:: sh
+
+  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
+    $ENDPOINT/groups/{groupId} | python -m json.tool

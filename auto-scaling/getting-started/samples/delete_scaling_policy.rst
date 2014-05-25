@@ -17,3 +17,8 @@
 .. code-block:: ruby
 
   my_policy.destroy
+
+.. code-block:: sh
+
+  $ curl -X DELETE -H "X-Auth-Token: $TOKEN" \
+    $ENDPOINT/groups/{groupId}/policies/{policyId}

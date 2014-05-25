@@ -17,3 +17,8 @@
 .. code-block:: ruby
 
   my_group.policies
+
+.. code-block:: sh
+
+  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
+    $ENDPOINT/groups/{groupId}/policies | python -m json.tool

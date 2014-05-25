@@ -28,3 +28,19 @@
 .. code-block:: ruby
 
   my_webhook = my_policy.webhooks.create :name => 'my-webhook'
+
+.. code-block:: sh
+
+  $ curl -X POST -d \
+    '[
+       {
+          "metadata":{
+             "notes":"{webhookDescription}"
+          },
+          "name":"{webhookName}"
+        }
+    ]' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks| python -m json.tool

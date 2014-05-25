@@ -17,3 +17,8 @@
 .. code-block:: ruby
 
   my_webhook.destroy
+
+.. code-block:: sh
+
+  $ curl -X DELETE -H "X-Auth-Token: $TOKEN" \
+    $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks/{webhookId}

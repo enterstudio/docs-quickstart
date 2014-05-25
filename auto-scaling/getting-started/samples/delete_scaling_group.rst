@@ -17,3 +17,8 @@
 .. code-block:: ruby
 
   my_group.destroy
+
+.. code-block::
+
+  $ curl -X DELETE -H "X-Auth-Token: $TOKEN" \
+    $ENDPOINT/groups/{groupId}

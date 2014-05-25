@@ -17,3 +17,8 @@
 .. code-block:: ruby
 
   scaling_groups = service.groups
+
+.. code-block:: sh
+
+  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
+  $ENDPOINT/groups | python -m json.tool

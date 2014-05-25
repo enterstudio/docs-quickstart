@@ -17,3 +17,8 @@
 .. code-block:: ruby
 
   my_policy.execute
+
+.. code-block:: sh
+
+  $ curl -X POST -H "X-Auth-Token: $TOKEN" \
+    $ENDPOINT/groups/{groupId}/policies/{policyId}/execute

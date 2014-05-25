@@ -17,3 +17,8 @@
 .. code-block:: ruby
 
   my_group.state
+
+.. code-sample:: sh
+
+  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
+    $ENDPOINT/groups/{groupId}/state | python -m json.tool
