@@ -107,3 +107,6 @@
     }
 
     my_group = Fog::Rackspace::AutoScale::GroupBuilder.build(service, attributes)
+
+.. code-block:: sh
+
