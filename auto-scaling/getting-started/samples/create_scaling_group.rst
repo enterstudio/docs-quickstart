@@ -110,3 +110,38 @@
 
 .. code-block:: sh
 
+  $ curl -X POST -d \
+    '{
+     "launchConfiguration":{
+        "args":{
+           "server":{
+              "name":"{serverName}",
+              "imageRef":"7cf5ffc3-7b20-46fd-98e4-fefa9908d7e8",
+              "flavorRef":"{serverFlavor}",
+              "OS-DCF:diskConfig":"AUTO"
+           }
+        },
+      "type":"launch_server"
+       },
+       "groupConfiguration":{
+          "maxEntities":{maxServers},
+          "cooldown":360,
+          "name":"{scalingGroupName}",
+          "minEntities":{minServers}
+       },
+       "scalingPolicies":[
+          {
+             "cooldown":0,
+             "name":"{scalingPolicyName}",
+             "change":1,
+             "type":"schedule",
+             "args":{
+                "cron":"23 * * * *"
+             }
+          }
+       ]
+    }' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/groups | python -m json.tool

@@ -37,3 +37,19 @@
     :cooldown => 360, 
     :type => 'webhook', 
     :change => 1
+
+.. code-block:: sh
+
+  $ curl -X POST -d \
+    '[
+       {
+          "name":"{policyName}",
+          "desiredCapacity":5,
+          "cooldown":1800,
+          "type":"webhook"
+       }
+    ]' \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/groups/{groupId}/policies | python -m json.tool
