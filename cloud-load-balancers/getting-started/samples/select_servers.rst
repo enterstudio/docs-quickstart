@@ -31,7 +31,7 @@
   @server_one = compute.servers.get('{serverId1}')
   @server_two = compute.servers.get('{serverId2}')
 
-.. code-block:: shell
+.. code-block:: sh
 
   # Retrieve servers using their UUIDs.
   curl -s -X GET $COMPUTE_ENDPOINT/servers/{serverId1} \

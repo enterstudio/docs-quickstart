@@ -6,15 +6,15 @@
 
 .. code-block:: php
 
-    // Load your new flavor
-    $newFlavor = $compute->flavor('{newFlavorId}');
-
-    $server->resize($newFlavor);
-
 .. code-block:: python
+
+  # After authenticating, get a reference to the client
+  imgs = pyrax.images
+  # {projectId} is the account ID to share the image with.
+  imgs.add_image_member("{imageId}", "{projectId}")
 
 .. code-block:: ruby
 
   # N/A
 
-.. code-block:: shell
+.. code-block:: sh

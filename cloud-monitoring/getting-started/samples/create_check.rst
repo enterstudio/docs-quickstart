@@ -6,6 +6,29 @@
 
 .. code-block:: php
 
+    $params = array(
+        'type'   => 'remote.http',
+        'details' => array(
+            'url'    => 'http://example.com',
+            'method' => 'GET'
+        ),
+        'monitoring_zones_poll' => array('mzlon'),
+        'period' => '100',
+        'timeout' => '30',
+        'target_alias' => 'default',
+        'label'  => 'Website check 1'
+    );
+
+    // Test your params first
+    $testResponse = $entity->testNewCheckParams($params);
+
+    echo $response->timestamp; // When was it executed?
+    echo $response->available; // Was it available?
+    echo $response->status;    // Status code
+
+    // Now create it
+    $entity->createCheck($params);
+
 .. code-block:: python
 
 .. code-block:: ruby
@@ -24,7 +47,7 @@
     :monitoring_zones_poll => ['{monitoringZoneId}']
   )
 
-.. code-block:: shell
+.. code-block:: sh
 
   $ curl -X POST -d \
     '{

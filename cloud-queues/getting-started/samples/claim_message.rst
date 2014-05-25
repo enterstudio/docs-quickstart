@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  ClaimApi claimApi = marconiApi.getClaimApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
+  List<Message> messages = claimApi.claim(900, 120, 4);
+
 .. code-block:: javascript
 
 .. code-block:: php
@@ -38,7 +41,7 @@
     :grace => 600
   )
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -X POST $ENDPOINT/queues/{queueName}/claims -d \
     '{"ttl": 300,"grace":300}' \

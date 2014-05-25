@@ -2,6 +2,12 @@
 
 .. code-block:: java
 
+    MessageApi messageApi = marconiApi.getMessageApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
+    CreateMessage createMessage = CreateMessage.builder().ttl(900).body("{\"play\": \"hockey\"}").build();
+    List<CreateMessage> createMessages = ImmutableList.of(createMessage);
+
+    MessagesCreated messagesCreated = messageApi.create(createMessages);
+
 .. code-block:: javascript
 
 .. code-block:: php
@@ -29,7 +35,7 @@
 
   queue.enqueue("Message body", 900)
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -X POST POST $ENDPOINT/queues/{queueName}/messages -d \
     '[{"ttl": 300,"body": {"event": "BackupStarted"}},{"ttl": 60,"body": {"play": "hockey"}}]' \

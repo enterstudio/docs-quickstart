@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  ClaimApi claimApi = marconiApi.getClaimApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
+  claimApi.release("{claimId}");
+
 .. code-block:: javascript
 
 .. code-block:: php
@@ -21,7 +24,7 @@
 
   claim.destroy
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -X DELETE $ENDPOINT/queues/{queueName}/claims/{claimId} \
     -H "Content-type: application/json" \

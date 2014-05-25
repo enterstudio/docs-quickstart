@@ -2,6 +2,11 @@
 
 .. code-block:: java
 
+  MessageApi messageApi = marconiApi.getMessageApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
+  List<String> messageIds = ImmutableList.of("{messageId}");
+
+  messageApi.delete(messageIds);
+
 .. code-block:: javascript
 
 .. code-block:: php
@@ -26,7 +31,7 @@
 
   message.destroy
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -X DELETE $ENDPOINT/queues/{queueName}/messages/{messageId} \
     -H "Content-type: application/json" \

@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  QueueApi queueApi = marconiApi.getQueueApiForZoneAndClient("{region}", "{clientId}");
+  List<Queue> queues = queueApi.list(true).concat().toList();
+
 .. code-block:: javascript
 
 .. code-block:: php
@@ -16,7 +19,7 @@
 
   @client.queues.all
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -X GET $ENDPOINT/queues \
     -H "Content-type: application/json" \

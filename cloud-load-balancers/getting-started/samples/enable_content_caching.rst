@@ -38,7 +38,7 @@
   @balancer.disable_content_caching
   @balancer.wait_for { ready? }
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -X PUT $ENDPOINT/loadbalancers/{loadBalancerId}/contentcaching \
     -H "X-Auth-Token: $TOKEN" \

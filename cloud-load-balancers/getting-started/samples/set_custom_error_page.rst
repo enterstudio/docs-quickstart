@@ -32,7 +32,7 @@
   # To delete your custom error page:
   @balancer.reset_error_page
 
-.. code-block:: shell
+.. code-block:: sh
 
   # To use a custom error page, specify the markup, up to a maximum of 65536 bytes:
   curl -X PUT $ENDPOINT/loadbalancers/{loadBalancerId}/errorpage \

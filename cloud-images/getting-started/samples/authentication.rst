@@ -24,11 +24,14 @@
 
 .. code-block:: python
 
+  import pyrax
+  pyrax.set_credentials("{username}", "{apiKey}")
+
 .. code-block:: ruby
 
   # N/A
 
-.. code-block:: shell
+.. code-block:: sh
 
   # To authenticate, use your Rackspace Cloud Account user name and API key:
   curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X POST \

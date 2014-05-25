@@ -30,7 +30,7 @@
   @balancer.enable_health_monitor('CONNECT', 10, 10, 3)
   @balancer.wait_for { ready? }
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -X PUT $ENDPOINT/loadbalancers/{loadBalancerId}/healthmonitor \
     -H "X-Auth-Token: $TOKEN" \

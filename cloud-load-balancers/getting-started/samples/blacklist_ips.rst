@@ -57,7 +57,7 @@
   )
   @balancer.wait_for { ready? }
 
-.. code-block:: shell
+.. code-block:: sh
 
   # Example 1: Blacklist a specific IP
 

@@ -43,7 +43,7 @@
   )
   @balancer.wait_for { ready? }
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -s -X POST $ENDPOINT/loadbalancers/{loadBalancerId}/nodes \
     -H "X-Auth-Token: $TOKEN" \

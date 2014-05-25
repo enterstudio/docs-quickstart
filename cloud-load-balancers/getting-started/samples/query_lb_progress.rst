@@ -34,7 +34,7 @@
 
   @balancer.wait_for { ready? }
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -s -X GET $ENDPOINT/loadbalancers/{loadBalancerId} \
     -H "X-Auth-Token: $TOKEN" \

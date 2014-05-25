@@ -6,13 +6,15 @@
 
 .. code-block:: php
 
+    $checks = $entity->getChecks();
+
 .. code-block:: python
 
 .. code-block:: ruby
 
   entity.checks.all
 
-.. code-block:: shell
+.. code-block:: sh
 
   $ curl -X GET $ENDPOINT/entities/{entityId}/checks \
     -H "X-Auth-Token: $TOKEN" \

@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  QueueApi queueApi = marconiApi.getQueueApiForZoneAndClient("{region}", "{clientId}");
+  queueApi.delete("sample_queue");
+
 .. code-block:: javascript
 
 .. code-block:: php
@@ -16,7 +19,7 @@
 
   queue.destroy
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -X DELETE $ENDPOINT/queues/{queueName} \
     -H "Content-type: application/json" \

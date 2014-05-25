@@ -38,7 +38,7 @@
     :nodes => []
   )
 
-.. code-block:: shell
+.. code-block:: sh
 
   curl -s -X POST $ENDPOINT/loadbalancers \
     -H "X-Auth-Token: $TOKEN" \
