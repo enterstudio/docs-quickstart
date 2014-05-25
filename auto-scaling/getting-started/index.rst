@@ -56,6 +56,13 @@ You can create two kinds of Auto Scale policies:
 API Operations
 ===============
 
+Authentication
+----------------
+
+Before we start working with the APIs, we first need to get our authentication token. To do so, see code samples below:
+
+.. include::  samples/authentication.rst
+
 Scaling Groups 
 -----------------
 
