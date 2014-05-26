@@ -2,6 +2,12 @@
 
 .. code-block:: java
 
+  // create a payload
+  Payload payload = Payloads.newByteSourcePayload(ByteSource.wrap("sample-data".getBytes()));
+
+  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}")
+  objectApi.put("{objectName}", payload);
+
 .. code-block:: javascript
 
   // we need to use the fs module to access the local disk

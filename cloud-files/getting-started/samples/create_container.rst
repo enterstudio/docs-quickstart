@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  cloudFilesApi.getContainerApiForRegion("{region}").create("{containerName}");
+
 .. code-block:: javascript
 
   client.createContainer({

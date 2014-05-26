@@ -2,6 +2,24 @@
 
 .. code-block:: java
 
+  // Create a new ContextBuilder
+  ContextBuilder builder = ContextBuilder.newBuilder("rackspace-cloudfiles-us")
+          .credentials("{username}", "{apiKey}");
+
+  // Access the RegionScopedBlobStore and get the Cloud Files API
+  BlobStore blobStore = builder.buildView(RegionScopedBlobStoreContext.class)
+          .blobStoreInRegion("{region}");
+
+  // Get the AccountApi and update the temporary URL key if not set
+  CloudFilesApi cloudFilesApi = blobStore.getContext().unwrapApi(CloudFilesApi.class);
+  AccountApi accountApi = cloudFilesApi.getAccountApiForRegion("{region}");
+  accountApi.updateTemporaryUrlKey("jnRB6#1sduo8YGUF&%7r7guf6f");
+
+  // Get the temporary URL
+  BlobRequestSigner signer = blobStore.getContext().signerInRegion("{region}");
+  HttpRequest request = signer.signGetBlob("{containerName}", "{objectName}");
+  URI tempUrl = request.getEndpoint();
+
 .. code-block:: javascript
 
   // This is not supported through the pkgcloud SDK at this time

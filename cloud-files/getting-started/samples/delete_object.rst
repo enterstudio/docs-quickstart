@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}").delete("{objectName}");
+
 .. code-block:: javascript
 
   client.removeFile('gallery', 'somefile.txt', function(err) {

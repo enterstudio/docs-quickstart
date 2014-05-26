@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  cloudFilesApi.getContainerApiForRegion("{region}").deleteIfEmpty("{containerName}");
+
 .. code-block:: javascript
 
   client.destroyContainer(container, function(err) {

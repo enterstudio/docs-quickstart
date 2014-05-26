@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");
+  objectApi.updateMetadata("{objectName}", ImmutableMap.of("some-key", "some-value"));
+
 .. code-block:: javascript
 
   file.metadata = {

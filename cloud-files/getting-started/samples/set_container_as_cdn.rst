@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  URI cdnUri = cloudFilesApi.getCDNApiForRegion("{region}").enable("{containerName}");
+
 .. code-block:: javascript
 
   container.enableCdn(function(err) {
