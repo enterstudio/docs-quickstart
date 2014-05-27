@@ -35,6 +35,9 @@
 
 .. code-block:: python
 
+  server = cs.servers.create('bessie02', image.id, flavor.id,
+                             key_name=keypair.name)
+
 .. code-block:: ruby
 
   server = @client.servers.create(

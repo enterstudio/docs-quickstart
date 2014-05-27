@@ -108,11 +108,11 @@ Registering your keypair
 
 In order to use keypair-based authentication, the API needs to know about it. You have two options: upload your existing key, or have the API create a new one for you. We'll cover both.
 
-In order to upload an existing keypair:
+Upload an existing keypair:
 
 .. include:: samples/upload_existing_keypair.rst
 
-In order to have the API create on for you:
+Or have the API create one for you:
 
 .. include:: samples/create_new_keypair.rst
 

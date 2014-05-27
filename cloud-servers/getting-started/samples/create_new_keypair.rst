@@ -35,6 +35,8 @@
 
 .. code-block:: python
 
+  # N/A
+
 .. code-block:: ruby
 
   key_pair = @client.key_pairs.create(:name => 'my-keypair')
