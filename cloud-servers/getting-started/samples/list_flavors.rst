@@ -38,7 +38,7 @@
 
 .. code-block:: python
 
-  flavor_list = pyrax.cloudservers.list_flavors()
+  flavor_list = cs.list_flavors()
 
 .. code-block:: ruby
 

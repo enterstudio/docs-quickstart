@@ -40,6 +40,8 @@
   pyrax.set_default_region('{region}')
   pyrax.set_credentials('{username}', '{apiKey}')
 
+  cs = pyrax.cloudservers
+
 .. code-block:: ruby
 
     require 'fog'

@@ -45,7 +45,7 @@
   import os
 
   public_key = open(os.path.expanduser("~/.ssh/id_rsa.pub")).read()
-  pyrax.cloudservers.keypairs.create("mykeypair", public_key)
+  keypair = cs.keypairs.create("mykeypair", public_key)
 
 .. code-block:: ruby
 
