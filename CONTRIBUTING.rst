@@ -70,7 +70,7 @@ When using a value the developer needs to insert by referencing some out-of-band
 
 Our convention is to name these in lowercase with camelCasing, regardless of the underlying language idioms. Consistency among samples is important for us to be able to automate later with a simple find-and-replace. Also, we *want* them to stand out, so it's obvious at a glance that a user needs to replace them with a real value.
 
-Don't use ``{placeholders}`` for every parameter! A good rule of thumb is to use a ``{placeholder}`` if the developer is going to need to look something up elsewhere, like the web UI, to find a correct value. Authentication credentials, addresses, or UUIDs are good examples of appropriate ``{placeholder}`` usage.
+Don't use ``{placeholders}`` for every parameter! A good rule of thumb is to use a ``{placeholder}`` if the developer is going to need to look something up elsewhere, like the web UI, to find a correct value. Authentication credentials, addresses, or UUIDs are good examples of appropriate ``{placeholder}`` usage. Otherwise, consider using a literal_ or a variable_ instead.
 
 Try to use consistent placeholder names throughout the guides. Here are some placeholders that should be consistent in the different language examples:
 
@@ -89,6 +89,8 @@ Databases
  * ``{instanceName}``
  * ``{flavorId}``
 
+.. _literal:
+
 Literals
 --------
 
@@ -99,6 +101,8 @@ As much as possible, try to be consistent with the values chosen by other langua
 Make sure that you clearly document what the literal values that you choose mean, especially if you don't have keyword parameters to clarify. Units are especially important. Also, be considerate, and don't use defaults that are going to rack someone up a high bill if they copy and paste without paying attention!
 
 Don't use literal values if there is a specific value that's needed for the call to succeed, like an API key or a valid server UUID! Use ``{placeholders}`` or variable references for those situations, instead.
+
+.. _variable:
 
 Variables
 ---------
