@@ -22,7 +22,7 @@
 
 .. code-block:: python
 
-  flavors = pyrax.cloudservers.flavors.get(u'{flavorId}')
+  flavor = pyrax.cloudservers.flavors.get(u'{flavorId}')
 
 .. code-block:: ruby
 
