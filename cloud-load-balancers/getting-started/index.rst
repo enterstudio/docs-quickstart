@@ -56,7 +56,12 @@ it is removed from rotation until the health monitor determines that it is
 functional. In addition to periodic checking, a check is performed against every
 node when added to your Load Balancer - ensuring that the Node can safely service traffic.
 
-To enable health monitoring on your Load Balancer:
+To enable health monitoring on your Load Balancer, you'll need to set
+
+* Type - `CONNECT` is used to monitor connections
+* Delay - Minimum number of seconds to wait before executing the monitor
+* Timeout - Maximum duration in seconds to wait for a connection establishment before timing out
+* Attempts before deactivation - Number of monitor failures to tolerate before removing a node from rotation
 
 .. include:: samples/enable_health_monitor.rst
 
@@ -70,8 +75,11 @@ balancer at a time.
 Connection throttling
 =====================
 
-The connection throttling feature imposes limits on the number of connections
-per IP address to help mitigate malicious or abusive traffic to your applications.
+The connection throttling feature imposes limits on the number of connections per IP address to help mitigate malicious or abusive traffic to your applications. You can set the
+
+* Max connection rate - Maximum connections from a single IP within the supplied rate interval (frequency in seconds)
+* Max connections - maximum simultaneous connections to allow from a single IP within the rate interval
+* Min connections - minimum amount of connections per IP before doing any throttling
 
 .. include:: samples/set_throttling.rst
 

@@ -21,16 +21,6 @@
 
 .. code-block:: python
 
-  #  maxConnectionRate: Maximum connections from a single IP within a given
-  #                       rate_interval. 0 means unlimited; otherwise, between 1
-  #                       and 100000.
-  #  maxConnections: Maximum simultaneous connections to allow from a single IP
-  #                   within the rate interval. 0 means unlimited; otherwise,
-  #                   between 1 and 100000.
-  #  minConnections: Allow at least this many connections per IP before throttling.
-  #                   0 means unlimited; otherwise, between 1 and 1000.
-  #  rateInterval: Frequency, in seconds, at which max_connection_rate is assessed.
-  #                 Between 1 and 3600.
   load_balancer.add_connection_throttle(maxConnectionRate=10000,
                                         maxConnections=5000,
                                         minConnections=2,
@@ -38,36 +28,14 @@
 
 .. code-block:: ruby
 
-  # Arguments, in order:
-  #
-  #  max_connections: Maximum simultaneous connections to allow from a single IP
-  #                   within the rate interval. 0 means unlimited; otherwise,
-  #                   between 1 and 100000.
-  #  min_connections: Allow at least this many connections per IP before throttling.
-  #                   0 means unlimited; otherwise, between 1 and 1000.
-  #  max_connection_rate: Maximum connections from a single IP within a given
-  #                       rate_interval. 0 means unlimited; otherwise, between 1
-  #                       and 100000.
-  #  rate_interval: Frequency, in seconds, at which max_connection_rate is assessed.
-  #                 Between 1 and 3600.
-  #
-  @balancer.enable_connection_throttling(5000, 2, 10000, 5)
+  @balancer.enable_connection_throttling(5000,  # max_connections
+    2,  # min_connections
+    10000,  # max_connection_rate
+    5)  # rate_interval
+
   @balancer.wait_for { ready? }
 
 .. code-block:: sh
-
-  # The arguments mean:
-  #
-  #  max_connections: Maximum simultaneous connections to allow from a single IP
-  #                   within the rate interval. 0 means unlimited; otherwise,
-  #                   between 1 and 100000.
-  #  min_connections: Allow at least this many connections per IP before throttling.
-  #                   0 means unlimited; otherwise, between 1 and 1000.
-  #  max_connection_rate: Maximum connections from a single IP within a given
-  #                       rate_interval. 0 means unlimited; otherwise, between 1
-  #                       and 100000.
-  #  rate_interval: Frequency, in seconds, at which max_connection_rate is assessed.
-  #                 Between 1 and 3600.
 
   curl -X PUT $ENDPOINT/loadbalancers/{loadBalancerId}/connectionthrottle \
     -H "X-Auth-Token: $TOKEN" \
@@ -81,4 +49,3 @@
               "rateInterval": 5
           }
       }'
-
