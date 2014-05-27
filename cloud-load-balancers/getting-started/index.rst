@@ -78,8 +78,8 @@ Connection throttling
 The connection throttling feature imposes limits on the number of connections per IP address to help mitigate malicious or abusive traffic to your applications. You can set the:
 
 * Max connection rate - Maximum connections from a single IP within the supplied rate interval (frequency in seconds)
-* Max connections - maximum simultaneous connections to allow from a single IP within the rate interval
-* Min connections - minimum amount of connections per IP before doing any throttling
+* Max connections - Maximum simultaneous connections to allow from a single IP within the rate interval
+* Min connections - Minimum amount of connections per IP before doing any throttling
 
 .. include:: samples/set_throttling.rst
 
