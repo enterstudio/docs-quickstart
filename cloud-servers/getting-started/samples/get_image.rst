@@ -22,7 +22,7 @@
 
 .. code-block:: python
 
-  pyrax.images.get(u'{imageId}')
+  image = pyrax.images.get(u'{imageId}')
 
 .. code-block:: ruby
 
