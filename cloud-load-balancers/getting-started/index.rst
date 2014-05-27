@@ -58,7 +58,7 @@ node when added to your Load Balancer - ensuring that the Node can safely servic
 
 To enable health monitoring on your Load Balancer, you'll need to set
 
-* Type - `CONNECT` is used to monitor connections
+* Type - ``CONNECT`` is used to monitor connections
 * Delay - Minimum number of seconds to wait before executing the monitor
 * Timeout - Maximum duration in seconds to wait for a connection establishment before timing out
 * Attempts before deactivation - Number of monitor failures to tolerate before removing a node from rotation
