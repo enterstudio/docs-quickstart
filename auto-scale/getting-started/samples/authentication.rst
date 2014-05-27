@@ -8,11 +8,15 @@
 
 .. code-block:: python
 
+  import pyrax
+
+  pyrax.set_setting("identity_type", "rackspace")
+  pyrax.set_default_region('{region}')
+  pyrax.set_credentials('{username}', '{apiKey}')
+
 .. code-block:: ruby
 
 .. code-block:: sh
-
-  # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
   $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
     -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
