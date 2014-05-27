@@ -31,10 +31,6 @@
 
   images = pyrax.images.list()
 
-  # Find Ubuntu 14.04 images
-  ubuntu1404_images = [image for image in images if "Ubuntu 14.04" in im.name]
-  image = ubuntu_images[0]
-
 .. code-block:: ruby
 
   @client.images.all
