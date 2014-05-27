@@ -25,6 +25,10 @@ If there's a new language you want to add code samples for, insert it where it f
 
 If starting a new narrative/code section, be sure to add all the code block sections to each `.rst` you create, to help ``git`` merge them later. You can copy and paste the section above into each sample file.
 
+If your SDK does not support an API, insert the following under the code-block:
+
+  // {sdk-name} doesn't support this API presently
+
 Language
 --------
 
