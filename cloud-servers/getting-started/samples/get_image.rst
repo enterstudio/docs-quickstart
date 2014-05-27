@@ -22,10 +22,7 @@
 
 .. code-block:: python
 
-  # Get a list of the images available to your account
-  image_list = pyrax.images.list()
-  image_name = [img in cs.images.list()
-      if img.id == "{imageId}"][0]
+  image = pyrax.images.get(u'{imageId}')
 
 .. code-block:: ruby
 

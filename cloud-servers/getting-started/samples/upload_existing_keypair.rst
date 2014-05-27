@@ -42,6 +42,11 @@
 
 .. code-block:: python
 
+  import os
+
+  public_key = open(os.path.expanduser("~/.ssh/id_rsa.pub")).read()
+  keypair = cs.keypairs.create("mykeypair", public_key)
+
 .. code-block:: ruby
 
   key_pair = @client.key_pairs.create(

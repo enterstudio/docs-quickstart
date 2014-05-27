@@ -29,8 +29,7 @@
 
 .. code-block:: python
 
-  # Get a list of the images available to your account
-  image_list = pyrax.images.list()
+  images = pyrax.images.list()
 
 .. code-block:: ruby
 

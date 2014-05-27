@@ -16,6 +16,8 @@
 
 .. code-block:: python
 
+  cs.servers.resize(server, flavor)
+
 .. code-block:: ruby
 
   server.resize('{newFlavorId}')
