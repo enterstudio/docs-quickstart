@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  // jclouds doesn't support this API presently
+
 .. code-block:: javascript
 
 .. code-block:: php
@@ -27,7 +29,7 @@
 
 .. code-block:: ruby
 
-  # N/A
+  // Fog doesn't support this API presently
 
 .. code-block:: sh
 
