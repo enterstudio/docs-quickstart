@@ -22,10 +22,7 @@
 
 .. code-block:: python
 
-  # Get a list of flavors available in your account
-  flavors = pyrax.cloudservers.list_flavors()
-  flavor = [flavor for flavor in flavors
-    if flavor.id == "{flavorId}"][0]
+  flavors = pyrax.cloudservers.flavors.get(u'{flavorId}')
 
 .. code-block:: ruby
 

@@ -29,8 +29,11 @@
 
 .. code-block:: python
 
-  # Get a list of the images available to your account
-  image_list = pyrax.images.list()
+  images = pyrax.images.list()
+
+  # Find Ubuntu 14.04 images
+  ubuntu1404_images = [image for image in images if "Ubuntu 14.04" in im.name]
+  image = ubuntu_images[0]
 
 .. code-block:: ruby
 

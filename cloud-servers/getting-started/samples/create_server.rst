@@ -33,7 +33,7 @@
 .. code-block:: python
 
   cs = pyrax.cloudservers
-  server = cs.servers.create('My new server', image.id, flavor.id)
+  server = cs.servers.create('bessie01', image.id, flavor.id)
 
 .. code-block:: ruby
 

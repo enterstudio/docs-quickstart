@@ -38,7 +38,6 @@
 
 .. code-block:: python
 
-  # Get a list of the flavors available to your account
   flavor_list = pyrax.cloudservers.list_flavors()
 
 .. code-block:: ruby
