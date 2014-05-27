@@ -53,3 +53,6 @@
   file.body
 
 .. code-block:: sh
+
+  curl -X GET $ENDPOINT/{containerName}/{objectName} \
+    -H "X-Auth-Token: $TOKEN"

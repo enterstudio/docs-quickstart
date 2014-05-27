@@ -59,7 +59,7 @@ Change Object Metadata
 
 Once you have an object uploaded to a container it is possible to change its metadata in-place. For instance, you can change its content-type so that when delivered to requesting clients it can be treated accordingly. The code snippet below shows how:
 
-.. include:: samples/update_object_metadata.rst
+.. include:: samples/change_object_metadata.rst
 
 Getting Objects
 ---------------
