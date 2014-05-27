@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  Volume volume = volumeApi.get("{volumeId}");
+
 .. code-block:: javascript
 
 .. code-block:: php

@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  Snapshot snapshot = snapshotApi.get("{snapshotId}");
+
 .. code-block:: javascript
 
 .. code-block:: php

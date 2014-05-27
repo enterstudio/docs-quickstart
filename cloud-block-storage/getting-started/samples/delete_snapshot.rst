@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  snapshotApi.delete("{snapshotId}");
+
 .. code-block:: javascript
 
 .. code-block:: php

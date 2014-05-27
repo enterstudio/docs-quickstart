@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  List<Snapshot> snapshots = snapshotApi.listInDetail().toList();
+
 .. code-block:: javascript
 
 .. code-block:: php

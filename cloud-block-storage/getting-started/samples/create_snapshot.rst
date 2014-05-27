@@ -2,6 +2,15 @@
 
 .. code-block:: java
 
+  // Get the volume to snapshot
+  Volume volume = volumeApi.get("{volumeId}")
+
+  CreateSnapshotOptions options = CreateSnapshotOptions.Builder
+      .name("{name}")
+      .description("This is the description");
+
+  Snapshot snapshot = snapshotApi.create("{volumeId}", options);
+
 .. code-block:: javascript
 
 .. code-block:: php

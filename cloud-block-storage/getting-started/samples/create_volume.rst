@@ -2,6 +2,12 @@
 
 .. code-block:: java
 
+  CreateVolumeOptions options = CreateVolumeOptions.Builder
+        .name("photos")
+        .volumeType("SATA");
+
+  Volume volume = volumeApi.create(100, options);
+
 .. code-block:: javascript
 
 .. code-block:: php

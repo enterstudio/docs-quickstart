@@ -2,6 +2,14 @@
 
 .. code-block:: java
 
+  CinderApi cinderApi = ContextBuilder.newBuilder("rackspace-cloudblockstorage-us")
+         .credentials("{username}", "{apiKey}")
+         .buildApi(CinderApi.class);
+
+  // jclouds refers to "regions" as "zones"
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
+  SnapshotApi snapshotApi = cinderApi.getSnapshotApiForZone("{region}");
+
 .. code-block:: javascript
 
 .. code-block:: php

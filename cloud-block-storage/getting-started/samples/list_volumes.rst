@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  List<Volume> volumes = volumeApi.listInDetail().toList();
+
 .. code-block:: javascript
 
 .. code-block:: php

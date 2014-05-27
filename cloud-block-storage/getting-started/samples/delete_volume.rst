@@ -2,6 +2,8 @@
 
 .. code-block:: java
 
+  volumeApi.delete("{volumeId}");
+
 .. code-block:: javascript
 
 .. code-block:: php
