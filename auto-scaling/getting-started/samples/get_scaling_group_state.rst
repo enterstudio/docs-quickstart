@@ -21,4 +21,5 @@
 .. code-sample:: sh
 
   $ curl -X GET -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
     $ENDPOINT/groups/{groupId}/state | python -m json.tool

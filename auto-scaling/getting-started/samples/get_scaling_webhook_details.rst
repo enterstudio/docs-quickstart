@@ -21,5 +21,6 @@
 .. code-block:: sh
 
   $ curl -X GET -H "X-Auth-Token: $TOKEN" \
-  $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks \
-  | python -m json.tool
+    -H "Accept: application/json" \
+    $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks \
+    | python -m json.tool

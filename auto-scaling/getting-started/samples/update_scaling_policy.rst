@@ -37,4 +37,6 @@
          "type":"webhook"
       }' \
     -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
     $ENDPOINT/groups/{groupId}/policies/{policyId}
