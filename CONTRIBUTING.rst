@@ -22,10 +22,33 @@ Code blocks go in this order::
   .. code-block:: sh
 
 
-If there's a new language you want to add code samples for, insert it where it fits alphabetically. 
-
+If there's a new language you want to add code samples for, insert it where it fits alphabetically.
 
 If starting a new narrative/code section, be sure to add all the code block sections to each `.rst` you create for PR sanity.
+
+Use active rather than passive voice.
+
+    After you create a new record:
+
+is much better than:
+
+    After the record is created.
+
+Consistently use second-person `you` rather than first-person `we`.
+
+    You create a record by ...
+
+rather than:
+
+    We create a record by ...
+
+For commands, use simple instructions.
+
+    To create a record:
+
+is better than
+
+    You'll need to create a record. You do this as follows:
 
 Use neutral language instead of gerunds:
 
