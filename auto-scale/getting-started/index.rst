@@ -14,8 +14,8 @@ Assumptions
 ------------
 This guide assumes the reader has working familiarity with (at the very least):
     
-* Cloud Servers
-* Cloud Monitoring
+* `Cloud Servers </docs/cloud-servers/getting-started/>`_
+* `Cloud Monitoring </docs/cloud-monitoring/getting-started/>`_
 
 
 Concepts
