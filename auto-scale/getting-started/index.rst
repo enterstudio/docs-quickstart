@@ -94,7 +94,10 @@ And, in the event that you want to delete an autoscaling group, follow the code 
 Policies
 ----------
 
-To create an autoscale policy that adds one server with a 360 second cool down before doing another scaling action:
+Let's create an autoscale policy that will
+
+* Add one server
+* Only allow another scaling action to happen after a 360 second cool down
 
 .. include:: samples/create_scaling_policy.rst
 
@@ -106,15 +109,15 @@ Alternatively, the code samples below show how to go about if you want to inspec
 
 .. include:: samples/get_scaling_policy_details.rst
 
-If you want to alter details for a policy, see code samples below:
+If you want to alter details for a policy:
 
 .. include:: samples/update_scaling_policy.rst
 
-To execute a particular autoscaling policy see code samples below:
+To execute a particular autoscaling policy:
 
 .. include:: samples/execute_scaling_policy.rst
 
-Finally, if you want to delete an autoscaling policy, consider the following:
+Finally, if you want to delete an autoscaling policy:
 
 .. include:: samples/delete_scaling_policy.rst
 
@@ -122,22 +125,22 @@ Finally, if you want to delete an autoscaling policy, consider the following:
 Webhooks
 ---------
 
-The first task as with most other API operations in this guide is to create an entity. In this case, to create a Webhook follow the code below:
+To trigger our autoscale actions, we can create a webhook:
 
 .. include:: samples/create_scaling_webhook.rst
 
-The next step is to inspect autoscaling Webhook details:
+Then we'll inspect the autoscaling Webhook details:
 
 .. include:: samples/get_scaling_webhook_details.rst
 
-Alternatively, you could list all available autoscaling Webhooks in a particular region as follows:
+We could also list all available autoscaling Webhooks in a particular region:
 
 .. include:: samples/list_scaling_webhooks.rst
 
-If you want to alter details about an existing Webhook, see code samples below:
+Now we can alter details about the webhook:
 
 .. include:: samples/update_scaling_webhook.rst
 
-Finally, to delete an autoscaling Webhook, you can do as suggested in the code samples below:
+Finally, delete the webhook if we don't need it:
 
 .. include:: samples/delete_scaling_webhook.rst
