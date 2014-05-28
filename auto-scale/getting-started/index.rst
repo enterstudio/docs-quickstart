@@ -59,34 +59,34 @@ API Operations
 Authentication
 ----------------
 
-Before we start working with the APIs, we first need to get our authentication token. To do so, see code samples below:
+Before we start working with the APIs, we first need to get our authentication token.
 
 .. include::  samples/authentication.rst
 
 Scaling Groups
 -----------------
 
-You can create an autoscaling group via SDK or API as shown below:
+First, we'll create an autoscaling group.
 
 .. include:: samples/create_scaling_group.rst
 
-To list autoscaling groups you already have setup in any given region, consider the following code:
+We can now list the autoscaling groups we have setup.
 
 .. include:: samples/list_scaling_groups.rst
 
-If you want to see the details of a scaling group, see the code below:
+Or even get details of the scaling group we created.
 
 .. include:: samples/get_scaling_group_details.rst
 
-If you want to alter details for a scaling group, see code samples below:
+Let's alter the details of the scaling group.
 
 .. include:: samples/update_scaling_group_details.rst
 
-Additionally, if you want to inspect the current state of an autoscaling group, do as follows:
+Look into the state of the autoscaling group.
 
 .. include:: samples/get_scaling_group_state.rst
 
-And, in the event that you want to delete an autoscaling group, follow the code sample below:
+Finally, delete the autoscaling group.
 
 .. include:: samples/delete_scaling_group.rst
 
