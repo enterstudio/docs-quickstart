@@ -66,19 +66,19 @@ Before we start working with the APIs, we first need to get our authentication t
 Scaling Groups
 -----------------
 
-First, we'll create an autoscaling group.
+First, create an autoscaling group.
 
 .. include:: samples/create_scaling_group.rst
 
-We can now list the autoscaling groups we have setup.
+List the autoscaling groups you have setup.
 
 .. include:: samples/list_scaling_groups.rst
 
-Or even get details of the scaling group we created.
+Or even get details of the scaling group you created.
 
 .. include:: samples/get_scaling_group_details.rst
 
-Let's alter the details of the scaling group.
+Alter the details of the scaling group.
 
 .. include:: samples/update_scaling_group_details.rst
 
@@ -94,10 +94,12 @@ Finally, delete the autoscaling group.
 Policies
 ----------
 
-Let's create an autoscale policy that will
+To create an autoscale policy that will
 
 * Add one server
-* Only allow another scaling action to happen after a 360 second cool down
+* Only allow another scaling actions to happen after a 360 second cool down
+
+you simply:
 
 .. include:: samples/create_scaling_policy.rst
 
@@ -129,18 +131,18 @@ To trigger our autoscale actions, we can create a webhook:
 
 .. include:: samples/create_scaling_webhook.rst
 
-Then we'll inspect the autoscaling Webhook details:
+Then you can inspect the autoscaling Webhook details:
 
 .. include:: samples/get_scaling_webhook_details.rst
 
-We could also list all available autoscaling Webhooks in a particular region:
+You could also list all available autoscaling Webhooks in a particular region:
 
 .. include:: samples/list_scaling_webhooks.rst
 
-Now we can alter details about the webhook:
+Now you can alter details about the webhook:
 
 .. include:: samples/update_scaling_webhook.rst
 
-Finally, delete the webhook if we don't need it:
+Finally, delete the webhook if you don't need it:
 
 .. include:: samples/delete_scaling_webhook.rst
