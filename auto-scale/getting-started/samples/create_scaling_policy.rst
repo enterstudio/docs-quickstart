@@ -12,7 +12,7 @@
             'name'     => 'My policy',
             'change'   => 1,
             'type'     => 'webhook',
-            'cooldown' => 60
+            'cooldown' => 360
         )
     ));
 
@@ -20,22 +20,14 @@
 
     # After authenticating
     au = pyrax.autoscale
-    au.add_policy("{scalingGroupId}", "My Policy", cooldown=60, change=2,
-            is_percent=False) 
-    # Parameter explanations:
-    #   scalingGroupId: ID of the scaling group to which you are
-    #       adding the policy
-    #   policy_name: Name for the new policy
-    #   cooldown: period to wait between applications of scaling actions
-    #   change: Scaling increment
-    #   is_percent: Determines whether the value of the `change` parameter
-    #       is a percentage or an absolute number
+    au.add_policy("{scalingGroupId}", "My Policy", cooldown=360, change=1,
+                  is_percent=False)
 
 .. code-block:: ruby
 
-  my_policy = my_group.policies.create :name => 'Scale by one server', 
-    :cooldown => 360, 
-    :type => 'webhook', 
+  my_policy = my_group.policies.create :name => 'Scale by one server',
+    :cooldown => 360,
+    :type => 'webhook',
     :change => 1
 
 .. code-block:: sh
@@ -44,8 +36,8 @@
     '[
        {
           "name":"{policyName}",
-          "desiredCapacity":5,
-          "cooldown":1800,
+          "change":1,
+          "cooldown":360,
           "type":"webhook"
        }
     ]' \

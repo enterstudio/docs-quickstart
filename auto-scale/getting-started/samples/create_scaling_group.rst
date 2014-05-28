@@ -47,17 +47,21 @@
     networks = [pyrax.cloudnetworks.PUBLIC_NET_ID,
             pyrax.cloudnetworks.SERVICE_NET_ID]
     scaling_group = au.create("My Scaling Group", cooldown=60,
-            min_entities=2, max_entities=24,
-            launch_config_type="launch_server", server_name="My Server Name",
-            image_id="{imageId}", flavor_id="{flavorId}", disk_config="MANUAL",
-            metadata={"someKey": "someValue"}, personality=[{"contents":
-            "SomeBase64EncodedString", "path": "/etc/SomeFileName.txt"}],
-            networks=networks, load_balancers=("{loadBalancerId}", 80),
-            key_name="MySSHKeyName")
+                              min_entities=2, max_entities=24,
+                              launch_config_type="launch_server",
+                              server_name="My Server Name",
+                              image_id="{imageId}", flavor_id="{flavorId}",
+                              disk_config="MANUAL",
+                              metadata={"someKey": "someValue"},
+                              personality=[{"contents": "SomeBase64EncodedString",
+                                            "path": "/etc/SomeFileName.txt"}],
+                              networks=networks,
+                              load_balancers=("{loadBalancerId}", 80),
+                              key_name="MySSHKeyName")
 
 .. code-block:: ruby
 
-    # A group builder is provided for you convenience.
+    # A group builder is provided for your convenience.
     # For other options please refer to the fog docs
 
     require 'fog/rackspace/models/auto_scale/group_builder'
