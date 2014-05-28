@@ -7,6 +7,20 @@ This guide will introduce Rackspace Cloud Databases and familiarize you with som
 that allows you to easily provision instances without having all the maintenance overhead. You can also backup your databases on a regular basis,
 as well as setting up monitoring functionality to track usage.
 
+Concepts
+========
+To use this service effectively, you should understand how these key ideas are used in this context:
+
+flavor
+------
+x
+
+instance
+-------
+An isolated environment in which your databases run. This is similar
+to the virtualized instances used by Cloud Servers, 
+but database instances are optimized for optimal database performance.
+
 Authentication
 ==============
 
@@ -17,10 +31,6 @@ Before we can use the API, we need to authenticate and create an instance of the
 
 Working with instances
 ======================
-
-An instance is an isolated environment which your databases run on. It is similar
-to the virtualized instances found with Cloud Servers (they both utilize
-OpenStack Nova), but database instances are optimized for optimal database performance.
 
 Two common issues that developers have with traditional RDS relate to peformance:
 increasing the amount of IO transactions per second, for example, or reducing

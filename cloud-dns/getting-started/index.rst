@@ -3,10 +3,19 @@
 Quickstart for Cloud DNS
 ========================
 
-Cloud DNS
----------------
-
 Rackspace offers a flexible and scalable solution to DNS management through its CloudDNS service.
+
+Concepts
+========
+To use this service effectively, you should understand how these key ideas are used in this context:
+
+domain
+------
+An entity containing all DNS-related information.
+
+zone
+----
+A single manager's scope of control within the domain name space.
 
 Authentication and client creation
 ----------------------------------

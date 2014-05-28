@@ -5,37 +5,33 @@ Quickstart for Cloud Servers
 
 This guide will provide an introduction to Rackspace Cloud Servers, describing what it is and what it can do. In a nutshell, it is a service that allows you to allocate and deallocate compute resources. It is based on OpenStack Compute (Nova), a community-led open-source platform.
 
-The compute service has a few core concepts which need to be understand before plunging in. These are:
+Concepts
+========
+To use this service effectively, you should understand how these key ideas are used in this context:
 
-1. Servers
-2. Flavors
-3. Images
-4. Networks
-
-The concepts
-============
-
-Server
+server
 ------
+A computer that provides explicit services to the client software running on that system. 
+A server is a virtual machine (VM) instance in the Cloud Servers environment. 
+To create a server, you must specify a name, flavor reference, and image reference.
 
-A Server is a virtual machine, hosted on a physical device in one of our top-notch data centers. This is where your application, web server, and filesystem sits.
-
-Image
+image
 -----
+The type of operating system you want to use. 
+You can choose from pre-defined images or create your own custom images.
 
-An Image is the type of operating system you want to use. We offer a whole bunch of Linux or Windows images for you to choose from: Ubuntu 12.04, RedHat 6, Windows, etc. You can also create your own custom images based on personal configuration, but this is not within the scope of this tutorial.
-
-Flavor
+flavor
 ------
+A resource configuration for a server. 
+Each flavor is a unique combination of disk, memory, vCPUs, and network bandwidth.
+You can choose from pre-defined flavors.
 
-A Flavor is a type of hardware configuration. Like images, we offer a list of standard hardware configurations for you to choose from. You might want a '2GB RAM flavor' for a smaller project, or a '32GB RAM performance flavor' for more intense computational needs.
-
-Network
+network
 -------
-
-A Network is the virtual space where your Servers live. Rackspace has two default Networks that you need to be aware of: PublicNet, which is the Internet; and ServiceNet, which is our internal network.
-
-Although you can create as many isolated networks as you like, the standard default is for servers to be connected to both PublicNet (for public Internet connectivity) and ServiceNet (for internal connectivity with your other servers).
+The virtual space where your servers live. Rackspace has two default networks: 
+PublicNet, which is the Internet; ServiceNet, which is our internal network.
+Although you can create as many isolated networks as you want, 
+the default configuration is for servers to be connected to both PublicNet (for public Internet connectivity) and ServiceNet (for internal connectivity with your other servers).
 
 Authenticating
 ==============

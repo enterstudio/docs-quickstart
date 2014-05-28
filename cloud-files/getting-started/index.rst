@@ -3,10 +3,24 @@
 Quickstart for Cloud Files
 ==========================
 
-Cloud Files
----------------
-
 Rackspace offers a flexible and scalable solution to object storage through its Cloud Files service. The intent of this guide to get you up and running with Cloud Files as quick as possible. If your case is not covered in the samples below, you might want to check out SDK-specific documentation for much deeper treatment of the subjects below as well as use cases purposely left out.
+
+Concepts
+========
+To use this service effectively, you should understand how these key ideas are used in this context:
+
+CDN (Content Delivery Network)
+------------------------------
+A network of servers delivering content to users. Cloud Files uses the Akamai CDN.
+
+container
+---------
+A storage compartment that provides a way for you to organize your data.
+
+object
+------
+The basic storage entity in Cloud Files. 
+An object represents a files and its optional metadata that you upload to the system.
 
 Authentication and client creation
 ----------------------------------

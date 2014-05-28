@@ -6,6 +6,19 @@ Quickstart for Cloud Load Balancers
 The Rackspace Load Balancers service provides a means to protect your infrastructure
 by distributing traffic efficiently.
 
+Concepts
+========
+To use this service effectively, you should understand how these key ideas are used in this context:
+
+monitor
+-------
+A configurable feature of each load balancer. 
+It is used to determine whether or not a back-end node is usable for processing a request. It is not related to the Cloud Monitoring service.
+
+node
+----
+A back-end device providing a service on a specified IP and port.
+
 Authenticating
 ==============
 

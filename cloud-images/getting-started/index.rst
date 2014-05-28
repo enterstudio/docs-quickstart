@@ -17,33 +17,32 @@ and are stored on, and retrieved from, Cloud Files storage.
 
 Concepts
 ========
+To use this service effectively, you should understand how these key ideas are used in this context:
 
-Before you jump in, it helps to understand these core Images service concepts:
+server
+------
+A computer that provides explicit services to the client software running on that system. 
+A server is a virtual machine (VM) instance in the Cloud Servers environment. 
+To create a server, you must specify a name, flavor reference, and image reference.
 
-* A **server** is a virtual machine, hosted on a physical device in one of our top-notch data centers. 
-  Your application, web server, and file system runs on a server.
+flavor
+------
+A resource configuration for a server. 
+Each flavor is a unique combination of disk, memory, vCPUs, and network bandwidth.
+You can choose from pre-defined flavors.
     
-* A **flavor** is a type of hardware configuration that describes the parameters of the available virtual 
-  machine images. 
-  
-  Includes parameters such as CPU, storage, and memory. 
-  
-  Rackspace offers a set of standard hardware configurations for you to choose from. 
-    
-* A **network** is the virtual space where your servers live. 
+network
+-------
+The virtual space where your servers live. Rackspace has two default networks: 
+PublicNet, which is the Internet; ServiceNet, which is our internal network.
+Although you can create as many isolated networks as you want, 
+the default configuration is for servers to be connected to both PublicNet (for public Internet connectivity) and ServiceNet (for internal connectivity with your other servers).
 
-  By default, Rackspace provides the PublicNet network
-  that enables public Internet connectivity and the internal ServiceNet 
-  network that enables internal connectivity with your other servers.
-
-* An **image** is a collection of specific operating system (OS) files that you use to 
-  create or rebuild a server. 
-  
-  Rackspace offers pre-built Linux and Windows images: 
-  Ubuntu 14.04, Red Hat 6, Windows, and so on. 
-  
-  You can also create custom images, or snapshots, 
-  from servers that you have launched. 
+image
+-----
+A collection of specific operating system (OS) files that you use to create or rebuild a server. 
+You can choose from pre-defined images or create your own custom images 
+from servers that you have launched. 
   
   You can use custom images for data backups and 
   as *gold* images to launch additional servers. 
@@ -59,7 +58,11 @@ Before you jump in, it helps to understand these core Images service concepts:
 Image entity
 ------------
 
-An image entity is represented by a JSON-encoded data structure and its raw binary data. An image entity has an identifier (ID) that is guaranteed to be unique within its endpoint. The ID is used as a TOKEN in request URIs to interact with that specific image. An image is always guaranteed to have the following attributes: ``id``,
+An image entity is represented by a JSON-encoded data structure and its raw binary data. 
+An image entity has an identifier (ID) that is guaranteed to be unique within its endpoint. 
+The ID is used as a TOKEN in request URIs to interact with that specific image. 
+An image is always guaranteed to have the following attributes: 
+``id``,
 ``status``,
 ``visibility``,
 ``protected``,
