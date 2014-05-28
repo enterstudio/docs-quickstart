@@ -3,6 +3,7 @@
 Quickstart for Cloud Orchestration
 ==================================
 
+SEEEEEEEEEEEE MEEEEEEEEE
 Rackspace Cloud Orchestration is the name of the Rackspace orchestration, and application architecture management service.  Cloud Orchestration provides a software API to create and manipulate stacks of resources (for example load balancers, web servers, databases, and so forth) and software that operates as part of those stacks (for example Apache, PHP, MySQL, Wordpress, and so forth). Cloud Orchestration is an engine that understands Cloud topologies, unlike Chef or Puppet, which are concerned with software on servers. Where applicable, Cloud Orchestration leverages software configuration management tools such as Chef. Using simple template syntax, you can define a cloud stack, deploy the stack, scale the stack (for example add/remove resources), delete the stack, clone the stack, and more.
 
 Concepts

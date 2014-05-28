@@ -5,20 +5,21 @@ Quickstart for Cloud Block Storage
 
 Rackspace Cloud Block Storage is a block level storage solution that allows customers to mount drives or volumes to their Rackspace Next Generation Cloud Servers™. The two primary use cases are (1) to allow customers to scale their storage independently from their compute resources, and (2) to allow customers to utilize high performance storage to serve database or I/O-intensive applications.
 
-Key Concepts
-==============
+Concepts
+========
+To use this service effectively, you should understand how these key ideas are used in this context:
 
-Volume
+snapshot
 --------
+A point-in-time copy of the data that a volume contains. 
+Snapshots are incremental, so each time that you create a snapshot, 
+the incremental changes for the new snapshot are appended to the previous snapshot, which is still available.
 
-A volume is a detachable block storage device. You can think of it as a USB hard drive. You can attach a volume to one instance at a time.
-
-Snapshot
-----------
-
-A snapshot is a point-in-time copy of the data that a volume contains.
-
-Snapshots are incremental, so each time that you create a snapshot, the incremental changes for the new snapshot are appended to the previous snapshot, which is still available.
+volume
+------
+A detachable block storage device. 
+You can think of it as a USB hard drive. 
+You can attach a volume to one instance at a time.
 
 Authenticating
 ===============

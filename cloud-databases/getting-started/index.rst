@@ -13,7 +13,8 @@ To use this service effectively, you should understand how these key ideas are u
 
 flavor
 ------
-x
+A flavor is an available hardware configuration for a database instance. 
+Each flavor has a unique combination of memory capacity and priority for CPU time.
 
 instance
 -------

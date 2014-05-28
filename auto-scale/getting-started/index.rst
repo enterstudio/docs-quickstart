@@ -14,29 +14,28 @@ This guide assumes the reader has working familiarity with (at the very least):
 * `Cloud Servers </docs/cloud-servers/getting-started/>`_
 * `Cloud Monitoring </docs/cloud-monitoring/getting-started/>`_
 
-
 Concepts
-===========
+========
+To use this service effectively, you should understand how these key ideas are used in this context:
 
-Scaling Groups
+capability URLs
 ---------------
+URLs that give authorization for a certain action or event. 
+If you know the URL, you have access to it and you can use the URL to trigger a specific event. 
+Capability URLs are usually long and random and cannot be guessed by a user.
 
-The scaling group is at the heart of an Auto Scale deployment. The scaling group specifies the basic elements of the Auto Scale configuration. It manages how many servers can participate in the scaling group. It also specifies information related to load balancers if your configuration uses a load balancer.
+scaling group
+-------------
+Specifies the basic elements of the Auto Scale configuration. 
+It manages how many servers can participate in the scaling group. 
+It also specifies information related to load balancers if your configuration uses a load balancer.
+When you create a scaling group, you specify the details for the group configuration and the launch configuration.
 
-When you create a scaling group, you specify the details for the following two configurations:
-
-* Group Configuration: Outlines the basic elements of the Auto Scale configuration. The group configuration manages how many servers can participate in the scaling group. It sets a minimum and maximum limit for the number of entities that can be used in the scaling process. It also specifies information related to load balancers.
-
-* Launch Configuration: Creates a blueprint for how new servers will be created. The launch configuration specifies what type of server image will be started on launch, what flavor the new server is, and which load balancer the new server connects to.
-
-
-Webhooks and Capability URLs
------------------------------
-
-Auto Scale uses webhooks to initiate scaling events. A webhook is an industry-standard protocol for sending events between systems; for Auto Scale, they are used to execute policies. A webhook consists of an HTTP callback that is triggered by some user-defined event, such as an alarm that is set through Cloud Monitoring or another monitoring service.
-
-Capability URLs are URLs that give authorization for a certain action or event. If you know the URL, you have access to it and you can use the URL to trigger a specific event. Capability URLs are usually long, and random, and cannot be guessed by a user.
-
+webhook 
+-------
+Industry-standard protocol for sending events between systems; for Auto Scale, webhoooks are used to execute policies. 
+A webhook consists of an HTTP callback that is triggered by some user-defined event, 
+such as an alarm that is set through Cloud Monitoring or another monitoring service.
 
 Scaling Policies
 -----------------

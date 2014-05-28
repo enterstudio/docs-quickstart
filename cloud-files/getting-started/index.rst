@@ -11,7 +11,7 @@ To use this service effectively, you should understand how these key ideas are u
 
 CDN (Content Delivery Network)
 ------------------------------
-A network of servers delivering content to users. Cloud Files uses the Akamai CDN.
+A network of high-availability servers delivering content to users. Cloud Files uses the Akamai CDN.
 
 container
 ---------
