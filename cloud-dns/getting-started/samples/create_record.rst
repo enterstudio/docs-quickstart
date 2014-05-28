@@ -2,6 +2,18 @@
 
 .. code-block:: java
 
+  RecordApi recordApi = cloudDNSApi.getRecordApiForDomain({domainId});
+  Record createARecord = Record.builder()
+          .type("A")
+          .name("app.domain.com")
+          .data("192.168.1.1")
+          .ttl(3600)
+          .build();
+
+  List<Record> createRecords = ImmutableList.of(createARecord);
+
+  Set<RecordDetail> records = awaitComplete(cloudDNSApi, recordApi.create(createRecords));
+
 .. code-block:: javascript
 
   var recDetails = {

@@ -2,6 +2,18 @@
 
 .. code-block:: java
 
+  DomainApi domainApi = cloudDNSApi.getDomainApi();
+  List<CreateDomain> createDomains = Lists.newArrayList();
+  CreateDomain createDomain = CreateDomain.builder()
+          .name(DOMAIN)
+          .email("admin@domain.com")
+          .ttl(300)
+          .build();
+
+  createDomains.add(createDomain);
+
+  Set<Domain> domains = awaitComplete(cloudDNSApi, domainApi.create(createDomains));
+
 .. code-block:: javascript
 
   var details = {

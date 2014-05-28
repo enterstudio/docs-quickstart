@@ -2,6 +2,10 @@
 
 .. code-block:: java
 
+  DomainApi domainApi = cloudDNSApi.getDomainApi();
+
+  awaitComplete(cloudDNSApi, domainApi.delete({domainIds}, true));
+
 .. code-block:: javascript
 
   rackspace.deleteZone(myZone, function (err) {

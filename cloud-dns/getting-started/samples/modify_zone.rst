@@ -2,6 +2,14 @@
 
 .. code-block:: java
 
+  DomainApi domainApi = cloudDNSApi.getDomainApi();
+  UpdateDomain updateDomain = UpdateDomain.builder()
+          .email("changed@domain.com")
+          .ttl(3600)
+          .build();
+
+  awaitComplete(cloudDNSApi, domainApi.update({domainId}, updateDomain));
+
 .. code-block:: javascript
 
   myZone.emailAddress = 'changed@domain.com';
