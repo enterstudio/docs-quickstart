@@ -1,6 +1,7 @@
-====================================
-Getting started with Cloud Databases
-====================================
+.. _quickstart:
+==============================
+Quickstart for Cloud Databases
+==============================
 
 This guide will introduce Rackspace Cloud Databases and familiarize you with some common functionality. Cloud Databases is a MySQL relational database service
 that allows you to easily provision instances without having all the maintenance overhead. You can also backup your databases on a regular basis,

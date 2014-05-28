@@ -1,6 +1,7 @@
-=======================================
-Getting Started with Cloud Monitoring
-=======================================
+.. _quickstart:
+===============================
+Quickstart for Cloud Monitoring
+===============================
 
 Cloud Monitoring helps you keep a keen eye on all of your resources; from web sites to web servers, routers, load balancers, and more.
 

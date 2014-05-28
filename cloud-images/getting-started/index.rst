@@ -1,6 +1,7 @@
-==================================
-Getting Started with Cloud Images
-==================================
+.. _quickstart:
+===========================
+Quickstart for Cloud Images
+===========================
 
 This guide helps you get started with the Rackspace Cloud Images service.
 

@@ -1,5 +1,6 @@
+.. _quickstart:
 ===================================
-Getting Started with Load Balancers
+Quickstart for Cloud Load Balancers
 ===================================
 
 The Rackspace Load Balancers service provides a means to protect your infrastructure

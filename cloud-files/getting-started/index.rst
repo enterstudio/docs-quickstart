@@ -1,7 +1,7 @@
 .. _quickstart:
-
-Quickstart Guide
-=================
+==========================
+Quickstart for Cloud Files
+==========================
 
 Cloud Files
 ---------------

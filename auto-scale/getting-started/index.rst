@@ -1,10 +1,7 @@
 .. _quickstart:
-
-Quickstart Guide
-=================
-
-Auto Scale
------------
+=========================
+Quickstart for Auto Scale
+=========================
 
 Rackspace Auto Scale is a service that lets you configure automated scaling of resources in response to an increase or decrease in overall workload based on user-defined policies. You can set up a schedule for launching Auto Scale or define an event that is triggered by Cloud Monitoring. You can also specify a minimum and maximum number of cloud servers, the amount of resources that you want to increase or decrease, and the thresholds in Cloud Monitoring that trigger the scaling activities.
 

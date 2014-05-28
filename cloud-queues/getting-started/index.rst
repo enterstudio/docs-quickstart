@@ -1,10 +1,7 @@
 .. _quickstart:
-
-Quickstart Guide
-=================
-
-Cloud Queues
----------------
+===========================
+Quickstart for Cloud Queues
+===========================
 
 Queues is an open source, scalable, and highly available message and notifications service, based on the OpenStack Marconi project. Users of this service can create and manage a producer-consumer or a publisher-subscriber model. Unlimited queues and messages give users the flexibility they need to create powerful web applications in the cloud.
 
