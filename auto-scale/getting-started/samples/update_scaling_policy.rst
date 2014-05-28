@@ -13,10 +13,7 @@
 
 .. code-block:: python
 
-    # After authenticating
     au = pyrax.autoscale
-    # The `scalingGroupId` and `policyId` parameters are required. You may
-    # include one or more of the remaining paramters.
     au.update_policy("{scalingGroupId}", "{policyId}", name="My Policy",
             policy_type="webhook", cooldown=120, change=10, is_percent=True,
             desired_capacity=7)
@@ -39,4 +36,4 @@
     -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/groups/{groupId}/policies/{policyId}
+    $ENDPOINT/groups/{scalingGroupId}/policies/{policyId}

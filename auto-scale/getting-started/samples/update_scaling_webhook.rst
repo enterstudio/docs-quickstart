@@ -14,10 +14,7 @@
 
 .. code-block:: python
 
-    # After authenticating
     au = pyrax.autoscale
-    # The `scalingGroupId`, `policyId`, and `webhookId` parameters are
-    # required. You may include one or more of the remaining parameters.
     au.update_webhook("{scalingGroupId}", "{policyId}", "{webhookId}",
             name="My Webhook", metadata={"someKey": "someValue"})
 
