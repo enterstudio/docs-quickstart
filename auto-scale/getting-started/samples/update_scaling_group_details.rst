@@ -8,10 +8,7 @@
 
 .. code-block:: python
 
-    # After authenticating
     au = pyrax.autoscale
-    # The scaling group ID is required. You may include one or more of
-    # the other parameters.
     au.update("{scalingGroupId}", name="My Group", cooldown=120,
             min_entities=1, max_entities=25, metadata={"someKey": "someValue"})
 
@@ -35,4 +32,4 @@
     -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/groups/{groupId}/config
+    $ENDPOINT/groups/{scalingGroupId}/config
