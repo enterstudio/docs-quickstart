@@ -8,9 +8,11 @@
 
 .. code-block:: php
 
-    $zones = $service->getMonitoringZones();
+  $zones = $service->getMonitoringZones();
 
 .. code-block:: python
+
+  zones = cm.list_monitoring_zones()
 
 .. code-block:: ruby
 

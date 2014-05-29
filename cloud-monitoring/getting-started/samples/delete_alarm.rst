@@ -8,9 +8,11 @@
 
 .. code-block:: php
 
-    $alarm->delete();
+  $alarm->delete();
 
 .. code-block:: python
+  
+  alarm.delete()
 
 .. code-block:: ruby
 

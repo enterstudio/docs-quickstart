@@ -8,25 +8,37 @@
 
 .. code-block:: php
 
-    $notification = $service->getNotification();
+  $notification = $service->getNotification();
 
-    $params = array(
-        'label' => 'My webhook #1',
-        'type'  => 'webhook',
-        'details' => array(
-            'url' => 'http://example.com'
-        )
-    );
+  $params = array(
+      'label' => 'My webhook #1',
+      'type'  => 'webhook',
+      'details' => array(
+          'url' => 'http://example.com'
+      )
+  );
 
-    // Test these params
-    $response = $notification->testParams($params);
+  // Test these params
+  $response = $notification->testParams($params);
 
-    echo $response->status; // Was it successful?
+  echo $response->status; // Was it successful?
 
-    // Now create the notification
-    $notification->create($params);
+  // Now create the notification
+  $notification->create($params);
 
 .. code-block:: python
+
+  warning = cm.create_notification("email",
+                                   label="Hey OPS, check this out.",
+                                   details={"address": "{emailAddress}"})
+
+  critical = cm.create_notification("email",
+                                    label="This is critical",
+                                    details={"address": "{emailAddress}"})
+
+  plan = cm.create_notification_plan(label="default",
+                                     warning_state=warning,
+                                     critical_state=critical)
 
 .. code-block:: ruby
 

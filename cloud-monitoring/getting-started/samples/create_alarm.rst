@@ -8,14 +8,19 @@
 
 .. code-block:: php
 
-    $alarm = $check->getAlarm();
-    $alarm->create(array(
-        'check_id' => '{checkId}',
-        'criteria' => 'if (metric["duration"] >= 2) { return new AlarmStatus(OK); } return new AlarmStatus(CRITICAL);',
-        'notification_plan_id' => '{notificationPlanId}'
-    ));
+  $alarm = $check->getAlarm();
+  $alarm->create(array(
+      'check_id' => '{checkId}',
+      'criteria' => 'if (metric["duration"] >= 2) { return new AlarmStatus(OK); } return new AlarmStatus(CRITICAL);',
+      'notification_plan_id' => '{notificationPlanId}'
+  ));
 
 .. code-block:: python
+
+  alarm = cm.create_alarm(entity, check, plan,
+                          ("if (rate(metric['average']) > 10) {"
+                           " return new AlarmStatus(WARNING); "
+                           "} return new AlarmStatus(OK);"))
 
 .. code-block:: ruby
 

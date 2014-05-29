@@ -8,9 +8,11 @@
 
 .. code-block:: php
 
-    $check->delete();
+  $check->delete();
 
 .. code-block:: python
+
+  check.delete()
 
 .. code-block:: ruby
 
