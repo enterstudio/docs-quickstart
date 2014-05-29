@@ -8,7 +8,7 @@
             .cooldown(60)
             .name("New name")
             .minEntities(5)
-            .metadata(ImmutableMap.of("notes","This is an autoscale group for examples"))
+            .metadata(ImmutableMap.of("notes", "This is an autoscale group for examples"))
             .build();
   boolean result = groupApi.updateGroupConfiguration("{groupId}", groupConfiguration);
 

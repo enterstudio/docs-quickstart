@@ -8,7 +8,7 @@
             .cooldown(60)
             .name("{groupName}")
             .minEntities(5)
-            .metadata(ImmutableMap.of("notes","This is an autoscale group for examples"))
+            .metadata(ImmutableMap.of("notes", "This is an autoscale group for examples"))
             .build();
 
   LaunchConfiguration launchConfiguration = LaunchConfiguration.builder()
