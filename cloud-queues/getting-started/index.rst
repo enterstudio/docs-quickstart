@@ -12,17 +12,14 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 claim
------
-The process of a worker checking out a message to perform a task. Claiming a message prevents other workers from attempting to process the same message.
+    The process of a worker checking out a message to perform a task. Claiming a message prevents other workers from attempting to process the same message.
 
 message
--------
-A task, a notification, or any meaningful data that a producer or publisher sends to the queue.
+    A task, a notification, or any meaningful data that a producer or publisher sends to the queue.
 
 queue
------
-The entity that holds messages. Ideally, a queue is created per work type. 
-For example, if you want to compress files, you would create a queue dedicated to files awaiting compression.
+    The entity that holds messages. Ideally, a queue is created per work type. 
+    For example, if you want to compress files, you would create a queue dedicated to files awaiting compression.
 
 Authentication and Client
 ---------------------------------

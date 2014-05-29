@@ -10,28 +10,23 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 agent
------
-A monitoring daemon that resides on the server being monitored. 
-The agent gathers metrics based on agent checks and pushes them to Cloud Monitoring.
+    A monitoring daemon that resides on the server being monitored. 
+    The agent gathers metrics based on agent checks and pushes them to Cloud Monitoring.
 
 alarm
------
-Contains a set of rules that determine when the monitoring system sends a notification. 
-You can create multiple alarms for the different check types associated with an entity
+    Contains a set of rules that determine when the monitoring system sends a notification. 
+    You can create multiple alarms for the different check types associated with an entity
 
 check
------
-Contains the specific details of how you are monitoring the entity, such as
-which components of the entity to monitor, the monitoring frequency, and how many monitoring zones are launching the check. 
+    Contains the specific details of how you are monitoring the entity, such as
+    which components of the entity to monitor, the monitoring frequency, and how many monitoring zones are launching the check. 
 
 entity
-------
-The object or resource that you want to monitor. 
-An entity is commonly a web server, but it might also be a website, a web page, or a web service.
+    The object or resource that you want to monitor. 
+    An entity is commonly a web server, but it might also be a website, a web page, or a web service.
 
 notification
-------------
-An informational message sent to one or more addresses by the monitoring system when an alarm is triggered.
+    An informational message sent to one or more addresses by the monitoring system when an alarm is triggered.
 
 Workflow
 ===========

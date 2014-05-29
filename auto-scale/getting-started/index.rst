@@ -18,36 +18,26 @@ Concepts
 ========
 To use this service effectively, you should understand how these key ideas are used in this context:
 
-capability URLs
----------------
-URLs that give authorization for a certain action or event. 
-If you know the URL, you have access to it and you can use the URL to trigger a specific event. 
-Capability URLs are usually long and random and cannot be guessed by a user.
+capability URL
+    URL that gives authorization for a certain action or event. 
+    If you know the URL, you have access to it and you can use the URL to trigger a specific event. 
+    Capability URLs are usually long and random and cannot be guessed by a user.
 
 scaling group
--------------
-Specifies the basic elements of the Auto Scale configuration. 
-It manages how many servers can participate in the scaling group. 
-It also specifies information related to load balancers if your configuration uses a load balancer.
-When you create a scaling group, you specify the details for the group configuration and the launch configuration.
+    Specifies the basic elements of the Auto Scale configuration. 
+    It manages how many servers can participate in the scaling group. 
+    It also specifies information related to load balancers if your configuration uses a load balancer.
+    When you create a scaling group, you specify the details for the group configuration and the launch configuration.
+
+scaling policy
+    Defines the scaling activity that will take place, as well as when and how that scaling activity will take place.
+    You can define a scaling policy to trigger Auto Scale activities through a webhook or based on a schedule.
+    You can specify multiple policies to manage a scaling group.
 
 webhook 
--------
-Industry-standard protocol for sending events between systems; for Auto Scale, webhoooks are used to execute policies. 
-A webhook consists of an HTTP callback that is triggered by some user-defined event, 
-such as an alarm that is set through Cloud Monitoring or another monitoring service.
-
-Scaling Policies
------------------
-
-Auto Scale uses policies to define the scaling activity that will take place, as well as when and how that scaling activity will take place. Scaling policies specify how to modify the scaling group and its behavior. You can specify multiple policies to manage a scaling group.
-
-You can create two kinds of Auto Scale policies:
-
-* Policies that trigger Auto Scale activities through a webhook.
-
-* Policies that trigger Auto Scale activities based on a schedule.
-
+    Industry-standard protocol for sending events between systems; for Auto Scale, webhoooks are used to execute policies. 
+    A webhook consists of an HTTP callback that is triggered by some user-defined event, 
+    such as an alarm that is set through Cloud Monitoring or another monitoring service.
 
 API Operations
 ===============

@@ -10,16 +10,14 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 snapshot
---------
-A point-in-time copy of the data that a volume contains. 
-Snapshots are incremental, so each time that you create a snapshot, 
-the incremental changes for the new snapshot are appended to the previous snapshot, which is still available.
+    A point-in-time copy of the data that a volume contains. 
+    Snapshots are incremental, so each time that you create a snapshot, 
+    the incremental changes for the new snapshot are appended to the previous snapshot, which is still available.
 
 volume
-------
-A detachable block storage device. 
-You can think of it as a USB hard drive. 
-You can attach a volume to one instance at a time.
+    A detachable block storage device. 
+    You can think of it as a USB hard drive. 
+    You can attach a volume to one instance at a time.
 
 Authenticating
 ===============

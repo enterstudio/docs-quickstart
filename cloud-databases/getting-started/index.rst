@@ -12,15 +12,13 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 flavor
-------
-A flavor is an available hardware configuration for a database instance. 
-Each flavor has a unique combination of memory capacity and priority for CPU time.
+    A flavor is an available hardware configuration for a database instance. 
+    Each flavor has a unique combination of memory capacity and priority for CPU time.
 
 instance
--------
-An isolated environment in which your databases run. This is similar
-to the virtualized instances used by Cloud Servers, 
-but database instances are optimized for optimal database performance.
+    An isolated environment in which your databases run. This is similar
+    to the virtualized instances used by Cloud Servers, 
+    but database instances are optimized for optimal database performance.
 
 Authentication
 ==============

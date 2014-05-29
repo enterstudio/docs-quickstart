@@ -20,40 +20,37 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 server
-------
-A computer that provides explicit services to the client software running on that system. 
-A server is a virtual machine (VM) instance in the Cloud Servers environment. 
-To create a server, you must specify a name, flavor reference, and image reference.
+    A computer that provides explicit services to the client software running on that system. 
+    A server is a virtual machine (VM) instance in the Cloud Servers environment. 
+    To create a server, you must specify a name, flavor reference, and image reference.
 
 flavor
-------
-A resource configuration for a server. 
-Each flavor is a unique combination of disk, memory, vCPUs, and network bandwidth.
-You can choose from pre-defined flavors.
+    A resource configuration for a server. 
+    Each flavor is a unique combination of disk, memory, vCPUs, and network bandwidth.
+    You can choose from pre-defined flavors.
     
 network
--------
-The virtual space where your servers live. Rackspace has two default networks: 
-PublicNet, which is the Internet; ServiceNet, which is our internal network.
-Although you can create as many isolated networks as you want, 
-the default configuration is for servers to be connected to both PublicNet (for public Internet connectivity) and ServiceNet (for internal connectivity with your other servers).
+    The virtual space where your servers live. Rackspace has two default networks: 
+    PublicNet, which is the Internet; ServiceNet, which is our internal network.
+    Although you can create as many isolated networks as you want, 
+    the default configuration is for servers to be connected to 
+    both PublicNet (for public Internet connectivity) and ServiceNet (for internal connectivity with your other servers).
 
 image
------
-A collection of specific operating system (OS) files that you use to create or rebuild a server. 
-You can choose from pre-defined images or create your own custom images 
-from servers that you have launched. 
-  
-  You can use custom images for data backups and 
-  as *gold* images to launch additional servers. 
-  
-* A **standard image** is one that has not reached its end of life 
-  and that Rackspace supplies for your service 
-  level or that is provided specifically for RackConnect customers. 
-  
-* A **nonstandard image** is one that is imported or exported, end-of-life, shared, 
-  not standard for your account service level and not included
-  in the subset of images provided for RackConnect customers.
+    A collection of specific operating system (OS) files that you use to create or rebuild a server. 
+    You can choose from pre-defined images or create your own custom images 
+    from servers that you have launched. 
+      
+      You can use custom images for data backups and 
+      as *gold* images to launch additional servers. 
+      
+    * A **standard image** is one that has not reached its end of life 
+      and that Rackspace supplies for your service 
+      level or that is provided specifically for RackConnect customers. 
+      
+    * A **nonstandard image** is one that is imported or exported, end-of-life, shared, 
+      not standard for your account service level and not included
+      in the subset of images provided for RackConnect customers.
 
 Image entity
 ------------

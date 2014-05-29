@@ -10,17 +10,14 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 CDN (Content Delivery Network)
-------------------------------
-A network of high-availability servers delivering content to users. Cloud Files uses the Akamai CDN.
+    A network of high-availability servers delivering content to users. Cloud Files uses the Akamai CDN.
 
 container
----------
-A storage compartment that provides a way for you to organize your data.
+    A storage compartment that provides a way for you to organize your data.
 
 object
-------
-The basic storage entity in Cloud Files. 
-An object represents a files and its optional metadata that you upload to the system.
+    The basic storage entity in Cloud Files. 
+    An object represents a files and its optional metadata that you upload to the system.
 
 Authentication and client creation
 ----------------------------------

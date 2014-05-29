@@ -10,12 +10,10 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 domain
-------
-An entity containing all DNS-related information.
+    An entity containing all DNS-related information.
 
 zone
-----
-A single manager's scope of control within the domain name space.
+    A single manager's scope of control within the domain name space.
 
 Authentication and client creation
 ----------------------------------
