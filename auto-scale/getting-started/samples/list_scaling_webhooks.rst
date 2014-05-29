@@ -3,7 +3,7 @@
 .. code-block:: java
 
   WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
-  Webhook webhook = webhookApi.list();
+  FluentIterable<Webhook> webhooks = webhookApi.list();
 
 .. code-block:: javascript
 
