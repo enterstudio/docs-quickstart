@@ -21,7 +21,7 @@ node
 Authenticate to gain access to the service
 ==========================================
 To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
+Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
 
 You can use either of two sets of credentials:
 
@@ -110,7 +110,7 @@ The connection throttling feature imposes limits on the number of connections pe
 .. include:: samples/set_throttling.rst
 
 Blacklisting IP addresses
-=========================
+-------------------------
 Your access List allows fine-grained network access controls to be applied to a
 load balancer. A single IP address, multiple IP addresses, or entire network
 subnets can be added.
@@ -121,7 +121,7 @@ other traffic, and items with the ``DENY`` type will have their traffic rejected
 .. include:: samples/blacklist_ips.rst
 
 Caching content for performance
-===============================
+-------------------------------
 When content caching is enabled, recently-accessed files are stored on the load
 balancer for easy retrieval by web clients. Content caching improves the
 performance of high traffic web sites by temporarily storing data that was
@@ -132,7 +132,7 @@ is improved response times for those requests and less load on the web server.
 .. include:: samples/enable_content_caching.rst
 
 Using error pages
-=================
+-----------------
 An error page is the HTML file that is shown to your users when accessing a
 load balancer node that is offline or otherwise unavailable. By default, every
 provisioned load balancer is configured with a default error page - however it

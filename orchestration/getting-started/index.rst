@@ -21,7 +21,7 @@ template
 Authenticate to gain access to the service
 ==========================================
 To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
+Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
 
 You can use either of two sets of credentials:
 
@@ -44,31 +44,31 @@ Use the API
 ===========
 These are some of the the basic operations you can perform with this API.
 
-Create Stack
+Create stack
 -------------
-After you have created your stack template, you can then create the stack in the Rackspace cloud in the following manner: 
+After you have created your stack template, you can create the stack in the Rackspace cloud: 
 
 .. include:: samples/create_stack.rst
 
-List Stacks
+List stacks
 ------------
 To see the stacks you have already deployed in a given region:
 
 .. include:: samples/list_stacks.rst
 
-Get Stack Data
+Get stack data
 ---------------
 To inspect a single stack's detail data:
 
 .. include:: samples/get_stack_data.rst
 
-Update Stack
+Update stack
 -------------
-To update or modify an existing stack, the code sample below demonstrate how it can be done:
+To update or modify an existing stack:
 
 .. include:: samples/update_stack.rst
 
-Delete Stack
+Delete stack
 -------------
 To delete a stack and destroy all resources the stack has provisioned:
 

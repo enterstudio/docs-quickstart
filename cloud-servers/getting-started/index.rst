@@ -33,7 +33,7 @@ network
 Authenticate to gain access to the service
 ==========================================
 To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
+Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
 
 You can use either of two sets of credentials:
 
@@ -75,7 +75,7 @@ Alternatively, you can traverse through the list:
 Once you've found the perfect operating system, and its ID, you can move on to picking your hardware.
 
 Task 2: Choose a hardware configuration
-----------------------------------
+---------------------------------------
 Flavors, or hardware configurations, will dictate how powerful your servers are. Like images, each flavor has its own UUID. If you already know which flavor to use, you can retrieve its details like this:
 
 .. include:: samples/get_flavor.rst
@@ -84,20 +84,20 @@ Alternatively, you can traverse through the standard list Rackspace provides:
 
 .. include:: samples/list_flavors.rst
 
-Task 3: Build a server
------------------------------------
+Task 3: Build server
+--------------------
 Now that we have our image ID and flavor ID, you can create your server:
 
 .. include:: samples/create_server.rst
 
-This is an asyncronous operation, meaning that it will _not_ block your request until the process is complete. It will provision your VM behind the scenes, allowing you to optionally query its status. Once the build reaches a ``COMPLETE`` state, it will be available for you to use.
+This is an asynchronous operation, meaning that it will _not_ block your request until the process is complete. It will provision your VM behind the scenes, allowing you to optionally query its status. Once the build reaches a ``COMPLETE`` state, it will be available for you to use.
 
 Some SDKs allow you to check on the status of the build:
 
 .. include:: samples/query_server_build.rst
 
-Delete a server
---------------------
+Delete server
+-------------
 If you've finished working with your server, you can permanently delete it:
 
 .. include:: samples/delete_server.rst

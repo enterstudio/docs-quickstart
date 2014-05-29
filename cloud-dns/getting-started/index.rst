@@ -17,7 +17,7 @@ zone
 Authenticate to gain access to the service
 ==========================================
 To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
+Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
 
 You can use either of two sets of credentials:
 
