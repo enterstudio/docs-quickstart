@@ -8,7 +8,7 @@
 
 .. code-block:: php
 
-    $entity->delete();
+  $entity->delete();
 
 .. code-block:: python
 
