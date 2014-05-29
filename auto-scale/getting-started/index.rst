@@ -2,7 +2,6 @@
 =========================
 Quickstart for Auto Scale
 =========================
-
 Rackspace Auto Scale is a service that lets you configure automated scaling of resources in response to an increase or decrease in overall workload based on user-defined policies. You can set up a schedule for launching Auto Scale or define an event that is triggered by Cloud Monitoring. You can also specify a minimum and maximum number of cloud servers, the amount of resources that you want to increase or decrease, and the thresholds in Cloud Monitoring that trigger the scaling activities.
 
 To use Auto Scale, you define a scaling group consisting of cloud servers and cloud load balancers. Then you define policies, either schedule-based or monitoring-based. For monitoring-based policies, you define cloud monitoring alerts to watch the group's activity, and you define scaling rules to change the scaling group's configuration in response to alerts. For schedule-based policies, you simply set a schedule. Because you can change a scaling group's configuration in response to changing workloads, you can begin with a minimal cloud configuration and grow only when the cost of that growth is justified.
@@ -39,15 +38,26 @@ webhook
     A webhook consists of an HTTP callback that is triggered by some user-defined event, 
     such as an alarm that is set through Cloud Monitoring or another monitoring service.
 
-API Operations
-===============
+Authenticate to gain access to the service
+==========================================
+To use this service, you must authenticate yourself as a subscriber to the service.
+Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
 
-Authentication
-----------------
+You can use either of two sets of credentials:
+* your username and password
+* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
+You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
 
-Before we start working with the APIs, we first need to get our authentication token.
+After you authenticate, you'll have two things:
+* a token, proving that your identity has been authenticated
+* a service catalog, listing the API endpoints available to you
+To begin interacting with a service, send your token to that service's API endpoint.
 
 .. include::  samples/authentication.rst
+
+API Operations
+===============
 
 Scaling Groups
 -----------------

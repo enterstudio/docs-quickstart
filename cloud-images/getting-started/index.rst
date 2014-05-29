@@ -52,6 +52,24 @@ image
       not standard for your account service level and not included
       in the subset of images provided for RackConnect customers.
 
+Authenticate to gain access to the service
+==========================================
+To use this service, you must authenticate yourself as a subscriber to the service.
+Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
+
+You can use either of two sets of credentials:
+* your username and password
+* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
+You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+
+After you authenticate, you'll have two things:
+* a token, proving that your identity has been authenticated
+* a service catalog, listing the API endpoints available to you
+To begin interacting with a service, send your token to that service's API endpoint.
+
+.. include:: samples/authentication.rst
+
 Image entity
 ------------
 
@@ -92,7 +110,6 @@ To help end users use your images, you can put additional common properties, or 
 
 The available properties and their expected values include:
 
-
 **os_distro**
   The common name of the operating system          
   distribution. 
@@ -123,16 +140,6 @@ The available properties and their expected values include:
 **os_version**   
   The distributor-specified OS version.
     
-Authenticate
-============
-
-You must authenticate before you can complete any Rackspace API interaction.
-
-To authenticate, you need a user name and API key. Find your API key in the control panel on the **Account Settings** page.
-
-Once you've retrieved your details, you pass them into the client:
-
-.. include:: samples/authentication.rst
 
 Use images
 ==========

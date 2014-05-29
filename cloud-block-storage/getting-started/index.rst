@@ -2,7 +2,6 @@
 ==================================
 Quickstart for Cloud Block Storage
 ==================================
-
 Rackspace Cloud Block Storage is a block level storage solution that allows customers to mount drives or volumes to their Rackspace Next Generation Cloud Servers™. The two primary use cases are (1) to allow customers to scale their storage independently from their compute resources, and (2) to allow customers to utilize high performance storage to serve database or I/O-intensive applications.
 
 Concepts
@@ -19,12 +18,21 @@ volume
     You can think of it as a USB hard drive. 
     You can attach a volume to one instance at a time.
 
-Authenticating
-===============
+Authenticate to gain access to the service
+==========================================
+To use this service, you must authenticate yourself as a subscriber to the service.
+Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
 
-In order to authenticate, you need a username and API key which you can find in the control panel by visiting the "Account Settings" page.
+You can use either of two sets of credentials:
+* your username and password
+* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
+You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
 
-Once you've retrieved your details, you pass them into the client:
+After you authenticate, you'll have two things:
+* a token, proving that your identity has been authenticated
+* a service catalog, listing the API endpoints available to you
+To begin interacting with a service, send your token to that service's API endpoint.
 
 .. include:: samples/authentication.rst
 

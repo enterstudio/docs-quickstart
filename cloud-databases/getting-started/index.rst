@@ -2,7 +2,6 @@
 ==============================
 Quickstart for Cloud Databases
 ==============================
-
 This guide will introduce Rackspace Cloud Databases and familiarize you with some common functionality. Cloud Databases is a MySQL relational database service
 that allows you to easily provision instances without having all the maintenance overhead. You can also backup your databases on a regular basis,
 as well as setting up monitoring functionality to track usage.
@@ -20,13 +19,23 @@ instance
     to the virtualized instances used by Cloud Servers, 
     but database instances are optimized for optimal database performance.
 
-Authentication
-==============
+Authenticate to gain access to the service
+==========================================
+To use this service, you must authenticate yourself as a subscriber to the service.
+Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
 
-Before we can use the API, we need to authenticate and create an instance of the appropriate API client.
+You can use either of two sets of credentials:
+* your username and password
+* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
+You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+
+After you authenticate, you'll have two things:
+* a token, proving that your identity has been authenticated
+* a service catalog, listing the API endpoints available to you
+To begin interacting with a service, send your token to that service's API endpoint.
 
 .. include:: samples/authentication.rst
-
 
 Working with instances
 ======================

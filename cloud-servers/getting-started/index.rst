@@ -30,14 +30,21 @@ network
     the default configuration is for servers to be connected to 
     both PublicNet (for public Internet connectivity) and ServiceNet (for internal connectivity with your other servers).
 
-Authenticating
-==============
+Authenticate to gain access to the service
+==========================================
+To use this service, you must authenticate yourself as a subscriber to the service.
+Authenticate by presenting valid Rackspace customer credentials in a ''POST'' to a Rackspace authentication endpoint.
 
-Okay, we've covered the concepts, so now we need to deal with authentication. Authentication is a required step for all API interactions.
+You can use either of two sets of credentials:
+* your username and password
+* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
+You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
 
-In order to authenticate, you need a username and API key which you can find in the control panel by visiting the "Account Settings" page.
-
-Once you've retrieved your details, you pass them into the client:
+After you authenticate, you'll have two things:
+* a token, proving that your identity has been authenticated
+* a service catalog, listing the API endpoints available to you
+To begin interacting with a service, send your token to that service's API endpoint.
 
 .. include:: samples/authentication.rst
 
