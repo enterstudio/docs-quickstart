@@ -9,14 +9,13 @@ Concepts
 ========
 To use this service effectively, you should understand how these key ideas are used in this context:
 
-term(resource)
+resource
     A template artifact that represents some component of your desired architecture 
 
-term(stack)
------
+stack
     A running instance of a template. The result of creating a stack is a deployment of the application framework or component.
 
-term(template)
+template
     A file that describes how a set of resources should be assembled and what software should be installed to produce a working deployment.
 
 Authentication
