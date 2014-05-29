@@ -36,7 +36,6 @@
                                     label="This is critical",
                                     details={"address": "{emailAddress}"})
 
-  # Plan to reach out to the
   plan = cm.create_notification_plan(label="default",
                                      warning_state=warning,
                                      critical_state=critical)
