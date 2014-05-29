@@ -42,81 +42,73 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+These are some of the the basic operations you can perform with this API.
 
-Volume Operations
-==================
+Volume operations
+-----------------
 
-Create Volume
---------------
-To create a block storage volume, in its basic form, you can do as follows:
+Create volume
+-------------
+To create a block storage volume in its basic form:
 
 .. include:: samples/create_volume.rst
 
-List Volumes
--------------
-
-In order to see a list of all the block storage volumes you have created in any one given region, follow the code below:
+List volumes
+------------
+To see a list of all the block storage volumes you have created in a single region:
 
 .. include:: samples/list_volumes.rst
 
-Show Volume
--------------
-
-The code below shows how to inspect a specific volume's state:
+Show volume
+-----------
+To inspect a specific volume's state:
 
 .. include:: samples/show_volume.rst
 
-Update Volume
------------------
-
-To modify a volume's display name and/or description, follow the code shown below:
+Update volume
+-------------
+To modify a volume's display name and/or description:
 
 .. include:: samples/update_volume.rst
 
-Delete Volume
+Delete volume
 --------------
-
-Once a volume is no longer in use (attached) and the data it contains is not needed, you can delete it as follows:
+When a volume is no longer in use (attached) and the data it contains is not needed, you can delete it:
 
 .. include:: samples/delete_volume.rst
 
 Note: please be advised that deleting a volume deletes all the data within it and cannot be recovered unless such data was previously backed up.
 
-Snapshots Operations
-=====================
+Snapshot operations
+-------------------
 
-Create Snapshot
+Create snapshot
 ----------------
-
-To create a snapshot of a block storage volume, simply follow the code below:
+To create a snapshot of a block storage volume:
 
 .. include:: samples/create_snapshot.rst
 
-List Snapshots
----------------
-
-To see all the snapshots you have created in a given region, you can do as follows:
+List snapshots
+--------------
+To see all the snapshots you have created in a given region:
 
 .. include:: samples/list_snapshots.rst
 
-Show Snapshot Details
-----------------------
-
-To inspect detailed metadata of a specific snapshot, do so as shown below:
+Show snapshot details
+---------------------
+To inspect detailed metadata of a specific snapshot:
 
 .. include:: samples/show_snapshot.rst
 
-Update Snapshot
+Update snapshot
 -----------------
-
-To modify a snapshot's display name and/or description, follow the code shown below:
+To modify a snapshot's display name and/or description:
 
 .. include:: samples/update_snapshot.rst
 
-Delete Snapshot
------------------
-
-To permanently delete a snapshot you can do as follows:
+Delete snapshot
+---------------
+To permanently delete a snapshot:
 
 .. include:: samples/delete_snapshot.rst
 

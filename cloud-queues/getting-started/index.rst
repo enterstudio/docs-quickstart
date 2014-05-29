@@ -45,57 +45,48 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+These are some of the the basic operations you can perform with this API.
 
-Create Queue
---------------
-
+Create queue
+------------
 First order of business is creating a queue. In its most basic usage, you can do so as follows:
 
 .. include:: samples/create_queue.rst
 
-
-List Queues
-------------
-
+List queues
+-----------
 To see a list of all the queues in a given region, see code below
 
 .. include:: samples/list_queues.rst
 
-Delete Queue
---------------
-
+Delete queue
+------------
 You may delete a queue, you may do so as follows:
 
 .. include:: samples/delete_queue.rst
 
 Warning: deleting a queue will also delete all messages within it.
 
-Post Message
---------------
-
+Post message
+-------------
 Having an empty queue is not that interesting or useful. To remedy that, you should post messages to it. To do so, follow examples below:
 
 .. include:: samples/post_message.rst
 
-
-Claiming Messages
--------------------
-
+Claim messages
+--------------
 On the other side of that model, the consumer of those messages can claim messages as follows:
 
 .. include:: samples/claim_message.rst
 
-
-Releasing Claimed Messages
+Release claimed messages
 ---------------------------
-
 If for whatever reason the consumer cannot complete the task specified in a message or simply refuses to do so, it can release the claim so that a different consumer could attempt to process the message, as shown below:
 
 .. include:: samples/release_message.rst
 
-Deleting Messages
+Delete messages
 -------------------
-
 After a message has been used or completed and is no longer needed, a consumer should delete the message to avoid duplicate work by other consumers of the queue. Deleting a message can be done as follows:
 
 .. include:: samples/delete_message.rst

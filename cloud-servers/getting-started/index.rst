@@ -54,18 +54,17 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+These are some of the the basic operations you can perform with this API.
 
-Setting up your first server
-============================
-
+Set up your first server
+------------------------
 Once you've finished your initial setup, you can begin the process of creating your first server.
 
-In order to do this, you need to decide which **Image** and **Flavor** you want to use.
+To do this, you need to decide which **Image** and **Flavor** you want to use.
 
-Task 1: Finding an Operating System
+Task 1: Choose an operating system
 -----------------------------------
-
-An Image, or operating system, will form the basis of your server. Each one has a unique ID, which is used to retrieve more details from the API. If you already know the ID, you can retrieve more details about the image like this:
+An image, or operating system, will form the basis of your server. Each one has a unique ID, which is used to retrieve more details from the API. If you already know the ID, you can retrieve more details about the image like this:
 
 .. include:: samples/get_image.rst
 
@@ -75,9 +74,8 @@ Alternatively, you can traverse through the list:
 
 Once you've found the perfect operating system, and its ID, you can move on to picking your hardware.
 
-Task 2: Finding the right hardware
+Task 2: Choose a hardware configuration
 ----------------------------------
-
 Flavors, or hardware configurations, will dictate how powerful your servers are. Like images, each flavor has its own UUID. If you already know which flavor to use, you can retrieve its details like this:
 
 .. include:: samples/get_flavor.rst
@@ -86,9 +84,8 @@ Alternatively, you can traverse through the standard list Rackspace provides:
 
 .. include:: samples/list_flavors.rst
 
-Task 3: Putting the pieces together
+Task 3: Build a server
 -----------------------------------
-
 Now that we have our image ID and flavor ID, you can create your server:
 
 .. include:: samples/create_server.rst
@@ -99,34 +96,30 @@ Some SDKs allow you to check on the status of the build:
 
 .. include:: samples/query_server_build.rst
 
-Deleting your server
+Delete a server
 --------------------
-
-If you've finished working with your server, you can permanently delete it like so:
+If you've finished working with your server, you can permanently delete it:
 
 .. include:: samples/delete_server.rst
 
-Managing key pairs
-==================
+Manage key pairs
+----------------
+By default, servers use password-based authentication. When a server is created, the HTTP response will contain a root password that is required for all subsequent SSH connections. You do have the option, however, of using keypairs instead.
 
-By default, servers will use password-based authentication. When a server is created, the HTTP response will contain a root password that is required for all subsequent SSH connections. You do have the option, however, of using keypairs instead.
-
-Registering your keypair
-------------------------
-
-In order to use keypair-based authentication, the API needs to know about it. You have two options: upload your existing key, or have the API create a new one for you. We'll cover both.
+Register your keypair
+---------------------
+To use keypair-based authentication, the API needs to know about it. You have two options: upload your existing key, or have the API create a new one for you. We'll cover both.
 
 Upload an existing keypair:
 
 .. include:: samples/upload_existing_keypair.rst
 
-Or have the API create one for you:
+or have the API create one for you:
 
 .. include:: samples/create_new_keypair.rst
 
-Using keypairs
---------------
-
+Use keypairs
+------------
 If you want an existing server to use keypair-based auth, you will need to configure this yourself.
 
 However, getting new servers to acknowledge keypairs is easy. You just need to supply the name of the pre-existing keypair when you do the create server operation, like this:

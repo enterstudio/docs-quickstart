@@ -62,11 +62,11 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+These are some of the the basic operations you can perform with this API.
 
 Scaling Groups
 -----------------
-
-First, create an autoscaling group.
+Create an autoscaling group.
 
 .. include:: samples/create_scaling_group.rst
 
@@ -74,7 +74,7 @@ List the autoscaling groups you have setup.
 
 .. include:: samples/list_scaling_groups.rst
 
-Or even get details of the scaling group you created.
+Get details of the scaling group you created.
 
 .. include:: samples/get_scaling_group_details.rst
 
@@ -86,32 +86,28 @@ Look into the state of the autoscaling group.
 
 .. include:: samples/get_scaling_group_state.rst
 
-Finally, delete the autoscaling group.
+Delete the autoscaling group.
 
 .. include:: samples/delete_scaling_group.rst
 
-
 Policies
 ----------
-
 To create an autoscale policy that will
 
 * Add one server
 * Only allow another scaling actions to happen after a 360 second cool down
 
-you simply:
-
 .. include:: samples/create_scaling_policy.rst
 
-Then, to list all autoscaling policies in a region you can do as follows:
+To list all autoscaling policies in a region:
 
 .. include:: samples/list_scaling_policies.rst
 
-Alternatively, the code samples below show how to go about if you want to inspect details of a specific autoscaling policy:
+To inspect details of a specific autoscaling policy:
 
 .. include:: samples/get_scaling_policy_details.rst
 
-If you want to alter details for a policy:
+To alter details for a policy:
 
 .. include:: samples/update_scaling_policy.rst
 
@@ -119,31 +115,29 @@ To execute a particular autoscaling policy:
 
 .. include:: samples/execute_scaling_policy.rst
 
-Finally, if you want to delete an autoscaling policy:
+To delete an autoscaling policy:
 
 .. include:: samples/delete_scaling_policy.rst
 
-
 Webhooks
 ---------
-
-To trigger our autoscale actions, we can create a webhook:
+To trigger autoscale actions, you can create a webhook:
 
 .. include:: samples/create_scaling_webhook.rst
 
-Then you can inspect the autoscaling Webhook details:
+To inspect the autoscaling webhook details:
 
 .. include:: samples/get_scaling_webhook_details.rst
 
-You could also list all available autoscaling Webhooks in a particular region:
+To list all available autoscaling webhooks in a particular region:
 
 .. include:: samples/list_scaling_webhooks.rst
 
-Now you can alter details about the webhook:
+To alter details about a webhook:
 
 .. include:: samples/update_scaling_webhook.rst
 
-Finally, delete the webhook if you don't need it:
+To delete a webhook:
 
 .. include:: samples/delete_scaling_webhook.rst
 

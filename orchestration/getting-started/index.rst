@@ -42,40 +42,35 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+These are some of the the basic operations you can perform with this API.
 
 Create Stack
 -------------
-
 After you have created your stack template, you can then create the stack in the Rackspace cloud in the following manner: 
 
 .. include:: samples/create_stack.rst
 
 List Stacks
 ------------
-
-If you want to see the stacks you have already deployed in a given region, you may do so as follows:
+To see the stacks you have already deployed in a given region:
 
 .. include:: samples/list_stacks.rst
 
-
 Get Stack Data
 ---------------
-
-If you want to inspect a single stack's detail data, you can do so as shown below:
+To inspect a single stack's detail data:
 
 .. include:: samples/get_stack_data.rst
 
 Update Stack
 -------------
-
-In the event that you wish to update or modify an existing stack, the code sample below demonstrate how it can be done:
+To update or modify an existing stack, the code sample below demonstrate how it can be done:
 
 .. include:: samples/update_stack.rst
 
 Delete Stack
 -------------
-
-Once you no longer wish to track a stack and destroy all resources the stack has provisioned, you can delete said stack as follows:
+To delete a stack and destroy all resources the stack has provisioned:
 
 .. include:: samples/delete_stack.rst
 

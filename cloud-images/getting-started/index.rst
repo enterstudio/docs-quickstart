@@ -76,10 +76,10 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+These are some of the the basic operations you can perform with this API.
 
 Image entity
 ------------
-
 An image entity is represented by a JSON-encoded data structure and its raw binary data. 
 An image entity has an identifier (ID) that is guaranteed to be unique within its endpoint. 
 The ID is used as a TOKEN in request URIs to interact with that specific image. 
@@ -100,19 +100,17 @@ These user-defined attributes appear like any other image attributes.
 
 Image identifiers
 -----------------
-
 Images are uniquely identified by a URI that matches this signature::
 
   {image server location}/v2/images/{imageId}
 
-Where:
+where:
 
 * ``{image server location}`` is the resource location of the Cloud Images service that knows about an image.
 * ``{imageId}`` is the image identifier, which is a UUID, making it globally unique.
 
 Common image properties
 -----------------------
-
 To help end users use your images, you can put additional common properties, or metadata, on your images.
 
 The available properties and their expected values include:
@@ -149,14 +147,12 @@ The available properties and their expected values include:
     
 
 Use images
-==========
-
+----------
 To see which images are available, you can list all images or get details for a specified image.
 Then, you can update an image and use image tasks to import and export images.
 
 List images and get image details
 ---------------------------------
-
 An image, or operating system, forms the basis of your server. 
 Each image has a unique ID, which you can use to get more details about the image.
 
@@ -172,12 +168,10 @@ Once you've found the desired operating system, and its ID, you can move on to p
 
 Update an image
 ---------------
-
 .. include:: samples/update_image.rst
 
 Import and export images
 ------------------------
-
 An image task is a request to perform an asynchronous image-related operation, such as importing or exporting an image. The request results in the creation of a disposable task resource that can be polled for information about the status of the operation.
 
 After you initiate an image import or export, poll the status of the created task by using the instructions in Section 2.1.6, Get details for a task. When the task resource reaches a final status of success or failure, the poll response includes an expiration date and time stamp. After that expiration date and time, the disposable task resource itself expires and is subject to deletion. 
@@ -188,34 +182,28 @@ However, the result of the task, such as an imported or exported image, does not
 .. include:: samples/export_image.rst
 
 Share images
-============
-
+------------
 The Cloud Images API enables you and others to share your custom images. 
 The following examples show some basic image sharing operations. 
 
 Add an image member
 -------------------
-
 .. include:: samples/create_image_member.rst
 
 List image members
 ------------------
-
 .. include:: samples/list_image_members.rst
 
 Get image member details
 ------------------------
-
 .. include:: samples/get_image_member.rst
 
 Update an image member
 ----------------------
-
 .. include:: samples/update_image_member.rst
 
 Delete an image member
 ----------------------
-
 .. include:: samples/delete_image_member.rst
 
 More information

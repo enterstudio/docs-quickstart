@@ -42,85 +42,69 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+These are some of the the basic operations you can perform with this API.
 
-Create Container
+Create container
 -----------------
-
 Before we can upload any objects to Cloud Files, we first must create a container. In its simplest form a container can be created as follows:
 
 .. include:: samples/create_container.rst
 
-
-Set Container as CDN
-----------------------
-
+Set container as CDN
+--------------------
 Once we have created a container, we can set it as CDN (Content Delivery Network). That implies that any objects within the container will be publicly readable. To set a container as CDN can be accomplished as follows:
 
 .. include:: samples/set_container_as_cdn.rst
 
-
-Unset Container as CDN
------------------------
-
+Unset container as CDN
+----------------------
 If you no longer wish to have your container set as CDN, you may do as as described in the code below:
 
 .. include:: samples/unset_container_as_cdn.rst
 
 
-Delete Container
+Delete container
 -----------------
-
 In that event that you need to delete a container, you can do so as shown below (please note that for data safety reasons you may not delete a container until **all** objects within it have been deleted):
 
 .. include:: samples/delete_container.rst
 
-
-Uploading Objects to Container
+Upload objects to container
 -------------------------------
-
 Once we have a container, we can then upload objects to it in the following manner:
 
 .. include:: samples/upload_object.rst
 
-
-Change Object Metadata
+Change object metadata
 ------------------------
-
 Once you have an object uploaded to a container it is possible to change its metadata in-place. For instance, you can change its content-type so that when delivered to requesting clients it can be treated accordingly. The code snippet below shows how:
 
 .. include:: samples/change_object_metadata.rst
 
-Getting Objects
+Getting objects
 ---------------
-
 We (and clients) can retrieve objects from Cloud Files in several ways. Below we explain the most common ways.
 
-Get Object via Temporary URL
+Get object via temporary URL
 -----------------------------
-
 To retrieve an object via temporary URL, see the example below:
 
 .. include:: samples/get_object_temp_url.rst
 
-
-Get Object Directly (i.e. download via SDK)
----------------------------------------------
-
+Get object via SDK
+------------------
 You may also download objects directly into your local storage drive via SDK download. To do so, see the following code example:
 
 .. include:: samples/get_object_sdk.rst
 
-
-Get Object via CDN URL
--------------------------
-
+Get object via CDN URL
+----------------------
 Another common way of getting objects is through CDN URLs, which, unlike temporary URLs, never expire and may considered publicly-accessible "permalinks"
 
 .. include:: samples/get_object_cdn.rst
 
-Delete Objects
+Delete object
 ---------------
-
 To delete objects, consider the code below:
 
 .. include:: samples/delete_object.rst

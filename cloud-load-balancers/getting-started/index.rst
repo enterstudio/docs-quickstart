@@ -42,13 +42,12 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+These are some of the the basic operations you can perform with this API.
 
-Setting up your Load Balancer
-=============================
-
-Create a Load Balancer
+Setting up your load balancer
+-----------------------------
+Create a load balancer
 ----------------------
-
 When creating a load balancer, there are a few mandatory parameters that you need
 to provide. You will need to specify a **name**, a **protocol** (e.g. HTTP, FTP,
 SMTP) and the types of IP you want to use (v4 or v6). Here is an example:
@@ -60,10 +59,8 @@ Balancer based on your configuration. Some SDKs allow you to query its progress:
 
 .. include:: samples/query_lb_progress.rst
 
-
 Select the servers you want as nodes
 ------------------------------------
-
 In order for a load balancer to distribute traffic, it needs to be aware of the
 servers or databases you want guarded - these are known as Nodes.
 
@@ -80,7 +77,6 @@ balancer:
 
 Monitoring the health of your nodes
 -----------------------------------
-
 The load balancing service includes a health monitor that periodically checks
 your nodes to ensure they are responding correctly. If a node is not responding,
 it is removed from rotation until the health monitor determines that it is
@@ -100,12 +96,11 @@ To view the status of a health monitor:
 
 .. include:: samples/query_health_monitor.rst
 
-Please be aware that only one health monitor is allowed to be enabled on a load
+Only one health monitor is allowed to be enabled on a load
 balancer at a time.
 
 Connection throttling
-=====================
-
+---------------------
 The connection throttling feature imposes limits on the number of connections per IP address to help mitigate malicious or abusive traffic to your applications. You can set the:
 
 * Max connection rate - Maximum connections from a single IP within the supplied rate interval (frequency in seconds)
@@ -116,9 +111,8 @@ The connection throttling feature imposes limits on the number of connections pe
 
 Blacklisting IP addresses
 =========================
-
-Your Access List allows fine-grained network access controls to be applied to a
-Load Balancer. A single IP address, multiple IP addresses,￼or entire network
+Your access List allows fine-grained network access controls to be applied to a
+load balancer. A single IP address, multiple IP addresses, or entire network
 subnets can be added.
 
 Items that are configured with the ``ALLOW`` type will take precedence over all
@@ -128,7 +122,6 @@ other traffic, and items with the ``DENY`` type will have their traffic rejected
 
 Caching content for performance
 ===============================
-
 When content caching is enabled, recently-accessed files are stored on the load
 balancer for easy retrieval by web clients. Content caching improves the
 performance of high traffic web sites by temporarily storing data that was
@@ -140,7 +133,6 @@ is improved response times for those requests and less load on the web server.
 
 Using error pages
 =================
-
 An error page is the HTML file that is shown to your users when accessing a
 load balancer node that is offline or otherwise unavailable. By default, every
 provisioned load balancer is configured with a default error page - however it
