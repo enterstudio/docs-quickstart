@@ -1,7 +1,8 @@
 .. code-block:: csharp
 
 .. code-block:: java
-AutoscaleApi autoscaleApi = ContextBuilder.newBuilder(PROVIDER)
+
+  AutoscaleApi autoscaleApi = ContextBuilder.newBuilder("rackspace-autoscale-us")
             .credentials("{username}", "{apiKey}")
             .buildApi(AutoscaleApi.class);
 

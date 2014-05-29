@@ -1,8 +1,9 @@
 .. code-block:: csharp
 
 .. code-block:: java
-PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
-boolean result = policyApi.delete("{policyId}");
+
+  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+  boolean result = policyApi.delete("{policyId}");
 
 .. code-block:: javascript
 

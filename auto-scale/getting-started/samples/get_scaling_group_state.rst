@@ -1,8 +1,9 @@
 .. code-block:: csharp
 
 .. code-block:: java
-GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
-GroupState groupState = groupApi.getState("{scalingGroupId}");
+
+  GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+  GroupState groupState = groupApi.getState("{scalingGroupId}");
 
 .. code-block:: javascript
 

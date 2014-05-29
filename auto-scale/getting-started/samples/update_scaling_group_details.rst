@@ -1,15 +1,16 @@
 .. code-block:: csharp
 
 .. code-block:: java
-GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
-GroupConfiguration groupConfiguration = GroupConfiguration.builder()
+
+  GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+  GroupConfiguration groupConfiguration = GroupConfiguration.builder()
             .maxEntities(25)
             .cooldown(60)
             .name("New name")
             .minEntities(5)
             .metadata(ImmutableMap.of("notes","This is an autoscale group for examples"))
             .build();
-boolean result = groupApi.updateGroupConfiguration("{groupId}", groupConfiguration);
+  boolean result = groupApi.updateGroupConfiguration("{groupId}", groupConfiguration);
 
 .. code-block:: javascript
 

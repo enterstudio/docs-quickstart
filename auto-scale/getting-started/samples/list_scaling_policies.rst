@@ -1,8 +1,9 @@
 .. code-block:: csharp
 
 .. code-block:: java
-PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
-Policy policy = policyApi.list();
+
+  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+  Policy policy = policyApi.list();
 
 .. code-block:: javascript
 

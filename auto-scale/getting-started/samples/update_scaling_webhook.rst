@@ -1,8 +1,9 @@
 .. code-block:: csharp
 
 .. code-block:: java
-WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
-boolean result = webhookApi.update("{webhookId}","New name", ImmutableMap.<String, Object>of());
+
+  WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+  boolean result = webhookApi.update("{webhookId}","New name", ImmutableMap.<String, Object>of());
 
 .. code-block:: javascript
 
