@@ -60,8 +60,8 @@ To begin interacting with a service, send your token to that service's API endpo
 
 .. include::  samples/authentication.rst
 
-API Operations
-===============
+Use the API
+===========
 
 Scaling Groups
 -----------------

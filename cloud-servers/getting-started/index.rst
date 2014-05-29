@@ -52,6 +52,9 @@ To begin interacting with a service, send your token to that service's API endpo
 
 .. include:: samples/authentication.rst
 
+Use the API
+===========
+
 Setting up your first server
 ============================
 
