@@ -31,6 +31,10 @@
 
 .. code-block:: python
 
+  check = cm.create_check(entity, label="sample_check", check_type="remote.ping",
+                          details={}, monitoring_zones_poll=["mzdfw", "mzlon", "mzsyd"],
+                          target_hostname="sample.hostname.com")
+
 .. code-block:: ruby
 
   # List available check types. Note the "id" of the one you want to use.

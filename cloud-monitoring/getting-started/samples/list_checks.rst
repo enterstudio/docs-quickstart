@@ -12,6 +12,8 @@
 
 .. code-block:: python
 
+  entity.list_checks()
+
 .. code-block:: ruby
 
   entity.checks.all

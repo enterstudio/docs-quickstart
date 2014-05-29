@@ -17,6 +17,11 @@
 
 .. code-block:: python
 
+  alarm = cm.create_alarm(entity, check, plan,
+                          ("if (rate(metric['average']) > 10) {"
+                           " return new AlarmStatus(WARNING); "
+                           "} return new AlarmStatus(OK);"))
+
 .. code-block:: ruby
 
   # To list known notification plans:

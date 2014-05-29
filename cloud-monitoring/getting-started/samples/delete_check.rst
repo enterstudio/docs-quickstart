@@ -12,6 +12,8 @@
 
 .. code-block:: python
 
+  check.delete()
+
 .. code-block:: ruby
 
   check.destroy

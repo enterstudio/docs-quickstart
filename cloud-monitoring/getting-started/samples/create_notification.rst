@@ -28,6 +28,19 @@
 
 .. code-block:: python
 
+  warning = cm.create_notification("email",
+                                   label="Hey OPS, check this out.",
+                                   details={"address": "{emailAddress}"})
+
+  critical = cm.create_notification("email",
+                                    label="This is critical",
+                                    details={"address": "{emailAddress}"})
+
+  # Plan to reach out to the
+  plan = cm.create_notification_plan(label="default",
+                                     warning_state=warning,
+                                     critical_state=critical)
+
 .. code-block:: ruby
 
   # :label is a String that's a friendly name for the notification.
