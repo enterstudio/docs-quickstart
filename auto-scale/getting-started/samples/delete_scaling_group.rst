@@ -1,6 +1,8 @@
 .. code-block:: csharp
 
 .. code-block:: java
+GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+boolean result = groupApi.delete("{groupId}");
 
 .. code-block:: javascript
 

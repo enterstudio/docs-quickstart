@@ -1,6 +1,9 @@
 .. code-block:: csharp
 
 .. code-block:: java
+WebhhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+Webhook webhook = webhookApi.get("{webhookId}");
+boolean result = result = AutoscaleUtils.execute(webhook.getAnonymousExecutionURI().get());
 
 .. code-block:: javascript
 

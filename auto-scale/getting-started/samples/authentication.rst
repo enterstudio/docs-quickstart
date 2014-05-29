@@ -1,6 +1,9 @@
 .. code-block:: csharp
 
 .. code-block:: java
+AutoscaleApi autoscaleApi = ContextBuilder.newBuilder(PROVIDER)
+            .credentials("{username}", "{apiKey}")
+            .buildApi(AutoscaleApi.class);
 
 .. code-block:: javascript
 

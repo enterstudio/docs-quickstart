@@ -1,6 +1,8 @@
 .. code-block:: csharp
 
 .. code-block:: java
+GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+Group group = groupApi.list();
 
 .. code-block:: javascript
 
