@@ -26,7 +26,7 @@
 .. code-block:: python
 
   entity = cm.create_entity(label="bestbox",
-                            ip_addresses={"rgbkrk": "192.168.1.32"})
+                            ip_addresses={"bestbox": "192.168.1.32"})
 
 .. code-block:: ruby
 
