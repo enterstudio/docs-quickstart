@@ -8,7 +8,7 @@
 
 .. code-block:: php
 
-    $checks = $entity->getChecks();
+  $checks = $entity->getChecks();
 
 .. code-block:: python
 

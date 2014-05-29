@@ -8,7 +8,7 @@
 
 .. code-block:: php
 
-    $alarm->delete();
+  $alarm->delete();
 
 .. code-block:: python
   

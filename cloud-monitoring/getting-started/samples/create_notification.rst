@@ -8,23 +8,23 @@
 
 .. code-block:: php
 
-    $notification = $service->getNotification();
+  $notification = $service->getNotification();
 
-    $params = array(
-        'label' => 'My webhook #1',
-        'type'  => 'webhook',
-        'details' => array(
-            'url' => 'http://example.com'
-        )
-    );
+  $params = array(
+      'label' => 'My webhook #1',
+      'type'  => 'webhook',
+      'details' => array(
+          'url' => 'http://example.com'
+      )
+  );
 
-    // Test these params
-    $response = $notification->testParams($params);
+  // Test these params
+  $response = $notification->testParams($params);
 
-    echo $response->status; // Was it successful?
+  echo $response->status; // Was it successful?
 
-    // Now create the notification
-    $notification->create($params);
+  // Now create the notification
+  $notification->create($params);
 
 .. code-block:: python
 
