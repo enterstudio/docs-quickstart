@@ -22,7 +22,7 @@
 
 .. code-block:: python
 
-  flavor = cs.flavors.get(u'{flavorId}')
+  flavor = cs.flavors.get('{flavorId}')
 
 .. code-block:: ruby
 
