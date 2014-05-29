@@ -24,6 +24,7 @@
   pyrax.set_setting("identity_type", "rackspace")
   pyrax.set_default_region('{region}')
   pyrax.set_credentials('{username}', '{apiKey}')
+  cm = pyrax.cloud_monitoring
 
 .. code-block:: ruby
 
