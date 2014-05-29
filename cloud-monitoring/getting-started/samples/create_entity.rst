@@ -25,6 +25,9 @@
 
 .. code-block:: python
 
+  entity = cm.create_entity(label="bestbox",
+                            ip_addresses={"rgbkrk": "192.168.1.32"})
+
 .. code-block:: ruby
 
   entity = @client.entities.create(:label => 'somehost.domain.com')

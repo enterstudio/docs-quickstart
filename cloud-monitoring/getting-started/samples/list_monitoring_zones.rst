@@ -12,6 +12,8 @@
 
 .. code-block:: python
 
+  zones = cm.list_monitoring_zones()
+
 .. code-block:: ruby
 
   @client.list_monitoring_zones.body['values']

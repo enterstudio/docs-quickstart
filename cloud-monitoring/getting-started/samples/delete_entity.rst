@@ -12,6 +12,8 @@
 
 .. code-block:: python
 
+  entity.delete()
+
 .. code-block:: ruby
 
   entity.destroy
