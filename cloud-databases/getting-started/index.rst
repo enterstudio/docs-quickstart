@@ -1,26 +1,52 @@
-====================================
-Getting started with Cloud Databases
-====================================
-
+.. _quickstart:
+==============================
+Quickstart for Cloud Databases
+==============================
 This guide will introduce Rackspace Cloud Databases and familiarize you with some common functionality. Cloud Databases is a MySQL relational database service
 that allows you to easily provision instances without having all the maintenance overhead. You can also backup your databases on a regular basis,
 as well as setting up monitoring functionality to track usage.
 
-Authentication
-==============
+Concepts
+========
+To use this service effectively, you should understand how these key ideas are used in this context:
 
-Before we can use the API, we need to authenticate and create an instance of the appropriate API client.
+flavor
+    A flavor is an available hardware configuration for a database instance. 
+    Each flavor has a unique combination of memory capacity and priority for CPU time.
+
+instance
+    An isolated environment in which your databases run. This is similar
+    to the virtualized instances used by Cloud Servers, 
+    but database instances are optimized for optimal database performance.
+
+Authenticate to gain access to the service
+==========================================
+To use this service, you must authenticate yourself as a subscriber to the service.
+Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+
+You can use either of two sets of credentials:
+
+* your username and password
+* your username and API key
+
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
+You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+
+After you authenticate, you'll have two things:
+
+* a token, proving that your identity has been authenticated
+* a service catalog, listing the API endpoints available to you
+
+To begin interacting with a service, send your token to that service's API endpoint.
 
 .. include:: samples/authentication.rst
 
+Use the API
+===========
+These are some of the the basic operations you can perform with this API.
 
-Working with instances
-======================
-
-An instance is an isolated environment which your databases run on. It is similar
-to the virtualized instances found with Cloud Servers (they both utilize
-OpenStack Nova), but database instances are optimized for optimal database performance.
-
+Work with instances
+-------------------
 Two common issues that developers have with traditional RDS relate to peformance:
 increasing the amount of IO transactions per second, for example, or reducing
 application latency. Because of this, our instances were re-designed from the
@@ -30,10 +56,9 @@ ground-up with two primary features in mind:
 
 * *Reliability*. We use fault-tolerant components, such as: RAID levels for individual drives, multi-tenant environments across different nodes, as well as dedicated power supplies and network adapters. This means you have redundancy both from a hardware level and a software level.
 
-Create a new instance
----------------------
-
-To create a new instance you first need to decide on the hardware type, or Flavor, you want to use:
+Create instance
+~~~~~~~~~~~~~~~
+To create an instance you first need to decide on the hardware type, or flavor, you want to use:
 
 .. include:: samples/get_flavor.rst
 
@@ -41,53 +66,46 @@ Alternatively, you can traverse through the standard list Rackspace provides:
 
 .. include:: samples/list_flavors.rst
 
-Once you have this Flavor, you can use it to create your instance:
+Once you have this flavor, you can use it to create your instance:
 
 .. include:: samples/create_instance.rst
 
-Resizing
---------
-
+Resize instance
+~~~~~~~~~~~~~~~
 As with creating an instance, in order to resize one, you need to know which
 Flavor to use. Once you've decided on a new Flavor, you can use it to resize
 your running instance:
 
 .. include:: samples/resize_instance.rst
 
-Enable root user
-----------------
+Restart instance
+~~~~~~~~~~~~~~~~
+In order to restart your instance:
 
+.. include:: samples/restart_instance.rst
+
+Enable root user
+~~~~~~~~~~~~~~~~
 Although you create a default user when creating a database instance, sometimes
 it might be necessary to execute operations as the root user. To do so, you will
 need to enable root:
 
 .. include:: samples/enable_root_user.rst
 
-This operation will then return the root password for your use. If you're not sure
+This operation returns the root password for your use. If you're not sure
 whether you've already done this, you can easily query whether root is enabled or not:
 
 .. include:: samples/check_root_status.rst
 
-Restarting
-----------
-
-In order to restart your instance:
-
-.. include:: samples/restart_instance.rst
-
-
-Create a database
-=================
-
+Create database
+~~~~~~~~~~~~~~~
 This is a simple MySQL database that you interact with normally. Creating one
 is very easy:
 
 .. include:: samples/create_db.rst
 
-
-Create a new user
-=================
-
+Create user
+~~~~~~~~~~~
 To allocate a new user to a database, you need to run:
 
 .. include:: samples/create_user.rst
@@ -95,14 +113,12 @@ To allocate a new user to a database, you need to run:
 The user is granted all privileges on this database. Please bear in mind that ``root``
 is a reserved name and cannot be used.
 
-
 Backups
-=======
+-------
 
 Create backup
--------------
-
-In order to create a backup for your instance, just run:
+~~~~~~~~~~~~~
+To create a backup for your instance:
 
 .. include:: samples/create_backup.rst
 
@@ -112,8 +128,18 @@ When creating a backup, there are some things to bear in mind:
 * You also cannot add or delete databases or users during this process.
 
 Restore instance from backup
-----------------------------
-
-Once you have a backup, you can use it to restore your instance:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To restore your instance from a backup:
 
 .. include:: samples/restore_backup.rst
+
+More information
+================
+This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
+If you want to know more, these are some good places to continue exploring:
+
+* http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.
+
+* http://docs.rackspace.com/ links to all our API reference documentation, where you can find additional examples and extended explanations of key concepts. It also links to our documentation for control panel users.
+
+* https://community.rackspace.com/developers/default is a forum where you can discuss your questions and concerns with a community of Rackers, Rackspace customers, and others interested in developing software in the cloud.
