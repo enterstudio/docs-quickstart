@@ -46,33 +46,34 @@ These are some of the the basic operations you can perform with this API.
 
 Volume operations
 -----------------
+You can perform create, read, update, and delete operations on volumes.
 
 Create volume
--------------
+~~~~~~~~~~~~~
 To create a block storage volume in its basic form:
 
 .. include:: samples/create_volume.rst
 
 List volumes
-------------
+~~~~~~~~~~~~
 To see a list of all the block storage volumes you have created in a single region:
 
 .. include:: samples/list_volumes.rst
 
 Show volume
------------
+~~~~~~~~~~~
 To inspect a specific volume's state:
 
 .. include:: samples/show_volume.rst
 
 Update volume
--------------
+~~~~~~~~~~~~~
 To modify a volume's display name and/or description:
 
 .. include:: samples/update_volume.rst
 
 Delete volume
---------------
+~~~~~~~~~~~~~
 When a volume is no longer in use (attached) and the data it contains is not needed, you can delete it:
 
 .. include:: samples/delete_volume.rst
@@ -81,33 +82,34 @@ Note: please be advised that deleting a volume deletes all the data within it an
 
 Snapshot operations
 -------------------
+You can perform create, read, update, and delete operations on snapshots.
 
 Create snapshot
-----------------
+~~~~~~~~~~~~~~~
 To create a snapshot of a block storage volume:
 
 .. include:: samples/create_snapshot.rst
 
 List snapshots
---------------
+~~~~~~~~~~~~~~
 To see all the snapshots you have created in a given region:
 
 .. include:: samples/list_snapshots.rst
 
 Show snapshot details
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 To inspect detailed metadata of a specific snapshot:
 
 .. include:: samples/show_snapshot.rst
 
 Update snapshot
------------------
+~~~~~~~~~~~~~~~
 To modify a snapshot's display name and/or description:
 
 .. include:: samples/update_snapshot.rst
 
 Delete snapshot
----------------
+~~~~~~~~~~~~~~~
 To permanently delete a snapshot:
 
 .. include:: samples/delete_snapshot.rst
