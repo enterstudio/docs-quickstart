@@ -49,19 +49,19 @@ These are some of the the basic operations you can perform with this API.
 
 Create queue
 ------------
-First order of business is creating a queue. In its most basic usage, you can do so as follows:
+To create a queue:
 
 .. include:: samples/create_queue.rst
 
 List queues
 -----------
-To see a list of all the queues in a given region, see code below
+To see a list of all the queues in a given region:
 
 .. include:: samples/list_queues.rst
 
 Delete queue
 ------------
-You may delete a queue, you may do so as follows:
+To delete a queue:
 
 .. include:: samples/delete_queue.rst
 
@@ -69,25 +69,26 @@ Warning: deleting a queue will also delete all messages within it.
 
 Post message
 -------------
-Having an empty queue is not that interesting or useful. To remedy that, you should post messages to it. To do so, follow examples below:
+The sender of a message can post it to a queue:
 
 .. include:: samples/post_message.rst
 
 Claim messages
 --------------
-On the other side of that model, the consumer of those messages can claim messages as follows:
+The consumer of messages can claim them from a queue:
 
 .. include:: samples/claim_message.rst
 
 Release claimed messages
----------------------------
-If for whatever reason the consumer cannot complete the task specified in a message or simply refuses to do so, it can release the claim so that a different consumer could attempt to process the message, as shown below:
+------------------------
+If the consumer cannot complete the task specified in a message or simply refuses to do so, 
+the consumer can release the claim so that a different consumer can attempt to process the message:
 
 .. include:: samples/release_message.rst
 
 Delete messages
--------------------
-After a message has been used or completed and is no longer needed, a consumer should delete the message to avoid duplicate work by other consumers of the queue. Deleting a message can be done as follows:
+---------------
+After a message has been used or completed and is no longer needed, a consumer should delete the message to avoid duplicate work by other consumers of the queue:
 
 .. include:: samples/delete_message.rst
 

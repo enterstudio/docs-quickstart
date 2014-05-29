@@ -45,67 +45,69 @@ Use the API
 These are some of the the basic operations you can perform with this API.
 
 Create container
------------------
-Before we can upload any objects to Cloud Files, we first must create a container. In its simplest form a container can be created as follows:
+----------------
+Before you can upload any objects to Cloud Files, you must create a container to receive the objects:
 
 .. include:: samples/create_container.rst
 
 Set container as CDN
 --------------------
-Once we have created a container, we can set it as CDN (Content Delivery Network). That implies that any objects within the container will be publicly readable. To set a container as CDN can be accomplished as follows:
+To make any objects within a container publicly readable, set the container as CDN (Content Delivery Network):
 
 .. include:: samples/set_container_as_cdn.rst
 
 Unset container as CDN
 ----------------------
-If you no longer wish to have your container set as CDN, you may do as as described in the code below:
+If you no longer wish to have your objects publicly readable, unset CDN for the container:
 
 .. include:: samples/unset_container_as_cdn.rst
 
-
 Delete container
 -----------------
-In that event that you need to delete a container, you can do so as shown below (please note that for data safety reasons you may not delete a container until **all** objects within it have been deleted):
+To delete a container:
 
 .. include:: samples/delete_container.rst
 
+For data safety reasons, you may not delete a container until **all** objects within it have been deleted.
+
 Upload objects to container
--------------------------------
-Once we have a container, we can then upload objects to it in the following manner:
+---------------------------
+To upload objects into a container:
 
 .. include:: samples/upload_object.rst
 
 Change object metadata
 ------------------------
-Once you have an object uploaded to a container it is possible to change its metadata in-place. For instance, you can change its content-type so that when delivered to requesting clients it can be treated accordingly. The code snippet below shows how:
+Once you have an object uploaded to a container you can change its metadata in-place. 
+For instance, you can change its content-type so that when delivered to requesting clients it can be treated accordingly:
 
 .. include:: samples/change_object_metadata.rst
 
-Getting objects
----------------
-We (and clients) can retrieve objects from Cloud Files in several ways. Below we explain the most common ways.
+Get object
+----------
+You and your clients can retrieve objects from Cloud Files in several ways. These are the most common ways.
 
 Get object via temporary URL
------------------------------
-To retrieve an object via temporary URL, see the example below:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To retrieve an object via temporary URL:
 
 .. include:: samples/get_object_temp_url.rst
 
 Get object via SDK
-------------------
-You may also download objects directly into your local storage drive via SDK download. To do so, see the following code example:
+~~~~~~~~~~~~~~~~~~
+To download objects directly into your local storage drive via SDK download:
 
 .. include:: samples/get_object_sdk.rst
 
 Get object via CDN URL
-----------------------
-Another common way of getting objects is through CDN URLs, which, unlike temporary URLs, never expire and may considered publicly-accessible "permalinks"
+~~~~~~~~~~~~~~~~~~~~~~
+To retrieve an object through CDN URLs, which, unlike temporary URLs, never expire and may considered publicly-accessible permalinks:
 
 .. include:: samples/get_object_cdn.rst
 
 Delete object
----------------
-To delete objects, consider the code below:
+-------------
+To delete an object from its container:
 
 .. include:: samples/delete_object.rst
 

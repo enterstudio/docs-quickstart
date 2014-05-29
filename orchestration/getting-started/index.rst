@@ -45,31 +45,31 @@ Use the API
 These are some of the the basic operations you can perform with this API.
 
 Create stack
--------------
+------------
 After you have created your stack template, you can create the stack in the Rackspace cloud: 
 
 .. include:: samples/create_stack.rst
 
 List stacks
-------------
+-----------
 To see the stacks you have already deployed in a given region:
 
 .. include:: samples/list_stacks.rst
 
 Get stack data
----------------
+--------------
 To inspect a single stack's detail data:
 
 .. include:: samples/get_stack_data.rst
 
 Update stack
--------------
+------------
 To update or modify an existing stack:
 
 .. include:: samples/update_stack.rst
 
 Delete stack
--------------
+------------
 To delete a stack and destroy all resources the stack has provisioned:
 
 .. include:: samples/delete_stack.rst

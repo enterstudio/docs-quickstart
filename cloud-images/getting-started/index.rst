@@ -160,21 +160,23 @@ To list images:
 
 .. include:: samples/list_images.rst
 
-Once you know the image ID, you can get more details about the image like this:
+Once you know the image ID, you can get more details about the image:
 
 .. include:: samples/get_image.rst
 
 Once you've found the desired operating system, and its ID, you can move on to picking your hardware.
 
-Update an image
----------------
+Update image
+------------
 .. include:: samples/update_image.rst
 
-Import and export images
-------------------------
-An image task is a request to perform an asynchronous image-related operation, such as importing or exporting an image. The request results in the creation of a disposable task resource that can be polled for information about the status of the operation.
+Import or export image
+----------------------
+An image task is a request to perform an asynchronous image-related operation, such as importing or exporting an image. 
+The request results in the creation of a disposable task resource that can be polled for information about the status of the operation.
 
-After you initiate an image import or export, poll the status of the created task by using the instructions in Section 2.1.6, Get details for a task. When the task resource reaches a final status of success or failure, the poll response includes an expiration date and time stamp. After that expiration date and time, the disposable task resource itself expires and is subject to deletion. 
+After you initiate an image import or export, poll the status of the created task. 
+When the task resource reaches a final status of success or failure, the poll response includes an expiration date and time stamp. After that expiration date and time, the disposable task resource itself expires and is subject to deletion. 
 However, the result of the task, such as an imported or exported image, does not expire.
 
 .. include:: samples/import_image.rst
@@ -183,27 +185,27 @@ However, the result of the task, such as an imported or exported image, does not
 
 Share images
 ------------
-The Cloud Images API enables you and others to share your custom images. 
-The following examples show some basic image sharing operations. 
+You can perform create, read, update, and delete operations on image members.
+The Cloud Images API enables you and others to share your custom images.  
 
-Add an image member
--------------------
+Add image member
+~~~~~~~~~~~~~~~~
 .. include:: samples/create_image_member.rst
 
 List image members
-------------------
+~~~~~~~~~~~~~~~~~~
 .. include:: samples/list_image_members.rst
 
 Get image member details
-------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: samples/get_image_member.rst
 
-Update an image member
-----------------------
+Update image member
+~~~~~~~~~~~~~~~~~~~
 .. include:: samples/update_image_member.rst
 
-Delete an image member
-----------------------
+Delete image member
+~~~~~~~~~~~~~~~~~~~
 .. include:: samples/delete_image_member.rst
 
 More information

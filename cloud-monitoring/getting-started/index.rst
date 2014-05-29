@@ -55,6 +55,7 @@ Use the API
 These are some of the the basic operations you can perform with this API.
 
 Workflow
+--------
 * Create an entity to represent the item you want to monitor. For example, the entity might represent a web site.
 
 * Attach a predefined check to the entity. For example, you could use the PING check to monitor your web site's public IP address.
@@ -63,64 +64,67 @@ Workflow
 
 * Create alarms to specify which notifications get triggered.
 
-
-Create an entity
------------------
-The first thing you do to begin monitoring a resource is create an entity that represents the resource in the monitoring system. Use the following code to create the entity:
+Create entity
+-------------
+To begin monitoring a resource, create an entity that represents the resource in the monitoring system:
 
 .. include:: samples/create_entity.rst
 
 List monitoring zones
 ----------------------
-Before creating a check for the new entity, choose which monitoring zones to run the check from. Cloud Monitoring is divided into different monitoring zones. You may want to have a single server monitored from several monitoring zones to reduce the risk of false alarms and check the response time from different locations around the world. To see which zones are available, consider the code sample below:
+Before creating a check for the new entity, choose which monitoring zones to run the check from. 
+Cloud Monitoring is divided into different monitoring zones. 
+You may want to have a single server monitored from several monitoring zones to reduce the risk of false alarms and check the response time from different locations around the world. 
+To see which zones are available to you:
 
 .. include:: samples/list_monitoring_zones.rst
 
-Delete an entity
------------------
-When you are ready to delete a monitoring entity, you may do so as follows: 
+Delete entity
+-------------
+To delete a monitoring entity: 
 
 .. include:: samples/delete_entity.rst
 
 Note: you cannot delete a monitoring entity until you have removed all its checks and alarms have been removed.
 
-Create a check
----------------
-Any entity that you create can have many checks, each monitoring a different aspect of the entity. A basic example how to do so is presented below:
+Create check
+------------
+Any entity that you create can have many checks, each monitoring a different aspect of the entity:
 
 .. include:: samples/create_check.rst
 
 List checks
-------------
-If you want to list all the monitoring checks for a given entity, follow the code sample shown below:
+-----------
+To list all the monitoring checks for a given entity:
 
 .. include:: samples/list_checks.rst
 
-Delete a check
------------------
-In order to remove a check, you can proceed as shown below:
+Delete check
+------------
+To remove a check:
 
 .. include:: samples/delete_check.rst
 
-Notifications
--------------
-In most cases you, and perhaps several people on your team, will be interested in multiple alerts. Cloud Monitoring lets you set up notification plans that can be shared between multiple alerts.
+Notifications and alarms
+------------------------
+In most cases you, and perhaps several people on your team, will be interested in multiple alerts. 
+Cloud Monitoring lets you set up notification plans that can be shared between multiple alerts.
 
 Create notification
--------------------
-To create a notification plan, you can do as follows:
+~~~~~~~~~~~~~~~~~~~
+To create a notification plan:
 
 .. include:: samples/create_notification.rst
 
 Create alarm
-------------
-The code below shows how you can create an alarm for an entity:
+~~~~~~~~~~~~
+To create an alarm for an entity:
 
 .. include:: samples/create_alarm.rst
 
 Delete alarm
----------------
-If you need to delete an alarm, do so as shown in the code samples below:
+~~~~~~~~~~~~
+To delete an alarm:
 
 .. include:: samples/delete_alarm.rst
 

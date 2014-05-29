@@ -45,8 +45,8 @@ Use the API
 ===========
 These are some of the the basic operations you can perform with this API.
 
-Working with instances
-----------------------
+Work with instances
+-------------------
 Two common issues that developers have with traditional RDS relate to peformance:
 increasing the amount of IO transactions per second, for example, or reducing
 application latency. Because of this, our instances were re-designed from the
@@ -56,9 +56,9 @@ ground-up with two primary features in mind:
 
 * *Reliability*. We use fault-tolerant components, such as: RAID levels for individual drives, multi-tenant environments across different nodes, as well as dedicated power supplies and network adapters. This means you have redundancy both from a hardware level and a software level.
 
-Create new instance
----------------------
-To create a new instance you first need to decide on the hardware type, or flavor, you want to use:
+Create instance
+~~~~~~~~~~~~~~~
+To create an instance you first need to decide on the hardware type, or flavor, you want to use:
 
 .. include:: samples/get_flavor.rst
 
@@ -71,15 +71,21 @@ Once you have this flavor, you can use it to create your instance:
 .. include:: samples/create_instance.rst
 
 Resize instance
----------------
+~~~~~~~~~~~~~~~
 As with creating an instance, in order to resize one, you need to know which
 Flavor to use. Once you've decided on a new Flavor, you can use it to resize
 your running instance:
 
 .. include:: samples/resize_instance.rst
 
+Restart instance
+~~~~~~~~~~~~~~~~
+In order to restart your instance:
+
+.. include:: samples/restart_instance.rst
+
 Enable root user
-----------------
+~~~~~~~~~~~~~~~~
 Although you create a default user when creating a database instance, sometimes
 it might be necessary to execute operations as the root user. To do so, you will
 need to enable root:
@@ -91,21 +97,15 @@ whether you've already done this, you can easily query whether root is enabled o
 
 .. include:: samples/check_root_status.rst
 
-Restart instance
-----------------
-In order to restart your instance:
-
-.. include:: samples/restart_instance.rst
-
 Create database
----------------
+~~~~~~~~~~~~~~~
 This is a simple MySQL database that you interact with normally. Creating one
 is very easy:
 
 .. include:: samples/create_db.rst
 
 Create user
------------
+~~~~~~~~~~~
 To allocate a new user to a database, you need to run:
 
 .. include:: samples/create_user.rst
@@ -117,7 +117,7 @@ Backups
 -------
 
 Create backup
--------------
+~~~~~~~~~~~~~
 To create a backup for your instance:
 
 .. include:: samples/create_backup.rst
@@ -128,8 +128,8 @@ When creating a backup, there are some things to bear in mind:
 * You also cannot add or delete databases or users during this process.
 
 Restore instance from backup
-----------------------------
-You can use a backup to restore your instance:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+To restore your instance from a backup:
 
 .. include:: samples/restore_backup.rst
 
