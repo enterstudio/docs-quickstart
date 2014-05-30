@@ -1,5 +1,25 @@
 .. code-block:: csharp
 
+  using net.openstack.Core.Domain;
+  using net.openstack.Providers.Rackspace;
+  
+  namespace GettingStarted
+  {
+  	class Program
+  	{
+  		static void Main(string[] args)
+  		{
+  			CloudIdentity cid = new CloudIdentity()
+  			{
+  				APIKey = "apikey_goes_here",
+  				Username = "username_goes_here"
+  			};
+  			CloudIdentityProvider cip = new CloudIdentityProvider(cid);
+  			UserAccess ua = cip.Authenticate(cid);
+  		}
+  	}
+  }
+  
 .. code-block:: java
 
   CinderApi cinderApi = ContextBuilder.newBuilder("rackspace-cloudblockstorage-us")
