@@ -2,6 +2,11 @@
 
 .. code-block:: java
 
+  ErrorPageApi errorPageApi = clbApi.getErrorPageApiForZoneAndLoadBalancer("{region}", loadBalancer.getId());
+
+  String content = "<html><body>Something went wrong...</body></html>";
+  errorPageApi.create(content);
+
 .. code-block:: javascript
 
 .. code-block:: php

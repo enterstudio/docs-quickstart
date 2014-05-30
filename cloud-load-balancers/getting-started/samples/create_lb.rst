@@ -2,6 +2,22 @@
 
 .. code-block:: java
 
+  CreateLoadBalancer createLB = CreateLoadBalancer.builder()
+     .name("My Load Balancer")
+     .protocol("HTTP")
+     .port(80)
+     .algorithm(RANDOM)
+     .nodes(addNodes)
+     .virtualIPType(PUBLIC)
+     .build();
+
+  LoadBalancer loadBalancer = lbApi.create(createLB);
+
+  // Wait for the Load Balancer to become Active before moving on
+  if (!LoadBalancerPredicates.awaitAvailable(lbApi).apply(loadBalancer)) {
+     throw new TimeoutException("Timeout on creating load balancer: " + loadBalancer);
+  }
+
 .. code-block:: javascript
 
 .. code-block:: php

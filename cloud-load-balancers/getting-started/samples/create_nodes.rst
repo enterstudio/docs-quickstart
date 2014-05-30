@@ -2,6 +2,25 @@
 
 .. code-block:: java
 
+  Set<AddNode> loadBalancerNodes = Sets.newHashSet();
+
+  AddNode node1 = AddNode.builder()
+      .address("10.180.1.1")
+      .condition(DISABLED)
+      .port(80)
+      .weight(20)
+      .build();
+
+  AddNode node2 = AddNode.builder()
+      .address("10.180.1.2")
+      .condition(ENABLED)
+      .port(80)
+      .weight(20)
+      .build();
+
+  loadBalancerNodes.add(node1);
+  loadBalancerNodes.add(node2);
+
 .. code-block:: javascript
 
 .. code-block:: php

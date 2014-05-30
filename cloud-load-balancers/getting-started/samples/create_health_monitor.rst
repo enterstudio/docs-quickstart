@@ -1,6 +1,15 @@
 .. code-block:: csharp
 
 .. code-block:: java
+  HealthMonitor healthMonitor = HealthMonitor.builder()
+      .type(HealthMonitor.Type.CONNECT)
+      .delay(3599)
+      .timeout(30)
+      .attemptsBeforeDeactivation(2)
+      .build();
+
+  clbApi.getHealthMonitorApiForZoneAndLoadBalancer("{region}", loadBalancer.getId())
+      .createOrUpdate(healthMonitor);
 
 .. code-block:: javascript
 

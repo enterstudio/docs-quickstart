@@ -90,11 +90,11 @@ To enable health monitoring on your Load Balancer, you'll need to set:
 * Timeout - Maximum duration in seconds to wait for a connection establishment before timing out
 * Attempts before deactivation - Number of monitor failures to tolerate before removing a node from rotation
 
-.. include:: samples/enable_health_monitor.rst
+.. include:: samples/create_health_monitor.rst
 
 To view the status of a health monitor:
 
-.. include:: samples/query_health_monitor.rst
+.. include:: samples/get_health_monitor.rst
 
 Only one health monitor is allowed to be enabled on a load
 balancer at a time.
