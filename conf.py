@@ -181,7 +181,7 @@ html_static_path = ['_static']
 htmlhelp_basename = 'RackspaceDeveloperDocumentationdoc'
 
 # this will change the 'paragraph' character to '#'
-html_add_permalinks = '\u0023'
+html_add_permalinks = '#'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
