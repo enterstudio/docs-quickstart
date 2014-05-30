@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  new CloudBlockStorageProvider({cloudIdentity}).DeleteVolume("{volumeId}", "{region}");
+
 .. code-block:: java
 
   volumeApi.delete("{volumeId}");

@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  new CloudBlockStorageProvider({cloudIdentity}).CreateSnapshot("{volumeId}", displayName: "{name}", displayDescription: "{description}", region: "{region}");
+
 .. code-block:: java
 
   // Get the volume to snapshot

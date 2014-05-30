@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+   IEnumerable<Volume> volumeList = new CloudBlockStorageProvider("{cloudIdentity}").ListVolumes(region: "{region}");
+
 .. code-block:: java
 
   List<Volume> volumes = volumeApi.listInDetail().toList();

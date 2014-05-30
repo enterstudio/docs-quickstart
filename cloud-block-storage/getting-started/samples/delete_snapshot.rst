@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  new CloudBlockStorageProvider({cloudIdentity}).DeleteSnapshot("{snapshotId}", "{region}");            
+
 .. code-block:: java
 
   snapshotApi.delete("{snapshotId}");
