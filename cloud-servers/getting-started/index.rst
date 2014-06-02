@@ -3,7 +3,9 @@
 Quickstart for Cloud Servers
 ============================
 
-This guide will provide an introduction to Rackspace Cloud Servers, describing what it is and what it can do. In a nutshell, it is a service that allows you to allocate and deallocate compute resources. It is based on OpenStack Compute (Nova), a community-led open-source platform.
+This guide introduces Rackspace Cloud Servers, describing what it is and what it can do. 
+In a nutshell, it is a service that allows you to allocate and deallocate compute resources. 
+It is based on OpenStack Compute (Nova), a community-led open-source platform.
 
 Concepts
 ========
@@ -86,11 +88,13 @@ Alternatively, you can traverse through the standard list Rackspace provides:
 
 Build server
 ~~~~~~~~~~~~
-Now that we have our image ID and flavor ID, you can create your server:
+Now that you have an image ID and flavor ID, you can create your server:
 
 .. include:: samples/create_server.rst
 
-This is an asynchronous operation, meaning that it will _not_ block your request until the process is complete. It will provision your VM behind the scenes, allowing you to optionally query its status. Once the build reaches a ``COMPLETE`` state, it will be available for you to use.
+This is an asynchronous operation, meaning that it will _not_ block your request while the build process runs. 
+It will provision your VM behind the scenes, allowing you to optionally query its status. 
+Once the build reaches a ``COMPLETE`` state, it will be available for you to use.
 
 Some SDKs allow you to check on the status of the build:
 
@@ -104,7 +108,8 @@ To permanently delete a server:
 
 Manage keypairs
 ----------------
-By default, servers use password-based authentication. When a server is created, the HTTP response will contain a root password that is required for all subsequent SSH connections. You do have the option, however, of using keypairs instead.
+By default, servers use password-based authentication. 
+When a server is created, the HTTP response contains a root password that is required for all subsequent SSH connections. You do have the option, however, of using keypairs instead.
 
 Register keypair
 ~~~~~~~~~~~~~~~~
