@@ -68,7 +68,7 @@ servers or databases you want guarded. These are known as nodes.
 
 The above sample retrieves two cloud servers using their unique IDs. 
 You can obtain a server's ID by following the steps outlined in the 
-`Quickstart for Cloud Servers </docs/cloud-servers/getting-started/>` 
+`Quickstart for Cloud Servers </docs/cloud-servers/getting-started/>`_
 for retrieving servers based on arbitrary properties.
 
 Now that you have your servers, you can create your nodes and add them to the load
