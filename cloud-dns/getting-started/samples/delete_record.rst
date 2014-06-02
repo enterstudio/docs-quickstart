@@ -2,6 +2,10 @@
 
 .. code-block:: java
 
+  RecordApi recordApi = cloudDNSApi.getRecordApiForDomain({domainId});
+
+  awaitComplete(cloudDNSApi, recordApi.delete({recordIds}));
+
 .. code-block:: javascript
 
   rackspace.deleteRecord(myZone, myRec, function (err) {

@@ -2,6 +2,13 @@
 
 .. code-block:: java
 
+  // Authentication in jclouds is lazy.
+  // It only happens on the first call to the cloud.
+
+  CloudDNSApi cloudDNSApi = ContextBuilder.newBuilder("rackspace-clouddns-us")
+          .credentials("{username}", "{apiKey}")
+          .buildApi(CloudDNSApi.class);
+
 .. code-block:: javascript
 
   pkgcloud = require('pkgcloud');

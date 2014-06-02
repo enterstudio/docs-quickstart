@@ -4,7 +4,7 @@
 
 .. code-block:: javascript
 
-  myRec.data = '192.168.1.1';
+  myRec.data = '192.168.1.2';
   rackspace.updateRecord(myZone, myRec, function (err){
     if (err) {
       console.dir(err);
@@ -20,13 +20,13 @@
   $record->ttl -= 60;
 
   // And change its data value:
-  $record->data = '192.168.1.1';
+  $record->data = '192.168.1.2';
 
   $record->update();
 
 .. code-block:: python
 
-  record.update(data="192.168.1.1")
+  record.update(data="192.168.1.2")
 
 .. code-block:: ruby
 
@@ -34,7 +34,7 @@
   record.ttl -= 60
 
   # And change its data value:
-  record.value = '192.168.1.1'
+  record.value = '192.168.1.2'
 
   record.save
 
@@ -43,7 +43,7 @@
   curl -X PUT -d \
     '{
         "type" : "A",
-        "data" : "192.168.1.1",
+        "data" : "192.168.1.2",
         "ttl" : 3600
     }' \
     -H "X-Auth-Token: $TOKEN" \
