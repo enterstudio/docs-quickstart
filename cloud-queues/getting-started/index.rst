@@ -7,16 +7,9 @@ Cloud Queues uses a few basic components--queues, messages, and claims--which gi
 
 This service supports a variety of messaging patterns, such as the *producer-consumer* model and the *publisher-subscriber* model, through which you create and manage queues and messages.
 
-* In the *producer-consumer* model, you create queues in which producers, or servers, can post messages. 
-Workers, or consumers, can then claim those messages and delete them after they complete the actions associated with the messages. 
-A single claim can contain multiple messages, and administrators can query claims for status. 
-This pattern is ideal for dispatching jobs to multiple processors.
+* In the *producer-consumer* model, you create queues in which producers, or servers, can post messages. Workers, or consumers, can then claim those messages and delete them after they complete the actions associated with the messages. A single claim can contain multiple messages, and administrators can query claims for status. This pattern is ideal for dispatching jobs to multiple processors.
 
-* In the *publisher-subscriber* model, the publisher sends a message to the queue. 
-All subscribers (or workers) listen for messages in the queue, but they do not claim them. 
-Multiple subscribers can work on a message. 
-Messages are eventually deleted based on their time to live (TTL) value. 
-This pattern is ideal for notification of events to multiple workers at once.
+* In the *publisher-subscriber* model, the publisher sends a message to the queue. All subscribers (or workers) listen for messages in the queue, but they do not claim them. Multiple subscribers can work on a message. Messages are eventually deleted based on their time to live (TTL) value. This pattern is ideal for notification of events to multiple workers at once.
 
 Concepts
 ========

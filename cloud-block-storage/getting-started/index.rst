@@ -2,7 +2,18 @@
 ==================================
 Quickstart for Cloud Block Storage
 ==================================
-Rackspace Cloud Block Storage is a block level storage solution that allows customers to mount drives or volumes to their Rackspace Next Generation Cloud Serversâ„¢. The two primary use cases are (1) to allow customers to scale their storage independently from their compute resources, and (2) to allow customers to utilize high performance storage to serve database or I/O-intensive applications.
+Cloud Block Storage provides dependable performance for your I/O-intensive applications by providing a block level storage solution that allows you to mount drives or volumes to your Next Generation Cloud Serversª. 
+The two primary use cases are (1) to allow you to scale your storage independently from your compute resources 
+and (2) to allow you to utilize high performance storage to serve database or I/O-intensive applications.
+
+You have your choice of SSD or standard volumes. 
+
+* *Standard* volumes work well for your everyday file system needs.
+
+* *SSD* volumes deliver even higher performance for databases and other I/O-intensive applications. 
+
+Plus, you don't have to scale up your servers; both standard and SSD volumes work with all sizes of next-generation Cloud Servers.
+
 
 Concepts
 ========
