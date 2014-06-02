@@ -2,6 +2,16 @@
 
 .. code-block:: java
 
+  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+  CreateScalingPolicy scalingPolicy = CreateScalingPolicy.builder()
+            .cooldown(3)
+            .type(ScalingPolicyType.WEBHOOK)
+            .name("New name")
+            .targetType(ScalingPolicyTargetType.INCREMENTAL)
+            .target("1")
+            .build();
+  boolean result = policyApi.update("{policyId}", scalingPolicy);
+
 .. code-block:: javascript
 
 .. code-block:: php

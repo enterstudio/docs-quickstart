@@ -2,6 +2,33 @@
 
 .. code-block:: java
 
+  GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+  GroupConfiguration groupConfiguration = GroupConfiguration.builder()
+            .maxEntities(25)
+            .cooldown(60)
+            .name("{groupName}")
+            .minEntities(5)
+            .metadata(ImmutableMap.of("notes", "This is an autoscale group for examples"))
+            .build();
+
+  LaunchConfiguration launchConfiguration = LaunchConfiguration.builder()
+            .loadBalancers(ImmutableList.of(LoadBalancer.builder().port(8080).id(9099).build()))
+            .serverName("{serverName}")
+            .serverImageRef("{imageId}")
+            .serverFlavorRef("{flavorId}")
+            .type(LaunchConfigurationType.LAUNCH_SERVER)
+            .build();
+
+  CreateScalingPolicy scalingPolicy = CreateScalingPolicy.builder()
+            .cooldown(60)
+            .type(ScalingPolicyType.WEBHOOK)
+            .name(NAME)
+            .targetType(ScalingPolicyTargetType.PERCENT_CHANGE)
+            .target("1")
+            .build();
+
+  Group g = groupApi.create(groupConfiguration, launchConfiguration, ImmutableList.of(scalingPolicy));
+
 .. code-block:: javascript
 
 .. code-block:: php

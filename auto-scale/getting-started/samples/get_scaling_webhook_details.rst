@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+  Webhook webhook = webhookApi.get("{webhookId}");
+
 .. code-block:: javascript
 
 .. code-block:: php

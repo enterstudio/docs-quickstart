@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+  FluentIterable<Policy> policies = policyApi.list();
+
 .. code-block:: javascript
 
 .. code-block:: php

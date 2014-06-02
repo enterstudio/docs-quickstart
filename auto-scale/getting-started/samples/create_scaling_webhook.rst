@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+  FluentIterable<Webhook> result = webhookApi.create("{name}", ImmutableMap.<String, Object>of());
+
 .. code-block:: javascript
 
 .. code-block:: php

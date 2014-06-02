@@ -2,6 +2,10 @@
 
 .. code-block:: java
 
+  AutoscaleApi autoscaleApi = ContextBuilder.newBuilder("rackspace-autoscale-us")
+            .credentials("{username}", "{apiKey}")
+            .buildApi(AutoscaleApi.class);
+
 .. code-block:: javascript
 
 .. code-block:: php
