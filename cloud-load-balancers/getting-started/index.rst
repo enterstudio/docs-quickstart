@@ -3,7 +3,7 @@
 Quickstart for Cloud Load Balancers
 ===================================
 
-The Rackspace Load Balancers service provides a means to protect your infrastructure
+The Rackspace Cloud Load Balancers service provides a means to protect your infrastructure
 by distributing traffic efficiently.
 
 Concepts
