@@ -19,7 +19,7 @@ flavor
 instance
     An isolated environment in which your databases run. This is similar
     to the virtualized instances used by Cloud Servers, 
-    but database instances are optimized for optimal database performance.
+    but database instances are optimized for database performance.
 
 Authenticate to gain access to the service
 ==========================================
