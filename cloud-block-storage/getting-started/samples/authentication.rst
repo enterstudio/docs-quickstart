@@ -2,8 +2,8 @@
 
   CloudIdentity cid = new CloudIdentity()
   {
-      APIKey = "apikey_goes_here",
-      Username = "username_goes_here"
+      APIKey = "{apiKey}",
+      Username = "{username}"
   };
   CloudIdentityProvider cip = new CloudIdentityProvider(cid);
   UserAccess ua = cip.Authenticate(cid);
