@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  // This API call is not implemented in the .NET SDK
+
 .. code-block:: java
 
   // jclouds doesn't support this API presently

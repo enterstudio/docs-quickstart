@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+   IEnumerable<Snapshot> snapshots = new CloudBlockStorageProvider("{cloudIdentity}").ListSnapshots(region: "{region}");
+
 .. code-block:: java
 
   List<Snapshot> snapshots = snapshotApi.listInDetail().toList();

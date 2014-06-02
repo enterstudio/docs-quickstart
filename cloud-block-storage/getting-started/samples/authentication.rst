@@ -1,5 +1,13 @@
 .. code-block:: csharp
 
+  CloudIdentity cid = new CloudIdentity()
+  {
+      APIKey = "apikey_goes_here",
+      Username = "username_goes_here"
+  };
+  CloudIdentityProvider cip = new CloudIdentityProvider(cid);
+  UserAccess ua = cip.Authenticate(cid);
+  
 .. code-block:: java
 
   CinderApi cinderApi = ContextBuilder.newBuilder("rackspace-cloudblockstorage-us")
