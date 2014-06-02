@@ -120,3 +120,10 @@ Always make sure that you don't accidentally use a variable before it's declared
 If it's possible, try to distinguish in some way between variables that are "local" to the current snippet, and ones that are "shared" among many snippets, to provider readers a clue that this return value is something that should be remembered. In Ruby examples, I use ``@instance_variables`` for "shared" variables and ``temp_variables`` for "local" ones.
 
 For shell snippets, use ``UPPERCASE`` names for environment variables so they stand out clearly, and enclose all headers in double quotes.
+
+Language Specific Code Conventions
+----------------------------------
+
+**Java**
+
+blah
