@@ -106,6 +106,7 @@ The connection throttling feature imposes limits on the number of connections pe
 * Max connection rate - Maximum connections from a single IP within the supplied rate interval (frequency in seconds)
 * Max connections - Maximum simultaneous connections to allow from a single IP within the rate interval
 * Min connections - Minimum amount of connections per IP before doing any throttling
+* Rate interval - the frequency in seconds at which the max connections are assessed
 
 .. include:: samples/set_throttling.rst
 
@@ -135,8 +136,8 @@ Use error pages
 ---------------
 An error page is the HTML file that is shown to your users when accessing a
 load balancer node that is offline or otherwise unavailable. By default, every
-provisioned load balancer is configured with a default error page. However, it
-is possible to create a custom error page for load balancers that use the HTTP protocol:
+provisioned load balancer is configured with a default error page. 
+However, you can create a custom error page for load balancers that use the HTTP protocol:
 
 .. include:: samples/set_custom_error_page.rst
 
