@@ -47,7 +47,7 @@ You can perform create, read, update, and delete operations on zones.
 Create zone
 ~~~~~~~~~~~
 The first step in managing your domains and subdomains is to create a DNS zone, which you can think of as being the "root" level. 
-So, for example, if you have a domain called `domain.com`, create a zone called `domain.com` via the DNS service as follows:
+So, for example, if you have a domain called `example.com`, create a zone called `example.com` via the DNS service as follows:
 
 .. include:: samples/create_zone.rst
 
