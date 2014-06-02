@@ -2,6 +2,12 @@
 
 .. code-block:: java
 
+  LoadBalancer loadBalancer = lbApi.create(createLB);
+
+  if (!LoadBalancerPredicates.awaitAvailable(lbApi).apply(loadBalancer)) {
+      throw new TimeoutException("Timeout on creating load balancer: " + loadBalancer);
+  }
+
 .. code-block:: javascript
 
 .. code-block:: php

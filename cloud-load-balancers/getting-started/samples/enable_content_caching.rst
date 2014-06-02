@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  ContentCachingApi contentCachingApi = clbApi.getContentCachingApiForZoneAndLoadBalancer("{region}", loadBalancer.getId());
+  contentCachingApi.enable();
+
 .. code-block:: javascript
 
 .. code-block:: php

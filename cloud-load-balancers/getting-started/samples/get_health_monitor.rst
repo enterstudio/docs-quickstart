@@ -2,6 +2,9 @@
 
 .. code-block:: java
 
+  HealthMonitorApi hmApi = clbApi.getHealthMonitorApiForZoneAndLoadBalancer("{region}", loadBalancer.getId());
+  HealthMonitor monitor = hmApi.get();
+
 .. code-block:: javascript
 
 .. code-block:: php
