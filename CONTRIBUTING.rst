@@ -132,7 +132,7 @@ Language Specific Code Conventions
     VolumeApi volumeApi = cinderApi.getVolumeApiForZone(REGION);
 
   
-* Pass the top level API to all static methods::
+* Pass the appropriate API to all static methods::
 
     public static Volume showVolume(VolumeApi volumeApi, String volumeId) {
         Volume volume = volumeApi.get(volumeId);
@@ -140,8 +140,13 @@ Language Specific Code Conventions
         return volume;
     }
 
-* Always return a temporary variable like the previous code example.
+* Always return a temporary variable when invoking a particular API. In the previous code example, it is clear that the API returns a  ``Volume`` object.
 
 * Always close the jclouds ``Context``::
 
     Closeables.close("{exampleApi}", true);
+
+* Always match the Getting Started sample file names (snake case) to Java method names (lower CamelCase). For example::
+
+    list_volumes.rst -> listVolumes(VolumeApi volumeApi);
+    
