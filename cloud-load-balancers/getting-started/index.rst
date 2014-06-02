@@ -49,24 +49,24 @@ Set up your load balancer
 Create a load balancer
 ~~~~~~~~~~~~~~~~~~~~~~
 When creating a load balancer, there are a few mandatory parameters that you need
-to provide. You will need to specify a **name**, a **protocol** (e.g. HTTP, FTP,
+to provide. You need to specify a **name**, a **protocol** (such as HTTP, FTP,
 SMTP) and the types of IP you want to use (v4 or v6). Here is an example:
 
 .. include:: samples/create_lb.rst
 
-Once this operation is executed, the API will asynchronously provision a Load
-Balancer based on your configuration. Some SDKs allow you to query its progress:
+Once this operation is executed, the API will asynchronously provision a load
+balancer based on your configuration. Some SDKs allow you to query its progress:
 
 .. include:: samples/query_lb_progress.rst
 
 Select the servers you want as nodes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In order for a load balancer to distribute traffic, it needs to be aware of the
-servers or databases you want guarded - these are known as Nodes.
+For a load balancer to distribute traffic, it needs to be aware of the
+servers or databases you want guarded. These are known as nodes.
 
 .. include:: samples/select_servers.rst
 
-The above sample retrieves two Cloud Servers using their unique IDs. If you
+The above sample retrieves two cloud servers using their unique IDs. If you
 do not know their IDs, you can follow the steps outlined in the Compute Getting
 Started Guide for retrieving servers based on arbitrary properties.
 
@@ -81,9 +81,9 @@ The load balancing service includes a health monitor that periodically checks
 your nodes to ensure they are responding correctly. If a node is not responding,
 it is removed from rotation until the health monitor determines that it is
 functional. In addition to periodic checking, a check is performed against every
-node when added to your Load Balancer - ensuring that the Node can safely service traffic.
+node when added to your Load Balancer, ensuring that the node can safely service traffic.
 
-To enable health monitoring on your Load Balancer, you'll need to set:
+To enable health monitoring on your load balancer, you'll need to set:
 
 * Type - ``CONNECT`` is used to monitor connections
 * Delay - Minimum number of seconds to wait before executing the monitor
@@ -111,7 +111,7 @@ The connection throttling feature imposes limits on the number of connections pe
 
 Blacklist IP addresses
 ----------------------
-Your access List allows fine-grained network access controls to be applied to a
+Your access list allows fine-grained network access controls to be applied to a
 load balancer. A single IP address, multiple IP addresses, or entire network
 subnets can be added.
 
@@ -135,8 +135,8 @@ Use error pages
 ---------------
 An error page is the HTML file that is shown to your users when accessing a
 load balancer node that is offline or otherwise unavailable. By default, every
-provisioned load balancer is configured with a default error page - however it
-is possible to create a custom one for Load Balancers that use the HTTP protocol:
+provisioned load balancer is configured with a default error page. However, it
+is possible to create a custom error page for load balancers that use the HTTP protocol:
 
 .. include:: samples/set_custom_error_page.rst
 
