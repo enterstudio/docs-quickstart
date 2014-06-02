@@ -65,7 +65,7 @@ To create a queue:
 
 List queues
 -----------
-To see a list of all the queues in a given region:
+To list all the queues in a given region:
 
 .. include:: samples/list_queues.rst
 
@@ -75,30 +75,30 @@ To delete a queue:
 
 .. include:: samples/delete_queue.rst
 
-Warning: deleting a queue will also delete all messages within it.
+Warning: Deleting a queue also deletes all messages within it.
 
 Post message
 -------------
-The sender of a message can post it to a queue:
+To post a message to a queue used by the consumer of the message:
 
 .. include:: samples/post_message.rst
 
 Claim messages
 --------------
-The consumer of messages can claim them from a queue:
+To claim a message or messages from a queue used by the consumer of the messages:
 
 .. include:: samples/claim_message.rst
 
 Release claimed messages
 ------------------------
-If the consumer cannot complete the task specified in a message or simply refuses to do so, 
-the consumer can release the claim so that a different consumer can attempt to process the message:
+To release a claimed message so that a different consumer can attempt to process the message, 
+if the consumer cannot complete the task specified in a message or simply refuses to do so:
 
 .. include:: samples/release_message.rst
 
 Delete messages
 ---------------
-After a message has been used or completed and is no longer needed, a consumer should delete the message to avoid duplicate work by other consumers of the queue:
+To delete a message after it has been used or completed and is no longer needed, avoiding duplicate work by other consumers of the queue:
 
 .. include:: samples/delete_message.rst
 
