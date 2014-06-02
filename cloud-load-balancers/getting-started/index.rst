@@ -66,9 +66,10 @@ servers or databases you want guarded. These are known as nodes.
 
 .. include:: samples/select_servers.rst
 
-The above sample retrieves two cloud servers using their unique IDs. If you
-do not know their IDs, you can follow the steps outlined in the Compute Getting
-Started Guide for retrieving servers based on arbitrary properties.
+The above sample retrieves two cloud servers using their unique IDs. 
+You can obtain a server's ID by following the steps outlined in the 
+`Quickstart for Cloud Servers </docs/cloud-servers/getting-started/>` 
+for retrieving servers based on arbitrary properties.
 
 Now that you have your servers, you can create your nodes and add them to the load
 balancer:
