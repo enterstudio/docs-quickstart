@@ -45,8 +45,7 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
-These are some of the the basic operations you can perform with this API.
-
+Some of the basic operations you can perform with this API are described below.
 Create queue
 ------------
 To create a queue:
