@@ -14,7 +14,6 @@ You have your choice of SSD or standard volumes.
 
 Plus, you don't have to scale up your servers; both standard and SSD volumes work with all sizes of next-generation Cloud Servers.
 
-
 Concepts
 ========
 To use this service effectively, you should understand how these key ideas are used in this context:
@@ -85,7 +84,7 @@ To modify a volume's display name and/or description:
 
 Delete volume
 ~~~~~~~~~~~~~
-When a volume is no longer in use (attached) and the data it contains is not needed, you can delete it:
+To delete a volume when it is no longer in use (attached) and the data it contains is not needed:
 
 .. include:: samples/delete_volume.rst
 
