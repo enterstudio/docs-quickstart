@@ -126,4 +126,22 @@ Language Specific Code Conventions
 
 **Java**
 
-blah
+* Comment all references to regions and zones with::
+
+    // jclouds refers to "regions" as "zones"  
+    VolumeApi volumeApi = cinderApi.getVolumeApiForZone(REGION);
+
+  
+* Pass the top level API to all static methods::
+
+    public static Volume showVolume(VolumeApi volumeApi, String volumeId) {
+        Volume volume = volumeApi.get(volumeId);
+
+        return volume;
+    }
+
+* Always return a temporary variable like the previous code example.
+
+* Always close the jclouds ``Context``::
+
+    Closeables.close("{exampleApi}", true);
