@@ -27,7 +27,8 @@
 
   import pyrax
   # for queues, we also need to generate a client ID
-  import uuid; my_client_id = str(uuid.uuid4());
+  import uuid
+  my_client_id = str(uuid.uuid4())
   
   pyrax.set_setting("identity_type", "rackspace")
   pyrax.set_default_region('{region}')
