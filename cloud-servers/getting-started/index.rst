@@ -3,8 +3,7 @@
 Quickstart for Cloud Servers
 ============================
 
-This guide introduces Rackspace Cloud Servers, describing what it is and what it can do. 
-In a nutshell, it is a service that allows you to allocate and deallocate compute resources. 
+Rackspace Cloud Servers allows you to allocate and deallocate compute resources. 
 It is based on OpenStack Compute (Nova), a community-led open-source platform.
 
 Concepts
