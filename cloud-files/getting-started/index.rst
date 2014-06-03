@@ -59,24 +59,26 @@ Some of the basic operations you can perform with this API are described below.
 
 Create container
 ----------------
-Before you can upload any objects to Cloud Files, you must create a container to receive the objects:
+Before you can upload any objects to Cloud Files, you must create a container to receive the objects. 
+To create a container:
 
 .. include:: samples/create_container.rst
 
-Set container as CDN
+CDN-enable container
 --------------------
-To make any objects within a container publicly readable, set the container as CDN (Content Delivery Network):
+To make any objects within a container publicly readable, 
+enable the container for access on the CDN (Content Delivery Network):
 
 .. include:: samples/set_container_as_cdn.rst
 
-Unset container as CDN
-----------------------
-If you no longer wish to have your objects publicly readable, unset CDN for the container:
+Disable CDN for container
+-------------------------
+If you no longer wish to have your objects publicly readable, disable CDN access for the container:
 
 .. include:: samples/unset_container_as_cdn.rst
 
 Delete container
------------------
+----------------
 To delete a container:
 
 .. include:: samples/delete_container.rst
@@ -91,14 +93,17 @@ To upload objects into a container:
 
 Change object metadata
 ------------------------
-Once you have an object uploaded to a container you can change its metadata in-place. 
-For instance, you can change its content-type so that when delivered to requesting clients it can be treated accordingly:
+To change object metadata: 
 
 .. include:: samples/change_object_metadata.rst
 
+Once you have an object uploaded to a container you can change its metadata in-place. 
+For instance, you can change its content-type so that when delivered to requesting clients it can be treated accordingly.
+
 Get object
 ----------
-You and your clients can retrieve objects from Cloud Files in several ways. These are the most common ways.
+You and your clients can retrieve objects from Cloud Files in several ways. 
+To retrieve objects, the most common ways are:
 
 Get object via temporary URL
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,7 +119,7 @@ To download objects directly into your local storage drive via SDK download:
 
 Get object via CDN URL
 ~~~~~~~~~~~~~~~~~~~~~~
-To retrieve an object through CDN URLs, which, unlike temporary URLs, never expire and may considered publicly-accessible permalinks:
+To retrieve an object through a CDN URL, that, unlike a temporary URL, never expires and may be considered a publicly-accessible permalink:
 
 .. include:: samples/get_object_cdn.rst
 
