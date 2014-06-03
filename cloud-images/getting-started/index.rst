@@ -98,6 +98,9 @@ image identifier
 * ``{image server location}`` is the resource location of the Cloud Images service that knows about an image.
 * ``{imageId}`` is the image identifier, which is a UUID, making it globally unique.
 
+image member
+    A user who has been granted access to an image.
+
 network
     The virtual space where your servers live. Rackspace has two default networks: 
     PublicNet, which is the Internet; ServiceNet, which is our internal network.
@@ -136,15 +139,12 @@ Use the API
 ===========
 Some of the basic operations you can perform with this API are described below.
 
-Use images
-----------
-To see which images are available, you can list all images or get details for a specified image.
-Then, you can update an image and use image tasks to import and export images.
-
 List images and get image details
 ---------------------------------
-An image, or operating system, forms the basis of your server. 
+An image, or operating system, forms the basis of your server.
 Each image has a unique ID, which you can use to get more details about the image.
+To see which images are available, you can list all images or get details for a specified image.
+Then you can update an image and use image tasks to import and export images.
 
 To list images:
 
@@ -153,8 +153,6 @@ To list images:
 Once you know the image ID, you can get more details about the image:
 
 .. include:: samples/get_image.rst
-
-Once you've found the desired operating system, and its ID, you can move on to picking your hardware.
 
 Update image
 ------------
@@ -173,8 +171,8 @@ However, the result of the task, such as an imported or exported image, does not
 
 .. include:: samples/export_image.rst
 
-Share images
-------------
+Share image
+-----------
 You can perform create, read, update, and delete operations on image members.
 The Cloud Images API enables you and others to share your custom images.  
 
