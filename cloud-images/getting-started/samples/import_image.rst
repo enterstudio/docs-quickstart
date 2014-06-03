@@ -19,7 +19,7 @@
   task = imgs.import_task("My Image", "exportSwiftContainer",
         img_format="someOddFormat", img_name = "My New Image"))
   # Wait for the task to complete
-  pyrax.utils.utils.wait_for_build(task, verbose=True,
+  pyrax.utils.wait_for_build(task, verbose=True,
         desired=["success", "failure"])
   # The task's `status` attribute will be either "success" or "failure".
   # In the case of a failure, its `message` attribute will explain why.
