@@ -2,18 +2,17 @@
 ===========================
 Quickstart for Cloud Images
 ===========================
+This guide introduces the Rackspace Cloud Images service.
 
-This guide helps you get started with the Rackspace Cloud Images service.
-
-This service enables you to create and
+This service enables you to 
 manipulate images, image members, and associated metadata through
 a simple Representational State Transfer (REST) web service interface.
 
-This service is closely aligned with the Rackspace Cloud Servers
+This service is closely related to the Rackspace Cloud Servers
 and Cloud Files services. 
 
-Images are captured from, and applied to, cloud servers
-and are stored on, and retrieved from, Cloud Files storage.
+Images are captured from and applied to cloud servers.
+Images are stored on and retrieved from cloud files.
 
 Concepts
 ========
