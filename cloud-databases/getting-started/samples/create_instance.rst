@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  // The create database instance method is asynchronous
+  DatabaseInstance {foo} = await {CloudDatabasesProvider}.CreateDatabaseInstanceAsync({database_instance_configuration}, {async_completion_option}, {cancellation_token}, null);
+
 .. code-block:: java
 
   // We need to get a Flavor (hardware type) to run the Instance on.

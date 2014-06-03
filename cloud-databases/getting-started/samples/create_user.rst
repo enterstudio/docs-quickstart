@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  await {CloudDatabasesProvider}.CreateUserAsync({database_instance_id}, {user_configuration}, {cancellation_token});
+
 .. code-block:: java
 
   // Create a user by specifying a username and password, and give them access

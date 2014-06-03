@@ -1,5 +1,13 @@
 .. code-block:: csharp
 
+  CloudIdentity cid = new CloudIdentity()
+  {
+      APIKey = "apikey_goes_here",
+      Username = "username_goes_here"
+  };
+  CloudIdentityProvider cip = new CloudIdentityProvider(cid);
+  UserAccess ua = cip.Authenticate(cid);
+  
 .. code-block:: java
 
   // The TroveApi will provide access to all database features, such as Instances or Users.

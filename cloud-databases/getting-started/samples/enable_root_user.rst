@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  RootUser {foo} = await {CloudDatabasesProvider}.EnableRootUserAsync({database_instance_id}, {cancellation_token});
+
 .. code-block:: java
 
   InstanceApi instanceApi = troveApi.getInstanceApiForZone("{region}");

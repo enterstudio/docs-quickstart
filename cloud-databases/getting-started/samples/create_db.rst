@@ -1,4 +1,6 @@
 .. code-block:: csharp
+ 
+  await {CloudDatabasesProvider}.CreateDatabaseAsync({database_instance_id}, {database_configuration}, {cancellation_token});
 
 .. code-block:: java
 

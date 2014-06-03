@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  await {CloudDatabasesProvider}.RestartDatabaseInstanceAsync({database_instance_id}, {async_completion_option}, {cancellation_token}, null);
+
 .. code-block:: java
 
   // This operation is currently not supported through the jclouds SDK.
