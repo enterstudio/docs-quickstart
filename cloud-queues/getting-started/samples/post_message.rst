@@ -20,6 +20,9 @@
 
 .. code-block:: python
 
+  #assign generated client ID (see authentication section)
+  pyrax.queues.client_id = my_client_id
+
   queue = pyrax.queues.get("sample_queue")
 
   # The 'body' parameter can be a simple value, or a chunk of XML, or pretty
