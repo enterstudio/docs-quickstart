@@ -176,6 +176,11 @@ Share image
 You can perform create, read, update, and delete operations on image members.
 The Cloud Images API enables you and others to share your custom images.  
 
+Note: 
+The operations you can execute depend on your role. 
+If you are an image producer, you cannot use the update_image_member operation for an image you are sharing with someone else. 
+Likewise, if you are an image consumer you cannot use create_image_member for someone else's image.
+
 Add image member
 ~~~~~~~~~~~~~~~~
 .. include:: samples/create_image_member.rst
