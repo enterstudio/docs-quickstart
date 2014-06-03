@@ -65,19 +65,23 @@ To do this, you need to decide which **Image** and **Flavor** you want to use.
 
 Choose operating system
 ~~~~~~~~~~~~~~~~~~~~~~~
-An image, or operating system, will form the basis of your server. Each one has a unique ID, which is used to retrieve more details from the API. If you already know the ID, you can retrieve more details about the image like this:
+An image, or operating system, forms the basis of your server. 
+Each image has a unique ID, which is used to retrieve more details from the API. 
+If you already know the ID, you can retrieve more details about the image:
 
 .. include:: samples/get_image.rst
 
-Alternatively, you can traverse through the list:
+Alternatively, you can traverse through the list of images:
 
 .. include:: samples/list_images.rst
 
-Once you've found the perfect operating system, and its ID, you can move on to picking your hardware.
+Once you've found the appropriate operating system and its ID, you can move on to picking your hardware.
 
 Choose hardware configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Flavors, or hardware configurations, will dictate how powerful your servers are. Like images, each flavor has its own UUID. If you already know which flavor to use, you can retrieve its details like this:
+Flavors, or hardware configurations, dictate how powerful your servers are. 
+Like images, each flavor has its own UUID. 
+If you already know which flavor to use, you can retrieve its details:
 
 .. include:: samples/get_flavor.rst
 
