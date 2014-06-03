@@ -96,8 +96,8 @@ Now that you have an image ID and flavor ID, you can create your server:
 .. include:: samples/create_server.rst
 
 This is an asynchronous operation, meaning that it will _not_ block your request while the build process runs. 
-It will provision your VM behind the scenes, allowing you to optionally query its status. 
-Once the build reaches a ``COMPLETE`` state, it will be available for you to use.
+It will provision your VM behind the scenes. 
+When the build completes, it places your server in an ``ACTIVE`` state. At this point, the server is available for you to use.
 
 Some SDKs allow you to check on the status of the build:
 

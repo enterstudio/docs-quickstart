@@ -14,7 +14,7 @@
 
 .. code-block:: ruby
 
-  server.wait_for { ready? }
+  server.wait_for { active }
 
 .. code-block:: sh
 
