@@ -25,8 +25,14 @@ entity
     The object or resource that you want to monitor. 
     An entity is commonly a web server, but it might also be a website, a web page, or a web service.
 
+monitoring zone
+    The launch point of a check; a monitoring zone is a geographical region. When you create a check, you specify which monitoring zone(s) you want to launch the check from. 
+
 notification
     An informational message sent to one or more addresses by the monitoring system when an alarm is triggered.
+
+notification plan
+    Contains a set of notification rules to execute when an alarm is triggered. A notification plan can contain multiple notifications for Critical, Warning, and Ok states.
 
 Authenticate to gain access to the service
 ==========================================
