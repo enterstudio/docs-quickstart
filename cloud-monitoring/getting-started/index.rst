@@ -3,7 +3,7 @@
 Quickstart for Cloud Monitoring
 ===============================
 
-Cloud Monitoring helps you keep a keen eye on all of your resources; from web sites to web servers, routers, load balancers, and more.
+Cloud Monitoring helps you keep a keen eye on all of your resources. You can monitor activity on websites, web servers, routers, load balancers, and more.
 
 Concepts
 ========
@@ -56,9 +56,9 @@ Some of the basic operations you can perform with this API are described below.
 
 Workflow
 --------
-* Create an entity to represent the item you want to monitor. For example, the entity might represent a web site.
+* Create an entity to represent the item you want to monitor. For example, the entity might represent a website.
 
-* Attach a predefined check to the entity. For example, you could use the PING check to monitor your web site's public IP address.
+* Attach a predefined check to the entity. For example, you could use the PING check to monitor your website's public IP address.
 
 * Create notifications and notification plans. A notification lets you define an action which Cloud Monitoring uses to communicate with you when a problem occurs. Notification plans allow you to organize a set of several notifications, or actions.
 
