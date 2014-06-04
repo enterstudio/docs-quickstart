@@ -7,7 +7,7 @@
 
 .. code-block:: javascript
 
-  rackspace.getZones({ name: 'domain.com' }, function (err, zones) {
+  rackspace.getZones({ name: 'example.com' }, function (err, zones) {
     if (err) {
       console.dir(err);
       return;
@@ -25,7 +25,7 @@
 
   // Alternatively, if you do not know your domain ID:
   $domains = $dnsService->domainList(array(
-      'name' => 'domain.com'
+      'name' => 'example.com'
   ));
 
   foreach ($domains as $domain) {
@@ -38,11 +38,11 @@
 
 .. code-block:: python
 
-  domain = pyrax.cloud_dns.find(name="domain.com")
+  domain = pyrax.cloud_dns.find(name="example.com")
 
 .. code-block:: ruby
 
-  zone = service.zones.all.find { |z| z.name == 'domain.com' }
+  zone = service.zones.all.find { |z| z.name == 'example.com' }
 
 .. code-block:: sh
 

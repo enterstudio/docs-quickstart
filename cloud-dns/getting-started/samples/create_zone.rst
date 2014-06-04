@@ -17,10 +17,10 @@
 .. code-block:: javascript
 
   var details = {
-    name: 'domain.com',
-    email: 'admin@domain.com',
+    name: 'example.com',
+    email: 'admin@example.com',
     ttl: 300,
-    comment: 'Root level for domain.com'
+    comment: 'Root level for example.com'
   };
 
   rackspace.createZone(details, function (err, zone) {
@@ -38,25 +38,25 @@
 
   $domain = $dnsService->domain();
   $domain->create(array(
-      'name'         => 'domain.com',
-      'emailAddress' => 'admin@domain.com',
+      'name'         => 'example.com',
+      'emailAddress' => 'admin@example.com',
       'ttl'          => 300,
-      'comment'      => 'Root level for domain.com'
+      'comment'      => 'Root level for example.com'
   ));
 
 .. code-block:: python
 
-  domain = pyrax.cloud_dns.create(name="domain.com",
-                                  emailAddress="admin@domain.com",
+  domain = pyrax.cloud_dns.create(name="example.com",
+                                  emailAddress="admin@example.com",
                                   ttl=300)
 
 .. code-block:: ruby
 
   zone = @client.zones.create(
-    :domain => 'domain.com',
-    :email => 'admin@domain.com',
+    :domain => 'example.com',
+    :email => 'admin@example.com',
     :ttl => 300,
-    :comment => 'Root level for domain.com'
+    :comment => 'Root level for example.com'
   )
 
 .. code-block:: sh
@@ -64,13 +64,13 @@
   curl -X POST -d \
     '{
         "domains" : [ {
-            "name" : "domain.com",
-            "comment" : "Root level for domain.com",
+            "name" : "example.com",
+            "comment" : "Root level for example.com",
             "subdomains" : {
                 "domains" : []
             },
             "ttl" : 300,
-            "emailAddress" : "admin@domain.com"
+            "emailAddress" : "admin@example.com"
         } ]
     }' \
     -H "X-Auth-Token: $TOKEN" \

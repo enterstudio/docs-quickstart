@@ -2,10 +2,14 @@
 ===========================
 Quickstart for Cloud Queues
 ===========================
+Cloud Queues is an open source, scalable, and highly available message and notifications service, based on the OpenStack Marconi project. 
+Cloud Queues uses a few basic components--queues, messages, and claims--which give you the flexibility you need to create powerful web applications in the cloud.
 
-Queues is an open source, scalable, and highly available message and notifications service, based on the OpenStack Marconi project. Users of this service can create and manage a producer-consumer or a publisher-subscriber model. Unlimited queues and messages give users the flexibility they need to create powerful web applications in the cloud.
+This service supports a variety of messaging patterns, such as the *producer-consumer* model and the *publisher-subscriber* model, through which you create and manage queues and messages.
 
-It consists of a few basic components: queues, messages, claims, and statistics. In the producer-consumer model, users create queues in which producers, or servers, can post messages. Workers, or consumers, can then claim those messages and delete them after they complete the actions associated with the messages. A single claim can contain multiple messages, and administrators can query claims for status.
+* In the *producer-consumer* model, you create queues in which producers, or servers, can post messages. Workers, or consumers, can then claim those messages and delete them after they complete the actions associated with the messages. A single claim can contain multiple messages, and administrators can query claims for status. This pattern is ideal for dispatching jobs to multiple processors.
+
+* In the *publisher-subscriber* model, the publisher sends a message to the queue. All subscribers (or workers) listen for messages in the queue, but they do not claim them. Multiple subscribers can work on a message. Messages are eventually deleted based on their time to live (TTL) value. This pattern is ideal for notification of events to multiple workers at once.
 
 Concepts
 ========
@@ -45,8 +49,7 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
-These are some of the the basic operations you can perform with this API.
-
+Some of the basic operations you can perform with this API are described below.
 Create queue
 ------------
 To create a queue:
@@ -55,7 +58,7 @@ To create a queue:
 
 List queues
 -----------
-To see a list of all the queues in a given region:
+To list all the queues in a given region:
 
 .. include:: samples/list_queues.rst
 
@@ -65,30 +68,30 @@ To delete a queue:
 
 .. include:: samples/delete_queue.rst
 
-Warning: deleting a queue will also delete all messages within it.
+Warning: Deleting a queue also deletes all messages within it.
 
 Post message
 -------------
-The sender of a message can post it to a queue:
+To post a message to a queue used by the consumer of the message:
 
 .. include:: samples/post_message.rst
 
 Claim messages
 --------------
-The consumer of messages can claim them from a queue:
+To claim a message or messages from a queue used by the consumer of the messages:
 
 .. include:: samples/claim_message.rst
 
 Release claimed messages
 ------------------------
-If the consumer cannot complete the task specified in a message or simply refuses to do so, 
-the consumer can release the claim so that a different consumer can attempt to process the message:
+To release a claimed message so that a different consumer can attempt to process the message, 
+if the consumer cannot complete the task specified in a message or simply refuses to do so:
 
 .. include:: samples/release_message.rst
 
 Delete messages
 ---------------
-After a message has been used or completed and is no longer needed, a consumer should delete the message to avoid duplicate work by other consumers of the queue:
+To delete a message after it has been used or completed and is no longer needed, avoiding duplicate work by other consumers of the queue:
 
 .. include:: samples/delete_message.rst
 

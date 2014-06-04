@@ -3,7 +3,7 @@
 Quickstart for Cloud Monitoring
 ===============================
 
-Cloud Monitoring helps you keep a keen eye on all of your resources; from web sites to web servers, routers, load balancers, and more.
+Cloud Monitoring helps you keep a keen eye on all of your resources. You can monitor activity on websites, web servers, routers, load balancers, and more.
 
 Concepts
 ========
@@ -25,8 +25,14 @@ entity
     The object or resource that you want to monitor. 
     An entity is commonly a web server, but it might also be a website, a web page, or a web service.
 
+monitoring zone
+    The launch point of a check; a monitoring zone is a geographical region. When you create a check, you specify which monitoring zone(s) you want to launch the check from. 
+
 notification
     An informational message sent to one or more addresses by the monitoring system when an alarm is triggered.
+
+notification plan
+    Contains a set of notification rules to execute when an alarm is triggered. A notification plan can contain multiple notifications for Critical, Warning, and Ok states.
 
 Authenticate to gain access to the service
 ==========================================
@@ -52,13 +58,13 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
-These are some of the the basic operations you can perform with this API.
+Some of the basic operations you can perform with this API are described below.
 
 Workflow
 --------
-* Create an entity to represent the item you want to monitor. For example, the entity might represent a web site.
+* Create an entity to represent the item you want to monitor. For example, the entity might represent a website.
 
-* Attach a predefined check to the entity. For example, you could use the PING check to monitor your web site's public IP address.
+* Attach a predefined check to the entity. For example, you could use the PING check to monitor your website's public IP address.
 
 * Create notifications and notification plans. A notification lets you define an action which Cloud Monitoring uses to communicate with you when a problem occurs. Notification plans allow you to organize a set of several notifications, or actions.
 

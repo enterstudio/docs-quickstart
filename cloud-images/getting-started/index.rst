@@ -2,47 +2,67 @@
 ===========================
 Quickstart for Cloud Images
 ===========================
+This guide introduces the Rackspace Cloud Images service.
 
-This guide helps you get started with the Rackspace Cloud Images service.
-
-This service enables you to create and
+This service enables you to 
 manipulate images, image members, and associated metadata through
 a simple Representational State Transfer (REST) web service interface.
 
-This service is closely aligned with the Rackspace Cloud Servers
+This service is closely related to the Rackspace Cloud Servers
 and Cloud Files services. 
 
-Images are captured from, and applied to, cloud servers
-and are stored on, and retrieved from, Cloud Files storage.
+Images are captured from and applied to cloud servers.
+Images are stored on and retrieved from cloud files.
 
 Concepts
 ========
 To use this service effectively, you should understand how these key ideas are used in this context:
 
-server
-    A computer that provides explicit services to the client software running on that system. 
-    A server is a virtual machine (VM) instance in the Cloud Servers environment. 
-    To create a server, you must specify a name, flavor reference, and image reference.
+Common image properties
+    Metadata which you can use to help end users understand your images.
+    
+    The available properties and their expected values include:
+    
+    **os_distro**
+      The common name of the operating system          
+      distribution. Must be all lowercase and          
+      entered exactly as shown here:                                      
+    
+      - arch. Arch Linux                               
+      - centos. Community Enterprise Operating System  
+      - debian. Debian                                 
+      - fedora. Fedora                                 
+      - freebsd. FreeBSD                               
+      - gentoo. Gentoo Linux                           
+      - mandrake. Mandrakelinux (MandrakeSoft)         
+      - mandriva. Mandriva Linux                       
+      - mes. Mandriva Enterprise Server                
+      - msdos. Microsoft Disk Operating System         
+      - netbsd. NetBSD                                 
+      - netware. Novell NetWare                        
+      - openbsd. OpenBSD                               
+      - opensolaris. OpenSolaris                       
+      - opensuse. openSUSE                             
+      - rhel. Red Hat Enterprise Linux                 
+      - sled. SUSE Linux Enterprise Desktop            
+      - ubuntu. Ubuntu                                 
+      - windows. Microsoft Windows                     
+    
+    **os_version**   
+      The distributor-specified OS version.
 
 flavor
     A resource configuration for a server. 
     Each flavor is a unique combination of disk, memory, vCPUs, and network bandwidth.
     You can choose from pre-defined flavors.
     
-network
-    The virtual space where your servers live. Rackspace has two default networks: 
-    PublicNet, which is the Internet; ServiceNet, which is our internal network.
-    Although you can create as many isolated networks as you want, 
-    the default configuration is for servers to be connected to 
-    both PublicNet (for public Internet connectivity) and ServiceNet (for internal connectivity with your other servers).
-
 image
     A collection of specific operating system (OS) files that you use to create or rebuild a server. 
     You can choose from pre-defined images or create your own custom images 
     from servers that you have launched. 
       
-      You can use custom images for data backups and 
-      as *gold* images to launch additional servers. 
+    You can use custom images for data backups and 
+    as *gold* images to launch additional servers. 
       
     * A **standard image** is one that has not reached its end of life 
       and that Rackspace supplies for your service 
@@ -51,7 +71,48 @@ image
     * A **nonstandard image** is one that is imported or exported, end-of-life, shared, 
       not standard for your account service level and not included
       in the subset of images provided for RackConnect customers.
+      
+    An image is guaranteed to have the following attributes: 
+    ``id``,
+    ``status``,
+    ``visibility``,
+    ``protected``,
+    ``tags``,
+    ``created_at``,
+    ``file``, and
+    ``self``.
+    
+    The other attributes defined in the image schema are guaranteed, but are only returned with an image entity if you set them explicitly.
+    
+    A client can set arbitrarily-named attributes on their images if the image JSON-schema allows it. 
+    These user-defined attributes appear like any other image attributes.
 
+image entity
+    Represented by a JSON-encoded data structure and its raw binary data. 
+    An image entity has an identifier (ID) that is guaranteed to be unique within its endpoint. 
+    The ID is used as a TOKEN in request URIs to interact with that specific image.    
+
+image identifier
+    Unique URI of the form {image server location}/v2/images/{imageId} where:
+
+* ``{image server location}`` is the resource location of the Cloud Images service that knows about an image.
+* ``{imageId}`` is the image identifier, which is a UUID, making it globally unique.
+
+image member
+    A user who has been granted access to an image.
+
+network
+    The virtual space where your servers live. Rackspace has two default networks: 
+    PublicNet, which is the Internet; ServiceNet, which is our internal network.
+    Although you can create as many isolated networks as you want, 
+    the default configuration is for servers to be connected to 
+    both PublicNet (for public Internet connectivity) and ServiceNet (for internal connectivity with your other servers).
+
+server
+    A computer that provides explicit services to the client software running on that system. 
+    A server is a virtual machine (VM) instance in the Cloud Servers environment. 
+    To create a server, you must specify a name, flavor reference, and image reference.
+    
 Authenticate to gain access to the service
 ==========================================
 To use this service, you must authenticate yourself as a subscriber to the service.
@@ -76,85 +137,14 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
-These are some of the the basic operations you can perform with this API.
-
-Image entity
-------------
-An image entity is represented by a JSON-encoded data structure and its raw binary data. 
-An image entity has an identifier (ID) that is guaranteed to be unique within its endpoint. 
-The ID is used as a TOKEN in request URIs to interact with that specific image. 
-An image is always guaranteed to have the following attributes: 
-``id``,
-``status``,
-``visibility``,
-``protected``,
-``tags``,
-``created_at``,
-``file``, and
-``self``.
-
-The other attributes defined in the image schema are guaranteed, but are only returned with an image entity if you set them explicitly.
-
-A client can set arbitrarily-named attributes on their images if the image JSON-schema allows it. 
-These user-defined attributes appear like any other image attributes.
-
-Image identifiers
------------------
-Images are uniquely identified by a URI that matches this signature::
-
-  {image server location}/v2/images/{imageId}
-
-where:
-
-* ``{image server location}`` is the resource location of the Cloud Images service that knows about an image.
-* ``{imageId}`` is the image identifier, which is a UUID, making it globally unique.
-
-Common image properties
------------------------
-To help end users use your images, you can put additional common properties, or metadata, on your images.
-
-The available properties and their expected values include:
-
-**os_distro**
-  The common name of the operating system          
-  distribution. 
-  
-  Must be all lowercase and          
-  entered exactly as shown here:                                      
-
-  - arch. Arch Linux                               
-  - centos. Community Enterprise Operating System  
-  - debian. Debian                                 
-  - fedora. Fedora                                 
-  - freebsd. FreeBSD                               
-  - gentoo. Gentoo Linux                           
-  - mandrake. Mandrakelinux (MandrakeSoft)         
-  - mandriva. Mandriva Linux                       
-  - mes. Mandriva Enterprise Server                
-  - msdos. Microsoft Disk Operating System         
-  - netbsd. NetBSD                                 
-  - netware. Novell NetWare                        
-  - openbsd. OpenBSD                               
-  - opensolaris. OpenSolaris                       
-  - opensuse. openSUSE                             
-  - rhel. Red Hat Enterprise Linux                 
-  - sled. SUSE Linux Enterprise Desktop            
-  - ubuntu. Ubuntu                                 
-  - windows. Microsoft Windows                     
-
-**os_version**   
-  The distributor-specified OS version.
-    
-
-Use images
-----------
-To see which images are available, you can list all images or get details for a specified image.
-Then, you can update an image and use image tasks to import and export images.
+Some of the basic operations you can perform with this API are described below.
 
 List images and get image details
 ---------------------------------
-An image, or operating system, forms the basis of your server. 
+An image, or operating system, forms the basis of your server.
 Each image has a unique ID, which you can use to get more details about the image.
+To see which images are available, you can list all images or get details for a specified image.
+Then you can update an image and use image tasks to import and export images.
 
 To list images:
 
@@ -163,8 +153,6 @@ To list images:
 Once you know the image ID, you can get more details about the image:
 
 .. include:: samples/get_image.rst
-
-Once you've found the desired operating system, and its ID, you can move on to picking your hardware.
 
 Update image
 ------------
@@ -183,10 +171,15 @@ However, the result of the task, such as an imported or exported image, does not
 
 .. include:: samples/export_image.rst
 
-Share images
-------------
+Share image
+-----------
 You can perform create, read, update, and delete operations on image members.
 The Cloud Images API enables you and others to share your custom images.  
+
+Note: 
+The operations you can execute depend on your role. 
+If you are an image producer, you cannot use the update_image_member operation for an image you are sharing with someone else. 
+Likewise, if you are an image consumer you cannot use create_image_member for someone else's image.
 
 Add image member
 ~~~~~~~~~~~~~~~~

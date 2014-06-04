@@ -17,7 +17,7 @@
 .. code-block:: javascript
 
   var recDetails = {
-    name: 'app.domain.com',
+    name: 'app.example.com',
     data: '192.168.1.1',
     type: 'A'
   };
@@ -35,7 +35,7 @@
   // Add an A record
   $record = $domain->record(array(
       'type' => 'A',
-      'name' => 'app.domain.com',
+      'name' => 'app.example.com',
       'ttl'  => 3600,
       'data' => '192.168.1.1'
   ));
@@ -45,7 +45,7 @@
 .. code-block:: python
 
   domain.add_record({'type': 'A',
-                     'name': 'app.domain.com',
+                     'name': 'app.example.com',
                      'ttl': 3600,
                      'data': '192.168.1.1'})
 
@@ -53,7 +53,7 @@
 
   record = zone.records.create(
     :type => 'A',
-    :name => 'app.domain.com',
+    :name => 'app.example.com',
     :ttl => 3600,
     :value => '192.168.1.1'
   )
@@ -64,7 +64,7 @@
     '{
         "records": [
             {
-                "name" : "app.domain.com",
+                "name" : "app.example.com",
                 "type" : "A",
                 "data" : "192.168.1.1",
                 "ttl" : 3600

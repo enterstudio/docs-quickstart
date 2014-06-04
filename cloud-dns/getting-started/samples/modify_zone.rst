@@ -12,7 +12,7 @@
 
 .. code-block:: javascript
 
-  myZone.emailAddress = 'changed@domain.com';
+  myZone.emailAddress = 'changed@example.com';
   rackspace.updateZone(myZone, function (err) {
     if (err) {
       console.dir(err);
@@ -26,7 +26,7 @@
 
   // Specify your changes
   $changes = array(
-      'email' => 'changed@domain.com',
+      'email' => 'changed@example.com',
       'ttl'   => 3600
   );
 
@@ -34,11 +34,11 @@
 
 .. code-block:: python
 
-  domain.update(emailAddress="changed@domain.com")
+  domain.update(emailAddress="changed@example.com")
 
 .. code-block:: ruby
 
-  zone.email = 'changed@domain.com'
+  zone.email = 'changed@example.com'
   zone.ttl = 3600
   zone.save
 

@@ -2,7 +2,7 @@
 ========================
 Quickstart for Cloud DNS
 ========================
-Rackspace offers a flexible and scalable solution to DNS management through its CloudDNS service.
+Rackspace offers a flexible and scalable solution to DNS management through its Cloud DNS service.
 
 Concepts
 ========
@@ -38,7 +38,7 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
-These are some of the the basic operations you can perform with this API.
+Some of the basic operations you can perform with this API are described below.
 
 Zones
 -----
@@ -46,7 +46,8 @@ You can perform create, read, update, and delete operations on zones.
 
 Create zone
 ~~~~~~~~~~~
-The first step in managing your domains and subdomains is to create a DNS zone, which you can think of as being the "root" level. So, for example, you have a domain called `domain.com`, create a zone called `domain.com` via the DNS service as follows:
+The first step in managing your domains and subdomains is to create a DNS zone, which you can think of as being the "root" level. 
+So, for example, if you have a domain called `example.com`, create a zone called `example.com` via the DNS service as follows:
 
 .. include:: samples/create_zone.rst
 
@@ -58,7 +59,11 @@ After you create a zone, you can retrieve it and inspect its details as follows:
 
 Modify zone
 ~~~~~~~~~~~
-You can modify your DNS zone if any of the details change, so long as the  new values are valid (i.e. correct email address format, TTL > 300s, etc.); however, the zone name is cannot be changed. Thus, if you need to modify the zone name, delete the zone (explained below) and create another one with the new domain.
+You can modify your DNS zone to change any of the details other than the zone name, so long as the new values are valid.
+For example, you can change the zone's email address, but the new address must follow the correct email address format; 
+you can define a new TTL, but the new TTL must be > 300s. 
+However, the zone name cannot be changed. 
+If you need to modify the zone name, delete the zone (explained below) and create another zone with the new domain.
 
 .. include:: samples/modify_zone.rst
 

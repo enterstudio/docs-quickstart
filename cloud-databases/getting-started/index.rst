@@ -2,9 +2,11 @@
 ==============================
 Quickstart for Cloud Databases
 ==============================
-This guide will introduce Rackspace Cloud Databases and familiarize you with some common functionality. Cloud Databases is a MySQL relational database service
-that allows you to easily provision instances without having all the maintenance overhead. You can also backup your databases on a regular basis,
-as well as setting up monitoring functionality to track usage.
+This guide introduces you to Rackspace Cloud Databases. 
+Cloud Databases is a MySQL relational database service
+that allows you to easily provision instances without having all the maintenance overhead. 
+You can also back up your databases on a regular basis 
+and set up monitoring functionality to track usage.
 
 Concepts
 ========
@@ -17,7 +19,7 @@ flavor
 instance
     An isolated environment in which your databases run. This is similar
     to the virtualized instances used by Cloud Servers, 
-    but database instances are optimized for optimal database performance.
+    but database instances are optimized for database performance.
 
 Authenticate to gain access to the service
 ==========================================
@@ -43,16 +45,16 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
-These are some of the the basic operations you can perform with this API.
+Some of the basic operations you can perform with this API are described below.
 
 Work with instances
 -------------------
-Two common issues that developers have with traditional RDS relate to peformance:
+Two common issues that developers have with a traditional RDS relate to peformance:
 increasing the amount of IO transactions per second, for example, or reducing
-application latency. Because of this, our instances were re-designed from the
-ground-up with two primary features in mind:
+application latency. Because of this, our instances were designed from the
+ground up with two primary features in mind:
 
-* *Performance*. By using Container-based virtualization, instances are allocated the resources they truly need and there is no compute power waste like there is with traditional virtualization. As a result, things are faster and more efficient.
+* *Performance*. By using container-based virtualization, instances are allocated the resources they truly need and there is no compute power waste such as with traditional virtualization. As a result, things are faster and more efficient.
 
 * *Reliability*. We use fault-tolerant components, such as: RAID levels for individual drives, multi-tenant environments across different nodes, as well as dedicated power supplies and network adapters. This means you have redundancy both from a hardware level and a software level.
 
@@ -73,7 +75,7 @@ Once you have this flavor, you can use it to create your instance:
 Resize instance
 ~~~~~~~~~~~~~~~
 As with creating an instance, in order to resize one, you need to know which
-Flavor to use. Once you've decided on a new Flavor, you can use it to resize
+flavor to use. Once you've decided on a new flavor, you can use it to resize
 your running instance:
 
 .. include:: samples/resize_instance.rst
@@ -92,8 +94,13 @@ need to enable root:
 
 .. include:: samples/enable_root_user.rst
 
-This operation returns the root password for your use. If you're not sure
-whether you've already done this, you can easily query whether root is enabled or not:
+This operation returns the root password for your use. 
+Note that
+changes you make as a root user may cause detrimental effects to the
+database instance and unpredictable behavior for API operations. 
+
+If you're not sure
+whether you've already enabled the root user, you can easily query whether root is enabled or not:
 
 .. include:: samples/check_root_status.rst
 
@@ -106,7 +113,7 @@ is very easy:
 
 Create user
 ~~~~~~~~~~~
-To allocate a new user to a database, you need to run:
+To allocate a new user to a database:
 
 .. include:: samples/create_user.rst
 

@@ -3,14 +3,18 @@
 Quickstart for Cloud Orchestration
 ==================================
 
-Rackspace Cloud Orchestration is the name of the Rackspace orchestration, and application architecture management service.  Cloud Orchestration provides a software API to create and manipulate stacks of resources (for example load balancers, web servers, databases, and so forth) and software that operates as part of those stacks (for example Apache, PHP, MySQL, Wordpress, and so forth). Cloud Orchestration is an engine that understands Cloud topologies, unlike Chef or Puppet, which are concerned with software on servers. Where applicable, Cloud Orchestration leverages software configuration management tools such as Chef. Using simple template syntax, you can define a cloud stack, deploy the stack, scale the stack (for example add/remove resources), delete the stack, clone the stack, and more.
+Rackspace Cloud Orchestration is the name of the Rackspace orchestration and application architecture management service. 
+Cloud Orchestration provides a software API to create and manipulate stacks of resources (for example load balancers, web servers, and databases) and software that operates as part of those stacks (for example Apache, PHP, MySQL, and Wordpress). 
+Cloud Orchestration is an engine that understands cloud topologies; in this way, it is unlike Chef or Puppet, which are concerned with software on servers. 
+Where applicable, Cloud Orchestration leverages software configuration management tools such as Chef. 
+Using simple template syntax, you can define a cloud stack, deploy the stack, scale the stack (for example, add or remove resources), delete the stack, clone the stack, and more.
 
 Concepts
 ========
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 resource
-    A template artifact that represents some component of your desired architecture 
+    A template artifact that represents some component of your desired architecture. 
 
 stack
     A running instance of a template. The result of creating a stack is a deployment of the application framework or component.
@@ -42,7 +46,7 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
-These are some of the the basic operations you can perform with this API.
+Some of the basic operations you can perform with this API are described below.
 
 Create stack
 ------------
