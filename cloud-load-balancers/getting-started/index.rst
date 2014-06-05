@@ -123,7 +123,7 @@ other traffic, and items with the ``DENY`` type will have their traffic rejected
 .. include:: samples/blacklist_ips.rst
 
 Cache content for performance
------------------------------
+------------------------------
 When content caching is enabled, recently-accessed files are stored on the load
 balancer for easy retrieval by web clients. Content caching improves the
 performance of high traffic web sites by temporarily storing data that was
