@@ -1,7 +1,10 @@
 .. code-block:: csharp
 
-  // The create database instance method is asynchronous
-  DatabaseInstance {foo} = await {CloudDatabasesProvider}.CreateDatabaseInstanceAsync({database_instance_configuration}, {async_completion_option}, {cancellation_token}, null);
+  FlavorRef flavorRef = new FlavorRef("{flavor_ref_id}");
+  DatabaseVolumeConfiguration databaseVolumeConfiguration = new DatabaseVolumeConfiguration({database_volume_configuration_id});
+  DatabaseInstanceConfiguration databaseInstanceConfiguration = new DatabaseInstanceConfiguration(flavorRef, databaseVolumeConfiguration, "{instance_name}");
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  DatabaseInstance databaseInstance = await cloudDatabasesProvider.CreateDatabaseInstanceAsync(databaseInstanceConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
 
 .. code-block:: java
 

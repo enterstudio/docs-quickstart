@@ -1,6 +1,10 @@
 .. code-block:: csharp
  
-  await {CloudDatabasesProvider}.CreateDatabaseAsync({database_instance_id}, {database_configuration}, {cancellation_token});
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id");
+  DatabaseName databaseName = new DatabaseName("{database_name}");
+  DatabaseConfiguration databaseConfiguration = new DatabaseConfiguration(databaseName);
+  await cloudDatabasesProvider.CreateDatabaseAsync(databaseInstanceId, databaseConfiguration, CancellationToken.None);
 
 .. code-block:: java
 

@@ -1,6 +1,8 @@
 .. code-block:: csharp
 
-  await {CloudDatabasesProvider}.RestartDatabaseInstanceAsync({database_instance_id}, {async_completion_option}, {cancellation_token}, null);
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id");
+  await cloudDatabasesProvider.RestartDatabaseInstanceAsync(databaseInstanceId, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
 
 .. code-block:: java
 

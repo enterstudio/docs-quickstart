@@ -1,6 +1,8 @@
 .. code-block:: csharp
 
-  DatabaseFlavor {foo} = await {CloudDatabasesProvider}.GetFlavorAsync({flavorId}, {cancellation_token});
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  FlavorId flavorId = new FlavorId("{flavor_id}");
+  DatabaseFlavor databaseFlavor = await cloudDatabasesProvider.GetFlavorAsync(flavorId, CancellationToken.None);
 
 .. code-block:: java
 

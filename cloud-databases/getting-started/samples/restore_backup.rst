@@ -1,5 +1,17 @@
 .. code-block:: csharp
 
+  // To restore a database, you must first use an existing backup to
+  // create a Restore Point, then use that Restore Point to create
+  // a database instance.
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, region, null);
+  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
+  BackupId backupId = new BackupId("{backup_id}");            
+  RestorePoint restorePoint = new RestorePoint(backupId);
+  FlavorRef flavorRef = new FlavorRef("{flavor_ref_id}");
+  DatabaseVolumeConfiguration databaseVolumeConfiguration = new DatabaseVolumeConfiguration({database_volume_configuration_id});
+  DatabaseInstanceConfiguration databaseInstanceConfiguration = new DatabaseInstanceConfiguration(flavorRef, databaseVolumeConfiguration, "{instance_name}",restorePoint);
+  DatabaseInstance databaseInstance = await cloudDatabasesProvider.CreateDatabaseInstanceAsync(databaseInstanceConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+
   // This operation is currently not supported through the .NET SDK.
   
 .. code-block:: java

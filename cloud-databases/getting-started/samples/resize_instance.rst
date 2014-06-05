@@ -1,6 +1,8 @@
 .. code-block:: csharp
 
-   await {CloudDatabasesProvider}.ResizeDatabaseInstanceAsync({database_instance_id}, {flavor_ref}, {async_completion_option}, {cancellation_token}, null);
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id");
+  await cloudDatabasesProvider.ResizeDatabaseInstanceAsync(databaseInstanceId, new FlavorRef("{flavor_ref_id}"), AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
 
 .. code-block:: java
 
