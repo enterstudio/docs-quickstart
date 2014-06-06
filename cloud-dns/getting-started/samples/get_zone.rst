@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+  CloudDnsProvider cloudDNSProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
+  Task<Tuple<ReadOnlyCollectionPage<DnsDomain>,int?>> domainsList =  cloudDNSProvider.ListDomainsAsync("domain.com", null, null, CancellationToken.None);
+  Tuple<ReadOnlyCollectionPage<DnsDomain>,int?> x = await domainsList;
+
 .. code-block:: java
 
   DomainApi domainApi = cloudDNSApi.getDomainApi();
