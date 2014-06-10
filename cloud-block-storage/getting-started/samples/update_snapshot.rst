@@ -8,6 +8,17 @@
 
 .. code-block:: javascript
 
+  // assuming we've already loaded the details of a snapshot into a
+  // local variable named snapshot
+
+  snapshot.name = 'new_shapshot_name';
+
+  client.updateSnapshot(snapshot, function(err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   $snapshot->rename(array(

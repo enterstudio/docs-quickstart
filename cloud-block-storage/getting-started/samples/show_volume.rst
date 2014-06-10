@@ -8,6 +8,14 @@
 
 .. code-block:: javascript
 
+  client.getVolume('{volumeId}', function(err, volume) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO use the retrieved volume
+  });
+
 .. code-block:: php
 
   $volume = $volumeService->volume('{volumeId}');
