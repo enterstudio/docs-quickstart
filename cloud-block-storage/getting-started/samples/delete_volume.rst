@@ -8,6 +8,12 @@
 
 .. code-block:: javascript
 
+  client.deleteVolume(volumeId, function(err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   $volume->delete();

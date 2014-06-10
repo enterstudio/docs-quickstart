@@ -8,6 +8,14 @@
 
 .. code-block:: javascript
 
+  client.getSnapshots(function(err, snapshots) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO use your list of snapshots
+  });
+
 .. code-block:: php
 
   $snapshots = $volumeService->snapshotList(array(

@@ -8,6 +8,12 @@
 
 .. code-block:: javascript
 
+  client.deleteSnapshot(snapshotId, function(err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   $snapshot->delete();

@@ -15,6 +15,22 @@
 
 .. code-block:: javascript
 
+  // To create a snapshot for a volume, the volume should be detached from
+  // any server. You must supply a name for the snapshot, and may provide
+  // an optional description.
+
+  client.createSnapshot({
+    name: 'name-here',
+    description: 'This is the description',
+    volumeId: '{volumeId}'
+  }, function(err, snapshot) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO use your newly created snapshot
+  });
+
 .. code-block:: php
 
     // To create a snapshot for a volume, the volume should be detached from

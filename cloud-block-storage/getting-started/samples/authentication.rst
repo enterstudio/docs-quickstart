@@ -20,6 +20,16 @@
 
 .. code-block:: javascript
 
+  pkgcloud = require('pkgcloud');
+
+  // each client is bound to a specific service and provider
+  var client = pkgcloud.blockstorage.createClient({
+    provider: 'rackspace',
+    username: '{username}',
+    apiKey: '{apiKey}',
+    region: '{region}'
+  });
+
 .. code-block:: php
 
   require 'vendor/autoload.php';

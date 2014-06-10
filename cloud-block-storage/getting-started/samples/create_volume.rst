@@ -12,6 +12,23 @@
 
 .. code-block:: javascript
 
+  // To create the volume, specify a name and size (in GB, with a miminum of
+  // 100GB). You may optionally specify a volume type, which is either 'SSD'
+  // (faster, more expensive), or 'SATA' (more affordable). SATA is the
+  // default if you omit this.
+
+  client.createVolume({
+    name: 'photos',
+    volumeType: 'SATA',
+    size: 100
+  }, function(err, volume) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO use your newly created volume
+  });
+
 .. code-block:: php
 
   // To create the volume, specify a name and size (in GB, with a miminum of

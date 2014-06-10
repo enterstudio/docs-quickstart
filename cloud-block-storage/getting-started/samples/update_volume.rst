@@ -8,6 +8,17 @@
 
 .. code-block:: javascript
 
+  // assuming we've already loaded the details of a volume into a
+  // local variable named volume
+
+  volume.name = 'new_volume_name';
+
+  client.updateVolume(volume, function(err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   $volume->rename(array(
