@@ -2,15 +2,17 @@
 ==================================
 Quickstart for Cloud Block Storage
 ==================================
-Cloud Block Storage provides dependable performance for your I/O-intensive applications by providing a block level storage solution that allows you to mount drives or volumes to your Next Generation Cloud Serversª. 
+Cloud Block Storage provides dependable performance for your I/O-intensive applications by providing a block level storage solution that allows you to mount drives or volumes to your Next Generation Cloud Servers.
 The two primary use cases are (1) to allow you to scale your storage independently from your compute resources 
 and (2) to allow you to utilize high performance storage to serve database or I/O-intensive applications.
 
-You have your choice of SSD or standard volumes. 
+You have your choice of SSD or SATA volume types:
 
-* *Standard* volumes work well for your everyday file system needs.
+SATA
+    SATA volumes work well for your everyday file system needs. This is the default volume type.
 
-* *SSD* volumes deliver even higher performance for databases and other I/O-intensive applications. 
+SSD
+    SSD volumes deliver even higher performance for databases and other I/O-intensive applications.
 
 Plus, you don't have to scale up your servers; both standard and SSD volumes work with all sizes of next-generation Cloud Servers.
 
@@ -18,12 +20,12 @@ Concepts
 ========
 To use this service effectively, you should understand how these key ideas are used in this context:
 
-snapshot
+Snapshot
     A point-in-time copy of the data that a volume contains. 
     Snapshots are incremental, so each time that you create a snapshot, 
     the incremental changes for the new snapshot are appended to the previous snapshot, which is still available.
 
-volume
+Volume
     A detachable block storage device. 
     You can think of it as a USB hard drive. 
     You can attach a volume to one instance at a time.
