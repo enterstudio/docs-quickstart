@@ -38,7 +38,7 @@ You can use either of two sets of credentials:
 * your username and password
 * your username and API key
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
+Your username and password are the ones you use to login to the `Cloud Control Panel <https://mycloud.rackspace.com>`_.
 You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
 
 After you authenticate, you'll have two things:
