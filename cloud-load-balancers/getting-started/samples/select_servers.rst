@@ -4,6 +4,40 @@
 
 .. code-block:: javascript
 
+  // We're using async, a flow control library to make parallel calls easy
+  var async = require('async');
+
+  // We also need a compute client to retrieve details of two servers
+  var compute = pkgcloud.compute.createClient({
+    provider: 'rackspace',
+    username: '{username}',
+    apiKey: '{apiKey}',
+    region: '{region}'
+  });
+
+  var serverIds = ['{serverId1}','{serverId2}'],
+    servers = [];
+
+  async.forEach(serverIds, function(serverId, next) {
+    compute.getServer(serverId, function(err, server) {
+      // If you had an error, callback with err
+      if (err) {
+        next(err);
+        return;
+      }
+
+      // save our server into our array
+      servers.push(server);
+      next();
+    });
+  }, function(err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO next we'll add the nodes
+  });
+
 .. code-block:: php
 
   $computeService = $client->computeService('cloudServersOpenStack', 'DFW');

@@ -13,6 +13,19 @@
 
 .. code-block:: javascript
 
+  // using our previously created lb
+
+  lb.updateHealthMonitor({
+    type: 'CONNECT',
+    attemptsBeforeDeactivation: 2,
+    delay: 3599,
+    timeout: 30
+  }, function (err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   $healthMonitor = $loadBalancer->healthMonitor();

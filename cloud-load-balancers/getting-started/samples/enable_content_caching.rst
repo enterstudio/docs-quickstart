@@ -7,6 +7,13 @@
 
 .. code-block:: javascript
 
+  // Send false for the second argument to disable content caching
+  client.updateContentCaching(lb, true, function (err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   // To check whether caching is enabled

@@ -13,6 +13,16 @@
 
 .. code-block:: javascript
 
+  lb.addAccessList([
+    { type: 'DENY', address: '206.160.165.0/24'},
+    { type: 'ALLOW', address: '206.160.166.0/24'},
+    { type: 'DENY', address: '0.0.0.0/0'},
+  ], function (err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   // Example 1: Blacklist a specific IP

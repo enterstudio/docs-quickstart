@@ -23,6 +23,25 @@
 
 .. code-block:: javascript
 
+  var nodes = [];
+
+  // using our servers array from above
+  servers.forEach(function(server) {
+    nodes.push({
+      address: server.addresses.['private'][0].addr,
+      port: 80,
+      weight: 20,
+      condition: 'ENABLED',
+      type: 'PRIMARY'
+    });
+  });
+
+  client.addNodes(lb, nodes, function(err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   // Create the first node

@@ -9,11 +9,13 @@
 
 .. code-block:: javascript
 
-  pkgcloud = require('pkgcloud');
-  var rackspace = pkgcloud.dns.createClient({
+  var pkgcloud = require('pkgcloud');
+
+  var rackspace = pkgcloud.loadbalancer.createClient({
     provider: 'rackspace',
     username: '{username}',
-    apiKey: '{apiKey}'
+    apiKey: '{apiKey}',
+    region: '{region}'
   });
 
 .. code-block:: php

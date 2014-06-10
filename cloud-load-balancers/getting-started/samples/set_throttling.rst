@@ -14,6 +14,18 @@
 
 .. code-block:: javascript
 
+  lb.updateConnectionThrottle({
+    minConnections: 2,
+    maxConnections: 5000,
+    maxConnectionRate: 10000,
+    rateInterval: 5
+  }, function (err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
+
 .. code-block:: php
 
   $throttle = $loadBalancer->connectionThrottle();

@@ -10,6 +10,15 @@
 
 .. code-block:: javascript
 
+  // Poll the resource until it reaches an ACTIVE state, with a 2500ms frequency
+  lb.setWait({
+    status: 'ACTIVE'
+  }, 2500, function(err) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
     // Write a callback which outputs the name, status and progress of a LB

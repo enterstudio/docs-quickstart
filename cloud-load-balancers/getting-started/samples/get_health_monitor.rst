@@ -7,6 +7,14 @@
 
 .. code-block:: javascript
 
+  lb.getHealthMonitor(function (err, monitor) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO use your health monitor here
+  });
+
 .. code-block:: php
 
   $healthMonitor = $loadBalancer->healthMonitor();

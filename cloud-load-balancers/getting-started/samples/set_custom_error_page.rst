@@ -9,6 +9,12 @@
 
 .. code-block:: javascript
 
+  lb.setErrorPage('<html><body>Something went wrong...</body></html>', function (err, page) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+  });
+
 .. code-block:: php
 
   // To use a custom error page, specify the markup:

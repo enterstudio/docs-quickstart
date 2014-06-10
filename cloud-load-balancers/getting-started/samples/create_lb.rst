@@ -20,6 +20,22 @@
 
 .. code-block:: javascript
 
+  client.createLoadBalancer({
+    name: 'My Load Balancer',
+    protocol: pkgcloud.providers.rackspace.loadbalancer.Protocols.HTTP,
+    virtualIps: [
+      {
+        type: pkgcloud.providers.rackspace.loadbalancer.VirtualIpTypes.PUBLIC
+      }]
+  }, function(err, lb) {
+    if (err) {
+      // TODO handle as appropriate
+      return;
+    }
+
+    // TODO use your load balancer
+  });
+
 .. code-block:: php
 
   // Get an empty Load Balancer object
