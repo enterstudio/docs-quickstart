@@ -33,7 +33,7 @@
 
 .. code-block:: php
 
-    $service = $client->autoscaleService();
+    $service = $client->autoscaleService(null, '{region}');
 
     $object = (object) array(
        // Config which determines the autoscale group's behaviour
@@ -56,10 +56,18 @@
              // LB properties
              'loadBalancer' => array(
                 (object) array(
-                   'loadBalancerId' => '{loadBalancerId}',
+                   'loadBalancerId' => {loadBalancerId},
                    'port'           => 80
                 )
              )
+          )
+       ),
+       'scalingPolicies' => array(
+          array(
+             'name'     => 'scale up by 1',
+             'change'   => 1,
+             'cooldown' => 60,
+             'type'     => 'webhook'
           )
        )
     );

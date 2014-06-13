@@ -9,7 +9,7 @@
 
 .. code-block:: php
 
-    $policy = $group->getPolicy('{policyId}');
+    $policy = $group->getScalingPolicy('{policyId}');
 
 .. code-block:: python
 
