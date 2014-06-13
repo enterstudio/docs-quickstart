@@ -14,7 +14,7 @@
 
 .. code-block:: php
 
-  $dbService = $client->databaseService();
+  $dbService = $client->databaseService(null, '{region}');
 
   // Create the empty object:
   $instance = $dbService->instance();

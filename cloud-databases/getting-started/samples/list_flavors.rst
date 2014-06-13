@@ -10,6 +10,8 @@
 
 .. code-block:: php
 
+  $flavors = $service->flavorList();
+
 .. code-block:: python
 
   flavors = cdb.list_flavors()
