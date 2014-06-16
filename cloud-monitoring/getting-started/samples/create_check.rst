@@ -22,9 +22,11 @@
   // Test your params first
   $testResponse = $entity->testNewCheckParams($params);
 
-  echo $response->timestamp; // When was it executed?
-  echo $response->available; // Was it available?
-  echo $response->status;    // Status code
+  $body = $testResponse[0];
+  
+  echo $body->timestamp; // When was it executed?
+  echo $body->available; // Was it available?
+  echo $body->status;    // Status code
 
   // Now create it
   $entity->createCheck($params);
