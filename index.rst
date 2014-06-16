@@ -15,10 +15,10 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <h1>
+                <h2>
                   <img src="/img/cloud-servers.png" alt="" class="product-image"/>
    	          Cloud Servers
-                </h1>
+                </h2>
                 <p>Cloud Servers, powered by OpenStack®, are virtual machines running Linux or Windows Server in the
                 Rackspace Cloud. You can scale resources like CPU, memory, and storage up or down, depending on your
                 needs. Best of all, you can pay as you go.</p>
@@ -32,10 +32,10 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1>
+                <h2>
                   <img src="/img/cloud-files.png" alt="" class="product-image"/>
 	          Cloud Files
-		</h1>
+		</h2>
                 <p>Cloud Files, powered by OpenStack®, provides an easy to use online storage for files and media
                 which can be delivered globally at blazing speeds over Akamai's content delivery network (CDN).</p>
                 <ul class="piped-list">
@@ -48,10 +48,10 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1>
+                <h2>
                   <img src="/img/cloud-block-storage.png" alt="" class="product-image"/>
 		  Cloud Block Storage
-		</h1>
+		</h2>
                 <p>Cloud Block Storage, powered by OpenStack®, delivers consistent performance for your
                 I/O-intensive applications. Choose the service that works best for you - Standard or SSD volumes.</p>
                 <ul class="piped-list">
@@ -64,10 +64,10 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1>
+                <h2>
                   <img src="/img/cloud-load-balancer.png" alt="" class="product-image"/>
    	          Cloud Load Balancers
-		</h1>
+		</h2>
                 <p>Mission-critical web-based applications and workloads require high availability. Load balancing
                 distributes workloads across two or more servers, network links, and other resources to maximize
                 throughput, minimize response time and avoid overload.</p>
@@ -80,10 +80,10 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1>
+                <h2>
                   <img src="/img/cloud-dns.png" alt="" class="product-image"/>
 		  Cloud DNS
-		</h1>
+		</h2>
                 <p>Cloud DNS automates and simplifies Domain Name System management. Using the Rackspace Cloud Control
                 Panel and REST-based API, you can list, add, modify, and remove domains, subdomains, and records, as
                 well as import and export domains and records.</p>
@@ -96,10 +96,10 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1>
+                <h2>
                   <img src="/img/cloud-databases.png" alt="" class="product-image"/>
 		  Cloud Databases
-		</h1>
+		</h2>
                 <p>Cloud Databases, powered by OpenStack®, provides fast, scalable, fully managed hosting for your MySQL
                 instances using a REST-based API and open standards.</p>
                 <ul class="piped-list">
@@ -112,10 +112,10 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1>
+                <h2>
                   <img src="/img/cloud-images.png" alt="" class="product-image"/>
 	          Cloud Images
-		</h1>
+		</h2>
                 <p>Cloud Images, powered by OpenStack®, allows you to share, import, and export your virtual machine
                 images using a REST-based API.</p>
                 <ul class="piped-list">
@@ -128,10 +128,10 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h1>
+                <h2>
 		  <img src="/img/cloud-backup.png" alt="" class="product-image"/>
 		  Cloud Backup
-		</h1>
+		</h2>
                 <p>Cloud Backup is a file-based backup solution that allows customization of files, folders, schedule,
                 retention and notification. Restore your backed up data to any Cloud Server running Cloud Backup.</p>
                 <ul class="piped-list">
