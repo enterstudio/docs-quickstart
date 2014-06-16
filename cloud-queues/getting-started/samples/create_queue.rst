@@ -10,8 +10,13 @@
 .. code-block:: php
 
   // Obtain an Object Store service object from the client.
-  $region = 'DFW';
-  $queuesService = $client->queuesService(null, $region);
+  $queuesService = $client->queuesService(null, '{regionId}');
+
+  // You must set a unique client ID for every script that accesses the API
+  // This enforces responsibility when consuming and processing messages. If 
+  // you do not want to set your own UUID, leave the arg empty and the SDK will 
+  // create a default one:
+  $queuesService->setClientId();
 
   $queue = $queuesService->createQueue('sample_queue');
 
