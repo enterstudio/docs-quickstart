@@ -11,11 +11,6 @@
             <div class="col-md-12">
                 <h1>Explore our APIs</h1>
                 <p>With this developer documentation, we offer code snippets in the Getting Started links below so you can try our REST APIs in the language of your choice (shell, Java, Python, .NET, Node.js, PHP, and Ruby). To use these snippets to their full potential, be sure you have a Rackspace Cloud account. To see a snappy listing of all API calls, use the API Reference links. For a deeper dive into each product, go to a Developer Guide. We've built these docs for you and want to build with you, so let us know of any issues you find.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-servers/getting-started/">Getting Started</a></li>
-                    <li><a target="_blank" href="http://api.rackspace.com/api-ref.html">API Reference</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html">Developer Guide</a></li>
-                </ul>
             </div>
         </div>
         <div class="row">
@@ -121,11 +116,7 @@
                 </ul>
             </div>
         </div>
-
     </div>
-
-Contents
-~~~~~~~~
 
 .. toctree::
     :maxdepth: 2
