@@ -24,7 +24,7 @@
 
 .. code-block:: php
 
-  $server = $compute->server();
+  $server = $service->server();
 
   $response = $server->create(array(
       'name'     => 'My new server',
