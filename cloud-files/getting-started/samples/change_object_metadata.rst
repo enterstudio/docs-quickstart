@@ -21,7 +21,7 @@
 
   // Update object metadata.
   $object->saveMetadata(array(
-      'Content-Type' => 'image/jpeg'
+      'some-key' => 'some-value'
   ));
 
 .. code-block:: python

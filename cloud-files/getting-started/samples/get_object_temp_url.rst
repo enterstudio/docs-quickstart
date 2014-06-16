@@ -29,16 +29,12 @@
   // First, you'll need to set the "temp url key" on your Account. This is an
   // arbitrary secret shared between Cloud Files and your application that's
   // used to validate temp url requests. You only need to do this once.
-
-  $account = $objectStoreService->getAccount();
+  $account = $service->getAccount();
   $account->setTempUrlSecret();
-
+  
   // Get a temporary URL that will expire in 3600 seconds (1 hour) from now
   // and only allow GET HTTP requests to it.
-
-  $expirationTimeInSeconds = 3600;
-  $httpMethodAllowed = 'GET';
-  $tempUrl = $object->getTemporaryUrl($expirationTimeInSeconds, $httpMethodAllowed);
+  $tempUrl = $object->getTemporaryUrl(3600, 'GET');
 
 .. code-block:: python
 
