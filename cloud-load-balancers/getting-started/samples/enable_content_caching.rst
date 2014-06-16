@@ -17,9 +17,7 @@
 .. code-block:: php
 
   // To check whether caching is enabled
-  if (true === $loadBalancer->hasContentCaching()) {
-      // it does
-  }
+  $loadBalancer->hasContentCaching();
 
   // To enable caching
   $loadBalancer->enableContentCaching(true);

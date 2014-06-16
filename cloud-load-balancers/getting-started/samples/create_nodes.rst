@@ -44,19 +44,21 @@
 
 .. code-block:: php
 
-  // Create the first node
+  use OpenCloud\LoadBalancer\Enum\NodeCondition;
+  
   $serverOneNode = $loadBalancer->node(array(
       'address'   => $serverOne->addresses->private[0]->addr,
       'port'      => 8080,
-      'condition' => 'ENABLED'
+      'condition' => NodeCondition::ENABLED
   ));
-
-  // Create the second node
+  $serverOneNode->create();
+  
   $serverTwoNode = $loadBalancer->node(array(
       'address'   => $serverTwo->addresses->private[0]->addr,
       'port'      => 8080,
-      'condition' => 'ENABLED'
+      'condition' => NodeCondition::ENABLED
   ));
+  $serverTwoNode->create();
 
 .. code-block:: python
 

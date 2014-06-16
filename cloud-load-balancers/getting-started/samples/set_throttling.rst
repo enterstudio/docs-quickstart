@@ -30,15 +30,13 @@
 
   $throttle = $loadBalancer->connectionThrottle();
 
-  // Allow 5,000 simultaneous connections
+  // Allow a maximum of 5,000 simultaneous connections (maxConnections) per minute (rateInterval).
+  // Limit each IP to a maximum of 50 connections (maxConnectionRate).
   $throttle->create(array(
-      'maxConnections' => 5000
-  ));
-
-  // Or, allow 10,000 every 5 seconds
-  $throttle->create(array(
-      'maxConnectionRate' => 10000,
-      'rateInterval'      => 5
+      'maxConnections'    => 5000,
+      'minConnections'    => 10,
+      'rateInterval'      => 60,
+      'maxConnectionRate' => 50
   ));
 
 .. code-block:: python
