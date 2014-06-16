@@ -42,7 +42,7 @@ Some of the basic operations you can perform with this API are described below.
 
 Zones
 -----
-You can perform create, read, update, and delete operations on zones.
+You can perform create, read, update, and delete operations on zones. A few of our SDKs use 'domain' to refer to the top-level entity of a DNS entry.
 
 Create zone
 ~~~~~~~~~~~
