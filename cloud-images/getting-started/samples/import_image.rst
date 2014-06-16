@@ -8,6 +8,8 @@
 
 .. code-block:: php
 
+  // Not currently supported
+
 .. code-block:: python
 
   # After authenticating, get a reference to the client

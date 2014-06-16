@@ -8,6 +8,8 @@
 
 .. code-block:: php
 
+  $image->createMember('{tenantId}');
+
 .. code-block:: python
 
   # After authenticating, get a reference to the client

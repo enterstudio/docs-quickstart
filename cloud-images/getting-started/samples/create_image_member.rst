@@ -8,8 +8,7 @@
 
 .. code-block:: php
 
-    /** @param $response Guzzle\Http\Message\Response */
-    $response = $image->createMember('{tenantId}');
+  $image->createMember('{tenantId}');
 
 .. code-block:: python
 

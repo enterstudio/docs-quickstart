@@ -9,6 +9,7 @@
 .. code-block:: php
 
     $image = $service->getImage('{imageId}');
+    echo $image['id'];
 
 .. code-block:: python
 
