@@ -32,13 +32,15 @@
 .. code-block:: php
 
   // Get the object content (data) as a stream.
-  $objectContent = $object->getContent();
+  $stream = $object->getContent();
 
+  // Cast to string
+  $content = (string) $stream;
+  
   // Write object content to file on local filesystem.
-  $objectContent->rewind();
-  $stream = $objectContent->getStream();
+  $stream->rewind();
   $localFilename = tempnam("/tmp", 'php-opencloud-');
-  file_put_contents($localFilename, $stream);
+  file_put_contents($localFilename, $stream->getStream());
 
 .. code-block:: python
 

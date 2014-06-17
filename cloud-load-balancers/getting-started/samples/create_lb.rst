@@ -43,7 +43,9 @@
 
   // Add the IP types that your Load Balancer will support
   $loadBalancer->addVirtualIp('PUBLIC', 4);
-  $loadBalancer->addVirtualIp('PUBLIC', 6);
+  
+  // Add a node, specifying IP address and port
+  $loadBalancer->addNode('192.168.0.2', 80);
 
   // Send to the API
   $loadBalancer->create(array(

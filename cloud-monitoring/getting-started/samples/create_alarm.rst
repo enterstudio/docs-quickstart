@@ -8,7 +8,7 @@
 
 .. code-block:: php
 
-  $alarm = $check->getAlarm();
+  $alarm = $entity->getAlarm();
   $alarm->create(array(
       'check_id' => '{checkId}',
       'criteria' => 'if (metric["duration"] >= 2) { return new AlarmStatus(OK); } return new AlarmStatus(CRITICAL);',

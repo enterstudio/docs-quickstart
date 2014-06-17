@@ -10,9 +10,7 @@
 
 .. code-block:: php
 
-  if (true === $instance->isRootEnabled()) {
-      // yes it is
-  }
+  $instance->isRootEnabled();
 
 .. code-block:: python
 

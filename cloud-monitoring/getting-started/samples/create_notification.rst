@@ -21,7 +21,7 @@
   // Test these params
   $response = $notification->testParams($params);
 
-  echo $response->status; // Was it successful?
+  $status = $response->status; // Was it successful?
 
   // Now create the notification
   $notification->create($params);

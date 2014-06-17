@@ -30,7 +30,10 @@
 
   $healthMonitor = $loadBalancer->healthMonitor();
   $healthMonitor->update(array(
-      'delay' => 20
+      'delay'   => 120,
+      'timeout' => 60,,
+      'type'    => 'CONNECT'
+      'attemptsBeforeDeactivation' => 3
   ));
 
 .. code-block:: python

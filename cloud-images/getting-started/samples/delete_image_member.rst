@@ -8,9 +8,7 @@
 
 .. code-block:: php
 
-    /** @param $member OpenCloud\Image\Resource\Member */
-    $member = $image->getMember('{tenantId}');
-    $member->delete();
+    $image->deleteMember('{tenantId}');
 
 .. code-block:: python
 
