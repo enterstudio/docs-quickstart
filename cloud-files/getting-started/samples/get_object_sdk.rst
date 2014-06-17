@@ -33,9 +33,9 @@
 
   // Get the object content (data) as a stream.
   $stream = $object->getContent();
-  
+
   // Cast to string
-  echo $stream;
+  $content = (string) $stream;
   
   // Write object content to file on local filesystem.
   $stream->rewind();
