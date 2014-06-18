@@ -32,6 +32,3 @@
     -d '[{"op": "replace", "path": "/name", "value": "My Favorite Ubuntu"}]' \
     -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/openstack-images-v2.1-json-patch" | python -m json.tool
-
-  # NOTE: {imageId} is a placeholder: Replace it with
-  # an actual value and do not enclose it with {}.
