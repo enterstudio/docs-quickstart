@@ -1,5 +1,11 @@
 .. code-block:: csharp
 
+  FlavorRef flavorRef = new FlavorRef("{flavor_ref_id}");
+  DatabaseVolumeConfiguration databaseVolumeConfiguration = new DatabaseVolumeConfiguration({database_volume_configuration_id});
+  DatabaseInstanceConfiguration databaseInstanceConfiguration = new DatabaseInstanceConfiguration(flavorRef, databaseVolumeConfiguration, "{instance_name}");
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  DatabaseInstance databaseInstance = await cloudDatabasesProvider.CreateDatabaseInstanceAsync(databaseInstanceConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+
 .. code-block:: java
 
   // We need to get a Flavor (hardware type) to run the Instance on.

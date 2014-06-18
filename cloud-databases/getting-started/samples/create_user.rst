@@ -1,5 +1,12 @@
 .. code-block:: csharp
 
+   CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+   DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
+   DatabaseName databaseName = new DatabaseName("{databaseName}");
+   UserName userName = new UserName("{username}");
+   UserConfiguration userConfiguration = new UserConfiguration(userName, "{password}", new DatabaseName[] { databaseName });
+   await cloudDatabasesProvider.CreateUserAsync(databaseInstanceId, userConfiguration, CancellationToken.None);
+
 .. code-block:: java
 
   // Create a user by specifying a username and password, and give them access

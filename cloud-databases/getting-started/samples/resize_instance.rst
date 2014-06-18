@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id");
+  await cloudDatabasesProvider.ResizeDatabaseInstanceAsync(databaseInstanceId, new FlavorRef("{flavor_ref_id}"), AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+
 .. code-block:: java
 
   // This operation is currently not supported through the jclouds SDK.

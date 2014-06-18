@@ -1,12 +1,12 @@
 .. code-block:: csharp
 
-  CloudIdentity cid = new CloudIdentity()
+  CloudIdentity cloudIdentity = new CloudIdentity()
   {
       APIKey = "{apiKey}",
       Username = "{username}"
   };
-  CloudIdentityProvider cip = new CloudIdentityProvider(cid);
-  UserAccess ua = cip.Authenticate(cid);
+  CloudIdentityProvider cloudIdentityProvider = new CloudIdentityProvider(cloudIdentity);
+  UserAccess userAccess = cloudIdentityProvider.Authenticate(cloudIdentity);
   
 .. code-block:: java
 

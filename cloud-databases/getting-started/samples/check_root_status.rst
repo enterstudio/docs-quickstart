@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id);
+  bool? isRooted = await cloudDatabasesProvider.CheckRootEnabledStatusAsync(databaseInstanceId, CancellationToken.None);
+
 .. code-block:: java
 
   InstanceApi instanceApi = troveApi.getInstanceApiForZone("{region}");
