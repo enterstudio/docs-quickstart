@@ -32,10 +32,10 @@
 
 .. code-block:: sh
 
-    # To create a task to import an image, specify the source
-    # file for the image and the directory in your Cloud Files
-    # account where you want to export the image to:
+  # To create a task to import an image, specify the source
+  # file for the image and the directory in your Cloud Files
+  # account where you want to export the image to:
 
-    curl -s $ENDPOINT/tasks -X POST \
-        -d '{"type": "import","input":{"image_properties": {"name": "My image"},"import_from": "exports/my-image.vhd"}}' \
-        -H "X-Auth-Token: $TOKEN" | python -m json.tool
+  curl -s $ENDPOINT/tasks -X POST \
+      -d '{"type": "import","input":{"image_properties": {"name": "My image"},"import_from": "exports/my-image.vhd"}}' \
+      -H "X-Auth-Token: $TOKEN" | python -m json.tool
