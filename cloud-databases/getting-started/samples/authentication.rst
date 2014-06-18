@@ -7,12 +7,12 @@
   };
   CloudIdentityProvider cloudIdentityProvider = new CloudIdentityProvider(cloudIdentity);
   UserAccess userAccess = cloudIdentityProvider.Authenticate(cloudIdentity);
-  
+
 .. code-block:: java
 
   // The TroveApi will provide access to all database features, such as Instances or Users.
   TroveApi troveApi = ContextBuilder.newBuilder("rackspace-clouddatabases-us")
-          .credentials("{username}", "{apiKey}"")
+          .credentials("{username}", "{apiKey}")
           .buildApi(TroveApi.class);
 
 .. code-block:: javascript
@@ -53,3 +53,14 @@
   )
 
 .. code-block:: sh
+
+  # {username}, {apiKey} below are placeholders. Do not enclose '{}' when you replace them with actual credentials.
+
+  $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
+    -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
+    -H "Content-Type: application/json" | python -m json.tool
+
+  # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
+
+  export TOKEN="{tokenId}"
+  export ENDPOINT="{publicUrl}" # For the Cloud Databases service

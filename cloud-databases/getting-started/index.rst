@@ -2,37 +2,34 @@
 ==============================
 Quickstart for Cloud Databases
 ==============================
-This guide introduces you to Rackspace Cloud Databases. 
-Cloud Databases is a MySQL relational database service
-that allows you to easily provision instances without having all the maintenance overhead. 
-You can also back up your databases on a regular basis 
-and set up monitoring functionality to track usage.
+
+This guide introduces you to Rackspace Cloud Databases. Cloud Databases is a MySQL relational database service that allows you to easily provision instances without having all the maintenance overhead. You can also back up your databases on a regular basis and set up monitoring functionality to track usage.
 
 Concepts
 ========
+
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 flavor
-    A flavor is an available hardware configuration for a database instance. 
+    A flavor is an available hardware configuration for a database instance.
     Each flavor has a unique combination of memory capacity and priority for CPU time.
 
 instance
     An isolated environment in which your databases run. This is similar
-    to the virtualized instances used by Cloud Servers, 
+    to the virtualized instances used by Cloud Servers,
     but database instances are optimized for database performance.
 
 Authenticate to gain access to the service
 ==========================================
-To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+
+To use this service, you must authenticate yourself as a subscriber to the service. Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
 
 You can use either of two sets of credentials:
 
 * your username and password
 * your username and API key
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
-You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key.
 
 After you authenticate, you'll have two things:
 
@@ -45,22 +42,22 @@ To begin interacting with a service, send your token to that service's API endpo
 
 Use the API
 ===========
+
 Some of the basic operations you can perform with this API are described below.
 
 Work with instances
 -------------------
-Two common issues that developers have with a traditional RDS relate to peformance:
-increasing the amount of IO transactions per second, for example, or reducing
-application latency. Because of this, our instances were designed from the
-ground up with two primary features in mind:
+
+Two common issues that developers have with a traditional RDS relate to peformance: increasing the amount of IO transactions per second, for example, or reducing application latency. Because of this, our instances were designed from the ground up with two primary features in mind:
 
 * *Performance*. By using container-based virtualization, instances are allocated the resources they truly need and there is no compute power waste such as with traditional virtualization. As a result, things are faster and more efficient.
 
 * *Reliability*. We use fault-tolerant components, such as: RAID levels for individual drives, multi-tenant environments across different nodes, as well as dedicated power supplies and network adapters. This means you have redundancy both from a hardware level and a software level.
 
-Create instance
-~~~~~~~~~~~~~~~
-To create an instance you first need to decide on the hardware type, or flavor, you want to use:
+Create an instance
+~~~~~~~~~~~~~~~~~~
+
+To create an instance, you must decide on the hardware type, or flavor, that you want to use:
 
 .. include:: samples/get_flavor.rst
 
@@ -72,59 +69,55 @@ Once you have this flavor, you can use it to create your instance:
 
 .. include:: samples/create_instance.rst
 
-Resize instance
-~~~~~~~~~~~~~~~
-As with creating an instance, in order to resize one, you need to know which
-flavor to use. Once you've decided on a new flavor, you can use it to resize
-your running instance:
+Resize an instance
+~~~~~~~~~~~~~~~~~~
+
+As with creating an instance, in order to resize one, you need to know which flavor to use. Once you've decided on a new flavor, you can use it to resize your running instance:
 
 .. include:: samples/resize_instance.rst
 
-Restart instance
-~~~~~~~~~~~~~~~~
+Restart an instance
+~~~~~~~~~~~~~~~~~~~
+
 In order to restart your instance:
 
 .. include:: samples/restart_instance.rst
 
 Enable root user
 ~~~~~~~~~~~~~~~~
-Although you create a default user when creating a database instance, sometimes
-it might be necessary to execute operations as the root user. To do so, you will
-need to enable root:
+
+Although you create a default user when creating a database instance, sometimes it might be necessary to execute operations as the root user. To do so, you will need to enable root:
 
 .. include:: samples/enable_root_user.rst
 
-This operation returns the root password for your use. 
-Note that
-changes you make as a root user may cause detrimental effects to the
-database instance and unpredictable behavior for API operations. 
+This operation returns the root password for your use. Note that changes you make as a root user may cause detrimental effects to the database instance and unpredictable behavior for API operations.
 
-If you're not sure
-whether you've already enabled the root user, you can easily query whether root is enabled or not:
+If you're not sure whether you've already enabled the root user, you can easily query whether root is enabled or not:
 
 .. include:: samples/check_root_status.rst
 
 Create database
 ~~~~~~~~~~~~~~~
-This is a simple MySQL database that you interact with normally. Creating one
-is very easy:
+
+This is a simple MySQL database that you interact with normally. Creating one is very easy:
 
 .. include:: samples/create_db.rst
 
 Create user
 ~~~~~~~~~~~
+
 To allocate a new user to a database:
 
 .. include:: samples/create_user.rst
 
-The user is granted all privileges on this database. Please bear in mind that ``root``
-is a reserved name and cannot be used.
+The user is granted all privileges on this database. Please bear in mind that ``root`` is a reserved name and cannot be used.
 
 Backups
 -------
 
 Create backup
 ~~~~~~~~~~~~~
+
 To create a backup for your instance:
 
 .. include:: samples/create_backup.rst
@@ -136,14 +129,15 @@ When creating a backup, there are some things to bear in mind:
 
 Restore instance from backup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 To restore your instance from a backup:
 
 .. include:: samples/restore_backup.rst
 
 More information
 ================
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
-If you want to know more, these are some good places to continue exploring:
+
+This Quickstart is intentionally very brief, demonstrating only a few basic operations. If you want to know more, these are some good places to continue exploring:
 
 * http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.
 

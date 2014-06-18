@@ -24,3 +24,9 @@
   instance.wait_for { ready? }
 
 .. code-block:: sh
+
+  curl -s -X POST $ENDPOINT/instances/{instanceId}/action \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{ "restart": {} }' | python -m json.tool

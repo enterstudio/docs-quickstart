@@ -24,3 +24,11 @@
   instance.wait_for { ready? }
 
 .. code-block:: sh
+
+  curl -s -X POST $ENDPOINT/instances/{instanceId}/action \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d "{
+      \"resize\": { \"flavorRef\": \"$NEW_FLAVOR_REF\" }
+    }" | python -m json.tool

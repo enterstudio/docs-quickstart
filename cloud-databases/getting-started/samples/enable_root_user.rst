@@ -32,3 +32,7 @@
   File.write('~/.root_mysql_pwd', instance.root_password)
 
 .. code-block:: sh
+
+  curl -s -X POST $ENDPOINT/instances/{instanceId}/root \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

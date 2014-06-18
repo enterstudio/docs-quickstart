@@ -23,3 +23,7 @@
   flavor = @client.flavors.get('{flavorId}')
 
 .. code-block:: sh
+
+  curl -s $ENDPOINT/flavors/{flavorId} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

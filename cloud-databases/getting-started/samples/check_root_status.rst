@@ -25,3 +25,7 @@
   root_enabled = instance.root_user_enabled?
 
 .. code-block:: sh
+
+  curl -s -X GET $ENDPOINT/instances/{instanceId}/root \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool
