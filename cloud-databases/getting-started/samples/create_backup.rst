@@ -23,7 +23,6 @@
 
 .. code-block:: sh
 
-  # To asynchronously create a backup for a specified database instance:
   curl -s -X POST $ENDPOINT/backups \
     -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
@@ -36,5 +35,5 @@
       }
     }' | python -m json.tool
 
-  # Note the ID of the created backup.
+  # Note the ID of the created backup for later.
   export BACKUP_ID="{backupId}"

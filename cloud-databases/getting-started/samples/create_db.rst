@@ -33,8 +33,6 @@
 
 .. code-block:: sh
 
-  # To create a database:
-
   curl -s -X POST $ENDPOINT/instances/{instanceId}/databases \
     -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
