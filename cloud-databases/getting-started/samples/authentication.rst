@@ -54,18 +54,14 @@
 
 .. code-block:: sh
 
-  # Export your publicURL to the publicUrl variable:
-  $ export publicUrl="https://identity.api.rackspacecloud.com/v2.0/"
-  # To authenticate, use your Rackspace Cloud Account user name and API key:
-  $ curl -s $publicUrl/tokens -X 'POST' \
-      -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-      -H "Content-Type: application/json" | python -m json.tool
-  # NOTE: {username} and {apiKey} are placeholders:
-  # Replace them with actual values and do not enclose the values with {}.
-  #
-  # Export the publicURL for cloudDatabases to the publicUrl variable,
-  # and your authentication token to the token variable.
-  $ export publicUrl="https://syd.databases.api.rackspacecloud.com/v1.0/{account}"
-  $ export token="{token}"
-  # NOTE: {account} and {token} are placeholders:
-  # Replace them with actual values and do not enclose the values with {}.
+  # {username}, {apiKey} below are placeholders. Do not enclose '{}' when you replace them with actual credentials.
+
+  $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
+    -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
+    -H "Content-Type: application/json" | python -m json.tool
+
+  # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
+
+  export TENANT="{tenantId}"
+  export TOKEN="{tokenId}"
+  export ENDPOINT="{publicUrl}" # For the Cloud Databases service

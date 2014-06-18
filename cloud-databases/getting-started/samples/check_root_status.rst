@@ -25,3 +25,11 @@
   root_enabled = instance.root_user_enabled?
 
 .. code-block:: sh
+
+  # To show the root-enabled status for a database instance:
+  curl -s -X GET  $ENDPOINT/instances/{instanceId}/root \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool
+
+  # The command returns True if the root user is enabled for the specified
+  # database instance.

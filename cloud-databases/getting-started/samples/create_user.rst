@@ -48,3 +48,20 @@
   )
 
 .. code-block:: sh
+
+  curl -s -X POST $ENDPOINT/instances/{instanceId}/users \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "users": [
+        {
+          "databases": [
+            { "name": "{dbName1}" },
+            { "name": "{dbName2}" }
+          ],
+          "name": "{dbUsername}",
+          "password": "{dbPassword}"
+        }
+      ]
+    }' | python -m json.tool

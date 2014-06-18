@@ -5,7 +5,7 @@
   // a database instance.
   CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, region, null);
   DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
-  BackupId backupId = new BackupId("{backup_id}");            
+  BackupId backupId = new BackupId("{backup_id}");
   RestorePoint restorePoint = new RestorePoint(backupId);
   FlavorRef flavorRef = new FlavorRef("{flavor_ref_id}");
   DatabaseVolumeConfiguration databaseVolumeConfiguration = new DatabaseVolumeConfiguration({database_volume_configuration_id});
@@ -13,7 +13,7 @@
   DatabaseInstance databaseInstance = await cloudDatabasesProvider.CreateDatabaseInstanceAsync(databaseInstanceConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
 
   // This operation is currently not supported through the .NET SDK.
-  
+
 .. code-block:: java
 
   // This operation is currently not supported through the jclouds SDK.
@@ -35,3 +35,18 @@
   # This operation is currently not supported through the fog SDK.
 
 .. code-block:: sh
+
+  curl -s -X POST $ENDPOINT/instances \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d "{
+      \"instance\": {
+        \"name\": \"new_name\",
+        \"flavorRef\": \"$FLAVOR_REF\",
+        \"volume\": { \"size\": 20 },
+        \"restorePoint\": {
+          \"backupRef\": \"$BACKUP_ID\"
+        }
+      }
+    }" | python -m json.tool

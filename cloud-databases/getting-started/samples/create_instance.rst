@@ -59,3 +59,15 @@
   instance.wait_for { ready? }
 
 .. code-block:: sh
+
+  curl -s -X POST $ENDPOINT/instances \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d "{
+      \"instance\": {
+        \"name\": \"sample_instance\",
+        \"flavorRef\": \"$FLAVOR_REF\",
+        \"volume\": { \"size\": 20 }
+      }
+    }" | python -m json.tool

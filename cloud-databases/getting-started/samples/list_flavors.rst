@@ -23,3 +23,13 @@
   flavors = @client.flavors.all
 
 .. code-block:: sh
+
+  curl -s $ENDPOINT/flavors \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool
+
+  # Choose the flavor you prefer and make a note of its "href" element.
+  export FLAVOR_REF="{flavorRef}"
+
+  # Remember the same "href" of another flavor for resizing, later.
+  export NEW_FLAVOR_REF="{newFlavorRef}"

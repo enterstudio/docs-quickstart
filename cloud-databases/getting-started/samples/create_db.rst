@@ -1,5 +1,5 @@
 .. code-block:: csharp
- 
+
   CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
   DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id");
   DatabaseName databaseName = new DatabaseName("{database_name}");
@@ -32,3 +32,15 @@
   database = instance.databases.create(:name => 'sample_db')
 
 .. code-block:: sh
+
+  # To create a database:
+
+  curl -s -X POST $ENDPOINT/instances/{instanceId}/databases \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d '{
+      "databases": [
+        { "name": "sampledb" }
+      ]
+    }' | python -m json.tool
