@@ -12,7 +12,7 @@
 
   // The TroveApi will provide access to all database features, such as Instances or Users.
   TroveApi troveApi = ContextBuilder.newBuilder("rackspace-clouddatabases-us")
-          .credentials("{username}", "{apiKey}"")
+          .credentials("{username}", "{apiKey}")
           .buildApi(TroveApi.class);
 
 .. code-block:: javascript
