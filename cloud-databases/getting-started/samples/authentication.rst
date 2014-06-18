@@ -62,6 +62,5 @@
 
   # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
 
-  export TENANT="{tenantId}"
   export TOKEN="{tokenId}"
   export ENDPOINT="{publicUrl}" # For the Cloud Databases service
