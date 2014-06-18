@@ -24,7 +24,7 @@
 
 .. code-block:: ruby
 
-  // Fog doesn't support this API presently
+  # Fog doesn't support this API presently
 
 .. code-block:: sh
 
