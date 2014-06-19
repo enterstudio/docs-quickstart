@@ -33,8 +33,8 @@
 
 .. code-block:: sh
 
-  curl -s $ENDPOINT/images/{imageId}/members/{memberId} -X PUT \
-    -d '{"status":"accepted"}' -H "X-Auth-Token: $TOKEN" | python -m json.tool
-
-  # NOTE: {imageId} and {memberId} are placeholders:
-  # Replace them with actual values and do not enclose the values with {}.
+  curl -s -X PUT $ENDPOINT/images/{imageId}/members/{memberId} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{ "status": "accepted" }' | python -m json.tool
