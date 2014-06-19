@@ -107,8 +107,7 @@ If you're an image **producer** and you want to unshare an image from another us
 More information
 ================
 
-This Quickstart is intentionally very brief, demonstrating only a few basic operations.
-If you want to know more, these are some good places to continue exploring:
+This Quickstart is intentionally very brief, demonstrating only a few basic operations. If you want to know more, these are some good places to continue exploring:
 
 * http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.
 
