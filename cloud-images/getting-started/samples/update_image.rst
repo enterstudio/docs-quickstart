@@ -29,6 +29,18 @@
 .. code-block:: sh
 
   curl -s $ENDPOINT/images/{imageId} -X PATCH \
-    -d '[{"op": "replace", "path": "/name", "value": "My Favorite Ubuntu"}]' \
     -H "X-Auth-Token: $TOKEN" \
-    -H "Accept: application/openstack-images-v2.1-json-patch" | python -m json.tool
+    -H "Content-Type: application/openstack-images-v2.1-json-patch" \
+    -H "Accent: application/json" \
+    -d '[
+      {
+        "op": "add",
+        "path": "/someAttribute",
+        "value": "someValue"
+      },
+      {
+        "op": "add",
+        "path": "/anotherAttribute",
+        "value": "anotherValue"
+      }
+    ]' | python -m json.tool

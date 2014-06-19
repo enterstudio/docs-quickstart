@@ -27,7 +27,5 @@
 .. code-block:: sh
 
   curl -s $ENDPOINT/images/{imageId}/members \
-    -H "X-Auth-Token: $TOKEN" | python -m json.tool
-
-  # NOTE: {imageId} is a placeholder: replace it with
-  # an actual value and do not enclose it with {}.
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

@@ -24,8 +24,5 @@
 
 .. code-block:: sh
 
-  curl -i $ENDPOINT/images/{imageId}/members/{memberId} -X DELETE \
+  curl -i -X DELETE $ENDPOINT/images/{imageId}/members/{memberId} \
       -H "X-Auth-Token: $TOKEN"
-
-  # NOTE: {imageId} and {memberId} are placeholders:
-  # Replace them with actual values and do not enclose the values with {}.

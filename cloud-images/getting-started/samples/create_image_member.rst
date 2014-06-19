@@ -24,13 +24,10 @@
 
 .. code-block:: sh
 
-  # To create an image member for an image, specify the image ID
-  # for the image you want to share and the user name (member ID)
-  # for the user that you want to share the image with:
+  # Use the prospective image consumer's Rackspace account number for {memberId}.
 
-  curl -s $ENDPOINT/images/{imageId}/members -X POST \
-    -d '{"member":"{memberId}"}' \
-    -H "X-Auth-Token: $TOKEN" | python -m json.tool
-
-  # NOTE: {imageId} and {memberId} are placeholders: replace these with
-  # actual values and do not enclose these values with {}.
+  curl -s -X POST $ENDPOINT/images/{imageId}/members \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -d '{ "member": "{memberId}" }' | python -m json.tool
