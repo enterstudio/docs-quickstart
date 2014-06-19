@@ -22,21 +22,16 @@ instance
 Authenticate to gain access to the service
 ==========================================
 
-To use this service, you must authenticate yourself as a subscriber to the service. Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+To use this service you have to authenticate first. To do this, you will need your Rackspace username, and one of the following:
 
-You can use either of two sets of credentials:
+* your Rackspace account password
+* your Rackspace API key
 
-* your username and password
-* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/.
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key.
+To find your API key, first navigate to the Cloud Control Panel, then click on your username at the top right corner, and then finally click on Account Settings. You will be taken to a page that shows your settings. Under Login Details, you can show or reset your API key.
 
-After you authenticate, you'll have two things:
-
-* a token, proving that your identity has been authenticated
-* a service catalog, listing the API endpoints available to you
-
-To begin interacting with a service, send your token to that service's API endpoint.
+Once you have these pieces of information, you can pass them into the SDK:
 
 .. include:: samples/authentication.rst
 

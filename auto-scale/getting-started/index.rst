@@ -9,7 +9,7 @@ To use Auto Scale, you define a scaling group consisting of cloud servers and cl
 Assumptions
 ------------
 This guide assumes the reader has working familiarity with (at the very least):
-    
+
 * `Cloud Servers </docs/cloud-servers/getting-started/>`_
 * `Cloud Monitoring </docs/cloud-monitoring/getting-started/>`_
 
@@ -18,13 +18,13 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 capability URL
-    URL that gives authorization for a certain action or event. 
-    If you know the URL, you have access to it and you can use the URL to trigger a specific event. 
+    URL that gives authorization for a certain action or event.
+    If you know the URL, you have access to it and you can use the URL to trigger a specific event.
     Capability URLs are usually long and random and cannot be guessed by a user.
 
 scaling group
-    Specifies the basic elements of the Auto Scale configuration. 
-    It manages how many servers can participate in the scaling group. 
+    Specifies the basic elements of the Auto Scale configuration.
+    It manages how many servers can participate in the scaling group.
     It also specifies information related to load balancers if your configuration uses a load balancer.
     When you create a scaling group, you specify the details for the group configuration and the launch configuration.
 
@@ -33,30 +33,23 @@ scaling policy
     You can define a scaling policy to trigger Auto Scale activities through a webhook or based on a schedule.
     You can specify multiple policies to manage a scaling group.
 
-webhook 
-    Industry-standard protocol for sending events between systems; for Auto Scale, webhoooks are used to execute policies. 
-    A webhook consists of an HTTP callback that is triggered by some user-defined event, 
+webhook
+    Industry-standard protocol for sending events between systems; for Auto Scale, webhoooks are used to execute policies.
+    A webhook consists of an HTTP callback that is triggered by some user-defined event,
     such as an alarm that is set through Cloud Monitoring or another monitoring service.
 
 Authenticate to gain access to the service
 ==========================================
-To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+To use this service you have to authenticate first. To do this, you will need your Rackspace username, and one of the following:
 
-You can use either of two sets of credentials:
+* your Rackspace account password
+* your Rackspace API key
 
-* your username and password
-* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/.
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
-You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+To find your API key, first navigate to the Cloud Control Panel, then click on your username at the top right corner, and then finally click on Account Settings. You will be taken to a page that shows your settings. Under Login Details, you can show or reset your API key.
 
-After you authenticate, you'll have two things:
-
-* a token, proving that your identity has been authenticated
-* a service catalog, listing the API endpoints available to you
-
-To begin interacting with a service, send your token to that service's API endpoint.
+Once you have these pieces of information, you can pass them into the SDK:
 
 .. include::  samples/authentication.rst
 
@@ -143,7 +136,7 @@ To delete a webhook:
 
 More information
 ================
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
+This Quickstart is intentionally very brief, demonstrating only a few basic operations.
 If you want to know more, these are some good places to continue exploring:
 
 * http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.

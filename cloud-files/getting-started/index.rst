@@ -2,13 +2,13 @@
 ==========================
 Quickstart for Cloud Files
 ==========================
-Rackspace offers a flexible and scalable solution to object storage through its Cloud Files service. 
+Rackspace offers a flexible and scalable solution to object storage through its Cloud Files service.
 
-The core storage system is designed to provide a secure, network-accessible way to store an unlimited number of files. 
-Files that exceed 5 GB in size are broken down into segments of 5 GB or less. 
+The core storage system is designed to provide a secure, network-accessible way to store an unlimited number of files.
+Files that exceed 5 GB in size are broken down into segments of 5 GB or less.
 For example, if you need to store large files such as videos, HD movies, or
 backups, Cloud Files accomplishes this by enabling you to upload multiple file segments
-and a manifest file to map those segments together. 
+and a manifest file to map those segments together.
 Large files are then downloaded as
 a single file. You can store as much as you want and pay only for storage space that you
 actually use.
@@ -28,28 +28,21 @@ container
     A storage compartment that provides a way for you to organize your data.
 
 object
-    The basic storage entity in Cloud Files. 
+    The basic storage entity in Cloud Files.
     An object represents a files and its optional metadata that you upload to the system.
 
 Authenticate to gain access to the service
 ==========================================
-To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+To use this service you have to authenticate first. To do this, you will need your Rackspace username, and one of the following:
 
-You can use either of two sets of credentials:
+* your Rackspace account password
+* your Rackspace API key
 
-* your username and password
-* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/.
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
-You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+To find your API key, first navigate to the Cloud Control Panel, then click on your username at the top right corner, and then finally click on Account Settings. You will be taken to a page that shows your settings. Under Login Details, you can show or reset your API key.
 
-After you authenticate, you'll have two things:
-
-* a token, proving that your identity has been authenticated
-* a service catalog, listing the API endpoints available to you
-
-To begin interacting with a service, send your token to that service's API endpoint.
+Once you have these pieces of information, you can pass them into the SDK:
 
 .. include:: samples/authentication.rst
 
@@ -59,14 +52,14 @@ Some of the basic operations you can perform with this API are described below.
 
 Create container
 ----------------
-Before you can upload any objects to Cloud Files, you must create a container to receive the objects. 
+Before you can upload any objects to Cloud Files, you must create a container to receive the objects.
 To create a container:
 
 .. include:: samples/create_container.rst
 
 CDN-enable container
 --------------------
-To make any objects within a container publicly readable, 
+To make any objects within a container publicly readable,
 enable the container for access on the CDN (Content Delivery Network):
 
 .. include:: samples/set_container_as_cdn.rst
@@ -93,16 +86,16 @@ To upload objects into a container:
 
 Change object metadata
 ------------------------
-To change object metadata: 
+To change object metadata:
 
 .. include:: samples/change_object_metadata.rst
 
-Once you have an object uploaded to a container you can change its metadata in-place. 
+Once you have an object uploaded to a container you can change its metadata in-place.
 For instance, you can change its content-type so that when delivered to requesting clients it can be treated accordingly.
 
 Get object
 ----------
-You and your clients can retrieve objects from Cloud Files in several ways. 
+You and your clients can retrieve objects from Cloud Files in several ways.
 To retrieve objects, the most common ways are:
 
 Get object via temporary URL
@@ -131,7 +124,7 @@ To delete an object from its container:
 
 More information
 ================
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
+This Quickstart is intentionally very brief, demonstrating only a few basic operations.
 If you want to know more, these are some good places to continue exploring:
 
 * http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.

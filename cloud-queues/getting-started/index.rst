@@ -2,7 +2,7 @@
 ===========================
 Quickstart for Cloud Queues
 ===========================
-Cloud Queues is an open source, scalable, and highly available message and notifications service, based on the OpenStack Marconi project. 
+Cloud Queues is an open source, scalable, and highly available message and notifications service, based on the OpenStack Marconi project.
 Cloud Queues uses a few basic components--queues, messages, and claims--which give you the flexibility you need to create powerful web applications in the cloud.
 
 This service supports a variety of messaging patterns, such as the *producer-consumer* model and the *publisher-subscriber* model, through which you create and manage queues and messages.
@@ -22,28 +22,21 @@ message
     A task, a notification, or any meaningful data that a producer or publisher sends to the queue.
 
 queue
-    The entity that holds messages. Ideally, a queue is created per work type. 
+    The entity that holds messages. Ideally, a queue is created per work type.
     For example, if you want to compress files, you would create a queue dedicated to files awaiting compression.
 
 Authenticate to gain access to the service
 ==========================================
-To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+To use this service you have to authenticate first. To do this, you will need your Rackspace username, and one of the following:
 
-You can use either of two sets of credentials:
+* your Rackspace account password
+* your Rackspace API key
 
-* your username and password
-* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/.
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
-You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+To find your API key, first navigate to the Cloud Control Panel, then click on your username at the top right corner, and then finally click on Account Settings. You will be taken to a page that shows your settings. Under Login Details, you can show or reset your API key.
 
-After you authenticate, you'll have two things:
-
-* a token, proving that your identity has been authenticated
-* a service catalog, listing the API endpoints available to you
-
-To begin interacting with a service, send your token to that service's API endpoint.
+Once you have these pieces of information, you can pass them into the SDK:
 
 .. include:: samples/authentication.rst
 
@@ -84,7 +77,7 @@ To claim a message or messages from a queue used by the consumer of the messages
 
 Release claimed messages
 ------------------------
-To release a claimed message so that a different consumer can attempt to process the message, 
+To release a claimed message so that a different consumer can attempt to process the message,
 if the consumer cannot complete the task specified in a message or simply refuses to do so:
 
 .. include:: samples/release_message.rst
@@ -97,7 +90,7 @@ To delete a message after it has been used or completed and is no longer needed,
 
 More information
 ================
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
+This Quickstart is intentionally very brief, demonstrating only a few basic operations.
 If you want to know more, these are some good places to continue exploring:
 
 * http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.

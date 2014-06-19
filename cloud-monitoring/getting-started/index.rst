@@ -10,23 +10,23 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 agent
-    A monitoring daemon that resides on the server being monitored. 
+    A monitoring daemon that resides on the server being monitored.
     The agent gathers metrics based on agent checks and pushes them to Cloud Monitoring.
 
 alarm
-    Contains a set of rules that determine when the monitoring system sends a notification. 
+    Contains a set of rules that determine when the monitoring system sends a notification.
     You can create multiple alarms for the different check types associated with an entity
 
 check
     Contains the specific details of how you are monitoring the entity, such as
-    which components of the entity to monitor, the monitoring frequency, and how many monitoring zones are launching the check. 
+    which components of the entity to monitor, the monitoring frequency, and how many monitoring zones are launching the check.
 
 entity
-    The object or resource that you want to monitor. 
+    The object or resource that you want to monitor.
     An entity is commonly a web server, but it might also be a website, a web page, or a web service.
 
 monitoring zone
-    The launch point of a check; a monitoring zone is a geographical region. When you create a check, you specify which monitoring zone(s) you want to launch the check from. 
+    The launch point of a check; a monitoring zone is a geographical region. When you create a check, you specify which monitoring zone(s) you want to launch the check from.
 
 notification
     An informational message sent to one or more addresses by the monitoring system when an alarm is triggered.
@@ -36,23 +36,16 @@ notification plan
 
 Authenticate to gain access to the service
 ==========================================
-To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+To use this service you have to authenticate first. To do this, you will need your Rackspace username, and one of the following:
 
-You can use either of two sets of credentials:
+* your Rackspace account password
+* your Rackspace API key
 
-* your username and password
-* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/.
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
-You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+To find your API key, first navigate to the Cloud Control Panel, then click on your username at the top right corner, and then finally click on Account Settings. You will be taken to a page that shows your settings. Under Login Details, you can show or reset your API key.
 
-After you authenticate, you'll have two things:
-
-* a token, proving that your identity has been authenticated
-* a service catalog, listing the API endpoints available to you
-
-To begin interacting with a service, send your token to that service's API endpoint.
+Once you have these pieces of information, you can pass them into the SDK:
 
 .. include:: samples/authentication.rst
 
@@ -78,16 +71,16 @@ To begin monitoring a resource, create an entity that represents the resource in
 
 List monitoring zones
 ----------------------
-Before creating a check for the new entity, choose which monitoring zones to run the check from. 
-Cloud Monitoring is divided into different monitoring zones. 
-You may want to have a single server monitored from several monitoring zones to reduce the risk of false alarms and check the response time from different locations around the world. 
+Before creating a check for the new entity, choose which monitoring zones to run the check from.
+Cloud Monitoring is divided into different monitoring zones.
+You may want to have a single server monitored from several monitoring zones to reduce the risk of false alarms and check the response time from different locations around the world.
 To see which zones are available to you:
 
 .. include:: samples/list_monitoring_zones.rst
 
 Delete entity
 -------------
-To delete a monitoring entity: 
+To delete a monitoring entity:
 
 .. include:: samples/delete_entity.rst
 
@@ -113,7 +106,7 @@ To remove a check:
 
 Notifications and alarms
 ------------------------
-In most cases you, and perhaps several people on your team, will be interested in multiple alerts. 
+In most cases you, and perhaps several people on your team, will be interested in multiple alerts.
 Cloud Monitoring lets you set up notification plans that can be shared between multiple alerts.
 
 Create notification
@@ -136,7 +129,7 @@ To delete an alarm:
 
 More information
 ================
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
+This Quickstart is intentionally very brief, demonstrating only a few basic operations.
 If you want to know more, these are some good places to continue exploring:
 
 * http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.

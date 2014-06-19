@@ -16,23 +16,16 @@ zone
 
 Authenticate to gain access to the service
 ==========================================
-To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+To use this service you have to authenticate first. To do this, you will need your Rackspace username, and one of the following:
 
-You can use either of two sets of credentials:
+* your Rackspace account password
+* your Rackspace API key
 
-* your username and password
-* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/.
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
-You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+To find your API key, first navigate to the Cloud Control Panel, then click on your username at the top right corner, and then finally click on Account Settings. You will be taken to a page that shows your settings. Under Login Details, you can show or reset your API key.
 
-After you authenticate, you'll have two things:
-
-* a token, proving that your identity has been authenticated
-* a service catalog, listing the API endpoints available to you
-
-To begin interacting with a service, send your token to that service's API endpoint.
+Once you have these pieces of information, you can pass them into the SDK:
 
 .. include:: samples/authentication.rst
 
@@ -46,7 +39,7 @@ You can perform create, read, update, and delete operations on zones. A few of o
 
 Create zone
 ~~~~~~~~~~~
-The first step in managing your domains and subdomains is to create a DNS zone, which you can think of as being the "root" level. 
+The first step in managing your domains and subdomains is to create a DNS zone, which you can think of as being the "root" level.
 So, for example, if you have a domain called `example.com`, create a zone called `example.com` via the DNS service as follows:
 
 .. include:: samples/create_zone.rst
@@ -60,9 +53,9 @@ After you create a zone, you can retrieve it and inspect its details as follows:
 Modify zone
 ~~~~~~~~~~~
 You can modify your DNS zone to change any of the details other than the zone name, so long as the new values are valid.
-For example, you can change the zone's email address, but the new address must follow the correct email address format; 
-you can define a new TTL, but the new TTL must be > 300s. 
-However, the zone name cannot be changed. 
+For example, you can change the zone's email address, but the new address must follow the correct email address format;
+you can define a new TTL, but the new TTL must be > 300s.
+However, the zone name cannot be changed.
 If you need to modify the zone name, delete the zone (explained below) and create another zone with the new domain.
 
 .. include:: samples/modify_zone.rst
@@ -107,7 +100,7 @@ To delete a DNS record:
 
 More information
 ================
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
+This Quickstart is intentionally very brief, demonstrating only a few basic operations.
 If you want to know more, these are some good places to continue exploring:
 
 * http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.

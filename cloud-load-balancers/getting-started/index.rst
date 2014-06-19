@@ -11,8 +11,8 @@ Concepts
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 monitor
-    A configurable feature of each load balancer. 
-    It is used to determine whether or not a back-end node is usable for processing a request. 
+    A configurable feature of each load balancer.
+    It is used to determine whether or not a back-end node is usable for processing a request.
     It is not related to the Cloud Monitoring service.
 
 node
@@ -20,23 +20,16 @@ node
 
 Authenticate to gain access to the service
 ==========================================
-To use this service, you must authenticate yourself as a subscriber to the service.
-Authenticate by presenting valid Rackspace customer credentials in a ``POST`` to a Rackspace authentication endpoint.
+To use this service you have to authenticate first. To do this, you will need your Rackspace username, and one of the following:
 
-You can use either of two sets of credentials:
+* your Rackspace account password
+* your Rackspace API key
 
-* your username and password
-* your username and API key
+Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/.
 
-Your username and password are the ones you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/. 
-You can obtain or create your API key if you are logged in to the Cloud Control Panel: click on your username, then Account Settings; then under Login Details, you can show or reset your API key. 
+To find your API key, first navigate to the Cloud Control Panel, then click on your username at the top right corner, and then finally click on Account Settings. You will be taken to a page that shows your settings. Under Login Details, you can show or reset your API key.
 
-After you authenticate, you'll have two things:
-
-* a token, proving that your identity has been authenticated
-* a service catalog, listing the API endpoints available to you
-
-To begin interacting with a service, send your token to that service's API endpoint.
+Once you have these pieces of information, you can pass them into the SDK:
 
 .. include:: samples/authentication.rst
 
@@ -66,8 +59,8 @@ servers or databases you want guarded. These are known as nodes.
 
 .. include:: samples/select_servers.rst
 
-The above sample retrieves two cloud servers using their unique IDs. 
-You can obtain a server's ID by following the steps outlined in the 
+The above sample retrieves two cloud servers using their unique IDs.
+You can obtain a server's ID by following the steps outlined in the
 `Quickstart for Cloud Servers </docs/cloud-servers/getting-started/>`_
 for retrieving servers based on arbitrary properties.
 
@@ -137,14 +130,14 @@ Use error pages
 ---------------
 An error page is the HTML file that is shown to your users when accessing a
 load balancer node that is offline or otherwise unavailable. By default, every
-provisioned load balancer is configured with a default error page. 
+provisioned load balancer is configured with a default error page.
 However, you can create a custom error page for load balancers that use the HTTP protocol:
 
 .. include:: samples/set_custom_error_page.rst
 
 More information
 ================
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
+This Quickstart is intentionally very brief, demonstrating only a few basic operations.
 If you want to know more, these are some good places to continue exploring:
 
 * http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.
