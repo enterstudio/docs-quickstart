@@ -46,8 +46,6 @@ Image operations
 List available images
 ---------------------
 
-To see the images that are currently available to your account:
-
 .. include:: samples/list_images.rst
 
 Get image details
