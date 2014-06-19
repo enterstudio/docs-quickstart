@@ -3,14 +3,10 @@
 Quickstart for Cloud Images
 ===========================
 
-Rackspace Cloud Images enables you to create and manipulate filesystem snapshots of your Cloud Servers. Custom images can be used as data backups or as *gold* images used to launch additional servers. Images can also be shared among several Rackspace accounts.
-
-Images that you capture are stored in Cloud Files.
+Cloud Images are filesystem snapshots of your Cloud Servers. You can use these snapshots to duplicate Cloud Servers and even share the images across other Rackspace accounts.
 
 Concepts
 ========
-
-To use this service effectively, you should understand these key ideas:
 
 Image
     A bundle of files that you use to create or rebuild a server. There are pre-defined images, but you can also create your own custom images from servers that you've launched.
