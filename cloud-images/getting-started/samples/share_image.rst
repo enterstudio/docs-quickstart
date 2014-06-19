@@ -14,8 +14,8 @@
 
   # After authenticating, get a reference to the client
   imgs = pyrax.images
-  # {projectId} is the account ID to share the image with.
-  imgs.add_image_member("{imageId}", "{projectId}")
+  # {tenantId} is the account ID to share the image with.
+  imgs.add_image_member("{imageId}", "{tenantId}")
 
 .. code-block:: ruby
 
