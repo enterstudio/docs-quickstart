@@ -3,7 +3,7 @@
 Quickstart for Cloud Images
 ===========================
 
-Cloud Images are filesystem snapshots of your Cloud Servers. You can use these snapshots to duplicate Cloud Servers and even share the images across other Rackspace accounts.
+Cloud Images are filesystem snapshots of your Cloud Servers. You can use them to duplicate Cloud Servers, and even share the images across multiple Rackspace accounts.
 
 Concepts
 ========
