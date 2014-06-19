@@ -69,7 +69,7 @@ You can also update the metadata for a specific image:
 Import or export an image
 -------------------------
 
-Images can be *imported* and *exported* to and from Cloud Files. This can be useful for doing your own backups, or for moving images between regions.
+Images can be *imported* and *exported* to and from Cloud Files. This can be useful for moving images between regions.
 
 To export an image to Cloud Files:
 
