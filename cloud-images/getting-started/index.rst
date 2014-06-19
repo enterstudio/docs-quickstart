@@ -103,14 +103,3 @@ Both users can also list all of the members for a given image:
 If you're an image **producer** and you want to unshare an image from another user, you can delete the image member:
 
 .. include:: samples/delete_image_member.rst
-
-More information
-================
-
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. If you want to know more, these are some good places to continue exploring:
-
-* http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.
-
-* http://docs.rackspace.com/ links to all our API reference documentation, where you can find additional examples and extended explanations of key concepts. It also links to our documentation for Cloud Control Panel users.
-
-* https://community.rackspace.com/developers/default is a forum where you can discuss your questions and concerns with a community of Rackers, Rackspace customers, and others interested in developing software in the cloud.
