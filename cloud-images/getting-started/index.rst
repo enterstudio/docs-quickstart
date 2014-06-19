@@ -3,9 +3,9 @@
 Quickstart for Cloud Images
 ===========================
 
-Rackspace Cloud Images enables you to create and manipulate filesystem snapshots of your Cloud Servers. Images that you capture are stored in Cloud Files.
+Rackspace Cloud Images enables you to create and manipulate filesystem snapshots of your Cloud Servers. Custom images can be used as data backups or as *gold* images used to launch additional servers. Images can also be shared among several Rackspace accounts.
 
-Images that you create can also be shared with other Rackspace accounts.
+Images that you capture are stored in Cloud Files.
 
 Concepts
 ========
@@ -13,7 +13,7 @@ Concepts
 To use this service effectively, you should understand these key ideas:
 
 Image
-    A bundle of operating system (OS) files that you use to create or rebuild a server. There are pre-defined images, but you can also create your own custom images from servers that you've launched. Custom images can be used as data backups or as *gold* images used to launch additional servers.
+    A bundle of files that you use to create or rebuild a server. There are pre-defined images, but you can also create your own custom images from servers that you've launched.
 
     * A **standard image** is one that Rackspace supplies for your service level, or that is provided specifically for RackConnect customers, and that hasn't yet reached its end-of-life.
 
@@ -57,62 +57,62 @@ To see the images that are currently available to your account:
 Get image details
 -----------------
 
-Once you know the ID of an image that you care about, you can access additional information and metadata:
+Each image can have arbitrary metadata associated with it, which you can use to share information about the image or to aid filtering and sorting.
+
+Once you know the ID of an image that you care about, you can see its additional information and metadata:
 
 .. include:: samples/get_image.rst
 
-Update image
-------------
+Update an image
+---------------
 
-Each image can have arbitrary metadata associated with it. You can update the metadata for a specific image:
+You can also update the metadata for a specific image:
 
 .. include:: samples/update_image.rst
 
-Import or export image
-----------------------
-An image task is a request to perform an asynchronous image-related operation, such as importing or exporting an image.
-The request results in the creation of a disposable task resource that can be polled for information about the status of the operation.
+Import or export an image
+-------------------------
 
-After you initiate an image import or export, poll the status of the created task.
-When the task resource reaches a final status of success or failure, the poll response includes an expiration date and time stamp. After that expiration date and time, the disposable task resource itself expires and is subject to deletion.
-However, the result of the task, such as an imported or exported image, does not expire.
+Images can be *imported* and *exported* to and from Cloud Files. This can be useful for doing your own backups, or for moving images between regions.
 
-.. include:: samples/import_image.rst
+To export an image to Cloud Files:
 
 .. include:: samples/export_image.rst
 
-Share image
------------
-You can perform create, read, update, and delete operations on image members.
-The Cloud Images API enables you and others to share your custom images.
+To import an image from Cloud Files:
 
-Note:
-The operations you can execute depend on your role.
-If you are an image producer, you cannot use the update_image_member operation for an image you are sharing with someone else.
-Likewise, if you are an image consumer you cannot use create_image_member for someone else's image.
+.. include:: samples/import_image.rst
 
-Add image member
-~~~~~~~~~~~~~~~~
+Share an image
+--------------
+
+Rackspace Cloud Images enables you and others to share custom images. You accomplish this by manipulating *image members*.
+
+The operations that you can execute on a specific image depend on your role. If you are an image producer, you can't update an image member for an image you're sharing with someone else. Similarly, if you're an image consumer, you can't create additional image members for someone else's image.
+
+First, the image **producer** initiates the sharing process by adding a *member* to the image.
+
 .. include:: samples/create_image_member.rst
 
-List image members
-~~~~~~~~~~~~~~~~~~
-.. include:: samples/list_image_members.rst
+The image does **not** automatically appear in the images list for the consuming user. Instead, the **consumer** must explicitly *accept* or *reject* the image member.
 
-Get image member details
-~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: samples/get_image_member.rst
-
-Update image member
-~~~~~~~~~~~~~~~~~~~
 .. include:: samples/update_image_member.rst
 
-Delete image member
-~~~~~~~~~~~~~~~~~~~
+To check on the status of these transactions, either party can view the image member's details:
+
+.. include:: samples/get_image_member.rst
+
+Both users can also list all of the members for a given image:
+
+.. include:: samples/list_image_members.rst
+
+If you're an image **producer** and you want to unshare an image from another user, you can delete the image member:
+
 .. include:: samples/delete_image_member.rst
 
 More information
 ================
+
 This Quickstart is intentionally very brief, demonstrating only a few basic operations.
 If you want to know more, these are some good places to continue exploring:
 
