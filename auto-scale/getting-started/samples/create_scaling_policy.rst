@@ -16,24 +16,24 @@
 
 .. code-block:: php
 
-    $policy = $group->getScalingPolicy();
-    $policy->create(array(
-        array(
-        (object) array(
-            'name'     => 'My policy',
-            'change'   => 1,
-            'type'     => 'webhook',
-            'cooldown' => 360
-        )
+  $policy = $group->getScalingPolicy();
+  $policy->create(array(
+      array(
+      (object) array(
+          'name'     => 'My policy',
+          'change'   => 1,
+          'type'     => 'webhook',
+          'cooldown' => 360
+      )
 
-        ));
+));
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    au.add_policy("{scalingGroupId}", "My Policy", cooldown=360, change=1,
-                  is_percent=False)
+  # After authenticating
+  au = pyrax.autoscale
+  au.add_policy("{scalingGroupId}", "My Policy", cooldown=360, change=1,
+                is_percent=False)
 
 .. code-block:: ruby
 
@@ -44,16 +44,15 @@
 
 .. code-block:: sh
 
-  $ curl -X POST -d \
-    '[
+  curl -X POST $ENDPOINT/groups/{groupId}/policies \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" \
+    -H "Content-Type: application/json" \
+    -d '[
        {
           "name":"{policyName}",
           "change":1,
           "cooldown":360,
           "type":"webhook"
        }
-    ]' \
-    -H "X-Auth-Token: $TOKEN" \
-    -H "Accept: application/json" \
-    -H "Content-Type: application/json" \
-    $ENDPOINT/groups/{groupId}/policies | python -m json.tool
+    ]' | python -m json.tool

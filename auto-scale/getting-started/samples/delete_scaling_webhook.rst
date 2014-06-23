@@ -13,9 +13,9 @@
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    au.delete_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
+  # After authenticating
+  au = pyrax.autoscale
+  au.delete_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
 
 .. code-block:: ruby
 
@@ -23,5 +23,5 @@
 
 .. code-block:: sh
 
-  $ curl -X DELETE -H "X-Auth-Token: $TOKEN" \
-    $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks/{webhookId}
+  curl -X DELETE $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks/{webhookId} \
+    -H "X-Auth-Token: $TOKEN"

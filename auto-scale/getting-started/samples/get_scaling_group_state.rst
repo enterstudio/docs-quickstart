@@ -9,13 +9,13 @@
 
 .. code-block:: php
 
-    $state = $group->getState();
+  $state = $group->getState();
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    state = au.get_state("{scalingGroupId}")
+  # After authenticating
+  au = pyrax.autoscale
+  state = au.get_state("{scalingGroupId}")
 
 .. code-block:: ruby
 
@@ -23,6 +23,6 @@
 
 .. code-block:: sh
 
-  curl -X GET -H "X-Auth-Token: $TOKEN" \
-    -H "Accept: application/json" \
-    $ENDPOINT/groups/{groupId}/state | python -m json.tool
+  curl -X GET $ENDPOINT/groups/{groupId}/state \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

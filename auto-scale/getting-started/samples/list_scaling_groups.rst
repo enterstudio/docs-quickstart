@@ -23,6 +23,6 @@
 
 .. code-block:: sh
 
-  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
-    -H "Accept: application/json" \
-    $ENDPOINT/groups | python -m json.tool
+  curl -X GET $ENDPOINT/groups \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

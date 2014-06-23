@@ -23,5 +23,5 @@
 
 .. code-block:: sh
 
-  curl -X DELETE -H "X-Auth-Token: $TOKEN" \
-    $ENDPOINT/groups/{groupId}
+  curl -X DELETE $ENDPOINT/groups/{groupId} \
+    -H "X-Auth-Token: $TOKEN" \

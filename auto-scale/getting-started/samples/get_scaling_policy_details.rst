@@ -13,9 +13,9 @@
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    policy = au.get_policy("{scalingGroupId}", "{policyId}")
+  # After authenticating
+  au = pyrax.autoscale
+  policy = au.get_policy("{scalingGroupId}", "{policyId}")
 
 .. code-block:: ruby
 
@@ -23,6 +23,6 @@
 
 .. code-block:: sh
 
-  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
-    -H "Accept: application/json" \
-    $ENDPOINT/groups/{groupId}/policies/{policyId} | python -m json.tool
+  curl -X GET $ENDPOINT/groups/{groupId}/policies/{policyId} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

@@ -14,9 +14,9 @@
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    au.execute_policy("{scalingGroupId}", "{policyId}")
+  # After authenticating
+  au = pyrax.autoscale
+  au.execute_policy("{scalingGroupId}", "{policyId}")
 
 .. code-block:: ruby
 
@@ -24,5 +24,5 @@
 
 .. code-block:: sh
 
-  $ curl -X POST -H "X-Auth-Token: $TOKEN" \
-    $ENDPOINT/groups/{groupId}/policies/{policyId}/execute
+  curl -X POST $ENDPOINT/groups/{groupId}/policies/{policyId}/execute \
+    -H "X-Auth-Token: $TOKEN"

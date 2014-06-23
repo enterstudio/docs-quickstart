@@ -9,13 +9,13 @@
 
 .. code-block:: php
 
-    $policies = $group->getScalingPolicies();
+  $policies = $group->getScalingPolicies();
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    policies = au.list_policies("{scalingGroupId}")
+  # After authenticating
+  au = pyrax.autoscale
+  policies = au.list_policies("{scalingGroupId}")
 
 .. code-block:: ruby
 
@@ -23,6 +23,6 @@
 
 .. code-block:: sh
 
-  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
-    -H "Accept: application/json" \
-    $ENDPOINT/groups/{groupId}/policies | python -m json.tool
+  curl -X GET $ENDPOINT/groups/{groupId}/policies \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

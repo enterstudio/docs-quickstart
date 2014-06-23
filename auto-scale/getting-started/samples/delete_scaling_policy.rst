@@ -13,9 +13,9 @@
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    au.delete_policy("{scalingGroupId}", "{policyId}")
+  # After authenticating
+  au = pyrax.autoscale
+  au.delete_policy("{scalingGroupId}", "{policyId}")
 
 .. code-block:: ruby
 
@@ -23,5 +23,5 @@
 
 .. code-block:: sh
 
-  $ curl -X DELETE -H "X-Auth-Token: $TOKEN" \
-    $ENDPOINT/groups/{groupId}/policies/{policyId}
+  curl -X DELETE $ENDPOINT/groups/{groupId}/policies/{policyId} \
+    -H "X-Auth-Token: $TOKEN"

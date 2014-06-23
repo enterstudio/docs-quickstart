@@ -9,17 +9,17 @@
 
 .. code-block:: php
 
-    $webhook->update(array(
-        'metadata' => array(
-            'someKey' => 'someValue'
-        )
-    ));
+  $webhook->update(array(
+      'metadata' => array(
+          'someKey' => 'someValue'
+      )
+  ));
 
 .. code-block:: python
 
-    au = pyrax.autoscale
-    au.update_webhook("{scalingGroupId}", "{policyId}", "{webhookId}",
-            name="My Webhook", metadata={"someKey": "someValue"})
+  au = pyrax.autoscale
+  au.update_webhook("{scalingGroupId}", "{policyId}", "{webhookId}",
+          name="My Webhook", metadata={"someKey": "someValue"})
 
 .. code-block:: ruby
 
@@ -31,14 +31,11 @@
 
 .. code-block:: sh
 
-  $ curl -X PUT -d \
-    '{
-    "name": "alice",
-    "metadata": {
-        "notes": "{newNote}"
-          }
-      }' \
+  curl -X PUT $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks/{webhookId} \
     -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks/{webhookId}
+    -d '{
+      "name": "webhook1",
+      "metadata": { "someKey": "someValue" }
+    }' | python -m json.tool

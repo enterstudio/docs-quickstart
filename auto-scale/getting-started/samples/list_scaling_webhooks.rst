@@ -9,21 +9,20 @@
 
 .. code-block:: php
 
-    $webhooks = $policy->getWebhookList();
+  $webhooks = $policy->getWebhookList();
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    webhooks = au.list_webhooks("{scalingGroupId}", "{policyId}")
+  # After authenticating
+  au = pyrax.autoscale
+  webhooks = au.list_webhooks("{scalingGroupId}", "{policyId}")
 
 .. code-block:: ruby
 
   my_policy.webhooks
 
 .. code-block:: sh
-  
-  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
-    -H "Accept: application/json" \
-    $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks \
-    | python -m json.tool
+
+  curl -X GET $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool

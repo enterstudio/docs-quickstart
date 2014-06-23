@@ -16,17 +16,17 @@
 
 .. code-block:: php
 
-    $policy->update(array(
-        'name'     => 'New name',
-        'cooldown' => 120
-    ));
+  $policy->update(array(
+      'name'     => 'New name',
+      'cooldown' => 120
+  ));
 
 .. code-block:: python
 
-    au = pyrax.autoscale
-    au.update_policy("{scalingGroupId}", "{policyId}", name="My Policy",
-            policy_type="webhook", cooldown=120, change=10, is_percent=True,
-            desired_capacity=7)
+  au = pyrax.autoscale
+  au.update_policy("{scalingGroupId}", "{policyId}", name="My Policy",
+          policy_type="webhook", cooldown=120, change=10, is_percent=True,
+          desired_capacity=7)
 
 .. code-block:: ruby
 
@@ -36,14 +36,13 @@
 
 .. code-block:: sh
 
-  $ curl -X PUT -d \
-    '{
-         "change":1,
-         "cooldown":{newCooldown},
-         "name":"scale up by one server",
-         "type":"webhook"
-      }' \
+  curl -X PUT $ENDPOINT/groups/{scalingGroupId}/policies/{policyId} \
     -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/groups/{scalingGroupId}/policies/{policyId}
+    -d '{
+      "change": 10,
+      "cooldown": 120,
+      "name": "My policy",
+      "type": "webhook"
+    }' | python -m json.tool

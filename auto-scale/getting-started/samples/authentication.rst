@@ -39,12 +39,11 @@
 
 .. code-block:: sh
 
-  $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
+  curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
     -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
     -H "Content-Type: application/json" | python -m json.tool
 
-  # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
+  # From the resulting json, set two environment variables: TOKEN and ENDPOINT.
 
-  export TENANT="{tenantId}"
   export TOKEN="{tokenId}"
   export ENDPOINT="{publicUrl}" # For Auto Scaling service(s)

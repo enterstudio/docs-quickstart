@@ -9,13 +9,13 @@
 
 .. code-block:: php
 
-    $webhook = $policy->getWebhook('{webhookId}');
+  $webhook = $policy->getWebhook('{webhookId}');
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    webhook = au.get_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
+  # After authenticating
+  au = pyrax.autoscale
+  webhook = au.get_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
 
 .. code-block:: ruby
 
@@ -23,7 +23,6 @@
 
 .. code-block:: sh
 
-  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
-    -H "Accept: application/json" \
-    $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks \
-    | python -m json.tool
+  curl -X GET $ENDPOINT/groups/{groupId}/policies/{policyId}/webhooks \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json" | python -m json.tool
