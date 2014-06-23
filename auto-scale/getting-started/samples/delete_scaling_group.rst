@@ -9,19 +9,19 @@
 
 .. code-block:: php
 
-    $group->delete();
+  $group->delete();
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
-    au.delete("{scalingGroupId}")
+  # After authenticating
+  au = pyrax.autoscale
+  au.delete("{scalingGroupId}")
 
 .. code-block:: ruby
 
   my_group.destroy
 
-.. code-block::
+.. code-block:: sh
 
-  $ curl -X DELETE -H "X-Auth-Token: $TOKEN" \
+  curl -X DELETE -H "X-Auth-Token: $TOKEN" \
     $ENDPOINT/groups/{groupId}
