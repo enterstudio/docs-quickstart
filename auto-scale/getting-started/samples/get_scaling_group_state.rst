@@ -21,8 +21,8 @@
 
   my_group.state
 
-.. code-sample:: sh
+.. code-block:: sh
 
-  $ curl -X GET -H "X-Auth-Token: $TOKEN" \
+  curl -X GET -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json" \
     $ENDPOINT/groups/{groupId}/state | python -m json.tool
