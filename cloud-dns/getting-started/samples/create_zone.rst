@@ -1,5 +1,16 @@
 .. code-block:: csharp
 
+  CloudDnsProvider cloudDnsProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
+  DnsConfiguration dnsConfiguration = new DnsConfiguration(
+      new DnsDomainConfiguration(
+          name: "domain.com",
+          timeToLive: default(TimeSpan?),
+          emailAddress: "admin@domain.com",
+          comment: "Root level for domain.com",
+          records: new DnsDomainRecordConfiguration[] { },
+          subdomains: new DnsSubdomainConfiguration[] { }));
+  DnsJob<DnsDomains> createResponse = await cloudDnsProvider.CreateDomainsAsync(dnsConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+
 .. code-block:: java
 
   DomainApi domainApi = cloudDNSApi.getDomainApi();
