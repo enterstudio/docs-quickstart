@@ -1,5 +1,11 @@
 .. code-block:: csharp
 
+  CloudDnsProvider cloudDNSProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
+  DomainId domainId = new DomainId("{domain_id}");
+  DnsDomainRecordUpdateConfiguration recordUpdateConfiguration = new DnsDomainRecordUpdateConfiguration({records}[0], {records}[0].Name, comment: "{comment}");
+  await cloudDNSProvider.UpdateRecordsAsync(domainId, new[] { recordUpdateConfiguration }, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  DnsRecord updatedRecord = await cloudDNSProvider.ListRecordDetailsAsync(domainId, {records}[0].Id, CancellationToken.None);
+
 .. code-block:: java
 
 .. code-block:: javascript

@@ -1,5 +1,5 @@
 .. code-block:: csharp
-  
+
   CloudIdentity cloudIdentity = new CloudIdentity()
   {
       APIKey = "{apiKey}",
