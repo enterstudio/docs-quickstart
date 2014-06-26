@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  cloudFilesProvider.CreateContainer("{container_name}", region: "{region}");
+
 .. code-block:: java
 
   cloudFilesApi.getContainerApiForRegion("{region}").create("{containerName}");

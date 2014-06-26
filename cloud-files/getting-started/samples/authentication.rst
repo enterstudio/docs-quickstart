@@ -1,5 +1,12 @@
 .. code-block:: csharp
-
+            
+   CloudIdentity cloudIdentity = new CloudIdentity()
+   {
+       APIKey = "{apikey}",
+       Username = "{username}"
+   };
+   CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+			
 .. code-block:: java
 
   // Authentication in jclouds is lazy and happens on the first call to the cloud.

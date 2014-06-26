@@ -1,5 +1,22 @@
 .. code-block:: csharp
 
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  FileStream fileStream = new FileStream("{path_to_file}", FileMode.Open, FileAccess.Read);
+  int fileLength = (int)fileStream.Length;
+  byte[] buffer = new byte[fileLength];
+  int nbrOfBytes;
+  int bytesRead = 0;
+  while ((nbrOfBytes = fileStream.Read(buffer, bytesRead, fileLength - bytesRead)) > 0)
+      bytesRead += nbrOfBytes;  
+  fileStream.Close();
+  using (fileStream)
+  {
+      cloudFilesProvider.CreateObject("{container_name}", fileStream, "{object_name}");
+  }
+
+  // OR, much simpler...
+  cloudFilesProvider.CreateObjectFromFile("{container_name}", "{path_to_file}", "{object_name}");
+
 .. code-block:: java
 
   // create a payload

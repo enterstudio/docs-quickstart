@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+   CloudDnsProvider cloudDNSProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
+   DomainId[] domainIds = new DomainId[1];
+   DnsJob deleteResponse = await cloudDNSProvider.RemoveDomainsAsync(domainIds, false, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+
 .. code-block:: java
 
   DomainApi domainApi = cloudDNSApi.getDomainApi();
