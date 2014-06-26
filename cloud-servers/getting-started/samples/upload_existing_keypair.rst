@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  // This is not supported through the .NET SDK at this time
+  
 .. code-block:: java
 
   File keyPairFile = new File("{/home/my-user/.ssh/id_rsa.pub}");
