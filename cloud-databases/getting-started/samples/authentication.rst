@@ -18,7 +18,7 @@
 .. code-block:: javascript
 
   pkgcloud = require('pkgcloud');
-  var rackspace = pkgcloud.dns.createClient({
+  var rackspace = pkgcloud.database.createClient({
     provider: 'rackspace',
     username: '{username}',
     apiKey: '{apiKey}'
