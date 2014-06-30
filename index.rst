@@ -24,8 +24,8 @@
                 needs. Best of all, you can pay as you go.</p>
                 <ul class="piped-list">
                     <li><a href="/docs/cloud-servers/getting-started/">Getting Started</a></li>
-                    <li><a target="_blank" href="http://api.rackspace.com/api-ref.html">API Reference</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html">Developer Guide</a></li>
+                    <li><a href="http://api.rackspace.com/api-ref.html">API Reference</a></li>
+                    <li><a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
@@ -40,8 +40,8 @@
                 which can be delivered globally at blazing speeds over Akamai's content delivery network (CDN).</p>
                 <ul class="piped-list">
                     <li><a href="/docs/cloud-files/getting-started/">Getting Started</a></li>
-                    <li><a target="_blank" href="http://api.rackspace.com/api-ref-files.html">API Reference</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html">Developer Guide</a></li>
+                    <li><a href="http://api.rackspace.com/api-ref-files.html">API Reference</a></li>
+                    <li><a href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
@@ -56,8 +56,8 @@
                 I/O-intensive applications. Choose the service that works best for you - Standard or SSD volumes.</p>
                 <ul class="piped-list">
                     <li><a href="/docs/cloud-block-storage/getting-started/">Getting Started</a></li>
-                    <li><a target="_blank" href="http://api.rackspace.com/api-ref-blockstorage.html">API Reference</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html">Developer Guide</a></li>
+                    <li><a href="http://api.rackspace.com/api-ref-blockstorage.html">API Reference</a></li>
+                    <li><a href="http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
@@ -73,7 +73,7 @@
                 throughput, minimize response time and avoid overload.</p>
                 <ul class="piped-list">
                     <li><a href="/docs/cloud-load-balancers/getting-started/">Getting Started</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/loadbalancers/api/v1.0/clb-getting-started/content/index.html">Developer Guide</a></li>
+                    <li><a href="http://docs.rackspace.com/loadbalancers/api/v1.0/clb-getting-started/content/index.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
@@ -89,7 +89,7 @@
                 well as import and export domains and records.</p>
                 <ul class="piped-list">
                     <li><a href="/docs/cloud-dns/getting-started/">Getting Started</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/overview.html">Developer Guide</a></li>
+                    <li><a href="http://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/overview.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
@@ -104,8 +104,8 @@
                 instances using a REST-based API and open standards.</p>
                 <ul class="piped-list">
                     <li><a href="/docs/cloud-databases/getting-started/">Getting Started</a></li>
-                    <li><a target="_blank" href="http://api.rackspace.com/api-ref-databases.html">API Reference</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/overview.html">Developer Guide</a></li>
+                    <li><a href="http://api.rackspace.com/api-ref-databases.html">API Reference</a></li>
+                    <li><a href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/overview.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
@@ -120,8 +120,8 @@
                 images using a REST-based API.</p>
                 <ul class="piped-list">
                     <li><a href="/docs/cloud-images/getting-started/">Getting Started</a></li>
-                    <li><a target="_blank" href="http://api.rackspace.com/api-ref-images.html">API Reference</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html">Developer Guide</a></li>
+                    <li><a href="http://api.rackspace.com/api-ref-images.html">API Reference</a></li>
+                    <li><a href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
@@ -135,8 +135,8 @@
                 <p>Cloud Backup is a file-based backup solution that allows customization of files, folders, schedule,
                 retention and notification. Restore your backed up data to any Cloud Server running Cloud Backup.</p>
                 <ul class="piped-list">
-                    <li><a target="_blank" href="http://api.rackspace.com/api-ref-backup.html">API Reference</a></li>
-                    <li><a target="_blank" href="http://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/overview.html">Developer Guide</a></li>
+                    <li><a href="http://api.rackspace.com/api-ref-backup.html">API Reference</a></li>
+                    <li><a href="http://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/overview.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
