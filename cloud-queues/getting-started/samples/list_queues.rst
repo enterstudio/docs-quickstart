@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  CloudQueuesProvider cloudQueuesProvider = new CloudQueuesProvider(cloudIdentity, "{region}", Guid.NewGuid(), false, null);
+  ReadOnlyCollectionPage<CloudQueue> queueList = await cloudQueuesProvider.ListQueuesAsync(null, null, true, CancellationToken.None);
+
 .. code-block:: java
 
   QueueApi queueApi = marconiApi.getQueueApiForZoneAndClient("{region}", "{clientId}");

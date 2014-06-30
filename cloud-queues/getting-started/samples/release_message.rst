@@ -1,5 +1,12 @@
 .. code-block:: csharp
 
+  CloudQueuesProvider cloudQueuesProvider = new CloudQueuesProvider(cloudIdentity, "{region}", Guid.NewGuid(), false, null);
+  QueueName queueName = new QueueName("{queue_name}");
+  TimeSpan ttl = TimeSpan.FromMinutes(900);
+  TimeSpan grace = TimeSpan.FromMinutes(60);
+  Claim claim = await cloudQueuesProvider.ClaimMessageAsync(queueName, null, ttl, grace, CancellationToken.None);
+  await cloudQueuesProvider.ReleaseClaimAsync(queueName, claim, CancellationToken.None);
+
 .. code-block:: java
 
   ClaimApi claimApi = marconiApi.getClaimApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
