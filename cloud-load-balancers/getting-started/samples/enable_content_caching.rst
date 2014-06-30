@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+  CloudLoadBalancerProvider cloudLoadBalancerProvider = new CloudLoadBalancerProvider(cloudIdentity, "{region}", null);
+  LoadBalancerId loadBalancerId = new LoadBalancerId("{load_balancer_id}");
+  await cloudLoadBalancerProvider.SetContentCachingAsync(loadBalancerId, true, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+
 .. code-block:: java
 
   ContentCachingApi contentCachingApi = clbApi.getContentCachingApiForZoneAndLoadBalancer("{region}", loadBalancer.getId());

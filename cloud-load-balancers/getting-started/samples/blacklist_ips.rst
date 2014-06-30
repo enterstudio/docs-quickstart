@@ -1,5 +1,10 @@
 .. code-block:: csharp
 
+  CloudLoadBalancerProvider cloudLoadBalancerProvider = new CloudLoadBalancerProvider(cloudIdentity, "{region}", null);
+  LoadBalancerId loadBalancerId = new LoadBalancerId("{load_balancer_id}");
+  NetworkItem networkItem = new NetworkItem("206.160.165.0/24", AccessType.Deny);
+  await cloudLoadBalancerProvider.CreateAccessListAsync(loadBalancerId, networkItem, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+
 .. code-block:: java
 
   AccessRule rule1 = AccessRule.deny("206.160.165.0/24");

@@ -1,5 +1,18 @@
 .. code-block:: csharp
 
+  CloudLoadBalancerProvider cloudLoadBalancerProvider = new CloudLoadBalancerProvider(cloudIdentity, "{region}", null);
+  int limit = 1;
+  ReadOnlyCollection<LoadBalancer> loadBalancers = await (await cloudLoadBalancerProvider.ListLoadBalancersAsync(null, limit, CancellationToken.None)).GetAllPagesAsync(CancellationToken.None, null);
+  LoadBalancerStatus loadBalancerStatus = loadBalancers[0].Status;
+  // Values include:
+  // LoadBalancerStatus.Active;
+  // LoadBalancerStatus.Build;
+  // LoadBalancerStatus.Deleted;
+  // LoadBalancerStatus.Error;
+  // LoadBalancerStatus.PendingDelete;
+  // LoadBalancerStatus.PendingUpdate;
+  // LoadBalancerStatus.Suspended;
+
 .. code-block:: java
 
   LoadBalancer loadBalancer = lbApi.create(createLB);

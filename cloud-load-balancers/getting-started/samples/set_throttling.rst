@@ -1,5 +1,14 @@
 .. code-block:: csharp
 
+  CloudLoadBalancerProvider cloudLoadBalancerProvider = new CloudLoadBalancerProvider(cloudIdentity, "{region}", null);
+  LoadBalancerId loadBalancerId = new LoadBalancerId("{load_balancer_id}");
+  int maxConnectionRate = 10000;
+  int maxConnections = 5000;
+  int minConnections = 2;
+  TimeSpan rateInterval = TimeSpan.FromSeconds(5);
+  ConnectionThrottles throttles = new ConnectionThrottles(maxConnectionRate, maxConnections, minConnections, rateInterval);
+  await cloudLoadBalancerProvider.UpdateThrottlesAsync(loadBalancerId, throttles, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);    
+
 .. code-block:: java
 
   ConnectionThrottle throttle = ConnectionThrottle.builder()
