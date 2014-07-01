@@ -1,6 +1,5 @@
 .. code-block:: csharp
 
-  CloudQueuesProvider cloudQueuesProvider = new CloudQueuesProvider(cloudIdentity, "{region}", Guid.NewGuid(), false, null);
   QueueName queueName = new QueueName("{queue_name}");
   int limit = 4;
   TimeSpan ttl = TimeSpan.FromMinutes(900);
