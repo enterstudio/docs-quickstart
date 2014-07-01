@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  ReadOnlyCollection<DatabaseFlavor> databaseFlavorCollection = await new CloudDatabasesProvider(cloudIdentity, "{region}", null).ListFlavorsAsync(CancellationToken.None);
+  ReadOnlyCollection<DatabaseFlavor> databaseFlavorCollection = await cloudDatabaseProvider.ListFlavorsAsync(CancellationToken.None);
 
 .. code-block:: java
 

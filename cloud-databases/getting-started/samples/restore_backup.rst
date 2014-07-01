@@ -3,7 +3,6 @@
   // To restore a database, you must first use an existing backup to
   // create a Restore Point, then use that Restore Point to create
   // a database instance.
-  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, region, null);
   DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
   BackupId backupId = new BackupId("{backup_id}");
   RestorePoint restorePoint = new RestorePoint(backupId);

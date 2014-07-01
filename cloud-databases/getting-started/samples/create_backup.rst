@@ -1,6 +1,5 @@
 .. code-block:: csharp
 
-  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
   DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
   BackupConfiguration backupConfiguration = new BackupConfiguration(databaseInstanceId, "{backup_name}", "{backup_description}");
   await cloudDatabasesProvider.CreateBackupAsync(backupConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);

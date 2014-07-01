@@ -1,6 +1,5 @@
 .. code-block:: csharp
 
-   CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
    DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
    DatabaseName databaseName = new DatabaseName("{databaseName}");
    UserName userName = new UserName("{username}");
