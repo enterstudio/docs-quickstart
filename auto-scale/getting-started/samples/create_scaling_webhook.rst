@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  NewWebhookConfiguration webhookConfiguration = new NewWebhookConfiguration("Test Webhook");
+  Webhook webhook = await cloudAutoScaleProvider.CreateWebhookAsync({scaling_group}.Id, {scaling_group}.ScalingPolicies[0].Id, webhookConfiguration, CancellationToken.None);
+
 .. code-block:: java
 
   WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");

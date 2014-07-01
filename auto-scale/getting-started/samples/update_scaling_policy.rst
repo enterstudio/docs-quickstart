@@ -1,5 +1,10 @@
 .. code-block:: csharp
 
+  TimeSpan cooldown = TimeSpan.FromSeconds(60);
+  int desiredCapacity = 1;
+  PolicyConfiguration policyConfiguration = PolicyConfiguration.Capacity("Capacity 1 Policy", desiredCapacity, cooldown);
+  await cloudAutoScaleProvider.SetPolicyAsync({group_id}, {policy_id), policyConfiguration, CancellationToken.None);
+ 
 .. code-block:: java
 
   PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");

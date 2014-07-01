@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  ReadOnlyCollectionPage<ScalingGroup> scalingGroups = await cloudAutoScaleProvider.ListScalingGroupsAsync(null, null, CancellationToken.None);
+
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");

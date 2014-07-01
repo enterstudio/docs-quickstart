@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  Policy policy = await cloudAutoScaleProvider.GetPolicyAsync({group_id}, {policy_id}, CancellationToken.None);
+
 .. code-block:: java
 
   PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");

@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  GroupState groupState = await cloudAutoScaleProvider.GetGroupStateAsync({group_id}, CancellationToken.None);
+
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
