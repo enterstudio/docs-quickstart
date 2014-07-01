@@ -7,6 +7,7 @@
   };
   CloudIdentityProvider cloudIdentityProvider = new CloudIdentityProvider(cloudIdentity);
   UserAccess userAccess = cloudIdentityProvider.Authenticate(cloudIdentity);
+  CloudDnsProvider cloudDNSProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
   
 .. code-block:: java
 

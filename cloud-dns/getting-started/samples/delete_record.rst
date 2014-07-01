@@ -1,6 +1,5 @@
 .. code-block:: csharp
 
-  CloudDnsProvider cloudDNSProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
   DomainId domainId = new DomainId("{domain_id}");
   await cloudDNSProvider.RemoveRecordsAsync(domainId, new[] { {records}[0].Id }, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
 			
