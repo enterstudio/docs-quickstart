@@ -1,5 +1,27 @@
 .. code-block:: csharp
 
+  CheckTypeId checkTypeId = CheckTypeId.RemoteHttp;
+  CheckDetails details = new HttpCheckDetails( 
+          url: new Uri("http://docs.rackspace.com", UriKind.Absolute),
+          authUser: default(string),
+          authPassword: default(string),
+          body: default(string),
+          bodyMatches: default(IDictionary<string, string>),
+          followRedirects: default(bool?),
+          headers: default(IDictionary<string, string>),
+          method: default(HttpMethod?),
+          payload: default(string));
+
+  IEnumerable<MonitoringZoneId> monitoringZonesPoll = new[] { "{zone_id}" };
+  TimeSpan? timeout = null;
+  TimeSpan? period = null;
+  string targetAlias = null;
+  string targetHostname = "www.example.com";
+  TargetResolverType resolverType = TargetResolverType.IPv4;
+  IDictionary<string, string> metadata = null;
+  NewCheckConfiguration checkConfiguration = new NewCheckConfiguration("{check_label}", checkTypeId, details, monitoringZonesPoll, timeout, period, targetAlias, targetHostname, resolverType, metadata);
+  Check check = await cloudMonitoringProvider.CreateCheckAsync({entity_id}, {check_configuration}, CancellationToken.None);
+
 .. code-block:: java
 
 .. code-block:: javascript

@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  ReadOnlyCollectionPage<MonitoringZone, MonitoringZoneId> monitoringZones = await cloudMonitoringProvider.ListMonitoringZonesAsync(null, null, CancellationToken.None);
+
 .. code-block:: java
 
   // jclouds doesn't support this API presently

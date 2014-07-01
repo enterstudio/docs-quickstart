@@ -1,5 +1,12 @@
 .. code-block:: csharp
 
+  CloudIdentity cloudIdentity = new CloudIdentity()
+  {
+      APIKey = "{apikey}",
+      Username = "{username}"
+  };
+  CloudMonitoringProvider cloudMonitoringProvider = new CloudMonitoringProvider(cloudIdentity, "{region}", null);
+
 .. code-block:: java
 
   // jclouds doesn't support this API presently

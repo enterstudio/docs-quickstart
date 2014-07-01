@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  await cloudMonitoringProvider.RemoveCheckAsync({entity_id}, {check_id}, CancellationToken.None);
+
 .. code-block:: java
 
   // jclouds doesn't support this API presently

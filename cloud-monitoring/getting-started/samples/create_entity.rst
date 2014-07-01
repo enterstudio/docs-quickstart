@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  NewEntityConfiguration entityConfiguration = new NewEntityConfiguration("{entity_label}", null, null, null);
+  EntityId entityId = await cloudMonitoringProvider.CreateEntityAsync(entityConfiguration, CancellationToken.None);
+
 .. code-block:: java
 
   // jclouds doesn't support this API presently
