@@ -1,6 +1,5 @@
 .. code-block:: csharp
 
-  CloudDnsProvider cloudDNSProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
   DnsUpdateConfiguration dnsUpdateConfiguration = new DnsUpdateConfiguration(new DnsDomainUpdateConfiguration({domain}, comment: "domain updated"));
   await cloudDNSProvider.UpdateDomainsAsync(dnsUpdateConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None,null);
 

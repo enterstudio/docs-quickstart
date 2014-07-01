@@ -1,6 +1,5 @@
 .. code-block:: csharp
 
-  CloudDnsProvider cloudDNSProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
   DomainId domainId = new DomainId("{domainId}");
   DnsDomainRecordConfiguration[] recordConfigurations =
           {
