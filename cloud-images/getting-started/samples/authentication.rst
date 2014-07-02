@@ -1,17 +1,14 @@
 .. code-block:: csharp
 
+  // Not currently supported by this SDK
+
 .. code-block:: java
 
-  // jclouds doesn't support this API presently
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
 
-  pkgcloud = require('pkgcloud');
-  var rackspace = pkgcloud.dns.createClient({
-    provider: 'rackspace',
-    username: '{username}',
-    apiKey: '{apiKey}'
-  });
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -31,7 +28,7 @@
 
 .. code-block:: ruby
 
-  # Fog doesn't support this API presently
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 

@@ -1,10 +1,14 @@
 .. code-block:: csharp
 
+  // Not currently supported by this SDK
+
 .. code-block:: java
 
-  // jclouds doesn't support this API presently
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -22,7 +26,7 @@
 
 .. code-block:: ruby
 
-  # Fog doesn't support this API presently
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 
