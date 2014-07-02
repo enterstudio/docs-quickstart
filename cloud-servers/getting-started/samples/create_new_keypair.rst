@@ -37,7 +37,7 @@
 
 .. code-block:: python
 
-  # N/A
+  # Not currently supported by this SDK
 
 .. code-block:: ruby
 
