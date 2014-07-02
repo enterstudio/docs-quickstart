@@ -17,6 +17,8 @@
 
 .. code-block:: javascript
 
+  // Not currently supported by this SDK
+
 .. code-block:: php
 
   // Post a message to the queue with a life of 900 seconds.
