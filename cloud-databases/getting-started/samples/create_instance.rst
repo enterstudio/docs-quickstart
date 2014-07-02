@@ -17,6 +17,25 @@
 
 .. code-block:: javascript
 
+  // For this example, we'll create a 20GB instance using the flavor with the
+  // least RAM.
+
+  flavors = flavors.sort(function(a, b) {
+    return a.ram >= b.ram;
+  });
+
+  client.createInstance({
+    flavor: flavors[0],
+    name: 'sample_instance',
+    size: 20
+  }, function(err, instance) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO use your newly created instance here
+  });
+
 .. code-block:: php
 
   $dbService = $client->databaseService(null, '{region}');

@@ -17,6 +17,19 @@
 
 .. code-block:: javascript
 
+  client.createUser({
+    instance: instance,
+    username: {dbUsername},
+    password: {dbPassword},
+    databases: [ {dbName1}, {dbName2} ]
+  }, function(err, user) {
+    if (err) {
+      // TODO handle err as appropriate
+    }
+
+    // TODO use your newly created user here
+  });
+
 .. code-block:: php
 
   $user = $instance->user();

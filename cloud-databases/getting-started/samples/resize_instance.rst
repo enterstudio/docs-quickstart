@@ -9,6 +9,12 @@
 
 .. code-block:: javascript
 
+  client.setFlavor(instance, {newFlavor}, function(err) {
+    if (err) {
+      // TODO handle err as appropriate
+    }
+  });
+
 .. code-block:: php
 
   $instance->resize($flavor);

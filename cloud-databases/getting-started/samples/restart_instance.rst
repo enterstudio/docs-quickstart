@@ -9,6 +9,12 @@
 
 .. code-block:: javascript
 
+  client.restartInstance(instance, function(err) {
+    if (err) {
+      // TODO handle err as appropriate
+    }
+  });
+
 .. code-block:: php
 
   $instance->restart();

@@ -10,6 +10,15 @@
 
 .. code-block:: javascript
 
+  client.getFlavors(function(err, flavors) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO use your flavors array here
+  });
+
+
 .. code-block:: php
 
   $flavors = $service->flavorList();

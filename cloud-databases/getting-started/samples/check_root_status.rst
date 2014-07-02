@@ -11,6 +11,14 @@
 
 .. code-block:: javascript
 
+  client.rootEnabled(instance, function(err, rootEnabled) {
+    if (err) {
+      // TODO handle err as appropriate
+    }
+
+    // TODO check status of rootEnabled
+  });
+
 .. code-block:: php
 
   $instance->isRootEnabled();

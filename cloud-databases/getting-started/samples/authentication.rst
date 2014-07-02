@@ -19,6 +19,7 @@
 .. code-block:: javascript
 
   pkgcloud = require('pkgcloud');
+
   var rackspace = pkgcloud.database.createClient({
     provider: 'rackspace',
     username: '{username}',

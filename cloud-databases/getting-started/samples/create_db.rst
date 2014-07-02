@@ -13,6 +13,16 @@
 
 .. code-block:: javascript
 
+  client.createDatabase({
+    name: 'sample_db',
+    instance: instance
+  }, function(err, db) {
+    if (err) {
+      // TODO handle err as appropriate
+    }
+
+    // TODO use your newly created DB here
+  });
 
 .. code-block:: php
 

@@ -11,6 +11,12 @@
 
 .. code-block:: javascript
 
+  client.enableRoot(instance, function(err) {
+    if (err) {
+      // TODO handle err as appropriate
+    }
+  });
+
 .. code-block:: php
 
   /** @param $user OpenCloud\Database\Resource\User */

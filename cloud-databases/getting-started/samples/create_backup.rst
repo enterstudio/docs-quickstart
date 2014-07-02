@@ -10,6 +10,8 @@
 
 .. code-block:: javascript
 
+ // This operation is currently not supported with pkgcloud.
+
 .. code-block:: php
 
 .. code-block:: python
