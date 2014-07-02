@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  cloudFilesProvider.DeleteObject("{container_name}", "{object_name}");
+
 .. code-block:: java
 
   cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}").delete("{objectName}");

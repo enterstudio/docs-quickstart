@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  long timeToLive = 604800;
+  Dictionary<string, string> header = cloudFilesProvider.EnableCDNOnContainer("{container_name}", timeToLive);
+
 .. code-block:: java
 
   URI cdnUri = cloudFilesApi.getCDNApiForRegion("{region}").enable("{containerName}");

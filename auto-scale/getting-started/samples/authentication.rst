@@ -1,5 +1,12 @@
 .. code-block:: csharp
 
+  CloudIdentity cloudIdentity = new CloudIdentity()
+  {
+      APIKey = "{apikey}",
+      Username = "{username}"
+  };
+  CloudAutoScaleProvider cloudAutoScaleProvider = new CloudAutoScaleProvider(cloudIdentity, "{region}", null);
+
 .. code-block:: java
 
   AutoscaleApi autoscaleApi = ContextBuilder.newBuilder("rackspace-autoscale-us")

@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  CloudServersProvider cloudServersProvider = new CloudServersProvider(cloudIdentity);
+  IEnumerable<SimpleServerImage> imageList = cloudServersProvider.ListImages();
+
 .. code-block:: java
 
   ImageApi imageApi = novaApi.getImageApiForZone("{region}");

@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+   CloudServersProvider cloudServersProvider = new CloudServersProvider(cloudIdentity);
+   FlavorDetails flavorDetails = cloudServersProvider.GetFlavor("{flavor_id}");
+
 .. code-block:: java
 
   FlavorApi flavorApi = novaApi.getFlavorApiForZone("{region}");

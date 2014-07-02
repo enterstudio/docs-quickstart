@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  CloudServersProvider cloudServersProvider = new CloudServersProvider(cloudIdentity);
+  cloudServersProvider.DeleteServer("{server_id}");
+
 .. code-block:: java
 
   ServerApi serverApi = novaApi.getServerApiForZone("{region}");

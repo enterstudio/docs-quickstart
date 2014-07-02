@@ -1,5 +1,13 @@
 .. code-block:: csharp
 
+  CloudIdentity cloudIdentity = new CloudIdentity()
+  {
+      APIKey = "{apikey}",
+      Username = "{username}"
+  };
+  // Create the provider as well; it'll be used in every method
+  CloudQueuesProvider cloudQueuesProvider = new CloudQueuesProvider(cloudIdentity, "{region}", Guid.NewGuid(), false, null);
+
 .. code-block:: java
 
   // Authentication in jclouds is lazy.

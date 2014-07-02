@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  await cloudAutoScaleProvider.DeleteGroupAsync({group_id}, true, CancellationToken.None);
+
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");

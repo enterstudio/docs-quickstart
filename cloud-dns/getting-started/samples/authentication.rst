@@ -1,5 +1,13 @@
 .. code-block:: csharp
-
+  
+  CloudIdentity cloudIdentity = new CloudIdentity()
+  {
+      APIKey = "{apiKey}",
+      Username = "{username}"
+  };
+  CloudIdentityProvider cloudIdentityProvider = new CloudIdentityProvider(cloudIdentity);
+  UserAccess userAccess = cloudIdentityProvider.Authenticate(cloudIdentity);
+  
 .. code-block:: java
 
   // Authentication in jclouds is lazy.

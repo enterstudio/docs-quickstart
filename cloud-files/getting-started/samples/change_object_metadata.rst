@@ -1,5 +1,10 @@
 .. code-block:: csharp
 
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  Dictionary<string, string> metadata = new Dictionary<string,string>();
+  metadata.Add("{key}","{value}");
+  cloudFilesProvider.UpdateObjectMetadata("{container_name}", "{object_name}", metadata, "{region}");
+
 .. code-block:: java
 
   ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");

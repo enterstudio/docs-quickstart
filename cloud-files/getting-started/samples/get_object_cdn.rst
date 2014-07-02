@@ -1,5 +1,12 @@
 .. code-block:: csharp
 
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  ContainerCDN container = cloudFilesProvider.GetContainerCDNHeader(container: "{container_name}");
+  string urlForHTTP = container.CDNUri;
+  string urlForHTTPS = container.CDNSslUri;
+  string urlForiOSStreaming = container.CDNIosUri;
+  string urlForStreaming = container.CDNStreamingUri;
+
 .. code-block:: java
 
   URI cdnUri = cloudFilesApi.getCDNApiForRegion("{region}").enable("{containerName}");

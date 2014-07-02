@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  TimeSpan cooldown = TimeSpan.FromSeconds(60);
+  await cloudAutoScaleProvider.SetGroupConfigurationAsync({group_id}, new GroupConfiguration("group_name", cooldown, 0, 0, new JObject()), CancellationToken.None);
+
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");

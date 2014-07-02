@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  await cloudMonitoringProvider.RemoveAlarmAsync({entity_id}, {alarm_id}, CancellationToken.None);
+
 .. code-block:: java
 
   // jclouds doesn't support this API presently

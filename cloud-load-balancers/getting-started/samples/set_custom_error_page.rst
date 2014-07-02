@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+  CloudLoadBalancerProvider cloudLoadBalancerProvider = new CloudLoadBalancerProvider(cloudIdentity, "{region}", null);
+  LoadBalancerId loadBalancerId = new LoadBalancerId("{load_balancer_id}");
+  await cloudLoadBalancerProvider.SetErrorPageAsync(loadBalancerId, "{custom_error_page}", AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+
 .. code-block:: java
 
   ErrorPageApi errorPageApi = clbApi.getErrorPageApiForZoneAndLoadBalancer("{region}", loadBalancer.getId());

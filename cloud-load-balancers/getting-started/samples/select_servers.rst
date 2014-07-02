@@ -1,5 +1,9 @@
 .. code-block:: csharp
 
+  CloudServersProvider cloudServersProvider = new CloudServersProvider(cloudIdentity);
+  Server server1 = cloudServersProvider.GetDetails("{serverId1}");
+  Server server2 = cloudServersProvider.GetDetails("{serverId2}");
+
 .. code-block:: java
 
 .. code-block:: javascript

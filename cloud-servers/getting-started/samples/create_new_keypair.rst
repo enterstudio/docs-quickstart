@@ -1,5 +1,7 @@
 .. code-block:: csharp
 
+  // This is not supported through the .NET SDK at this time
+  
 .. code-block:: java
 
   KeyPairApi keyPairApi = novaApi.getKeyPairExtensionForZone("{region}").get();
