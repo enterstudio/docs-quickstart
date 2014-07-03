@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  cloudAutoScaleProvider.ExecutePolicyAsync({group_id}, {policy_id}, CancellationToken.None);
+  cloudAutoScaleProvider.ExecutePolicyAsync(scalingGroup.Id, policy.Id, CancellationToken.None);
 
 .. code-block:: java
 

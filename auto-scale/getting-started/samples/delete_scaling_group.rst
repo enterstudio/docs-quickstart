@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  await cloudAutoScaleProvider.DeleteGroupAsync({group_id}, true, CancellationToken.None);
+  await cloudAutoScaleProvider.DeleteGroupAsync(scalingGroup.Id, true, CancellationToken.None);
 
 .. code-block:: java
 
@@ -17,9 +17,7 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  au.delete("{scalingGroupId}")
+  au.delete("{groupId}")
 
 .. code-block:: ruby
 
@@ -28,4 +26,4 @@
 .. code-block:: sh
 
   curl -X DELETE $ENDPOINT/groups/{groupId} \
-    -H "X-Auth-Token: $TOKEN" \
+    -H "X-Auth-Token: $TOKEN"

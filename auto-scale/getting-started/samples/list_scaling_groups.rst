@@ -17,8 +17,6 @@
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
     scaling_groups = au.list()
 
 .. code-block:: ruby

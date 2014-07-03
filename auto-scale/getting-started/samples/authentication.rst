@@ -2,7 +2,7 @@
 
   CloudIdentity cloudIdentity = new CloudIdentity()
   {
-      APIKey = "{apikey}",
+      APIKey = "{apiKey}",
       Username = "{username}"
   };
   CloudAutoScaleProvider cloudAutoScaleProvider = new CloudAutoScaleProvider(cloudIdentity, "{region}", null);
@@ -37,6 +37,8 @@
   pyrax.set_default_region('{region}')
   pyrax.set_credentials('{username}', '{apiKey}')
 
+  au = pyrax.autoscale
+
 .. code-block:: ruby
 
   require 'fog'
@@ -50,8 +52,15 @@
 .. code-block:: sh
 
   curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
-    -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-    -H "Content-Type: application/json" | python -m json.tool
+    -H "Content-Type: application/json" \
+    -d '{
+      "auth": {
+        "RAX-KSKEY:apiKeyCredentials": {
+          "username": "{username}",
+          "apiKey": "{apiKey}"
+        }
+      }
+    }' | python -m json.tool
 
   # From the resulting json, set two environment variables: TOKEN and ENDPOINT.
 

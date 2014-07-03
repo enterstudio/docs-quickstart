@@ -2,7 +2,7 @@
 
   // update the webhook name
   string updatedName = "Updated Webhook";
-  await cloudAutoScaleProvider.UpdateWebhookAsync({group_id}, {policy_id}, {webhook_id}, new UpdateWebhookConfiguration(updatedName), CancellationToken.None);
+  await cloudAutoScaleProvider.UpdateWebhookAsync(scalingGroup.Id, policy.Id, webhook.Id, new UpdateWebhookConfiguration(updatedName), CancellationToken.None);
 
 .. code-block:: java
 
@@ -23,8 +23,7 @@
 
 .. code-block:: python
 
-  au = pyrax.autoscale
-  au.update_webhook("{scalingGroupId}", "{policyId}", "{webhookId}",
+  au.update_webhook("{groupId}", "{policyId}", "{webhookId}",
           name="My Webhook", metadata={"someKey": "someValue"})
 
 .. code-block:: ruby

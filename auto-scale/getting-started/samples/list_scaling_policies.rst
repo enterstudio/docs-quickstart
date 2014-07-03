@@ -1,10 +1,10 @@
 .. code-block:: csharp
 
-  ReadOnlyCollectionPage<Policy> policies = await cloudAutoScaleProvider.ListPoliciesAsync({group_id}, null, null, CancellationToken.None);
+  ReadOnlyCollectionPage<Policy> policies = await cloudAutoScaleProvider.ListPoliciesAsync({groupId}, null, null, CancellationToken.None);
 
 .. code-block:: java
 
-  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{groupId}");
   FluentIterable<Policy> policies = policyApi.list();
 
 .. code-block:: javascript
@@ -17,9 +17,7 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  policies = au.list_policies("{scalingGroupId}")
+  policies = au.list_policies("{groupId}")
 
 .. code-block:: ruby
 

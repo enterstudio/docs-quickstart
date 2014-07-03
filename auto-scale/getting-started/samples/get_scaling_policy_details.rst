@@ -1,10 +1,10 @@
 .. code-block:: csharp
 
-  Policy policy = await cloudAutoScaleProvider.GetPolicyAsync({group_id}, {policy_id}, CancellationToken.None);
+  Policy policy = await cloudAutoScaleProvider.GetPolicyAsync(scalingGroup.Id, {policyId}, CancellationToken.None);
 
 .. code-block:: java
 
-  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{groupId}");
   Policy policy = policyApi.get("{policyId}");
 
 .. code-block:: javascript
@@ -17,13 +17,11 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  policy = au.get_policy("{scalingGroupId}", "{policyId}")
+  policy = au.get_policy("{groupId}", "{policyId}")
 
 .. code-block:: ruby
 
-  my_policy = my_group.policies.get '{policyId}'
+  my_policy = my_group.policies.get('{policyId}')
 
 .. code-block:: sh
 

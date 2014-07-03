@@ -1,11 +1,11 @@
 .. code-block:: csharp
 
-  GroupState groupState = await cloudAutoScaleProvider.GetGroupStateAsync({group_id}, CancellationToken.None);
+  GroupState groupState = await cloudAutoScaleProvider.GetGroupStateAsync(scalingGroup.Id, CancellationToken.None);
 
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
-  GroupState groupState = groupApi.getState("{scalingGroupId}");
+  GroupState groupState = groupApi.getState("{groupId}");
 
 .. code-block:: javascript
 
@@ -17,9 +17,7 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  state = au.get_state("{scalingGroupId}")
+  state = au.get_state("{groupId}")
 
 .. code-block:: ruby
 

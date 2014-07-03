@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  await cloudAutoScaleProvider.DeleteWebhookAsync({group_id}, {policy_id}, {webhook_id}, CancellationToken.None);
+  await cloudAutoScaleProvider.DeleteWebhookAsync(scalingGroup.Id, policy.Id, webhook.Id, CancellationToken.None);
 
 .. code-block:: java
 
@@ -17,9 +17,7 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  au.delete_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
+  au.delete_webhook("{groupId}", "{policyId}", "{webhookId}")
 
 .. code-block:: ruby
 

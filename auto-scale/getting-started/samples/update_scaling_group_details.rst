@@ -1,17 +1,17 @@
 .. code-block:: csharp
 
   TimeSpan cooldown = TimeSpan.FromSeconds(60);
-  await cloudAutoScaleProvider.SetGroupConfigurationAsync({group_id}, new GroupConfiguration("group_name", cooldown, 0, 0, new JObject()), CancellationToken.None);
+  await cloudAutoScaleProvider.SetGroupConfigurationAsync(scalingGroup.Id, new GroupConfiguration("New Name", cooldown, 0, 0, new JObject()), CancellationToken.None);
 
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
   GroupConfiguration groupConfiguration = GroupConfiguration.builder()
-            .maxEntities(25)
+            .minEntities(2)
+            .maxEntities(6)
             .cooldown(60)
-            .name("New name")
-            .minEntities(5)
-            .metadata(ImmutableMap.of("notes", "This is an autoscale group for examples"))
+            .name("New Name")
+            .metadata(ImmutableMap.of("someKey", "someValue"))
             .build();
   
   groupApi.updateGroupConfiguration("{groupId}", groupConfiguration);
@@ -26,16 +26,15 @@
 
 .. code-block:: python
 
-  au = pyrax.autoscale
-  au.update("{scalingGroupId}", name="My Group", cooldown=120,
-          min_entities=1, max_entities=25, metadata={"someKey": "someValue"})
+  au.update("{groupId}", name="My Group", cooldown=120,
+          min_entities=2, max_entities=6, metadata={"someKey": "someValue"})
 
 .. code-block:: ruby
 
   group_config = my_group.group_config
 
-  group_config.cooldown = 120
-  group_config.max_entities = 16
+  group_config.name = 'New Name'
+  group_config.max_entities = 6
   group_config.save
 
 .. code-block:: sh
@@ -46,7 +45,7 @@
     -H "Content-Type: application/json" \
     -d '{
        "name": "My Group",
-       "cooldown": 120,
-       "minEntities": 1,
-       "maxEntities": 25
+       "cooldown": 60,
+       "minEntities": 2,
+       "maxEntities": 6
      }' | python -m json.tool

@@ -1,17 +1,17 @@
 .. code-block:: csharp
 
-  TimeSpan cooldown = TimeSpan.FromSeconds(60);
+  TimeSpan cooldown = TimeSpan.FromSeconds(120);
   int desiredCapacity = 1;
-  PolicyConfiguration policyConfiguration = PolicyConfiguration.Capacity("Capacity 1 Policy", desiredCapacity, cooldown);
-  await cloudAutoScaleProvider.SetPolicyAsync({group_id}, {policy_id), policyConfiguration, CancellationToken.None);
- 
+  PolicyConfiguration policyConfiguration = PolicyConfiguration.Capacity("New Name", desiredCapacity, cooldown);
+  await cloudAutoScaleProvider.SetPolicyAsync(scalingGroup.Id, policy.Id, policyConfiguration, CancellationToken.None);
+
 .. code-block:: java
 
   PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
   CreateScalingPolicy scalingPolicy = CreateScalingPolicy.builder()
-            .cooldown(3)
+            .cooldown(120)
             .type(ScalingPolicyType.WEBHOOK)
-            .name("New name")
+            .name("New Name")
             .targetType(ScalingPolicyTargetType.INCREMENTAL)
             .target("1")
             .build();
@@ -31,15 +31,14 @@
 
 .. code-block:: python
 
-  au = pyrax.autoscale
-  au.update_policy("{scalingGroupId}", "{policyId}", name="My Policy",
+  au.update_policy("{groupId}", "{policyId}", name="New Name",
           policy_type="webhook", cooldown=120, change=10, is_percent=True,
-          desired_capacity=7)
+          desired_capacity=1)
 
 .. code-block:: ruby
 
-  my_policy.cooldown = 60
-  my_policy.change = 3
+  my_policy.name = 'New Name'
+  my_policy.cooldown = 120
   my_policy.save
 
 .. code-block:: sh
@@ -51,6 +50,6 @@
     -d '{
       "change": 10,
       "cooldown": 120,
-      "name": "My policy",
+      "name": "New Name",
       "type": "webhook"
     }' | python -m json.tool

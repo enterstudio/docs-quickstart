@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  Webhook webhook = await cloudAutoScaleProvider.GetWebhookAsync({group_id}, {policy_id}, {webhook_id}, CancellationToken.None);
+  Webhook webhook = await cloudAutoScaleProvider.GetWebhookAsync(scalingGroup.Id, policy.Id, {webhookId}, CancellationToken.None);
 
 .. code-block:: java
 
@@ -17,13 +17,11 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  webhook = au.get_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
+  webhook = au.get_webhook("{groupId}", "{policyId}", "{webhookId}")
 
 .. code-block:: ruby
 
-  my_webhook = my_policy.webhooks.get '{webhookId}'
+  my_webhook = my_policy.webhooks.get('{webhookId}')
 
 .. code-block:: sh
 

@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  ReadOnlyCollectionPage<Webhook> webhooks = await cloudAutoScaleProvider.ListWebhooksAsync({group_id}, {policy_id}, null, null, CancellationToken.None);
+  ReadOnlyCollectionPage<Webhook> webhooks = await cloudAutoScaleProvider.ListWebhooksAsync(scalingGroup.Id, policy.Id, null, null, CancellationToken.None);
 
 .. code-block:: java
 
@@ -17,9 +17,7 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  webhooks = au.list_webhooks("{scalingGroupId}", "{policyId}")
+  webhooks = au.list_webhooks("{groupId}", "{policyId}")
 
 .. code-block:: ruby
 

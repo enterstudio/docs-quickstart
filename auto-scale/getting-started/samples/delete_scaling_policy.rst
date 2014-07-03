@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  await cloudAutoScaleProvider.DeletePolicyAsync({group_id}, {policy_id}, CancellationToken.None);
+  await cloudAutoScaleProvider.DeletePolicyAsync(scalingGroup.Id, policy.Id, CancellationToken.None);
 
 .. code-block:: java
 
@@ -17,9 +17,7 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  au.delete_policy("{scalingGroupId}", "{policyId}")
+  au.delete_policy("{groupId}", "{policyId}")
 
 .. code-block:: ruby
 
