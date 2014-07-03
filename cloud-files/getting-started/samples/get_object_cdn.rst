@@ -9,7 +9,14 @@
 
 .. code-block:: java
 
-  URI cdnUri = cloudFilesApi.getCDNApiForRegion("{region}").enable("{containerName}");
+  CDNApi cdnApi = cloudFilesApi.getCDNApiForRegion("{region}");
+
+  CDNContainer cdnContainer = cdnApi.get("{containerName}");
+
+  URI uri = cdnContainer.getUri();
+  URI sslUri = cdnContainer.getSslUri();
+  URI streamingUri = cdnContainer.getStreamingUri();
+  URI iosUri = cdnContainer.getIosUri();
 
 .. code-block:: javascript
 

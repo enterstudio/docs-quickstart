@@ -1,10 +1,11 @@
 .. code-block:: csharp
 
   // This is not supported through the .NET SDK at this time
-  
+
 .. code-block:: java
 
   KeyPairApi keyPairApi = novaApi.getKeyPairExtensionForZone("{region}").get();
+
   KeyPair keyPair = keyPairApi.create("my-keypair");
 
   File keyPairFile = new File("my-keypair.pem");

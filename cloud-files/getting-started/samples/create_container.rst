@@ -5,7 +5,9 @@
 
 .. code-block:: java
 
-  cloudFilesApi.getContainerApiForRegion("{region}").create("{containerName}");
+  ContainerApi containerApi = cloudFilesApi.getContainerApiForRegion("{region}");
+
+  containerApi.create("{containerName}");
 
 .. code-block:: javascript
 

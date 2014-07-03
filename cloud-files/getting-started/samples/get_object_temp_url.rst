@@ -11,9 +11,9 @@
   // Access the RegionScopedBlobStore and get the Cloud Files API
   BlobStore blobStore = builder.buildView(RegionScopedBlobStoreContext.class)
           .blobStoreInRegion("{region}");
+  CloudFilesApi cloudFilesApi = blobStore.getContext().unwrapApi(CloudFilesApi.class);
 
   // Get the AccountApi and update the temporary URL key if not set
-  CloudFilesApi cloudFilesApi = blobStore.getContext().unwrapApi(CloudFilesApi.class);
   AccountApi accountApi = cloudFilesApi.getAccountApiForRegion("{region}");
   accountApi.updateTemporaryUrlKey("jnRB6#1sduo8YGUF&%7r7guf6f");
 
@@ -33,7 +33,7 @@
   // used to validate temp url requests. You only need to do this once.
   $account = $service->getAccount();
   $account->setTempUrlSecret();
-  
+
   // Get a temporary URL that will expire in 3600 seconds (1 hour) from now
   // and only allow GET HTTP requests to it.
   $tempUrl = $object->getTemporaryUrl(3600, 'GET');

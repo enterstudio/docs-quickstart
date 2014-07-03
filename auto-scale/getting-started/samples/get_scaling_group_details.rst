@@ -5,6 +5,7 @@
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+
   Group group = groupApi.get("{groupId}");
 
 .. code-block:: javascript

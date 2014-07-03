@@ -4,7 +4,9 @@
 
 .. code-block:: java
 
-  WebhhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+  WebhhookApi webhookApi =
+      autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+
   Webhook webhook = webhookApi.get("{webhookId}");
   AutoscaleUtils.execute(webhook.getAnonymousExecutionURI().get());
 

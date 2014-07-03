@@ -8,7 +8,9 @@
 
 .. code-block:: java
 
-  ServerPredicates.awaitActive(serverApi).apply(serverCreated.getId())
+  ServerApi serverApi = novaApi.getServerApiForZone("{region}");
+
+  ServerPredicates.awaitActive(serverApi).apply("{serverId}")
 
 .. code-block:: javascript
 

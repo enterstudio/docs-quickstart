@@ -5,6 +5,7 @@
 .. code-block:: java
 
   PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+
   Policy policy = policyApi.get("{policyId}");
 
 .. code-block:: javascript

@@ -12,32 +12,42 @@
 
 .. code-block:: java
 
-  GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
-  GroupConfiguration groupConfiguration = GroupConfiguration.builder()
-            .maxEntities(25)
-            .cooldown(60)
-            .name("{groupName}")
-            .minEntities(5)
-            .metadata(ImmutableMap.of("notes", "This is an autoscale group for examples"))
-            .build();
+  private static final String PUBLIC_NET = "00000000-0000-0000-0000-000000000000";
+  private static final String SERVICE_NET = "11111111-1111-1111-1111-111111111111";
 
-  LaunchConfiguration launchConfiguration = LaunchConfiguration.builder()
-            .loadBalancers(ImmutableList.of(LoadBalancer.builder().port(8080).id(9099).build()))
-            .serverName("{serverName}")
-            .serverImageRef("{imageId}")
-            .serverFlavorRef("{flavorId}")
-            .type(LaunchConfigurationType.LAUNCH_SERVER)
-            .build();
+  GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+
+  GroupConfiguration groupConfig = GroupConfiguration.builder()
+          .maxEntities(5)
+          .cooldown(2)
+          .name("{groupName}")
+          .minEntities(0)
+          .metadata(ImmutableMap.of("notes", "This is an autoscale group for examples"))
+          .build();
+
+  LaunchConfiguration launchConfig = LaunchConfiguration.builder()
+          .loadBalancers(ImmutableList.of(LoadBalancer.builder().port(8080).id(9099).build()))
+          .serverName("{groupName}")
+          .serverImageRef("{imageId}")
+          .serverFlavorRef("{flavorId}")
+          .serverDiskConfig(Server.DISK_CONFIG_AUTO)
+          .serverMetadata(ImmutableMap.of("notes", "Server examples notes"))
+          .networks(ImmutableList.of(PUBLIC_NET, SERVICE_NET))
+                .personalities(ImmutableList.of(
+                        Personality.builder()
+                                .path("filepath")
+                                .contents("VGhpcyBpcyBhIHRlc3QgZmlsZS4=")
+                                .build()))
+          .type(LaunchConfigurationType.LAUNCH_SERVER)
+          .build();
 
   CreateScalingPolicy scalingPolicy = CreateScalingPolicy.builder()
-            .cooldown(60)
-            .type(ScalingPolicyType.WEBHOOK)
-            .name(NAME)
-            .targetType(ScalingPolicyTargetType.PERCENT_CHANGE)
-            .target("1")
-            .build();
-
-  Group g = groupApi.create(groupConfiguration, launchConfiguration, ImmutableList.of(scalingPolicy));
+          .cooldown(0)
+          .type(ScalingPolicyType.WEBHOOK)
+          .name("{groupName}")
+          .targetType(ScalingPolicyTargetType.PERCENT_CHANGE)
+          .target("1")
+          .build();
 
 .. code-block:: javascript
 

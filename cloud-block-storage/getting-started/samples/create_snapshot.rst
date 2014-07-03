@@ -4,6 +4,9 @@
 
 .. code-block:: java
 
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
+  SnapshotApi snapshotApi = cinderApi.getSnapshotApiForZone("{region}");
+
   // Get the volume to snapshot
   Volume volume = volumeApi.get("{volumeId}")
 
@@ -53,7 +56,7 @@
   snap = vol.create_snapshot('name-here', 'This is the description')
 
 .. code-block:: ruby
-  
+
   # To create a snapshot for a volume, the volume should be detached from
   # any server. You must supply a name for the snapshot, and may provide
   # an optional description.
@@ -72,7 +75,7 @@
         "display_description": "{description}",
         "volume_id": "{volumeId}"
       }
-    }'\    
+    }'\
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
     $ENDPOINT/snapshots | python -m json.tool

@@ -5,7 +5,9 @@
 
 .. code-block:: java
 
-  cloudFilesApi.getCDNApiForRegion("{region}").disable("{containerName}");
+  CDNApi cdnApi = cloudFilesApi.getCDNApiForRegion("{region}");
+
+  cdnApi.disable("{containerName}");
 
 .. code-block:: javascript
 

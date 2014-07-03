@@ -9,8 +9,13 @@
 
 .. code-block:: java
 
-    MessageApi messageApi = marconiApi.getMessageApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
-    CreateMessage createMessage = CreateMessage.builder().ttl(900).body("{\"play\": \"hockey\"}").build();
+    MessageApi messageApi =
+        marconiApi.getMessageApiForZoneAndClientAndQueue("{region}", "{clientId}", "{queueName}");
+
+    CreateMessage createMessage = CreateMessage.builder()
+            .ttl(900)
+            .body("{\"play\": \"hockey\"}")
+            .build();
     List<CreateMessage> createMessages = ImmutableList.of(createMessage);
 
     MessagesCreated messagesCreated = messageApi.create(createMessages);

@@ -4,10 +4,11 @@
   int desiredCapacity = 1;
   PolicyConfiguration policyConfiguration = PolicyConfiguration.Capacity("Capacity 1 Policy", desiredCapacity, cooldown);
   await cloudAutoScaleProvider.SetPolicyAsync({group_id}, {policy_id), policyConfiguration, CancellationToken.None);
- 
+
 .. code-block:: java
 
   PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+
   CreateScalingPolicy scalingPolicy = CreateScalingPolicy.builder()
             .cooldown(3)
             .type(ScalingPolicyType.WEBHOOK)

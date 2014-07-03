@@ -5,6 +5,7 @@
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+
   FluentIterable<Group> groups = groupApi.list();
 
 .. code-block:: javascript

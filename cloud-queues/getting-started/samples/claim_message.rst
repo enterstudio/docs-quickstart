@@ -8,7 +8,9 @@
 
 .. code-block:: java
 
-  ClaimApi claimApi = marconiApi.getClaimApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
+  ClaimApi claimApi =
+      marconiApi.getClaimApiForZoneAndClientAndQueue("{region}", "{clientId}", "{queueName}");
+
   List<Message> messages = claimApi.claim(900, 120, 4);
 
 .. code-block:: javascript

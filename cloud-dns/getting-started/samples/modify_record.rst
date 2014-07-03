@@ -2,6 +2,14 @@
 
 .. code-block:: java
 
+  RecordApi recordApi = cloudDNSApi.getRecordApiForDomain({domainId}});
+
+  Record updateRecord = Record.builder()
+          .data("192.168.1.2")
+          .build();
+
+  awaitComplete(cloudDNSApi, recordApi.update("{recordId}", updateRecord));
+
 .. code-block:: javascript
 
   myRec.data = '192.168.1.2';

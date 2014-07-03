@@ -7,9 +7,12 @@
   int minConnections = 2;
   TimeSpan rateInterval = TimeSpan.FromSeconds(5);
   ConnectionThrottles throttles = new ConnectionThrottles(maxConnectionRate, maxConnections, minConnections, rateInterval);
-  await cloudLoadBalancerProvider.UpdateThrottlesAsync(loadBalancerId, throttles, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);    
+  await cloudLoadBalancerProvider.UpdateThrottlesAsync(loadBalancerId, throttles, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
 
 .. code-block:: java
+
+  ConnectionApi connectionApi =
+      clbApi.getConnectionApiForZoneAndLoadBalancer("{region}", "{loadBalancerId}");
 
   ConnectionThrottle throttle = ConnectionThrottle.builder()
       .maxConnectionRate(10000)
@@ -18,7 +21,6 @@
       .rateInterval(5)
       .build();
 
-  ConnectionApi connectionApi = clbApi.getConnectionApiForZoneAndLoadBalancer("{region}", loadBalancer.getId());
   connectionApi.createOrUpdateConnectionThrottle(throttle);
 
 .. code-block:: javascript

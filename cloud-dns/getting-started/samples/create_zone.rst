@@ -3,6 +3,7 @@
 .. code-block:: java
 
   DomainApi domainApi = cloudDNSApi.getDomainApi();
+
   List<CreateDomain> createDomains = Lists.newArrayList();
   CreateDomain createDomain = CreateDomain.builder()
           .name(DOMAIN)

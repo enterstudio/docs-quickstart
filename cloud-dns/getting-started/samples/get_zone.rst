@@ -3,6 +3,7 @@
 .. code-block:: java
 
   DomainApi domainApi = cloudDNSApi.getDomainApi();
+
   Domain domain = domainApi.get({domainId});
 
 .. code-block:: javascript

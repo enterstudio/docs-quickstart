@@ -1,8 +1,10 @@
 .. code-block:: csharp
 
   Snapshot snapshot = new CloudBlockStorageProvider({cloudIdentity}).ShowSnapshot("{snapshotId}", "{region}");
-			
+
 .. code-block:: java
+
+  SnapshotApi snapshotApi = cinderApi.getSnapshotApiForZone("{region}");
 
   Snapshot snapshot = snapshotApi.get("{snapshotId}");
 
@@ -32,4 +34,4 @@
 
     $ curl -X GET $ENDPOINT/snapshots/{snapshotId}
       -H "X-Auth-Token: $TOKEN" \
-      -H "Content-Type: application/json" | python -m json.tool 
+      -H "Content-Type: application/json" | python -m json.tool

@@ -7,7 +7,7 @@
   int nbrOfBytes;
   int bytesRead = 0;
   while ((nbrOfBytes = fileStream.Read(buffer, bytesRead, fileLength - bytesRead)) > 0)
-      bytesRead += nbrOfBytes;  
+      bytesRead += nbrOfBytes;
   fileStream.Close();
   using (fileStream)
   {
@@ -19,11 +19,17 @@
 
 .. code-block:: java
 
-  // create a payload
-  Payload payload = Payloads.newByteSourcePayload(ByteSource.wrap("sample-data".getBytes()));
+  ObjectApi objectApi =
+      cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");
 
-  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}")
-  objectApi.put("{objectName}", payload);
+  // Upload a String
+  Payload stringPayload = Payloads.newByteSourcePayload(ByteSource.wrap("sample-data".getBytes()));
+  objectApi.put("{objectName}", stringPayload);
+
+  // Upload a File
+  ByteSource byteSource = Files.asByteSource(new File("{filePath}"));
+  Payload filePayload = Payloads.newByteSourcePayload(byteSource);
+  objectApi.put("{objectName}", filePayload);
 
 .. code-block:: javascript
 

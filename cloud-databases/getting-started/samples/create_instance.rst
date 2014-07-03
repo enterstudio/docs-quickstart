@@ -7,13 +7,9 @@
 
 .. code-block:: java
 
-  // We need to get a Flavor (hardware type) to run the Instance on.
-  FlavorApi flavorApi = troveApi.getFlavorApiForZone("{region}");
-  Flavor flavor = Iterables.getFirst(flavorApi.list(), null);
-
   TroveUtils utils = new TroveUtils(troveApi);
 
-  Instance instance = utils.getWorkingInstance("{region}", "sample_instance", "" + flavor.getId(), 1);
+  Instance instance = utils.getWorkingInstance("{region}", "{instanceName}", "{flavorId}", 1);
 
 .. code-block:: javascript
 
