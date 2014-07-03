@@ -8,6 +8,8 @@
 
 .. code-block:: php
 
+  $server->waitFor('ACTIVE', 600);
+
 .. code-block:: python
 
   pyrax.utils.wait_for_build(server, verbose=True)

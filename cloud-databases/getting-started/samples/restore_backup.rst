@@ -22,6 +22,8 @@
 
 .. code-block:: php
 
+  // Not currently supported by this SDK
+
 .. code-block:: python
 
   # When restoring from a backup, you must supply a backup (either the backup
