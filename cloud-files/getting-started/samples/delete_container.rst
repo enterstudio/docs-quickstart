@@ -1,11 +1,10 @@
 .. code-block:: csharp
 
-  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
-  cloudFilesProvider.DeleteContainer("{container_name}");
+  cloudFilesProvider.DeleteContainer("example_container");
 
 .. code-block:: java
 
-  cloudFilesApi.getContainerApiForRegion("{region}").deleteIfEmpty("{containerName}");
+  cloudFilesApi.getContainerApiForRegion("{region}").deleteIfEmpty("example_container");
 
 .. code-block:: javascript
 
@@ -28,7 +27,7 @@
   container.delete()
 
   # Delete all the objects in the container and delete the container
-  container_deleted = pyrax.cloudfiles.delete_container("gallery",
+  container_deleted = pyrax.cloudfiles.delete_container("example_container",
                                                         del_objects=True)
 
 .. code-block:: ruby
@@ -37,5 +36,5 @@
 
 .. code-block:: sh
 
-  curl -i -X DELETE $ENDPOINT/{containerName} -H "X-Auth-Token: $TOKEN"
-
+  curl -i -X DELETE $ENDPOINT/{containerName} \
+    -H "X-Auth-Token: $TOKEN"

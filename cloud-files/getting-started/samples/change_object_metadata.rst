@@ -1,13 +1,12 @@
 .. code-block:: csharp
 
-  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
   Dictionary<string, string> metadata = new Dictionary<string,string>();
-  metadata.Add("{key}","{value}");
-  cloudFilesProvider.UpdateObjectMetadata("{container_name}", "{object_name}", metadata, "{region}");
+  metadata.Add("some-key", "some-value");
+  cloudFilesProvider.UpdateObjectMetadata("example_container", "someobject", metadata, "{region}");
 
 .. code-block:: java
 
-  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");
+  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "example_container");
   objectApi.updateMetadata("{objectName}", ImmutableMap.of("some-key", "some-value"));
 
 .. code-block:: javascript
@@ -51,4 +50,3 @@
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
     -H "X-Object-Meta-Some-Key: some-value"
-

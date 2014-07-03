@@ -1,11 +1,16 @@
 .. code-block:: csharp
 
-  cloudFilesProvider.GetObjectSaveToFile("{container_name}", "{output_folder}", "{object_name}", "{output_filename}");
-			
+  cloudFilesProvider.GetObjectSaveToFile(
+    "example_container",
+    @"C:\temp",
+    "someobject",
+    "somefile.txt"
+  );
+
 .. code-block:: java
 
-  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");
-  SwiftObject object = objectApi.get("{objectName}");
+  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "example_container");
+  SwiftObject object = objectApi.get("someobject");
 
 .. code-block:: javascript
 
@@ -20,8 +25,8 @@
 
   // create a writeable stream for our destination
   var source = client.download({
-    container: 'sample-container-test',
-    remote: 'somefile.txt'
+    container: 'example_container',
+    remote: 'someobject'
   }, function(err) {
     if (err) {
       // TODO handle as appropriate
@@ -38,7 +43,7 @@
 
   // Cast to string
   $content = (string) $stream;
-  
+
   // Write object content to file on local filesystem.
   $stream->rewind();
   $localFilename = tempnam("/tmp", 'php-opencloud-');

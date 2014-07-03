@@ -1,29 +1,28 @@
 .. code-block:: csharp
 
-  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
-  FileStream fileStream = new FileStream("{path_to_file}", FileMode.Open, FileAccess.Read);
+  FileStream fileStream = new FileStream("/tmp/somefile.txt", FileMode.Open, FileAccess.Read);
   int fileLength = (int)fileStream.Length;
   byte[] buffer = new byte[fileLength];
   int nbrOfBytes;
   int bytesRead = 0;
   while ((nbrOfBytes = fileStream.Read(buffer, bytesRead, fileLength - bytesRead)) > 0)
-      bytesRead += nbrOfBytes;  
+      bytesRead += nbrOfBytes;
   fileStream.Close();
   using (fileStream)
   {
-      cloudFilesProvider.CreateObject("{container_name}", fileStream, "{object_name}");
+      cloudFilesProvider.CreateObject("example_container", fileStream, "someobject");
   }
 
   // OR, much simpler...
-  cloudFilesProvider.CreateObjectFromFile("{container_name}", "{path_to_file}", "{object_name}");
+  // cloudFilesProvider.CreateObjectFromFile("example_container", "/tmp/somefile.txt", "someobject");
 
 .. code-block:: java
 
   // create a payload
   Payload payload = Payloads.newByteSourcePayload(ByteSource.wrap("sample-data".getBytes()));
 
-  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}")
-  objectApi.put("{objectName}", payload);
+  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "example_container")
+  objectApi.put("someobject", payload);
 
 .. code-block:: javascript
 
@@ -38,8 +37,8 @@
 
   // create a writeable stream for our destination
   var dest = client.upload({
-    container: 'sample-container-test',
-    remote: 'somefile.txt'
+    container: 'example_container',
+    remote: 'someobject'
   }, function(err) {
     if (err) {
       // TODO handle as appropriate
@@ -63,8 +62,7 @@
 
 .. code-block:: python
 
-  container = pyrax.cloudfiles.create_container("gallery")
-  obj = container.store_object("thumbnail", data)
+  obj = container.store_object("someobject", data)
 
 .. code-block:: ruby
 
