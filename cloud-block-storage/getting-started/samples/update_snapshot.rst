@@ -4,7 +4,7 @@
 
 .. code-block:: java
 
-  // jclouds doesn't support this API presently
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
 
@@ -33,7 +33,7 @@
 
 .. code-block:: ruby
 
-  # N/A
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 
@@ -46,4 +46,4 @@
     }'\
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/snapshots/{snapshotId} | python -m json.tool 
+    $ENDPOINT/snapshots/{snapshotId} | python -m json.tool

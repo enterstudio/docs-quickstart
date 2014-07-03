@@ -6,11 +6,11 @@
 
 .. code-block:: java
 
-  // This operation is currently not supported through the jclouds SDK.
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
 
- // This operation is currently not supported with pkgcloud.
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -22,7 +22,7 @@
 
 .. code-block:: ruby
 
-  # This operation is currently not supported through the Fog SDK.
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 

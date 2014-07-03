@@ -11,14 +11,16 @@
 
 .. code-block:: javascript
 
+  // Not currently supported by this SDK
+
 .. code-block:: php
 
   // Obtain an Object Store service object from the client.
   $queuesService = $client->queuesService(null, '{regionId}');
 
   // You must set a unique client ID for every script that accesses the API
-  // This enforces responsibility when consuming and processing messages. If 
-  // you do not want to set your own UUID, leave the arg empty and the SDK will 
+  // This enforces responsibility when consuming and processing messages. If
+  // you do not want to set your own UUID, leave the arg empty and the SDK will
   // create a default one:
   $queuesService->setClientId();
 
