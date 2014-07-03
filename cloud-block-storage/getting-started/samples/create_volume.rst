@@ -1,11 +1,16 @@
 .. code-block:: csharp
 
-   new CloudBlockStorageProvider({cloudIdentity}).CreateVolume(size: {size}, displayDescription: "{description}", displayName: "{name}", region: "{region}");
-			
+  volume = cbsProvider.CreateVolume(
+    size: 100,
+    displayDescription: "This is the description",
+    displayName: "Some Volume",
+    region: "{region}"
+  );
+
 .. code-block:: java
 
   CreateVolumeOptions options = CreateVolumeOptions.Builder
-        .name("photos")
+        .name("Some Volume")
         .volumeType("SATA");
 
   Volume volume = volumeApi.create(100, options);
@@ -18,7 +23,7 @@
   // default if you omit this.
 
   client.createVolume({
-    name: 'photos',
+    name: 'Some Volume',
     volumeType: 'SATA',
     size: 100
   }, function(err, volume) {
@@ -38,7 +43,7 @@
 
   $volume = $volumeService->volume();
   $volume->create(array(
-      'display_name' => 'photos',
+      'display_name' => 'Some Volume',
       'size' => 100,
       'volume_type' => 'SATA'
   ));
@@ -50,7 +55,7 @@
   # expensive), or 'SATA' (more affordable). SATA is the default if you omit
   # this.
 
-  vol = cbs.create('photos', 100, 'SATA')
+  volume = cbs.create('Some Volume', 100, 'SATA')
 
 .. code-block:: ruby
 
@@ -58,7 +63,7 @@
   # The :volume_type parameter may be either 'SSD' (faster, more expensive), or
   # 'SATA' (more affordable). SATA is the default it you omit this.
   volume = @client.volumes.create(
-    :display_name => 'photos',
+    :display_name => 'Some Volume',
     :size => '100',
     :volume_type => 'SATA'
   )
@@ -66,13 +71,12 @@
 
 .. code-block:: sh
 
-  $ curl -X POST -d \
-    '{
-    "volume": {
-        "display_name": "{name}",
-        "size": 100
-     }
-    }'\    
+  curl -X POST $ENDPOINT/volumes
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/volumes | python -m json.tool
+    -d '{
+    "volume": {
+        "display_name": "Some Volume",
+        "size": 100
+     }
+    }' | python -m json.tool

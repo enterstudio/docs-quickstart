@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  // This API call is not implemented in the .NET SDK
+  // Not currently supported by this SDK
 
 .. code-block:: java
 
@@ -11,7 +11,7 @@
   // assuming we've already loaded the details of a volume into a
   // local variable named volume
 
-  volume.name = 'new_volume_name';
+  volume.name = 'New Volume Name';
 
   client.updateVolume(volume, function(err) {
     if (err) {
@@ -22,14 +22,12 @@
 .. code-block:: php
 
   $volume->rename(array(
-      'display_name' => 'new_volume_name',
-      'display_description' => 'This is the new volume description'
+      'display_name' => 'New Volume Name'
   ));
 
 .. code-block:: python
 
-  vol.update(display_name='new_volume_name',
-             display_description='This is the new volume description')
+  vol.update(display_name='New Volume Name')
 
 .. code-block:: ruby
 
@@ -37,13 +35,11 @@
 
 .. code-block:: sh
 
- $ curl -X PUT -d \
-   '{
-    "snapshot":{
-        "display_name":"{name}",
-        "display_description":"{description}"
-        }
-    }'\
+  curl -X PUT $ENDPOINT/volumes/{volumeId} \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/volumes/{volumeId} | python -m json.tool
+    -d '{
+      "snapshot": {
+        "display_name": "New Volume Name"
+      }
+    }' | python -m json.tool

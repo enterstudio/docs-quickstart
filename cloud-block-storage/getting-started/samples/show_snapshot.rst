@@ -1,7 +1,7 @@
 .. code-block:: csharp
 
-  Snapshot snapshot = new CloudBlockStorageProvider({cloudIdentity}).ShowSnapshot("{snapshotId}", "{region}");
-			
+  Snapshot snapshot = cbsProvider.ShowSnapshot("{snapshotId}", "{region}");
+
 .. code-block:: java
 
   Snapshot snapshot = snapshotApi.get("{snapshotId}");
@@ -26,10 +26,10 @@
 
 .. code-block:: ruby
 
-  snapshot @client.snapshots.get('{snapshotId}')
+  snapshot = @client.snapshots.get('{snapshotId}')
 
- .. code-block:: sh
+.. code-block:: sh
 
-    $ curl -X GET $ENDPOINT/snapshots/{snapshotId}
-      -H "X-Auth-Token: $TOKEN" \
-      -H "Content-Type: application/json" | python -m json.tool 
+  curl -X GET $ENDPOINT/snapshots/{snapshotId}
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" | python -m json.tool

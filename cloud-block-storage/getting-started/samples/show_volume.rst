@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  Volume volume = new CloudBlockStorageProvider({cloudIdentity}).ShowVolume("{volumeId}", region: "{region}");
+  Volume volume = cbsProvider.ShowVolume("{volumeId}", region: "{region}");
 
 .. code-block:: java
 
@@ -30,6 +30,6 @@
 
  .. code-block:: sh
 
-    $ curl -X GET $ENDPOINT/volumes/{volumeId}
-      -H "X-Auth-Token: $TOKEN" \
-      -H "Content-Type: application/json" | python -m json.tool 
+  curl -X GET $ENDPOINT/volumes/{volumeId} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" | python -m json.tool

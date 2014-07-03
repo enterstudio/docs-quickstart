@@ -7,7 +7,8 @@
   };
   CloudIdentityProvider cloudIdentityProvider = new CloudIdentityProvider(cloudIdentity);
   UserAccess userAccess = cloudIdentityProvider.Authenticate(cloudIdentity);
-  
+  CloudBlockStorageProvider cbsProvider = new CloudBlockStorageProvider(cloudIdentity);
+
 .. code-block:: java
 
   // Authentication in jclouds is lazy and happens on the first call to the cloud.
@@ -65,12 +66,18 @@
 
   # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
-  $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
-    -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-    -H "Content-Type: application/json" | python -m json.tool
+  curl -s -X POST https://identity.api.rackspacecloud.com/v2.0/tokens \
+    -H "Content-Type: application/json" \
+    -d '{
+      "auth": {
+        "RAX-KSKEY:apiKeyCredentials": {
+          "username": "{username}",
+          "apiKey": "{apiKey}"
+        }
+      }
+    }' | python -m json.tool
 
-  # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
+  # From the resulting json, set two environment variables: TOKEN and ENDPOINT.
 
-  export TENANT="{tenantId}"
   export TOKEN="{tokenId}"
   export ENDPOINT="{publicUrl}" # For Block Storage service
