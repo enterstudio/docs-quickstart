@@ -19,6 +19,8 @@
 
 .. code-block:: php
 
+  // Not currently supported by this SDK
+
 .. code-block:: python
 
   au = pyrax.autoscale
