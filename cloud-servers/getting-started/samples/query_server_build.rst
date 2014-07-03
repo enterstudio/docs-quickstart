@@ -12,6 +12,14 @@
 
 .. code-block:: javascript
 
+  server.setWait({ status: server.STATUS.running }, 6000, function(err) {
+    if (err) {
+      // TODO handle err as appropriate
+    }
+
+    // TODO continue after status is running
+  });
+
 .. code-block:: php
 
   $server->waitFor('ACTIVE', 600);
