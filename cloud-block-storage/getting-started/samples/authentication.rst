@@ -80,4 +80,4 @@
   # From the resulting json, set two environment variables: TOKEN and ENDPOINT.
 
   export TOKEN="{tokenId}"
-  export ENDPOINT="{publicUrl}" # For Block Storage service
+  export ENDPOINT="{publicUrl}" # For the Block Storage service

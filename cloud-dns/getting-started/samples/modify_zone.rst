@@ -44,8 +44,6 @@
 
 .. code-block:: sh
 
-.. code-block:: sh
-
   curl -X PUT -d \
     '{
         "comment" : "{updatedComment}",

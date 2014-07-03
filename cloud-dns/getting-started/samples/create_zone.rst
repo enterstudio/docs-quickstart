@@ -47,8 +47,8 @@
 .. code-block:: python
 
   domain = pyrax.cloud_dns.create(name="example.com",
-                                  emailAddress="admin@example.com",
-                                  ttl=300)
+                               emailAddress="admin@example.com",
+                               ttl=300)
 
 .. code-block:: ruby
 
@@ -61,8 +61,10 @@
 
 .. code-block:: sh
 
-  curl -X POST -d \
-    '{
+  curl -X POST $ENDPOINT/domains \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -d '{
         "domains" : [ {
             "name" : "example.com",
             "comment" : "Root level for example.com",
@@ -72,7 +74,4 @@
             "ttl" : 300,
             "emailAddress" : "admin@example.com"
         } ]
-    }' \
-    -H "X-Auth-Token: $TOKEN" \
-    -H "Content-Type: application/json" \
-    $ENDPOINT/domains | python -m json.tool
+    }' | python -m json.tool

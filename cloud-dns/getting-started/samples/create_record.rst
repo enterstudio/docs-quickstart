@@ -60,8 +60,10 @@
 
 .. code-block:: sh
 
-  curl -X POST -s -d \
-    '{
+  curl -s -X POST $ENDPOINT/domains/{domainId}/records \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    -d '{
         "records": [
             {
                 "name" : "app.example.com",
@@ -70,7 +72,4 @@
                 "ttl" : 3600
             }
         ]
-    }' \
-    -H "X-Auth-Token: $TOKEN" \
-    -H "Content-Type: application/json" \
-    $ENDPOINT/domains/{domainId}/records | python -m json.tool
+    }' | python -m json.tool

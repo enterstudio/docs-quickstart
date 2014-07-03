@@ -1,8 +1,13 @@
 .. code-block:: csharp
 
-   CloudDnsProvider cloudDNSProvider = new CloudDnsProvider(cloudIdentity, "{region}", true, null);
-   DomainId[] domainIds = new DomainId[1];
-   DnsJob deleteResponse = await cloudDNSProvider.RemoveDomainsAsync(domainIds, false, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  DomainId[] domainIds = new DomainId[1];
+  DnsJob deleteResponse = await cloudDNSProvider.RemoveDomainsAsync(
+    domainIds,
+    false,
+    AsyncCompletionOption.RequestCompleted,
+    CancellationToken.None,
+    null
+  );
 
 .. code-block:: java
 
@@ -34,7 +39,6 @@
 
 .. code-block:: sh
 
-  $ curl -X DELETE -d \
+  curl -X DELETE $ENDPOINT/domains/{domainId} \
     -H "X-Auth-Token: $TOKEN" \
-    -H "Content-Type: application/json" \
-    $ENDPOINT/domains/{domainId} | python -m json.tool
+    -H "Content-Type: application/json" | python -m json.tool

@@ -46,7 +46,6 @@
 
 .. code-block:: sh
 
-  curl -X GET -d \
+  curl -X GET $ENDPOINT/domains/{domainId} \
     -H "X-Auth-Token: $TOKEN" \
-    -H "Content-Type: application/json" \
-    $ENDPOINT/domains/{domainId} | python -m json.tool
+    -H "Content-Type: application/json" | python -m json.tool
