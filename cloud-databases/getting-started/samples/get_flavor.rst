@@ -1,7 +1,8 @@
 .. code-block:: csharp
 
-  FlavorId flavorId = new FlavorId("{flavor_id}");
-  DatabaseFlavor databaseFlavor = await cloudDatabasesProvider.GetFlavorAsync(flavorId, CancellationToken.None);
+  FlavorId flavorId = new FlavorId("{flavorId}");
+  DatabaseFlavor databaseFlavor = await cloudDatabasesProvider.GetFlavorAsync(
+    flavorId, CancellationToken.None);
 
 .. code-block:: java
 

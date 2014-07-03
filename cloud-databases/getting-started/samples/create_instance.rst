@@ -1,9 +1,21 @@
 .. code-block:: csharp
 
-  FlavorRef flavorRef = new FlavorRef("{flavor_ref_id}");
-  DatabaseVolumeConfiguration databaseVolumeConfiguration = new DatabaseVolumeConfiguration({database_volume_configuration_id});
-  DatabaseInstanceConfiguration databaseInstanceConfiguration = new DatabaseInstanceConfiguration(flavorRef, databaseVolumeConfiguration, "{instance_name}");
-  DatabaseInstance databaseInstance = await cloudDatabasesProvider.CreateDatabaseInstanceAsync(databaseInstanceConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  FlavorRef flavorRef = new FlavorRef(databaseFlavor.Id);
+  DatabaseVolumeConfiguration databaseVolumeConfiguration = new DatabaseVolumeConfiguration(
+    {database_volume_configuration_id}
+  );
+  DatabaseInstanceConfiguration databaseInstanceConfiguration = new DatabaseInstanceConfiguration(
+    flavorRef,
+    databaseVolumeConfiguration,
+    "sample_instance"
+  );
+
+  DatabaseInstance databaseInstance = await cloudDatabasesProvider.CreateDatabaseInstanceAsync(
+    databaseInstanceConfiguration,
+    AsyncCompletionOption.RequestCompleted,
+    CancellationToken.None,
+    null
+  );
 
 .. code-block:: java
 

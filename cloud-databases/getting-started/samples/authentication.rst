@@ -7,7 +7,11 @@
   };
   CloudIdentityProvider cloudIdentityProvider = new CloudIdentityProvider(cloudIdentity);
   UserAccess userAccess = cloudIdentityProvider.Authenticate(cloudIdentity);
-  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(
+    cloudIdentity,
+    "{region}",
+    null
+  );
 
 .. code-block:: java
 
@@ -56,13 +60,20 @@
 
 .. code-block:: sh
 
-  # {username}, {apiKey} below are placeholders. Do not enclose '{}' when you replace them with actual credentials.
+  # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
-  $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
-    -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-    -H "Content-Type: application/json" | python -m json.tool
+  curl -s -X POST https://identity.api.rackspacecloud.com/v2.0/tokens \
+    -H "Content-Type: application/json" \
+    -d '{
+      "auth": {
+        "RAX-KSKEY:apiKeyCredentials": {
+          "username": "{username}",
+          "apiKey": "{apiKey}"
+        }
+      }
+    }' | python -m json.tool
 
-  # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
+  # From the resulting json, set two environment variables: TOKEN and ENDPOINT.
 
   export TOKEN="{tokenId}"
   export ENDPOINT="{publicUrl}" # For the Cloud Databases service

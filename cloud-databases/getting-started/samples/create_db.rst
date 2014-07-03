@@ -1,9 +1,13 @@
 .. code-block:: csharp
 
-  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id");
-  DatabaseName databaseName = new DatabaseName("{database_name}");
+  DatabaseName databaseName = new DatabaseName("sample_db");
   DatabaseConfiguration databaseConfiguration = new DatabaseConfiguration(databaseName);
-  await cloudDatabasesProvider.CreateDatabaseAsync(databaseInstanceId, databaseConfiguration, CancellationToken.None);
+
+  await cloudDatabasesProvider.CreateDatabaseAsync(
+    databaseInstance.Id,
+    databaseConfiguration,
+    CancellationToken.None
+  );
 
 .. code-block:: java
 
@@ -47,6 +51,6 @@
     -H "Content-Type: application/json" \
     -d '{
       "databases": [
-        { "name": "sampledb" }
+        { "name": "sample_db" }
       ]
     }' | python -m json.tool

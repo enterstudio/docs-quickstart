@@ -1,7 +1,9 @@
 .. code-block:: csharp
 
-  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id);
-  bool? isRooted = await cloudDatabasesProvider.CheckRootEnabledStatusAsync(databaseInstanceId, CancellationToken.None);
+  bool? isRooted = await cloudDatabasesProvider.CheckRootEnabledStatusAsync(
+    databaseInstance.Id,
+    CancellationToken.None
+  );
 
 .. code-block:: java
 

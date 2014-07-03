@@ -1,7 +1,11 @@
 .. code-block:: csharp
 
-  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id");
-  await cloudDatabasesProvider.ResizeDatabaseInstanceAsync(databaseInstanceId, new FlavorRef("{flavor_ref_id}"), AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  await cloudDatabasesProvider.ResizeDatabaseInstanceAsync(databaseInstance.Id,
+    new FlavorRef("{newFlavorId}"),
+    AsyncCompletionOption.RequestCompleted,
+    CancellationToken.None,
+    null
+  );
 
 .. code-block:: java
 
