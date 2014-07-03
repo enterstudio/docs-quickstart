@@ -32,15 +32,20 @@
 
 .. code-block:: sh
 
-  # To authenticate, use your Rackspace Cloud Account user name and API key:
-  curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X POST \
-      -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-      -H "Content-Type: application/json" | python -m json.tool
+  # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
-  # NOTE: {username} and {apiKey} are placeholders:
-  # Replace them with actual values and do not enclose the values with {}.
+  curl -s -X POST https://identity.api.rackspacecloud.com/v2.0/tokens \
+    -H "Content-Type: application/json" \
+    -d '{
+      "auth": {
+        "RAX-KSKEY:apiKeyCredentials": {
+          "username": "{username}",
+          "apiKey": "{apiKey}"
+        }
+      }
+    }' | python -m json.tool
 
-  # Export the publicURL for cloudImages to the ENDPOINT variable,
-  # and your authentication token to the TOKEN variable.
-  export ENDPOINT="{publicUrl}" # For the Cloud Images service.
-  export TOKEN="{token}"
+  # From the resulting json, set three environment variables: TOKEN, ENDPOINT, and CDN_ENDPOINT.
+
+  export TOKEN="{tokenId}"
+  export ENDPOINT="{publicUrl}" # For the Cloud Images service

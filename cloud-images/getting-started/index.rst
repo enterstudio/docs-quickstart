@@ -11,9 +11,9 @@ Concepts
 Image
     A bundle of files that you use to create or rebuild a server. There are pre-defined images, but you can also create your own custom images from servers that you've launched.
 
-* A **standard image** is a Rackspace provided image, like *Fedora 20 (Heisenbug) (PVHVM)*
+    * A **standard image** is a Rackspace provided image, like *Fedora 20 (Heisenbug) (PVHVM)*
 
-* A **nonstandard image** is one that is imported or exported, end-of-life, shared, not standard for your account service level, or not included in the subset of images provided for RackConnect customers.
+    * A **nonstandard image** is one that is imported or exported, end-of-life, shared, not standard for your account service level, or not included in the subset of images provided for RackConnect customers.
 
 Image Member
     A user who has been granted access to an image, identified by Rackspace account number.

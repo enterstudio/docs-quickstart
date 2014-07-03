@@ -12,17 +12,15 @@
 
 .. code-block:: php
 
-    $service = $client->imageService('cloudImages', '{regionId}');
-    $images  = $service->listImages();
+  $service = $client->imageService('cloudImages', '{regionId}');
+  $images  = $service->listImages();
 
-    foreach ($images as $image) {
-       /** @param $image OpenCloud\Image\Resource\Image */
-    }
+  foreach ($images as $image) {
+     /** @param $image OpenCloud\Image\Resource\Image */
+  }
 
 .. code-block:: python
 
-  # After authenticating, get a reference to the client
-  imgs = pyrax.images
   all_images = imgs.list()
 
 .. code-block:: ruby

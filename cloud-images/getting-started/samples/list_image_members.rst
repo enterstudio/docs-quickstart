@@ -12,16 +12,14 @@
 
 .. code-block:: php
 
-    $members = $image->listMembers();
+  $members = $image->listMembers();
 
-    foreach ($members as $member) {
-        /** @param $member OpenCloud\Image\Resource\Member */
-    }
+  foreach ($members as $member) {
+      /** @param $member OpenCloud\Image\Resource\Member */
+  }
 
 .. code-block:: python
 
-  # After authenticating, get a reference to the client
-  imgs = pyrax.images
   members = imgs.list_image_members("{imageId}")
 
 .. code-block:: ruby

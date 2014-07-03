@@ -12,13 +12,11 @@
 
 .. code-block:: php
 
-    $image   = $service->getImage('{imageId}');
-    $imageId = $image['id'];
+  $image   = $service->getImage('{imageId}');
+  $imageId = $image['id'];
 
 .. code-block:: python
 
-  # After authenticating, get a reference to the client
-  imgs = pyrax.images
   img = imgs.get("{imageId}")
 
 .. code-block:: ruby
