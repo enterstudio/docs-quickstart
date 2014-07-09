@@ -54,7 +54,7 @@
 
 .. code-block:: sh
 
-  curl -X POST POST $ENDPOINT/queues/{queueName}/messages -d \
+  curl -X POST $ENDPOINT/queues/{queueName}/messages -d \
     '[{"ttl": 300,"body": {"event": "BackupStarted"}},{"ttl": 60,"body": {"play": "hockey"}}]' \
     -H "Content-type: application/json" \
     -H "Client-ID: {clientId}" \
