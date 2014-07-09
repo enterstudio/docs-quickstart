@@ -1,15 +1,18 @@
 .. code-block:: csharp
 
-  cloudFilesProvider.CreateContainer("example_container", region: "{region}");
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  cloudFilesProvider.CreateContainer("{container_name}", region: "{region}");
 
 .. code-block:: java
 
-  cloudFilesApi.getContainerApiForRegion("{region}").create("example_container");
+  ContainerApi containerApi = cloudFilesApi.getContainerApiForRegion("{region}");
+
+  containerApi.create("{containerName}");
 
 .. code-block:: javascript
 
   client.createContainer({
-    name: 'example_container'
+    name: 'gallery'
   }, function (err, container) {
     if (err) {
       // TODO handle as appropriate
@@ -25,19 +28,20 @@
   $objectStoreService = $client->objectStoreService(null, '{region}');
 
   // Create a container for your objects (also referred to as files).
-  $container = $objectStoreService->createContainer('example_container');
+  $container = $objectStoreService->createContainer('gallery');
 
 .. code-block:: python
 
-  container = pyrax.cloudfiles.create_container("example_container")
+  container = pyrax.cloudfiles.create_container("gallery")
 
 .. code-block:: ruby
 
   # Fog calls containers "directories."
 
-  directory = @client.directories.create(:key => 'example_container')
+  directory = @client.directories.create(:key => 'gallery')
 
 .. code-block:: sh
 
   curl -i -X PUT $ENDPOINT/{containerName} \
     -H "X-Auth-Token: $TOKEN"
+

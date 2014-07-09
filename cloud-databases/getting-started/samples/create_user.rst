@@ -1,24 +1,17 @@
 .. code-block:: csharp
 
-  UserName userName = new UserName("{dbUsername}");
-  UserConfiguration userConfiguration = new UserConfiguration(
-    userName,
-    "{dbPassword}",
-    new DatabaseName[] { databaseName }
-  );
-  await cloudDatabasesProvider.CreateUserAsync(
-     databaseInstance.Id,
-     userConfiguration,
-     CancellationToken.None
-  );
+   DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
+   DatabaseName databaseName = new DatabaseName("{databaseName}");
+   UserName userName = new UserName("{username}");
+   UserConfiguration userConfiguration = new UserConfiguration(userName, "{password}", new DatabaseName[] { databaseName });
+   await cloudDatabasesProvider.CreateUserAsync(databaseInstanceId, userConfiguration, CancellationToken.None);
 
 .. code-block:: java
 
-  // Create a user by specifying a username and password, and give them access
-  // to one database.
+  // Create a user with username and password and give them access to one database.
   UserApi userApi = troveApi.getUserApiForZoneAndInstance("{region}", "{instanceId}");
 
-  userApi.create("{dbUsername}", "{dbPassword}", "sample_db");
+  userApi.create("{dbUsername}", "{dbPassword}", "{dbName}");
 
 .. code-block:: javascript
 
@@ -26,7 +19,7 @@
     instance: instance,
     username: {dbUsername},
     password: {dbPassword},
-    databases: [ 'sample_db' ]
+    databases: [ {dbName1}, {dbName2} ]
   }, function(err, user) {
     if (err) {
       // TODO handle err as appropriate
@@ -44,14 +37,14 @@
   $user->create(array(
       'name'      => '{dbUsername}',
       'password'  => '{dbPassword}',
-      'databases' => array('sample_db')
+      'databases' => array('{dbName1}', '{dbName2}')
   ));
 
 .. code-block:: python
 
   # Create a user by specifying the username and password, and give them
   # access to two databases.
-  inst.create_user("{dbUsername}", "{dbPassword}", ["sample_db"])
+  inst.create_user("{dbUsername}", "{dbPassword}", ["{dbName1}", "{dbName2}"])
 
 .. code-block:: ruby
 
@@ -61,7 +54,7 @@
   instance.users.create(
     :name => '{dbUsername}',
     :password => '{dbPassword}',
-    :databases => ['sample_db']
+    :databases => ['{dbName1}', '{dbName2}']
   )
 
 .. code-block:: sh
@@ -74,7 +67,8 @@
       "users": [
         {
           "databases": [
-            { "name": "sample_db" }
+            { "name": "{dbName1}" },
+            { "name": "{dbName2}" }
           ],
           "name": "{dbUsername}",
           "password": "{dbPassword}"

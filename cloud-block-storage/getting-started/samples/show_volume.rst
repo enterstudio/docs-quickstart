@@ -1,8 +1,10 @@
 .. code-block:: csharp
 
-  Volume volume = cbsProvider.ShowVolume("{volumeId}", region: "{region}");
+  Volume volume = new CloudBlockStorageProvider({cloudIdentity}).ShowVolume("{volumeId}", region: "{region}");
 
 .. code-block:: java
+
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
 
   Volume volume = volumeApi.get("{volumeId}");
 
@@ -28,8 +30,8 @@
 
   volume = @client.volumes.get('{volumeId}')
 
-.. code-block:: sh
+ .. code-block:: sh
 
-  curl -X GET $ENDPOINT/volumes/{volumeId} \
-    -H "X-Auth-Token: $TOKEN" \
-    -H "Content-Type: application/json" | python -m json.tool
+    $ curl -X GET $ENDPOINT/volumes/{volumeId}
+      -H "X-Auth-Token: $TOKEN" \
+      -H "Content-Type: application/json" | python -m json.tool

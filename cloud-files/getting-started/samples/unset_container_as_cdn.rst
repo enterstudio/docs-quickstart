@@ -1,10 +1,13 @@
 .. code-block:: csharp
 
-  cloudFilesProvider.DisableCDNOnContainer("example_container");
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  cloudFilesProvider.DisableCDNOnContainer("{container_name}");
 
 .. code-block:: java
 
-  cloudFilesApi.getCDNApiForRegion("{region}").disable("example_container");
+  CDNApi cdnApi = cloudFilesApi.getCDNApiForRegion("{region}");
+
+  cdnApi.disable("{containerName}");
 
 .. code-block:: javascript
 
@@ -32,3 +35,4 @@
   curl -i -X POST $ENDPOINT/{containerName} /
     -H "X-Auth-Token: $TOKEN" \
     -H "X-CDN-Enabled: False"
+

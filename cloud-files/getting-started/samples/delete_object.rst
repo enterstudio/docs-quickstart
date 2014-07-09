@@ -1,14 +1,18 @@
 .. code-block:: csharp
 
-  cloudFilesProvider.DeleteObject("example_container", "someobject");
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  cloudFilesProvider.DeleteObject("{container_name}", "{object_name}");
 
 .. code-block:: java
 
-  cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "example_container").delete("someobject");
+  ObjectApi objectApi =
+      cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");
+
+  objectApi.delete("{objectName}");
 
 .. code-block:: javascript
 
-  client.removeFile('example_container', 'someobject', function(err) {
+  client.removeFile('gallery', 'somefile.txt', function(err) {
     if (err) {
       // TODO handle as appropriate
     }
@@ -30,3 +34,4 @@
 
   curl -i -X DELETE $ENDPOINT/{containerName}/{objectName} \
     -H "X-Auth-Token: $TOKEN"
+

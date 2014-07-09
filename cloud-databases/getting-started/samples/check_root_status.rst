@@ -8,6 +8,7 @@
 .. code-block:: java
 
   InstanceApi instanceApi = troveApi.getInstanceApiForZone("{region}");
+
   instanceApi.isRooted("{instanceId}");
 
 .. code-block:: javascript

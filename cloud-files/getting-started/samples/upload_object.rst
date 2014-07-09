@@ -1,6 +1,7 @@
 .. code-block:: csharp
 
-  FileStream fileStream = new FileStream("/tmp/somefile.txt", FileMode.Open, FileAccess.Read);
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  FileStream fileStream = new FileStream("{path_to_file}", FileMode.Open, FileAccess.Read);
   int fileLength = (int)fileStream.Length;
   byte[] buffer = new byte[fileLength];
   int nbrOfBytes;
@@ -10,19 +11,25 @@
   fileStream.Close();
   using (fileStream)
   {
-      cloudFilesProvider.CreateObject("example_container", fileStream, "someobject");
+      cloudFilesProvider.CreateObject("{container_name}", fileStream, "{object_name}");
   }
 
   // OR, much simpler...
-  // cloudFilesProvider.CreateObjectFromFile("example_container", "/tmp/somefile.txt", "someobject");
+  cloudFilesProvider.CreateObjectFromFile("{container_name}", "{path_to_file}", "{object_name}");
 
 .. code-block:: java
 
-  // create a payload
-  Payload payload = Payloads.newByteSourcePayload(ByteSource.wrap("sample-data".getBytes()));
+  ObjectApi objectApi =
+      cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");
 
-  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "example_container")
-  objectApi.put("someobject", payload);
+  // Upload a String
+  Payload stringPayload = Payloads.newByteSourcePayload(ByteSource.wrap("sample-data".getBytes()));
+  objectApi.put("{objectName}", stringPayload);
+
+  // Upload a File
+  ByteSource byteSource = Files.asByteSource(new File("{filePath}"));
+  Payload filePayload = Payloads.newByteSourcePayload(byteSource);
+  objectApi.put("{objectName}", filePayload);
 
 .. code-block:: javascript
 
@@ -37,8 +44,8 @@
 
   // create a writeable stream for our destination
   var dest = client.upload({
-    container: 'example_container',
-    remote: 'someobject'
+    container: 'sample-container-test',
+    remote: 'somefile.txt'
   }, function(err) {
     if (err) {
       // TODO handle as appropriate
@@ -62,7 +69,8 @@
 
 .. code-block:: python
 
-  obj = container.store_object("someobject", data)
+  container = pyrax.cloudfiles.create_container("gallery")
+  obj = container.store_object("thumbnail", data)
 
 .. code-block:: ruby
 

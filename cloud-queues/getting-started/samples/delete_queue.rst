@@ -6,7 +6,8 @@
 .. code-block:: java
 
   QueueApi queueApi = marconiApi.getQueueApiForZoneAndClient("{region}", "{clientId}");
-  queueApi.delete("sample_queue");
+
+  queueApi.delete("{queueName}");
 
 .. code-block:: javascript
 

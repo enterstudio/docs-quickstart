@@ -1,10 +1,12 @@
 .. code-block:: csharp
 
-  cbsProvider.DeleteVolume(volume.Id, "{region}");
+  new CloudBlockStorageProvider({cloudIdentity}).DeleteVolume("{volumeId}", "{region}");
 
 .. code-block:: java
 
-  volumeApi.delete(volume.getId());
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
+
+  volumeApi.delete("{volumeId}");
 
 .. code-block:: javascript
 
@@ -20,7 +22,7 @@
 
 .. code-block:: python
 
-  volume.delete()
+  vol.delete()
   # Or:
   # cbs.delete(vol)
 
@@ -30,6 +32,6 @@
 
 .. code-block:: sh
 
-  curl -X DELETE $ENDPOINT/volumes/{volumeId} \
+  $ curl -X DELETE $ENDPOINT/volumes/{volumeId} \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" | python -m json.tool

@@ -5,6 +5,7 @@
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+
   groupApi.delete("{groupId}");
 
 .. code-block:: javascript

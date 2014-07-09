@@ -14,7 +14,7 @@
 
 .. code-block:: java
 
-  LoadBalancer loadBalancer = lbApi.create(createLB);
+  LoadBalancerApi lbApi = clbApi.getLoadBalancerApiForZone("{region}");
 
   if (!LoadBalancerPredicates.awaitAvailable(lbApi).apply(loadBalancer)) {
       throw new TimeoutException("Timeout on creating load balancer: " + loadBalancer);

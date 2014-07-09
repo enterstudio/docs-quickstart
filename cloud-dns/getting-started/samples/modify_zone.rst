@@ -6,6 +6,7 @@
 .. code-block:: java
 
   DomainApi domainApi = cloudDNSApi.getDomainApi();
+
   UpdateDomain updateDomain = UpdateDomain.builder()
           .email("changed@domain.com")
           .ttl(3600)

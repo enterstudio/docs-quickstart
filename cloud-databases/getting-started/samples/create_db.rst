@@ -12,7 +12,8 @@
 .. code-block:: java
 
   DatabaseApi databaseApi = troveApi.getDatabaseApiForZoneAndInstance("{region}", "{instanceId}");
-  databaseApi.create("sample_db");
+
+  databaseApi.create("{databaseName}");
 
 .. code-block:: javascript
 

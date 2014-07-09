@@ -6,6 +6,8 @@
 
 .. code-block:: java
 
+  FlavorApi flavorApi = troveApi.getFlavorApiForZone("{region}");
+
   Flavor flavor = flavorApi.get("{flavorId}");
 
 .. code-block:: javascript

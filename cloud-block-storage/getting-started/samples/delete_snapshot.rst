@@ -1,8 +1,10 @@
 .. code-block:: csharp
 
-  cbsProvider.DeleteSnapshot(snapshot.Id, "{region}");
+  new CloudBlockStorageProvider({cloudIdentity}).DeleteSnapshot("{snapshotId}", "{region}");
 
 .. code-block:: java
+
+  SnapshotApi snapshotApi = cinderApi.getSnapshotApiForZone("{region}");
 
   snapshotApi.delete("{snapshotId}");
 
@@ -20,9 +22,9 @@
 
 .. code-block:: python
 
-  snapshot.delete()
+  snap.delete()
   # Or:
-  # cbs.delete_snapshot('{snapshotId}')
+  # cbs.delete_snapshot('{snapId}')
 
 .. code-block:: ruby
 
@@ -30,6 +32,6 @@
 
 .. code-block:: sh
 
-  curl -X DELETE $ENDPOINT/snapshots/{snapshotId} \
+  $ curl -X DELETE $ENDPOINT/snapshots/{snapshotId} \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" | python -m json.tool

@@ -8,6 +8,9 @@
 
 .. code-block:: java
 
+  HealthMonitorApi healthMonitorApi =
+      clbApi.getHealthMonitorApiForZoneAndLoadBalancer("{region}", "{loadBalancerId}");
+
   HealthMonitor healthMonitor = HealthMonitor.builder()
       .type(HealthMonitor.Type.CONNECT)
       .delay(3599)
@@ -15,8 +18,7 @@
       .attemptsBeforeDeactivation(2)
       .build();
 
-  clbApi.getHealthMonitorApiForZoneAndLoadBalancer("{region}", loadBalancer.getId())
-      .createOrUpdate(healthMonitor);
+  healthMonitorApi.createOrUpdate(healthMonitor);
 
 .. code-block:: javascript
 

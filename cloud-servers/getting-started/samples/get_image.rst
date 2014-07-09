@@ -5,6 +5,7 @@
 .. code-block:: java
 
   ImageApi imageApi = novaApi.getImageApiForZone("{region}");
+
   Image image = imageApi.get("{imageId}");
 
 .. code-block:: javascript

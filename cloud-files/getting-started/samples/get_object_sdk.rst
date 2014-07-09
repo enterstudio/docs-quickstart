@@ -1,16 +1,13 @@
 .. code-block:: csharp
 
-  cloudFilesProvider.GetObjectSaveToFile(
-    "example_container",
-    @"C:\temp",
-    "someobject",
-    "somefile.txt"
-  );
+  cloudFilesProvider.GetObjectSaveToFile("{container_name}", "{output_folder}", "{object_name}", "{output_filename}");
 
 .. code-block:: java
 
-  ObjectApi objectApi = cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "example_container");
-  SwiftObject object = objectApi.get("someobject");
+  ObjectApi objectApi =
+      cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");
+
+  SwiftObject object = objectApi.get("{objectName}");
 
 .. code-block:: javascript
 
@@ -25,8 +22,8 @@
 
   // create a writeable stream for our destination
   var source = client.download({
-    container: 'example_container',
-    remote: 'someobject'
+    container: 'sample-container-test',
+    remote: 'somefile.txt'
   }, function(err) {
     if (err) {
       // TODO handle as appropriate

@@ -1,14 +1,14 @@
 .. code-block:: csharp
 
   // This is not supported through the .NET SDK at this time
-  
+
 .. code-block:: java
 
-  File keyPairFile = new File("{/home/my-user/.ssh/id_rsa.pub}");
-  // Using com.google.common.io.Files
-  String publicKey = Files.toString(keyPairFile, UTF_8);
-
   KeyPairApi keyPairApi = novaApi.getKeyPairExtensionForZone("{region}").get();
+
+  File keyPairFile = new File("{/home/my-user/.ssh/id_rsa.pub}");
+  String publicKey = Files.toString(keyPairFile, UTF_8); // Using com.google.common.io.Files
+
   KeyPair keyPair = keyPairApi.createWithPublicKey("my-keypair", publicKey);
 
 .. code-block:: javascript

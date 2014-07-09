@@ -4,7 +4,9 @@
 
 .. code-block:: java
 
-  WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+  WebhookApi webhookApi =
+      autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+
   FluentIterable<Webhook> webhooks = webhookApi.list();
 
 .. code-block:: javascript

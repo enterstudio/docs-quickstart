@@ -11,9 +11,9 @@
   // Access the RegionScopedBlobStore and get the Cloud Files API
   BlobStore blobStore = builder.buildView(RegionScopedBlobStoreContext.class)
           .blobStoreInRegion("{region}");
+  CloudFilesApi cloudFilesApi = blobStore.getContext().unwrapApi(CloudFilesApi.class);
 
   // Get the AccountApi and update the temporary URL key if not set
-  CloudFilesApi cloudFilesApi = blobStore.getContext().unwrapApi(CloudFilesApi.class);
   AccountApi accountApi = cloudFilesApi.getAccountApiForRegion("{region}");
   accountApi.updateTemporaryUrlKey("jnRB6#1sduo8YGUF&%7r7guf6f");
 

@@ -5,6 +5,7 @@
 .. code-block:: java
 
   FlavorApi flavorApi = novaApi.getFlavorApiForZone("{region}");
+
   Flavor flavor = flavorApi.get("{flavorId}");
 
 .. code-block:: javascript

@@ -1,12 +1,14 @@
 .. code-block:: csharp
 
-  NewWebhookConfiguration webhookConfiguration = new NewWebhookConfiguration("My Webhook");
-  Webhook webhook = await cloudAutoScaleProvider.CreateWebhookAsync(scalingGroup.Id, scalingGroup.ScalingPolicies[0].Id, webhookConfiguration, CancellationToken.None);
+  NewWebhookConfiguration webhookConfiguration = new NewWebhookConfiguration("Test Webhook");
+  Webhook webhook = await cloudAutoScaleProvider.CreateWebhookAsync({scaling_group}.Id, {scaling_group}.ScalingPolicies[0].Id, webhookConfiguration, CancellationToken.None);
 
 .. code-block:: java
 
-  WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
-  FluentIterable<Webhook> result = webhookApi.create("My Webhook", ImmutableMap.<String, Object>of());
+  WebhookApi webhookApi =
+      autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+
+  FluentIterable<Webhook> result = webhookApi.create("{name}", ImmutableMap.<String, Object>of());
 
 .. code-block:: javascript
 
@@ -17,20 +19,25 @@
   $webook = $policy->getWebhook();
   $webhook->create(array(
       (object) array(
-          'name'     => 'My Webhook',
-          'metadata' => array('someKey'  => 'someValue')
+          'name'     => 'My webhook',
+          'metadata' => array(
+              'firstKey'  => 'foo',
+              'secondKey' => 'bar'
+          )
       )
   ));
 
 .. code-block:: python
 
+  # After authenticating
+  au = pyrax.autoscale
   # Note: the `metadata` parameter is optional.
-  webhook = au.add_webhook("{groupId}", "{policyId}",
+  webhook = au.add_webhook("{scalingGroupId}", "{policyId}",
           name="My Webhook", metadata={"someKey": "someValue"})
 
 .. code-block:: ruby
 
-  my_webhook = my_policy.webhooks.create(:name => 'My Webhook')
+  my_webhook = my_policy.webhooks.create :name => 'my-webhook'
 
 .. code-block:: sh
 

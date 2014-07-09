@@ -1,18 +1,20 @@
 .. code-block:: csharp
 
-  PolicyConfiguration policyConfiguration = PolicyConfiguration.Capacity("My Policy", 0, TimeSpan.FromSeconds(360));
-  Policy policy = await cloudAutoScaleProvider.CreatePolicyAsync(scalingGroup.Id, policyConfiguration, CancellationToken.None);
+  PolicyConfiguration policyConfiguration = PolicyConfiguration.Capacity("Capacity 0 Policy", 0, TimeSpan.FromSeconds(60));
+  Policy policy = await cloudAutoScaleProvider.CreatePolicyAsync({group_id}, policyConfiguration, CancellationToken.None);
 
 .. code-block:: java
 
-  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{groupId}");
+  PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+
   CreateScalingPolicy scalingPolicy = CreateScalingPolicy.builder()
             .cooldown(360)
             .type(ScalingPolicyType.WEBHOOK)
-            .name("My Policy")
+            .name("{policyName}")
             .targetType(ScalingPolicyTargetType.INCREMENTAL)
             .target("1")
             .build();
+
   FluentIterable<ScalingPolicy> policies = policyApi.create(ImmutableList.of(scalingPolicy));
 
 .. code-block:: javascript
@@ -25,7 +27,7 @@
   $policy->create(array(
       array(
       (object) array(
-          'name'     => 'My Policy',
+          'name'     => 'My policy',
           'change'   => 1,
           'type'     => 'webhook',
           'cooldown' => 360
@@ -35,17 +37,17 @@
 
 .. code-block:: python
 
-  au.add_policy("{groupId}", "My Policy", cooldown=360, change=1,
+  # After authenticating
+  au = pyrax.autoscale
+  au.add_policy("{scalingGroupId}", "My Policy", cooldown=360, change=1,
                 is_percent=False)
 
 .. code-block:: ruby
 
-  my_policy = my_group.policies.create(
-    :name => 'My policy',
+  my_policy = my_group.policies.create :name => 'Scale by one server',
     :cooldown => 360,
     :type => 'webhook',
     :change => 1
-  )
 
 .. code-block:: sh
 
@@ -55,9 +57,9 @@
     -H "Content-Type: application/json" \
     -d '[
        {
-          "name": "My Policy",
-          "change": 1,
-          "cooldown": 360,
-          "type": "webhook"
+          "name":"{policyName}",
+          "change":1,
+          "cooldown":360,
+          "type":"webhook"
        }
     ]' | python -m json.tool

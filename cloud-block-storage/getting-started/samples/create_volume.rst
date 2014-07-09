@@ -1,17 +1,14 @@
 .. code-block:: csharp
 
-  volume = cbsProvider.CreateVolume(
-    size: 100,
-    displayDescription: "This is the description",
-    displayName: "Some Volume",
-    region: "{region}"
-  );
+   new CloudBlockStorageProvider({cloudIdentity}).CreateVolume(size: {size}, displayDescription: "{description}", displayName: "{name}", region: "{region}");
 
 .. code-block:: java
 
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
+
   CreateVolumeOptions options = CreateVolumeOptions.Builder
-        .name("Some Volume")
-        .volumeType("SATA");
+          .name("photos")
+          .volumeType("SATA");
 
   Volume volume = volumeApi.create(100, options);
 
@@ -23,7 +20,7 @@
   // default if you omit this.
 
   client.createVolume({
-    name: 'Some Volume',
+    name: 'photos',
     volumeType: 'SATA',
     size: 100
   }, function(err, volume) {
@@ -43,7 +40,7 @@
 
   $volume = $volumeService->volume();
   $volume->create(array(
-      'display_name' => 'Some Volume',
+      'display_name' => 'photos',
       'size' => 100,
       'volume_type' => 'SATA'
   ));
@@ -55,7 +52,7 @@
   # expensive), or 'SATA' (more affordable). SATA is the default if you omit
   # this.
 
-  volume = cbs.create('Some Volume', 100, 'SATA')
+  vol = cbs.create('photos', 100, 'SATA')
 
 .. code-block:: ruby
 
@@ -63,7 +60,7 @@
   # The :volume_type parameter may be either 'SSD' (faster, more expensive), or
   # 'SATA' (more affordable). SATA is the default it you omit this.
   volume = @client.volumes.create(
-    :display_name => 'Some Volume',
+    :display_name => 'photos',
     :size => '100',
     :volume_type => 'SATA'
   )
@@ -71,12 +68,13 @@
 
 .. code-block:: sh
 
-  curl -X POST $ENDPOINT/volumes
-    -H "X-Auth-Token: $TOKEN" \
-    -H "Content-Type: application/json" \
-    -d '{
+  $ curl -X POST -d \
+    '{
     "volume": {
-        "display_name": "Some Volume",
+        "display_name": "{name}",
         "size": 100
      }
-    }' | python -m json.tool
+    }'\
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Content-Type: application/json" \
+    $ENDPOINT/volumes | python -m json.tool

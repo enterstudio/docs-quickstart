@@ -6,6 +6,7 @@
 .. code-block:: java
 
   RecordApi recordApi = cloudDNSApi.getRecordApiForDomain({domainId}});
+
   RecordDetail record = recordApi.get({recordId}});
 
 .. code-block:: javascript

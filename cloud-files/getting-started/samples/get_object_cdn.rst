@@ -1,9 +1,7 @@
 .. code-block:: csharp
 
-  ContainerCDN container = cloudFilesProvider.GetContainerCDNHeader(
-    container: "example_container"
-  );
-
+  CloudFilesProvider cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+  ContainerCDN container = cloudFilesProvider.GetContainerCDNHeader(container: "{container_name}");
   string urlForHTTP = container.CDNUri;
   string urlForHTTPS = container.CDNSslUri;
   string urlForiOSStreaming = container.CDNIosUri;
@@ -11,7 +9,14 @@
 
 .. code-block:: java
 
-  URI cdnUri = cloudFilesApi.getCDNApiForRegion("{region}").enable("example_container");
+  CDNApi cdnApi = cloudFilesApi.getCDNApiForRegion("{region}");
+
+  CDNContainer cdnContainer = cdnApi.get("{containerName}");
+
+  URI uri = cdnContainer.getUri();
+  URI sslUri = cdnContainer.getSslUri();
+  URI streamingUri = cdnContainer.getStreamingUri();
+  URI iosUri = cdnContainer.getIosUri();
 
 .. code-block:: javascript
 
@@ -37,3 +42,4 @@
 
   curl -i -X HEAD $CDN_ENDPOINT/{containerName}/{objectName} /
       -H "X-Auth-Token: $TOKEN"
+
