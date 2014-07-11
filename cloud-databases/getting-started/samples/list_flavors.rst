@@ -1,12 +1,14 @@
 .. code-block:: csharp
 
-  ReadOnlyCollection<DatabaseFlavor> databaseFlavorCollection = await cloudDatabaseProvider.ListFlavorsAsync(CancellationToken.None);
+  ReadOnlyCollection<DatabaseFlavor> databaseFlavors = await cloudDatabaseProvider
+    .ListFlavorsAsync(CancellationToken.None);
 
 .. code-block:: java
 
   // List your flavors and get the first.
   FlavorApi flavorApi = troveApi.getFlavorApiForZone("{region}");
-  Flavor flavor = Iterables.getFirst(flavorApi.list(), null);
+
+  FluentIterable<Flavor> flavors = flavorApi.list();
 
 .. code-block:: javascript
 

@@ -1,8 +1,10 @@
 .. code-block:: csharp
 
-  new CloudBlockStorageProvider({cloudIdentity}).DeleteSnapshot("{snapshotId}", "{region}");            
+  new CloudBlockStorageProvider({cloudIdentity}).DeleteSnapshot("{snapshotId}", "{region}");
 
 .. code-block:: java
+
+  SnapshotApi snapshotApi = cinderApi.getSnapshotApiForZone("{region}");
 
   snapshotApi.delete("{snapshotId}");
 

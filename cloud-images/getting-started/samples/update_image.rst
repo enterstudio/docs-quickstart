@@ -1,22 +1,24 @@
 .. code-block:: csharp
 
+  // Not currently supported by this SDK
+
 .. code-block:: java
 
-  // jclouds doesn't support this API presently
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
     $image->update(array(
-        'name'        => 'foo',
-        'newProperty' => 'bar'
+        'someAttribute'    => 'someValue',
+        'anotherAttribute' => 'anotherValue'
     ));
 
 .. code-block:: python
 
-  # After authenticating, get a reference to the client
-  imgs = pyrax.images
   # `valueDict` is a dictionary of key/value pairs, where the key is the
   # attribute to be updated, and the value is its new value.
   imgs.update("{imageId}", {"someAttribute": "someValue",
@@ -24,7 +26,7 @@
 
 .. code-block:: ruby
 
-  # Fog doesn't support this API presently
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 

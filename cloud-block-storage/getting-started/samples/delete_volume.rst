@@ -4,6 +4,8 @@
 
 .. code-block:: java
 
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
+
   volumeApi.delete("{volumeId}");
 
 .. code-block:: javascript

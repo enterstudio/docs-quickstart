@@ -5,12 +5,14 @@
 	displayDescription: "{description}", 
 	displayName: "{name}", 
 	region: "{region}");
-			
+
 .. code-block:: java
 
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
+
   CreateVolumeOptions options = CreateVolumeOptions.Builder
-        .name("photos")
-        .volumeType("SATA");
+          .name("photos")
+          .volumeType("SATA");
 
   Volume volume = volumeApi.create(100, options);
 
@@ -76,7 +78,7 @@
         "display_name": "{name}",
         "size": 100
      }
-    }'\    
+    }'\
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
     $ENDPOINT/volumes | python -m json.tool

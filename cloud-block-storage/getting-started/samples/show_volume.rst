@@ -5,6 +5,8 @@
 
 .. code-block:: java
 
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
+
   Volume volume = volumeApi.get("{volumeId}");
 
 .. code-block:: javascript
@@ -33,4 +35,4 @@
 
     $ curl -X GET $ENDPOINT/volumes/{volumeId}
       -H "X-Auth-Token: $TOKEN" \
-      -H "Content-Type: application/json" | python -m json.tool 
+      -H "Content-Type: application/json" | python -m json.tool

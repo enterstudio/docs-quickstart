@@ -1,10 +1,14 @@
 .. code-block:: csharp
 
+  // Not currently supported by this SDK
+
 .. code-block:: java
 
-  // jclouds doesn't support this API presently
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -12,19 +16,19 @@
 
 .. code-block:: python
 
-  # After authenticating, get a reference to the client
-  imgs = pyrax.images
   # Create the export task
   task = imgs.export_task("{imageId}", "receivingSwiftContainer")
+
   # Wait for the task to complete
   pyrax.utils.wait_for_build(task, verbose=True,
         desired=["success", "failure"])
+
   # The task's `status` attribute will be either "success" or "failure".
   # In the case of a failure, its `message` attribute will explain why.
 
 .. code-block:: ruby
 
-  # Fog doesn't support this API presently
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 

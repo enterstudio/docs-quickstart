@@ -13,6 +13,7 @@
 .. code-block:: java
 
   DomainApi domainApi = cloudDNSApi.getDomainApi();
+
   UpdateDomain updateDomain = UpdateDomain.builder()
           .email("changed@domain.com")
           .ttl(3600)
@@ -51,8 +52,6 @@
   zone.email = 'changed@example.com'
   zone.ttl = 3600
   zone.save
-
-.. code-block:: sh
 
 .. code-block:: sh
 

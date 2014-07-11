@@ -1,17 +1,17 @@
 .. code-block:: csharp
 
-  // This API call is not implemented in the .NET SDK
+  // Not currently supported by this SDK
 
 .. code-block:: java
 
-  // jclouds doesn't support this API presently
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
 
   // assuming we've already loaded the details of a snapshot into a
   // local variable named snapshot
 
-  snapshot.name = 'new_shapshot_name';
+  snapshot.name = 'New Snapshot Name';
 
   client.updateSnapshot(snapshot, function(err) {
     if (err) {
@@ -22,28 +22,24 @@
 .. code-block:: php
 
   $snapshot->rename(array(
-    'display_name' => 'new_snapshot_name',
-    'display_description' => 'This is the new description'
+    'display_name' => 'new_snapshot_name'
   ));
 
 .. code-block:: python
 
-  snap.update(display_name='new_snapshot_name',
-              display_description='This is the new description')
+  snapshot.update(display_name='New Snapshot Name')
 
 .. code-block:: ruby
 
-  # N/A
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 
- $ curl -X PUT -d \
-   '{
-    "snapshot":{
-        "display_name":"{name}",
-        "display_description":"{description}"
-        }
-    }'\
+  curl -X PUT $ENDPOINT/snapshots/{snapshotId} \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/snapshots/{snapshotId} | python -m json.tool 
+    -d '{
+      "snapshot": {
+        "display_name": "New Snapshot Name"
+      }
+    }' | python -m json.tool

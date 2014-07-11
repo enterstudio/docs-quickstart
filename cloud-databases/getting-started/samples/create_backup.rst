@@ -1,16 +1,25 @@
 .. code-block:: csharp
 
-  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
-  BackupConfiguration backupConfiguration = new BackupConfiguration(databaseInstanceId, "{backup_name}", "{backup_description}");
-  await cloudDatabasesProvider.CreateBackupAsync(backupConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  BackupConfiguration backupConfiguration = new BackupConfiguration(
+    databaseInstance.Id,
+    "backup_name",
+    "friendly description"
+  );
+
+  Backup backup = await cloudDatabasesProvider.CreateBackupAsync(
+    backupConfiguration,
+    AsyncCompletionOption.RequestCompleted,
+    CancellationToken.None,
+    null
+  );
 
 .. code-block:: java
 
-  // This operation is currently not supported through the jclouds SDK.
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
 
- // This operation is currently not supported with pkgcloud.
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -22,7 +31,7 @@
 
 .. code-block:: ruby
 
-  # This operation is currently not supported through the Fog SDK.
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 
@@ -32,9 +41,9 @@
     -H "Content-Type: application/json" \
     -d '{
       "backup": {
-        "description": "backup_name",
         "instance": "{instanceId}",
-        "name": "snapshot"
+        "name": "backup_name",
+        "description": "friendly description"
       }
     }' | python -m json.tool
 

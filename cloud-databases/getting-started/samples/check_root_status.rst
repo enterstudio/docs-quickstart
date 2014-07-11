@@ -1,13 +1,15 @@
 .. code-block:: csharp
 
-  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id);
-  bool? isRooted = await cloudDatabasesProvider.CheckRootEnabledStatusAsync(databaseInstanceId, CancellationToken.None);
+  bool? isRooted = await cloudDatabasesProvider.CheckRootEnabledStatusAsync(
+    databaseInstance.Id,
+    CancellationToken.None
+  );
 
 .. code-block:: java
 
   InstanceApi instanceApi = troveApi.getInstanceApiForZone("{region}");
 
-  boolean rootedStatus = instanceApi.isRooted("{instanceId}");
+  instanceApi.isRooted("{instanceId}");
 
 .. code-block:: javascript
 

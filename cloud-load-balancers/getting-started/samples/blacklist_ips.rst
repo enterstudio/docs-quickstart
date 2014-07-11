@@ -11,13 +11,15 @@
 
 .. code-block:: java
 
+  AccessRuleApi accessRuleApi =
+      clbApi.getAccessRuleApiForZoneAndLoadBalancer("{region}", "{loadBalancerId}");
+
   AccessRule rule1 = AccessRule.deny("206.160.165.0/24");
   AccessRule rule2 = AccessRule.allow("206.160.165.0/2");
   AccessRule blacklisted = AccessRule.deny("0.0.0.0/0");
 
   List<AccessRule> accessList = ImmutableList.<AccessRule> of(rule1, rule2, blacklisted);
 
-  AccessRuleApi accessRuleApi = clbApi.getAccessRuleApiForZoneAndLoadBalancer("{region}", loadBalancer.getId());
   accessRuleApi.create(accessList);
 
 .. code-block:: javascript

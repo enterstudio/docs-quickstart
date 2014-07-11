@@ -6,9 +6,12 @@
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+
   Group group = groupApi.get("{groupId}");
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -22,7 +25,7 @@
 
 .. code-block:: ruby
 
-  my_group = service.groups.get '{groupId}'
+  my_group = service.groups.get('{groupId}')
 
 .. code-block:: sh
 

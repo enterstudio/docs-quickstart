@@ -6,9 +6,12 @@
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+
   GroupState groupState = groupApi.getState("{scalingGroupId}");
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 

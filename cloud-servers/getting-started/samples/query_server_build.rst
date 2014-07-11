@@ -1,16 +1,25 @@
 .. code-block:: csharp
 
   // You can wait for any number of states, e.g. Active, Reboot, etc.
-  CloudServersProvider cloudServersProvider = new CloudServersProvider(cloudIdentity);
   ServerState[] errorStates = new ServerState[1] { ServerState.Active };
   ServerState[] serverStates = new ServerState[1] { ServerState.Unknown };
   cloudServersProvider.WaitForServerState("{server_id}", serverStates, errorStates);
 
 .. code-block:: java
 
-  ServerPredicates.awaitActive(serverApi).apply(serverCreated.getId())
+  ServerApi serverApi = novaApi.getServerApiForZone("{region}");
+
+  ServerPredicates.awaitActive(serverApi).apply("{serverId}")
 
 .. code-block:: javascript
+
+  server.setWait({ status: server.STATUS.running }, 6000, function(err) {
+    if (err) {
+      // TODO handle err as appropriate
+    }
+
+    // TODO continue after status is running
+  });
 
 .. code-block:: php
 

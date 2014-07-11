@@ -10,13 +10,20 @@
 
 .. code-block:: java
 
-    MessageApi messageApi = marconiApi.getMessageApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
-    CreateMessage createMessage = CreateMessage.builder().ttl(900).body("{\"play\": \"hockey\"}").build();
+    MessageApi messageApi =
+        marconiApi.getMessageApiForZoneAndClientAndQueue("{region}", "{clientId}", "{queueName}");
+
+    CreateMessage createMessage = CreateMessage.builder()
+            .ttl(900)
+            .body("{\"play\": \"hockey\"}")
+            .build();
     List<CreateMessage> createMessages = ImmutableList.of(createMessage);
 
     MessagesCreated messagesCreated = messageApi.create(createMessages);
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -48,7 +55,7 @@
 
 .. code-block:: sh
 
-  curl -X POST POST $ENDPOINT/queues/{queueName}/messages -d \
+  curl -X POST $ENDPOINT/queues/{queueName}/messages -d \
     '[{"ttl": 300,"body": {"event": "BackupStarted"}},{"ttl": 60,"body": {"play": "hockey"}}]' \
     -H "Content-type: application/json" \
     -H "Client-ID: {clientId}" \

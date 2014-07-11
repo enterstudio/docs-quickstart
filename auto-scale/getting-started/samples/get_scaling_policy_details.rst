@@ -6,9 +6,12 @@
 .. code-block:: java
 
   PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+
   Policy policy = policyApi.get("{policyId}");
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 

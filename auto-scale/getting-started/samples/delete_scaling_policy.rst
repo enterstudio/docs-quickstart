@@ -1,13 +1,16 @@
 .. code-block:: csharp
 
-  await cloudAutoScaleProvider.DeletePolicyAsync({group_id}, {policy_id}, CancellationToken.None);
+  await cloudAutoScaleProvider.DeletePolicyAsync(scalingGroup.Id, policy.Id, CancellationToken.None);
 
 .. code-block:: java
 
   PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
-  boolean result = policyApi.delete("{policyId}");
+
+  policyApi.delete("{policyId}");
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -15,9 +18,7 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  au.delete_policy("{scalingGroupId}", "{policyId}")
+  au.delete_policy("{groupId}", "{policyId}")
 
 .. code-block:: ruby
 

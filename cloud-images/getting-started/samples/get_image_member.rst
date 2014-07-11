@@ -1,26 +1,28 @@
 .. code-block:: csharp
 
+  // Not currently supported by this SDK
+
 .. code-block:: java
 
-  // jclouds doesn't support this API presently
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
 
+  // Not currently supported by this SDK
+
 .. code-block:: php
 
-    /** @param $member OpenCloud\Image\Resource\Member */
-    $member = $image->getMember('{tenantId}');
+  /** @param $member OpenCloud\Image\Resource\Member */
+  $member = $image->getMember('{tenantId}');
 
 .. code-block:: python
 
-  # After authenticating, get a reference to the client
-  imgs = pyrax.images
   # {projectId} is the account ID of the member.
   member = imgs.get_image_member("{imageId}", "{projectId}")
 
 .. code-block:: ruby
 
-  # Fog doesn't support this API presently
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 

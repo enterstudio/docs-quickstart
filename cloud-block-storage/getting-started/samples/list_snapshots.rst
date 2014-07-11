@@ -1,8 +1,10 @@
 .. code-block:: csharp
 
-   IEnumerable<Snapshot> snapshots = new CloudBlockStorageProvider("{cloudIdentity}").ListSnapshots(region: "{region}");
+  IEnumerable<Snapshot> snapshots = cbsProvider.ListSnapshots(region: "{region}");
 
 .. code-block:: java
+
+  SnapshotApi snapshotApi = cinderApi.getSnapshotApiForZone("{region}");
 
   List<Snapshot> snapshots = snapshotApi.listInDetail().toList();
 
@@ -24,17 +26,17 @@
 
 .. code-block:: python
 
-  snaps = vol.list_snapshots()
+  snapshots = vol.list_snapshots()
 
 .. code-block:: ruby
 
-  @client.snapshots.all
+  snapshots = @client.snapshots.all
 
   # To fetch only snapshots associated with a given volume:
   volume.snapshots
 
 .. code-block:: sh
 
-  $ curl -X GET $ENDPOINT/snapshots \
+  curl -X GET $ENDPOINT/snapshots \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" | python -m json.tool

@@ -9,10 +9,14 @@
 
 .. code-block:: java
 
-  WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+  WebhookApi webhookApi =
+      autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+
   Webhook webhook = webhookApi.get("{webhookId}");
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -20,13 +24,11 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  webhook = au.get_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
+  webhook = au.get_webhook("{groupId}", "{policyId}", "{webhookId}")
 
 .. code-block:: ruby
 
-  my_webhook = my_policy.webhooks.get '{webhookId}'
+  my_webhook = my_policy.webhooks.get('{webhookId}')
 
 .. code-block:: sh
 

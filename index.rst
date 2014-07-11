@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                  <img src="/img/cloud-servers.png" alt="" class="product-image"/>
+                  <img src="{% asset_path cloud-servers.png%}" alt="" class="product-image"/>
    	          Cloud Servers
                 </h2>
                 <p>Cloud Servers, powered by OpenStack®, are virtual machines running Linux or Windows Server in the
@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                  <img src="/img/cloud-files.png" alt="" class="product-image"/>
+                  <img src="{% asset_path cloud-files.png %}" alt="" class="product-image"/>
 	          Cloud Files
 		</h2>
                 <p>Cloud Files, powered by OpenStack®, provides an easy to use online storage for files and media
@@ -49,7 +49,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                  <img src="/img/cloud-block-storage.png" alt="" class="product-image"/>
+                  <img src="{% asset_path cloud-block-storage.png %}" alt="" class="product-image"/>
 		  Cloud Block Storage
 		</h2>
                 <p>Cloud Block Storage, powered by OpenStack®, delivers consistent performance for your
@@ -65,7 +65,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                  <img src="/img/cloud-load-balancer.png" alt="" class="product-image"/>
+                  <img src="{% asset_path cloud-load-balancer.png %}" alt="" class="product-image"/>
    	          Cloud Load Balancers
 		</h2>
                 <p>Mission-critical web-based applications and workloads require high availability. Load balancing
@@ -81,7 +81,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                  <img src="/img/cloud-dns.png" alt="" class="product-image"/>
+                  <img src="{% asset_path cloud-dns.png %}" alt="" class="product-image"/>
 		  Cloud DNS
 		</h2>
                 <p>Cloud DNS automates and simplifies Domain Name System management. Using the Rackspace Cloud Control
@@ -97,7 +97,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                  <img src="/img/cloud-databases.png" alt="" class="product-image"/>
+                  <img src="{% asset_path cloud-databases.png %}" alt="" class="product-image"/>
 		  Cloud Databases
 		</h2>
                 <p>Cloud Databases, powered by OpenStack®, provides fast, scalable, fully managed hosting for your MySQL
@@ -113,7 +113,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                  <img src="/img/cloud-images.png" alt="" class="product-image"/>
+                  <img src="{% asset_path cloud-images.png %}" alt="" class="product-image"/>
 	          Cloud Images
 		</h2>
                 <p>Cloud Images, powered by OpenStack®, allows you to share, import, and export your virtual machine
@@ -129,7 +129,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-		  <img src="/img/cloud-backup.png" alt="" class="product-image"/>
+		  <img src="{% asset_path cloud-backup.png %}" alt="" class="product-image"/>
 		  Cloud Backup
 		</h2>
                 <p>Cloud Backup is a file-based backup solution that allows customization of files, folders, schedule,

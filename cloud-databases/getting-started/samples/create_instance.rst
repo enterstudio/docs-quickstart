@@ -1,19 +1,27 @@
 .. code-block:: csharp
 
-  FlavorRef flavorRef = new FlavorRef("{flavor_ref_id}");
-  DatabaseVolumeConfiguration databaseVolumeConfiguration = new DatabaseVolumeConfiguration({database_volume_configuration_id});
-  DatabaseInstanceConfiguration databaseInstanceConfiguration = new DatabaseInstanceConfiguration(flavorRef, databaseVolumeConfiguration, "{instance_name}");
-  DatabaseInstance databaseInstance = await cloudDatabasesProvider.CreateDatabaseInstanceAsync(databaseInstanceConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  FlavorRef flavorRef = new FlavorRef(databaseFlavor.Id);
+  DatabaseVolumeConfiguration databaseVolumeConfiguration = new DatabaseVolumeConfiguration(
+    {database_volume_configuration_id}
+  );
+  DatabaseInstanceConfiguration databaseInstanceConfiguration = new DatabaseInstanceConfiguration(
+    flavorRef,
+    databaseVolumeConfiguration,
+    "sample_instance"
+  );
+
+  DatabaseInstance databaseInstance = await cloudDatabasesProvider.CreateDatabaseInstanceAsync(
+    databaseInstanceConfiguration,
+    AsyncCompletionOption.RequestCompleted,
+    CancellationToken.None,
+    null
+  );
 
 .. code-block:: java
 
-  // We need to get a Flavor (hardware type) to run the Instance on.
-  FlavorApi flavorApi = troveApi.getFlavorApiForZone("{region}");
-  Flavor flavor = Iterables.getFirst(flavorApi.list(), null);
-
   TroveUtils utils = new TroveUtils(troveApi);
 
-  Instance instance = utils.getWorkingInstance("{region}", "sample_instance", "" + flavor.getId(), 1);
+  Instance instance = utils.getWorkingInstance("{region}", "{instanceName}", "{flavorId}", 1);
 
 .. code-block:: javascript
 

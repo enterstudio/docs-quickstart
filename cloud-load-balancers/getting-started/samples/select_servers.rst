@@ -5,6 +5,14 @@
 
 .. code-block:: java
 
+  NovaApi novaApi = ContextBuilder.newBuilder("rackspace-cloudservers-us")
+          .credentials("{username}, "{apiKey}")
+          .buildApi(NovaApi.class);
+  ServerApi serverApi = novaApi.getServerApiForZone("{region}");
+
+  Server server1 = serverApi.get("{serverId}");
+  Server server2 = serverApi.get("{serverId}");
+
 .. code-block:: javascript
 
   // We're using async, a flow control library to make parallel calls easy

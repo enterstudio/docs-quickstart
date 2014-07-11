@@ -7,7 +7,9 @@
 
 .. code-block:: java
 
-  URI cdnUri = cloudFilesApi.getCDNApiForRegion("{region}").enable("{containerName}");
+  CDNApi cdnApi = cloudFilesApi.getCDNApiForRegion("{region}");
+
+  URI cdnUri = cdnApi.enable("{containerName}");
 
 .. code-block:: javascript
 

@@ -19,6 +19,9 @@
 
 .. code-block:: java
 
+  ConnectionApi connectionApi =
+      clbApi.getConnectionApiForZoneAndLoadBalancer("{region}", "{loadBalancerId}");
+
   ConnectionThrottle throttle = ConnectionThrottle.builder()
       .maxConnectionRate(10000)
       .maxConnections(5000)
@@ -26,7 +29,6 @@
       .rateInterval(5)
       .build();
 
-  ConnectionApi connectionApi = clbApi.getConnectionApiForZoneAndLoadBalancer("{region}", loadBalancer.getId());
   connectionApi.createOrUpdateConnectionThrottle(throttle);
 
 .. code-block:: javascript

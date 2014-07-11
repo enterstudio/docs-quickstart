@@ -1,7 +1,9 @@
 .. code-block:: csharp
 
-  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("{database_instance_id}");
-  RootUser rootUser = await cloudDatabasesProvider.EnableRootUserAsync(databaseInstanceId, CancellationToken.None);
+  RootUser rootUser = await cloudDatabasesProvider.EnableRootUserAsync(
+    databaseInstance.Id,
+    CancellationToken.None
+  );
 
 .. code-block:: java
 

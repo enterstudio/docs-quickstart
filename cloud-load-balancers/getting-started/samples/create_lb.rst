@@ -19,21 +19,17 @@
 
 .. code-block:: java
 
+  LoadBalancerApi lbApi = clbApi.getLoadBalancerApiForZone("{region}");
+
   CreateLoadBalancer createLB = CreateLoadBalancer.builder()
-     .name("My Load Balancer")
-     .protocol("HTTP")
-     .port(80)
-     .algorithm(RANDOM)
-     .nodes(addNodes)
-     .virtualIPType(PUBLIC)
-     .build();
+      .name("My Load Balancer")
+      .protocol("HTTP")
+      .port(80)
+      .algorithm(BaseLoadBalancer.Algorithm.RANDOM)
+      .virtualIPType(VirtualIP.Type.PUBLIC)
+      .build();
 
   LoadBalancer loadBalancer = lbApi.create(createLB);
-
-  // Wait for the Load Balancer to become Active before moving on
-  if (!LoadBalancerPredicates.awaitAvailable(lbApi).apply(loadBalancer)) {
-     throw new TimeoutException("Timeout on creating load balancer: " + loadBalancer);
-  }
 
 .. code-block:: javascript
 
@@ -60,7 +56,7 @@
 
   // Add the IP types that your Load Balancer will support
   $loadBalancer->addVirtualIp('PUBLIC', 4);
-  
+
   // Add a node, specifying IP address and port
   $loadBalancer->addNode('192.168.0.2', 80);
 

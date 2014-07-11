@@ -5,7 +5,9 @@
 
 .. code-block:: java
 
-  cloudFilesApi.getContainerApiForRegion("{region}").deleteIfEmpty("{containerName}");
+  ContainerApi containerApi = cloudFilesApi.getContainerApiForRegion("{region}");
+
+  containerApi.deleteIfEmpty("{containerName}");
 
 .. code-block:: javascript
 

@@ -8,10 +8,14 @@
 
 .. code-block:: java
 
-  WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
-  boolean result = webhookApi.delete("{webhookId}");
+  WebhookApi webhookApi =
+      autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+
+  webhookApi.delete("{webhookId}");
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -19,9 +23,7 @@
 
 .. code-block:: python
 
-  # After authenticating
-  au = pyrax.autoscale
-  au.delete_webhook("{scalingGroupId}", "{policyId}", "{webhookId}")
+  au.delete_webhook("{groupId}", "{policyId}", "{webhookId}")
 
 .. code-block:: ruby
 

@@ -1,8 +1,10 @@
 .. code-block:: csharp
 
-   IEnumerable<Volume> volumeList = new CloudBlockStorageProvider("{cloudIdentity}").ListVolumes(region: "{region}");
+  IEnumerable<Volume> volumeList = cbsProvider.ListVolumes(region: "{region}");
 
 .. code-block:: java
+
+  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
 
   List<Volume> volumes = volumeApi.listInDetail().toList();
 
@@ -30,6 +32,6 @@
 
 .. code-block:: sh
 
-  $ curl -X GET $ENDPOINT/volumes \
+  curl -X GET $ENDPOINT/volumes \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" | python -m json.tool

@@ -11,10 +11,14 @@
 
 .. code-block:: java
 
-  WebhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
-  boolean result = webhookApi.update("{webhookId}", "New name", ImmutableMap.<String, Object>of());
+  WebhookApi webhookApi =
+    autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+
+  webhookApi.update("{webhookId}", "New name", ImmutableMap.<String, Object>of());
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -26,8 +30,7 @@
 
 .. code-block:: python
 
-  au = pyrax.autoscale
-  au.update_webhook("{scalingGroupId}", "{policyId}", "{webhookId}",
+  au.update_webhook("{groupId}", "{policyId}", "{webhookId}",
           name="My Webhook", metadata={"someKey": "someValue"})
 
 .. code-block:: ruby

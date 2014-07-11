@@ -7,14 +7,18 @@
   };
   CloudIdentityProvider cloudIdentityProvider = new CloudIdentityProvider(cloudIdentity);
   UserAccess userAccess = cloudIdentityProvider.Authenticate(cloudIdentity);
-  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(cloudIdentity, "{region}", null);
+  CloudDatabasesProvider cloudDatabasesProvider = new CloudDatabasesProvider(
+    cloudIdentity,
+    "{region}",
+    null
+  );
 
 .. code-block:: java
 
-  // The TroveApi will provide access to all database features, such as Instances or Users.
+  // Authentication in jclouds is lazy and happens on the first call to the cloud.
   TroveApi troveApi = ContextBuilder.newBuilder("rackspace-clouddatabases-us")
-          .credentials("{username}", "{apiKey}")
-          .buildApi(TroveApi.class);
+      .credentials("{username}", "{apiKey}")
+      .buildApi(TroveApi.class);
 
 .. code-block:: javascript
 
@@ -56,13 +60,20 @@
 
 .. code-block:: sh
 
-  # {username}, {apiKey} below are placeholders. Do not enclose '{}' when you replace them with actual credentials.
+  # {username}, {apiKey} below are placeholders, do not enclose '{}' when you replace them with actual credentials.
 
-  $ curl -s https://identity.api.rackspacecloud.com/v2.0/tokens -X 'POST' \
-    -d '{"auth":{"RAX-KSKEY:apiKeyCredentials":{"username":"{username}", "apiKey":"{apiKey}"}}}' \
-    -H "Content-Type: application/json" | python -m json.tool
+  curl -s -X POST https://identity.api.rackspacecloud.com/v2.0/tokens \
+    -H "Content-Type: application/json" \
+    -d '{
+      "auth": {
+        "RAX-KSKEY:apiKeyCredentials": {
+          "username": "{username}",
+          "apiKey": "{apiKey}"
+        }
+      }
+    }' | python -m json.tool
 
-  # From the resulting json, set three environment variables: tenant, TOKEN and endpoint
+  # From the resulting json, set two environment variables: TOKEN and ENDPOINT.
 
   export TOKEN="{tokenId}"
   export ENDPOINT="{publicUrl}" # For the Cloud Databases service

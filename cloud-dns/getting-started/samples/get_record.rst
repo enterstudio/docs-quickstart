@@ -14,6 +14,7 @@
 .. code-block:: java
 
   RecordApi recordApi = cloudDNSApi.getRecordApiForDomain({domainId}});
+
   RecordDetail record = recordApi.get({recordId}});
 
 .. code-block:: javascript
@@ -55,7 +56,6 @@
 
 .. code-block:: sh
 
-  curl -X GET -d \
+  curl -X GET $ENDPOINT/domains/{domainId}/records/{recordId} \
     -H "X-Auth-Token: $TOKEN" \
-    -H "Content-Type: application/json" \
-    $ENDPOINT/domains/{domainId}/records/{recordId} | python -m json.tool
+    -H "Content-Type: application/json" | python -m json.tool

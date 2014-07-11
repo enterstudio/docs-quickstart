@@ -13,10 +13,14 @@
 
 .. code-block:: java
 
-  ClaimApi claimApi = marconiApi.getClaimApiForZoneAndClientAndQueue("{region}", "{clientId}", "sample_queue");
+  ClaimApi claimApi =
+      marconiApi.getClaimApiForZoneAndClientAndQueue("{region}", "{clientId}", "{queueName}");
+
   claimApi.release("{claimId}");
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 

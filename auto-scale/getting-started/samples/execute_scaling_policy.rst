@@ -1,14 +1,18 @@
 .. code-block:: csharp
 
-  cloudAutoScaleProvider.ExecutePolicyAsync({group_id}, {policy_id}, CancellationToken.None);
+  cloudAutoScaleProvider.ExecutePolicyAsync(scalingGroup.Id, policy.Id, CancellationToken.None);
 
 .. code-block:: java
 
-  WebhhookApi webhookApi = autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+  WebhhookApi webhookApi =
+      autoscaleApi.getWebhookApiForZoneAndGroupAndPolicy("{region}", "{groupId}", "{policyId}");
+
   Webhook webhook = webhookApi.get("{webhookId}");
-  boolean result = result = AutoscaleUtils.execute(webhook.getAnonymousExecutionURI().get());
+  AutoscaleUtils.execute(webhook.getAnonymousExecutionURI().get());
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 

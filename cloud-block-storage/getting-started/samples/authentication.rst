@@ -7,16 +7,13 @@
   };
   CloudIdentityProvider cloudIdentityProvider = new CloudIdentityProvider(cloudIdentity);
   UserAccess userAccess = cloudIdentityProvider.Authenticate(cloudIdentity);
-  
+
 .. code-block:: java
 
+  // Authentication in jclouds is lazy and happens on the first call to the cloud.
   CinderApi cinderApi = ContextBuilder.newBuilder("rackspace-cloudblockstorage-us")
-         .credentials("{username}", "{apiKey}")
-         .buildApi(CinderApi.class);
-
-  // jclouds refers to "regions" as "zones"
-  VolumeApi volumeApi = cinderApi.getVolumeApiForZone("{region}");
-  SnapshotApi snapshotApi = cinderApi.getSnapshotApiForZone("{region}");
+      .credentials("{username}", "{apiKey}")
+      .buildApi(CinderApi.class);
 
 .. code-block:: javascript
 

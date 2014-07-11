@@ -14,6 +14,7 @@
 .. code-block:: java
 
   PolicyApi policyApi = autoscaleApi.getPolicyApiForZoneAndGroup("{region}", "{scalingGroupId}");
+
   CreateScalingPolicy scalingPolicy = CreateScalingPolicy.builder()
             .cooldown(360)
             .type(ScalingPolicyType.WEBHOOK)
@@ -21,9 +22,12 @@
             .targetType(ScalingPolicyTargetType.INCREMENTAL)
             .target("1")
             .build();
+
   FluentIterable<ScalingPolicy> policies = policyApi.create(ImmutableList.of(scalingPolicy));
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 

@@ -9,9 +9,12 @@
 .. code-block:: java
 
   GroupApi groupApi = autoscaleApi.getGroupApiForZone("{region}");
+
   FluentIterable<Group> groups = groupApi.list();
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -19,8 +22,6 @@
 
 .. code-block:: python
 
-    # After authenticating
-    au = pyrax.autoscale
     scaling_groups = au.list()
 
 .. code-block:: ruby

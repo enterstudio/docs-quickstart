@@ -1,11 +1,15 @@
 .. code-block:: csharp
 
-  DatabaseInstanceId databaseInstanceId = new DatabaseInstanceId("database_instance_id");
-  await cloudDatabasesProvider.RestartDatabaseInstanceAsync(databaseInstanceId, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  await cloudDatabasesProvider.RestartDatabaseInstanceAsync(
+    databaseInstance.Id,
+    AsyncCompletionOption.RequestCompleted,
+    CancellationToken.None,
+    null
+  );
 
 .. code-block:: java
 
-  // This operation is currently not supported through the jclouds SDK.
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
 

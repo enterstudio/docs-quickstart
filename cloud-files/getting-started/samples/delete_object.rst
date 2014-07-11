@@ -5,7 +5,10 @@
 
 .. code-block:: java
 
-  cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}").delete("{objectName}");
+  ObjectApi objectApi =
+      cloudFilesApi.getObjectApiForRegionAndContainer("{region}", "{containerName}");
+
+  objectApi.delete("{objectName}");
 
 .. code-block:: javascript
 

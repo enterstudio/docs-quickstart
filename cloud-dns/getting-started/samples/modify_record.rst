@@ -19,6 +19,14 @@
 
 .. code-block:: java
 
+  RecordApi recordApi = cloudDNSApi.getRecordApiForDomain({domainId}});
+
+  Record updateRecord = Record.builder()
+          .data("192.168.1.2")
+          .build();
+
+  awaitComplete(cloudDNSApi, recordApi.update("{recordId}", updateRecord));
+
 .. code-block:: javascript
 
   myRec.data = '192.168.1.2';
@@ -57,12 +65,11 @@
 
 .. code-block:: sh
 
-  curl -X PUT -d \
-    '{
-        "type" : "A",
-        "data" : "192.168.1.2",
-        "ttl" : 3600
-    }' \
+  curl -X PUT $ENDPOINT/domains/{domainId}/records/{recordId} \
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
-    $ENDPOINT/domains/{domainId}/records/{recordId} | python -m json.tool
+    -d '{
+      "type" : "A",
+      "data" : "192.168.1.2",
+      "ttl" : 3600
+    }' | python -m json.tool

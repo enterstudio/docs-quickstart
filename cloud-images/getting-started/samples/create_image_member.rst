@@ -1,10 +1,14 @@
 .. code-block:: csharp
 
+  // Not currently supported by this SDK
+
 .. code-block:: java
 
-  // jclouds doesn't support this API presently
+  // Not currently supported by this SDK
 
 .. code-block:: javascript
+
+  // Not currently supported by this SDK
 
 .. code-block:: php
 
@@ -12,15 +16,13 @@
 
 .. code-block:: python
 
-  # After authenticating, get a reference to the client
-  imgs = pyrax.images
   # Call the `add_image_member()` method, passing in the ID of the image
-  # and the project ID of the member to add.
-  member = imgs.add_image_member("{imageId}", "{projectId}")
+  # and the Rackspace account number of the member to add.
+  member = imgs.add_image_member("{imageId}", "{memberId}")
 
 .. code-block:: ruby
 
-  # Fog doesn't support this API presently
+  # Not currently supported by this SDK
 
 .. code-block:: sh
 

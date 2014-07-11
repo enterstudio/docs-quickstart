@@ -18,24 +18,27 @@
 
 .. code-block:: java
 
-  Set<AddNode> loadBalancerNodes = Sets.newHashSet();
+  NodeApi nodeApi = clbApi.getNodeApiForZoneAndLoadBalancer("{region}", "{loadBalancerId}");
 
   AddNode node1 = AddNode.builder()
-      .address("10.180.1.1")
-      .condition(DISABLED)
+      .address(server1.getAccessIPv4())
+      .condition(BaseNode.Condition.DISABLED)
       .port(80)
       .weight(20)
       .build();
 
   AddNode node2 = AddNode.builder()
-      .address("10.180.1.2")
-      .condition(ENABLED)
+      .address(server2.getAccessIPv4())
+      .condition(BaseNode.Condition.ENABLED)
       .port(80)
       .weight(20)
       .build();
 
-  loadBalancerNodes.add(node1);
-  loadBalancerNodes.add(node2);
+  Set<AddNode> addNodes = Sets.newHashSet();
+  addNodes.add(node1);
+  addNodes.add(node2);
+
+  nodeApi.add(addNodes);
 
 .. code-block:: javascript
 
@@ -61,14 +64,14 @@
 .. code-block:: php
 
   use OpenCloud\LoadBalancer\Enum\NodeCondition;
-  
+
   $serverOneNode = $loadBalancer->node(array(
       'address'   => $serverOne->addresses->private[0]->addr,
       'port'      => 8080,
       'condition' => NodeCondition::ENABLED
   ));
   $serverOneNode->create();
-  
+
   $serverTwoNode = $loadBalancer->node(array(
       'address'   => $serverTwo->addresses->private[0]->addr,
       'port'      => 8080,
