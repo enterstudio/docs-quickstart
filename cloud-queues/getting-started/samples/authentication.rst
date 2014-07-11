@@ -6,7 +6,13 @@
       Username = "{username}"
   };
   // Create the provider as well; it'll be used in every method
-  CloudQueuesProvider cloudQueuesProvider = new CloudQueuesProvider(cloudIdentity, "{region}", Guid.NewGuid(), false, null);
+  CloudQueuesProvider cloudQueuesProvider = 
+	new CloudQueuesProvider(
+		cloudIdentity, 
+		"{region}", 
+		Guid.NewGuid(), 
+		false, 
+		null);
 
 .. code-block:: java
 

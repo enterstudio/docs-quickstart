@@ -19,8 +19,22 @@
   string targetHostname = "www.example.com";
   TargetResolverType resolverType = TargetResolverType.IPv4;
   IDictionary<string, string> metadata = null;
-  NewCheckConfiguration checkConfiguration = new NewCheckConfiguration("{check_label}", checkTypeId, details, monitoringZonesPoll, timeout, period, targetAlias, targetHostname, resolverType, metadata);
-  Check check = await cloudMonitoringProvider.CreateCheckAsync({entity_id}, {check_configuration}, CancellationToken.None);
+  NewCheckConfiguration checkConfiguration = 
+	new NewCheckConfiguration(
+		"{check_label}", 
+		checkTypeId, 
+		details, 
+		monitoringZonesPoll, 
+		timeout, 
+		period, 
+		targetAlias, 
+		targetHostname, 
+		resolverType, 
+		metadata);
+  Check check = await cloudMonitoringProvider.CreateCheckAsync(
+	{entity_id}, 
+	{check_configuration}, 
+	CancellationToken.None);
 
 .. code-block:: java
 

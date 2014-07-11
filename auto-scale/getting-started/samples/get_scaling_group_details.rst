@@ -1,6 +1,7 @@
 .. code-block:: csharp
 
-  ScalingGroup scalingGroup = await cloudAutoScaleProvider.GetGroupAsync({group_id},CancellationToken.None);
+  ScalingGroup scalingGroup = 
+	await cloudAutoScaleProvider.GetGroupAsync({group_id},CancellationToken.None);
 
 .. code-block:: java
 

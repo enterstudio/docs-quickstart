@@ -4,11 +4,30 @@
   ImageId imageId = new ImageId("{image_id}");
   string groupName = "{group_name}";
   string serverName = "{server_name}";
-  GroupConfiguration groupConfiguration = new GroupConfiguration(name: groupName, cooldown: TimeSpan.FromSeconds(60), minEntities: 0, maxEntities: 0, metadata: new JObject());
-  LaunchConfiguration launchConfiguration = new ServerLaunchConfiguration(new ServerLaunchArguments(new ServerArgument(flavorId, imageId, serverName, null, null)));
+  GroupConfiguration groupConfiguration = 
+	new GroupConfiguration(
+		name: groupName, 
+		cooldown: TimeSpan.FromSeconds(60), 
+		minEntities: 0, 
+		maxEntities: 0, 
+		metadata: new JObject());
+  LaunchConfiguration launchConfiguration = 
+	new ServerLaunchConfiguration(
+		new ServerLaunchArguments(
+			new ServerArgument(
+				flavorId, 
+				imageId, 
+				serverName, 
+				null, 
+				null)));
   PolicyConfiguration[] policyConfigurations = { };
-  ScalingGroupConfiguration configuration = new ScalingGroupConfiguration(groupConfiguration, launchConfiguration, policyConfigurations);
-  ScalingGroup scalingGroup = await cloudAutoScaleProvider.CreateGroupAsync(configuration, CancellationToken.None);
+  ScalingGroupConfiguration configuration = 
+	new ScalingGroupConfiguration(
+		groupConfiguration, 
+		launchConfiguration, 
+		policyConfigurations);
+  ScalingGroup scalingGroup 
+	= await cloudAutoScaleProvider.CreateGroupAsync(configuration, CancellationToken.None);
 
 .. code-block:: java
 

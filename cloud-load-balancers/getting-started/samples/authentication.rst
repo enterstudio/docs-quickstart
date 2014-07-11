@@ -5,7 +5,12 @@
       APIKey = "{apikey}",
       Username = "{username}"
   };
-
+  CloudLoadBalancerProvider cloudLoadBalancerProvider =
+	new CloudLoadBalancerProvider(
+	  cloudIdentity,
+	  "{region}",
+	  null);
+	  
 .. code-block:: java
 
   // Authentication in jclouds is lazy and happens on the first call to the cloud.

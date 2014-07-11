@@ -1,6 +1,10 @@
 .. code-block:: csharp
 
-  ReadOnlyCollectionPage<ScalingGroup> scalingGroups = await cloudAutoScaleProvider.ListScalingGroupsAsync(null, null, CancellationToken.None);
+  ReadOnlyCollectionPage<ScalingGroup> scalingGroups = 
+	await cloudAutoScaleProvider.ListScalingGroupsAsync(
+		null, 
+		null, 
+		CancellationToken.None);
 
 .. code-block:: java
 

@@ -11,7 +11,12 @@
                   comment: "{comment}",
                   priority: null)
           };
-  DnsJob<DnsRecordsList> recordsResponse = await cloudDNSProvider.AddRecordsAsync(domainId, recordConfigurations, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  DnsJob<DnsRecordsList> recordsResponse = 
+	await cloudDNSProvider.AddRecordsAsync(
+		domainId, 
+		recordConfigurations, 
+		AsyncCompletionOption.RequestCompleted, 
+		CancellationToken.None, null);
   DnsRecord[] records = recordsResponse.Response.Records.ToArray();
   
 .. code-block:: java

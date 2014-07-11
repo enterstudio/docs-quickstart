@@ -1,11 +1,20 @@
 .. code-block:: csharp
 
-  CloudLoadBalancerProvider cloudLoadBalancerProvider = new CloudLoadBalancerProvider(cloudIdentity, "{region}", null);
   LoadBalancerId loadBalancerId = new LoadBalancerId("{load_balancer_id}");
   int attemptsBeforeDeactivation = 3;
   TimeSpan timeout = TimeSpan.FromSeconds(30);
-  TimeSpan delay = TimeSpan.FromSeconds(30); HealthMonitor healthMonitor = new ConnectionHealthMonitor(attemptsBeforeDeactivation, timeout, delay);
-  await cloudLoadBalancerProvider.SetHealthMonitorAsync(loadBalancerId, healthMonitor, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  TimeSpan delay = TimeSpan.FromSeconds(30);
+  HealthMonitor healthMonitor = 
+	new ConnectionHealthMonitor(
+		attemptsBeforeDeactivation, 
+		timeout, 
+		delay);
+  await cloudLoadBalancerProvider.SetHealthMonitorAsync(
+	loadBalancerId, 
+	healthMonitor, 
+	AsyncCompletionOption.RequestCompleted, 
+	CancellationToken.None, 
+	null);
 
 .. code-block:: java
 

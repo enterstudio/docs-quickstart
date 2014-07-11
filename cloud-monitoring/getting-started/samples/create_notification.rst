@@ -1,9 +1,17 @@
 .. code-block:: csharp
 
   NotificationTypeId notificationTypeId = NotificationTypeId.Webhook;
-  NotificationDetails notificationDetails = new WebhookNotificationDetails(new Uri("http://example.com"));
-  NewNotificationConfiguration configuration = new NewNotificationConfiguration("{notification_label}", notificationTypeId, notificationDetails);
-  NotificationId notificationId = await cloudMonitoringProvider.CreateNotificationAsync(configuration, CancellationToken.None);
+  NotificationDetails notificationDetails = new WebhookNotificationDetails(
+	new Uri("http://example.com"));
+  NewNotificationConfiguration configuration = 
+	new NewNotificationConfiguration(
+		"{notification_label}", 
+		notificationTypeId, 
+		notificationDetails);
+  NotificationId notificationId = 
+	await cloudMonitoringProvider.CreateNotificationAsync(
+		configuration, 
+		CancellationToken.None);
 
 .. code-block:: java
 

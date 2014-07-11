@@ -8,7 +8,11 @@
           comment: "Root level for domain.com",
           records: new DnsDomainRecordConfiguration[] { },
           subdomains: new DnsSubdomainConfiguration[] { }));
-  DnsJob<DnsDomains> createResponse = await cloudDnsProvider.CreateDomainsAsync(dnsConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  DnsJob<DnsDomains> createResponse = 
+	await cloudDnsProvider.CreateDomainsAsync(
+		dnsConfiguration, 
+		AsyncCompletionOption.RequestCompleted, 
+		CancellationToken.None, null);
 
 .. code-block:: java
 

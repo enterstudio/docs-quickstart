@@ -5,7 +5,10 @@
       APIKey = "{apikey}",
       Username = "{username}"
   };
-  CloudMonitoringProvider cloudMonitoringProvider = new CloudMonitoringProvider(cloudIdentity, "{region}", null);
+  CloudMonitoringProvider cloudMonitoringProvider = new CloudMonitoringProvider(
+	cloudIdentity, 
+	"{region}", 
+	null);
 
 .. code-block:: java
 

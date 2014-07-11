@@ -1,6 +1,10 @@
 .. code-block:: csharp
 
-  ReadOnlyCollectionPage<MonitoringZone, MonitoringZoneId> monitoringZones = await cloudMonitoringProvider.ListMonitoringZonesAsync(null, null, CancellationToken.None);
+  ReadOnlyCollectionPage<MonitoringZone, MonitoringZoneId> monitoringZones 
+	= await cloudMonitoringProvider.ListMonitoringZonesAsync(
+		null, 
+		null, 
+		CancellationToken.None);
 
 .. code-block:: java
 

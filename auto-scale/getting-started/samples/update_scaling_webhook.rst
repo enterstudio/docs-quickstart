@@ -2,7 +2,12 @@
 
   // update the webhook name
   string updatedName = "Updated Webhook";
-  await cloudAutoScaleProvider.UpdateWebhookAsync({group_id}, {policy_id}, {webhook_id}, new UpdateWebhookConfiguration(updatedName), CancellationToken.None);
+  await cloudAutoScaleProvider.UpdateWebhookAsync(
+	{group_id}, 
+	{policy_id}, 
+	{webhook_id}, 
+	new UpdateWebhookConfiguration(updatedName), 
+	CancellationToken.None);
 
 .. code-block:: java
 

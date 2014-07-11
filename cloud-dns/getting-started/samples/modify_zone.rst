@@ -1,7 +1,14 @@
 .. code-block:: csharp
 
-  DnsUpdateConfiguration dnsUpdateConfiguration = new DnsUpdateConfiguration(new DnsDomainUpdateConfiguration({domain}, comment: "domain updated"));
-  await cloudDNSProvider.UpdateDomainsAsync(dnsUpdateConfiguration, AsyncCompletionOption.RequestCompleted, CancellationToken.None,null);
+  DnsUpdateConfiguration dnsUpdateConfiguration = 
+	new DnsUpdateConfiguration(
+	  new DnsDomainUpdateConfiguration(
+		{domain}, 
+		comment: "domain updated"));
+  await cloudDNSProvider.UpdateDomainsAsync(
+	dnsUpdateConfiguration, 
+	AsyncCompletionOption.RequestCompleted, 
+	CancellationToken.None,null);
 
 .. code-block:: java
 

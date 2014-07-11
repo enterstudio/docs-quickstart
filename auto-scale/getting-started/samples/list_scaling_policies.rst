@@ -1,6 +1,7 @@
 .. code-block:: csharp
 
-  ReadOnlyCollectionPage<Policy> policies = await cloudAutoScaleProvider.ListPoliciesAsync({group_id}, null, null, CancellationToken.None);
+  ReadOnlyCollectionPage<Policy> policies = 
+	await cloudAutoScaleProvider.ListPoliciesAsync({group_id}, null, null, CancellationToken.None);
 
 .. code-block:: java
 

@@ -1,8 +1,10 @@
 .. code-block:: csharp
 
-  CloudLoadBalancerProvider cloudLoadBalancerProvider = new CloudLoadBalancerProvider(cloudIdentity, "{region}", null);
   LoadBalancerId loadBalancerId = new LoadBalancerId("{load_balancer_id}");
-  HealthMonitor healthMonitor = await cloudLoadBalancerProvider.GetHealthMonitorAsync(loadBalancerId, CancellationToken.None);
+  HealthMonitor healthMonitor = 
+	await cloudLoadBalancerProvider.GetHealthMonitorAsync(
+		loadBalancerId, 
+		CancellationToken.None);
 
 .. code-block:: java
 

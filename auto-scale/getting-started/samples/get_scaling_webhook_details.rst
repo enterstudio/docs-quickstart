@@ -1,6 +1,11 @@
 .. code-block:: csharp
 
-  Webhook webhook = await cloudAutoScaleProvider.GetWebhookAsync({group_id}, {policy_id}, {webhook_id}, CancellationToken.None);
+  Webhook webhook = 
+	await cloudAutoScaleProvider.GetWebhookAsync(
+		{group_id}, 
+		{policy_id}, 
+		{webhook_id}, 
+		CancellationToken.None);
 
 .. code-block:: java
 

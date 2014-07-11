@@ -1,15 +1,21 @@
 .. code-block:: csharp
 
-  CloudLoadBalancerProvider cloudLoadBalancerProvider = new CloudLoadBalancerProvider(cloudIdentity, "{region}", null);
-  IEnumerable<LoadBalancingProtocol> protocols = await cloudLoadBalancerProvider.ListProtocolsAsync(CancellationToken.None);
-  LoadBalancingProtocol httpProtocol = protocols.First(i => i.Name.Equals("HTTP", StringComparison.OrdinalIgnoreCase));
+  IEnumerable<LoadBalancingProtocol> protocols = 
+	await cloudLoadBalancerProvider.ListProtocolsAsync(CancellationToken.None);
+  LoadBalancingProtocol httpProtocol = 
+	protocols.First(i => i.Name.Equals("HTTP", StringComparison.OrdinalIgnoreCase));
   LoadBalancerConfiguration configuration = new LoadBalancerConfiguration(
       name: "{load_balancer_name}",
       nodes: null,
       protocol: httpProtocol,
-      virtualAddresses: new[] { new LoadBalancerVirtualAddress(LoadBalancerVirtualAddressType.ServiceNet) },
+      virtualAddresses: new[] { new LoadBalancerVirtualAddress(
+		LoadBalancerVirtualAddressType.ServiceNet) },
       algorithm: LoadBalancingAlgorithm.RoundRobin);
-  LoadBalancer tempLoadBalancer = await cloudLoadBalancerProvider.CreateLoadBalancerAsync(configuration, AsyncCompletionOption.RequestCompleted, CancellationToken.None, null);
+  LoadBalancer tempLoadBalancer = 
+	await cloudLoadBalancerProvider.CreateLoadBalancerAsync(
+		configuration, 
+		AsyncCompletionOption.RequestCompleted, 
+		CancellationToken.None, null);
 
 .. code-block:: java
 

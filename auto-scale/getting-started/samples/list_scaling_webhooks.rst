@@ -1,6 +1,12 @@
 .. code-block:: csharp
 
-  ReadOnlyCollectionPage<Webhook> webhooks = await cloudAutoScaleProvider.ListWebhooksAsync({group_id}, {policy_id}, null, null, CancellationToken.None);
+  ReadOnlyCollectionPage<Webhook> webhooks = 
+	await cloudAutoScaleProvider.ListWebhooksAsync(
+		{group_id}, 
+		{policy_id}, 
+		null, 
+		null, 
+		CancellationToken.None);
 
 .. code-block:: java
 

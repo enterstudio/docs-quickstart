@@ -1,6 +1,7 @@
 .. code-block:: csharp
 
-  Snapshot snapshot = new CloudBlockStorageProvider({cloudIdentity}).ShowSnapshot("{snapshotId}", "{region}");
+  Snapshot snapshot = 
+	new CloudBlockStorageProvider({cloudIdentity}).ShowSnapshot("{snapshotId}", "{region}");
 			
 .. code-block:: java
 

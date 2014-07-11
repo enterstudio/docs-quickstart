@@ -4,8 +4,19 @@
   string criteria = null;
   bool? enabled = null;
   IDictionary<string, string> alarmMetadata = null;
-  NewAlarmConfiguration alarmConfiguration = new NewAlarmConfiguration({check_id}, {notification_plan_id}, criteria, enabled, alarmName, alarmMetadata);
-  AlarmId alarmId = await cloudMonitoringProvider.CreateAlarmAsync({entity_id}, alarmConfiguration, CancellationToken.None);
+  NewAlarmConfiguration alarmConfiguration = 
+	new NewAlarmConfiguration(
+		{check_id}, 
+		{notification_plan_id}, 
+		criteria, 
+		enabled, 
+		alarmName, 
+		alarmMetadata);
+  AlarmId alarmId = 
+	await cloudMonitoringProvider.CreateAlarmAsync(
+		{entity_id}, 
+		alarmConfiguration, 
+		CancellationToken.None);
 
 .. code-block:: java
 

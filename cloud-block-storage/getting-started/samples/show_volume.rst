@@ -1,6 +1,7 @@
 .. code-block:: csharp
 
-  Volume volume = new CloudBlockStorageProvider({cloudIdentity}).ShowVolume("{volumeId}", region: "{region}");
+  Volume volume = 
+	new CloudBlockStorageProvider({cloudIdentity}).ShowVolume("{volumeId}", region: "{region}");
 
 .. code-block:: java
 

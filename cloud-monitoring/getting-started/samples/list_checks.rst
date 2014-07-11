@@ -1,6 +1,11 @@
 .. code-block:: csharp
 
-  ReadOnlyCollectionPage<Check, CheckId> checks = await cloudMonitoringProvider.ListChecksAsync({entity_id}, null, null, CancellationToken.None);
+  ReadOnlyCollectionPage<Check, CheckId> checks = 
+	await cloudMonitoringProvider.ListChecksAsync(
+		{entity_id}, 
+		null, 
+		null, 
+		CancellationToken.None);
 
 .. code-block:: java
 

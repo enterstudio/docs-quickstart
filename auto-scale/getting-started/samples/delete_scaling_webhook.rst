@@ -1,6 +1,10 @@
 .. code-block:: csharp
 
-  await cloudAutoScaleProvider.DeleteWebhookAsync({group_id}, {policy_id}, {webhook_id}, CancellationToken.None);
+  await cloudAutoScaleProvider.DeleteWebhookAsync(
+	{group_id}, 
+	{policy_id}, 
+	{webhook_id}, 
+	CancellationToken.None);
 
 .. code-block:: java
 

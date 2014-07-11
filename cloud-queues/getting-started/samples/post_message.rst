@@ -2,7 +2,8 @@
 
    QueueName queueName = new QueueName("{queue_name}");
    TimeSpan ttl = TimeSpan.FromMinutes(900);
-   Newtonsoft.Json.Linq.JObject message_body = new Newtonsoft.Json.Linq.JObject("{\"play\": \"hockey\"}");
+   Newtonsoft.Json.Linq.JObject message_body = 
+	new Newtonsoft.Json.Linq.JObject("{\"play\": \"hockey\"}");
    Message message = new Message(ttl, message_body);
    Message[] messages = { message };
    await cloudQueuesProvider.PostMessagesAsync(queueName, CancellationToken.None, messages);

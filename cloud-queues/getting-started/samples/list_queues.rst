@@ -1,6 +1,7 @@
 .. code-block:: csharp
 
-  ReadOnlyCollectionPage<CloudQueue> queueList = await cloudQueuesProvider.ListQueuesAsync(null, null, true, CancellationToken.None);
+  ReadOnlyCollectionPage<CloudQueue> queueList = 
+	await cloudQueuesProvider.ListQueuesAsync(null, null, true, CancellationToken.None);
 
 .. code-block:: java
 
