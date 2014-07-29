@@ -12,5 +12,8 @@
 
 .. code-block:: sh
 
+  curl -i -X GET $ENDPOINT/{containerName} \
+    -H "X-Auth-Token: $TOKEN" \
+    -H "Accept: application/json"
 
 
