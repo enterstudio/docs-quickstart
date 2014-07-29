@@ -10,10 +10,10 @@
 
 .. code-block:: ruby
 
+  directory = @client.directories.get('{containerName}')
+
 .. code-block:: sh
 
   curl -i -X GET $ENDPOINT/{containerName} \
     -H "X-Auth-Token: $TOKEN" \
     -H "Accept: application/json"
-
-
