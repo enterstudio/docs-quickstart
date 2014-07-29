@@ -48,6 +48,12 @@ To create a container:
 
 .. include:: samples/create_container.rst
 
+Get container
+--------------
+After a container has been created or if you want to inspect an existing container's objects or metadata, you can retrieve it as shown below:
+
+.. include:: samples/get_container.rst
+
 CDN-enable container
 --------------------
 To make any objects within a container publicly readable,
