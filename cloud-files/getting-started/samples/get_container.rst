@@ -6,6 +6,8 @@
 
 .. code-block:: php
 
+  $container = $objectStoreService->getContainer('{containerName}');
+
 .. code-block:: python
 
 .. code-block:: ruby
