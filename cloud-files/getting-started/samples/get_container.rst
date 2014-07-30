@@ -2,6 +2,10 @@
 
 .. code-block:: java
 
+  ContainerApi containerApi = cloudFilesApi.getContainerApiForRegion("{region}");
+
+  Container container = containerApi.get("{containerName}");
+
 .. code-block:: javascript
 
 .. code-block:: php
