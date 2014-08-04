@@ -14,6 +14,8 @@
 
 .. code-block:: python
 
+  container = pyrax.cloudfiles.get_container("gallery")
+
 .. code-block:: ruby
 
   directory = @client.directories.get('{containerName}')
