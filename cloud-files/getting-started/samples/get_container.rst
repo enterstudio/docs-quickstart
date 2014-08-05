@@ -1,5 +1,8 @@
 .. code-block:: csharp
 
+  Dictionary<string,string> container = 
+        cloudFilesProvider.GetContainerHeader("{container_name}", "{region}");
+          
 .. code-block:: java
 
   ContainerApi containerApi = cloudFilesApi.getContainerApiForRegion("{region}");
