@@ -11,6 +11,14 @@
 
 .. code-block:: javascript
 
+  client.getContainer({containerName}, function(err, container) {
+    if (err) {
+      // TODO handle as appropriate
+    }
+
+    // TODO use your container
+  });
+
 .. code-block:: php
 
   $container = $objectStoreService->getContainer('{containerName}');
