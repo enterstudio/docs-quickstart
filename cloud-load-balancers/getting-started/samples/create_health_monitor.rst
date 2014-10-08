@@ -50,8 +50,8 @@
   $healthMonitor = $loadBalancer->healthMonitor();
   $healthMonitor->update(array(
       'delay'   => 120,
-      'timeout' => 60,,
-      'type'    => 'CONNECT'
+      'timeout' => 60,
+      'type'    => 'CONNECT',
       'attemptsBeforeDeactivation' => 3
   ));
 
