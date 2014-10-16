@@ -18,6 +18,8 @@
 
 .. code-block:: php
 
+  $service = $client->computeService(null, '{region}');
+
   $image = $service->image('{imageId}');
 
 .. code-block:: python
