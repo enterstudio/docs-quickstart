@@ -32,6 +32,8 @@
       'apiKey'   => '{apiKey}'
   ));
 
+  $service = $client->computeService(null, '{region}');
+
 .. code-block:: python
 
   import pyrax
