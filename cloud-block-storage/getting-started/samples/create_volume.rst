@@ -8,8 +8,9 @@
 
 .. code-block:: go
 
-	options := &CreateOpts{Name: "vol-001", Size: 100}
-	n, err := Create(ServiceClient(), options).Extract()
+	import "github.com/rackspace/gophercloud/rackspace/blockstorage/v1/volumes"
+	opts := volumes.CreateOpts{Name: "{volumeName}", Size: 100}
+	vol, err := volumes.Create(client, opts).Extract()
 
 .. code-block:: java
 

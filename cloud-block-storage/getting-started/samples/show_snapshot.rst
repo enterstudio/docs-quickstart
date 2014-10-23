@@ -5,7 +5,7 @@
 
 .. code-block:: go
 
-	s, err := Get(serviceClient, "{snapshotId}").Extract()
+	s, err := Get(client, "{snapshotId}").Extract()
 
 .. code-block:: java
 

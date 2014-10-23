@@ -4,12 +4,9 @@
 
 .. code-block:: go
 
-	options := &UpdateMetadataOpts{
-  	Metadata: map[string]interface{}{
-	 	"key": "v1",
-  	},
-	}
-	r, err := UpdateMetadata(serviceClient, "{snapshotId}", options).ExtractMetadata()
+	// Only Name and Description may be updated
+	opts := snapshots.UpdateOpts{Name: "new_name"}
+	s, err := snapshots.Update(client, "{snapshotId}", opts).Extract()
 
 .. code-block:: java
 
@@ -18,7 +15,7 @@
 .. code-block:: javascript
 
 	// assuming we've already loaded the details of a snapshot into a
-  // local variable named snapshot
+	// local variable named snapshot
 
   snapshot.name = 'New Snapshot Name';
 

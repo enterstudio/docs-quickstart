@@ -4,11 +4,13 @@
 
 .. code-block:: go
 
-	volumes.List(serviceClient, &ListOpts{}.EachPage(func (page pagination.Page) (bool, error) {
-  	volumes, _ := ExtractVolumes(page)
-  	// Use the page of []volumes.Volumes
-  	return true, nil
-	}
+	volumes.List(client).EachPage(func(page pagination.Page) (bool, error) {
+		volumeList, err := volumes.ExtractVolumes(page)
+		for _, v := range volumeList {
+		// ...
+		}
+		return true, nil
+	})
 
 .. code-block:: java
 

@@ -4,11 +4,13 @@
 
 .. code-block:: go
 
-	snapshots.List(serviceClient, &ListOpts{}.EachPage(func (page pagination.Page) (bool, error) {
-  	snapshots, _ := ExtractSnapshots(page)
-  	// Use the page of []snapshots.Snapshots
-  	return true, nil
-	}
+	snapshots.List(client).EachPage(func(page pagination.Page) (bool, error) {
+		snapshotList, err := snapshots.ExtractSnapshots(page)
+		for _, s := range snapshotList {
+		// ...
+		}
+		return true, nil
+	})
 
 .. code-block:: java
 

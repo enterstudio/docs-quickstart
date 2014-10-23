@@ -16,7 +16,7 @@
 	}
 	provider, err := rackspace.AuthenticatedClient(ao)
 
-	client, err := rackspace.NewComputeV2(provider, gophercloud.EndpointOpts{
+	client, err := rackspace.NewBlockStorageV1(provider, gophercloud.EndpointOpts{
 		Region: "{region}",
 	})
 

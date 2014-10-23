@@ -4,7 +4,8 @@
 
 .. code-block:: go
 
-	r := Update(serviceClient, "{volumeId}", &UpdateOpts{Name: "new-name"}).Extract()
+	opts := volumes.UpdateOpts{Name: "new_name"}
+	vol, err := volumes.Update{client, "{volumeId}", opts).Extract()
 
 .. code-block:: java
 

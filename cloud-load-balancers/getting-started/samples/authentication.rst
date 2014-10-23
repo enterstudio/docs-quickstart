@@ -13,16 +13,8 @@
 
 .. code-block:: go
 
-	ao := gophercloud.AuthOptions{
-		Username: "{username}",
-		APIKey: "{apiKey}",
-	}
-	provider, err := rackspace.AuthenticatedClient(ao)
-
-	client, err := rackspace.NewComputeV2(provider, gophercloud.EndpointOpts{
-		Region: "{region}",
-	})
-
+	// Not currently supported by this SDK
+	
 .. code-block:: java
 
   // Authentication in jclouds is lazy and happens on the first call to the cloud.

@@ -5,7 +5,7 @@
 
 .. code-block:: go
 
-	v, err := Get(serviceClient, "{volumeId}").Extract()
+	v, err := Get(client, "{volumeId}").Extract()
 
 
 .. code-block:: java
