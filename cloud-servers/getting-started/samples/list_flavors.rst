@@ -4,11 +4,11 @@
 
 .. code-block:: go
 
-	flavors.List(serviceClient).EachPage(func (page pagination.Page) (bool, error) {
-  	flavors, _ := ExtractFlavors(page)
-  	// Use the page of []flavors.Flavors
-  	return true, nil
-	}
+  flavors.List(serviceClient).EachPage(func (page pagination.Page) (bool, error) {
+    flavors, _ := ExtractFlavors(page)
+    // Use the page of []flavors.Flavors
+    return true, nil
+  }
 
 .. code-block:: java
 

@@ -4,7 +4,7 @@
 
 .. code-block:: go
 
-	err := Delete(client, "{volumeId}")
+  err := Delete(client, "{volumeId}")
 
 .. code-block:: java
 

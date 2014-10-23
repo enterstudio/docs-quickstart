@@ -5,8 +5,8 @@
 
 .. code-block:: go
 
-	_, err := Delete(serviceClient, "{containerName}").ExtractHeaders()```
-
+  _, err := Delete(serviceClient, "{containerName}").ExtractHeaders()
+  
 .. code-block:: java
 
   ContainerApi containerApi = cloudFilesApi.getContainerApiForRegion("{region}");

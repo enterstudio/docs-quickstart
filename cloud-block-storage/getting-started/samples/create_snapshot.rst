@@ -8,9 +8,9 @@
 
 .. code-block:: go
 
-	import "github.com/rackspace/gophercloud/blockstorage/v1/snapshots"
-	opts := snapshots.CreateOpts{VolumeID: "{volumeId}, "Name: "{snapshotName}"}
-	s, err := Create(client, opts).Extract()
+  import "github.com/rackspace/gophercloud/blockstorage/v1/snapshots"
+  opts := snapshots.CreateOpts{VolumeID: "{volumeId}, "Name: "{snapshotName}"}
+  s, err := Create(client, opts).Extract()
 
 .. code-block:: java
 

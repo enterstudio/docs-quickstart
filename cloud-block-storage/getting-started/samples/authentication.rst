@@ -10,15 +10,15 @@
 
 .. code-block:: go
 
-	ao := gophercloud.AuthOptions{
-		Username: "{username}",
-		APIKey: "{apiKey}",
-	}
-	provider, err := rackspace.AuthenticatedClient(ao)
+  ao := gophercloud.AuthOptions{
+    Username: "{username}",
+    APIKey: "{apiKey}",
+  }
+  provider, err := rackspace.AuthenticatedClient(ao)
 
-	client, err := rackspace.NewBlockStorageV1(provider, gophercloud.EndpointOpts{
-		Region: "{region}",
-	})
+  client, err := rackspace.NewBlockStorageV1(provider, gophercloud.EndpointOpts{
+    Region: "{region}",
+  })
 
 .. code-block:: java
 

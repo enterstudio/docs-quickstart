@@ -4,7 +4,7 @@
 
 .. code-block:: go
 
-	err := Delete(client, "{snapshotId}")
+  err := Delete(client, "{snapshotId}")
 
 .. code-block:: java
 

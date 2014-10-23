@@ -5,7 +5,7 @@
           
 .. code-block:: go
 
-	_, err := Get(serviceClient, "{containerName}").ExtractMetadata()
+  _, err := Get(serviceClient, "{containerName}").ExtractMetadata()
 
 .. code-block:: java
 

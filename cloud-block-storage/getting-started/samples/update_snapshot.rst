@@ -4,9 +4,9 @@
 
 .. code-block:: go
 
-	// Only Name and Description may be updated
-	opts := snapshots.UpdateOpts{Name: "new_name"}
-	s, err := snapshots.Update(client, "{snapshotId}", opts).Extract()
+  // Only Name and Description may be updated
+  opts := snapshots.UpdateOpts{Name: "new_name"}
+  s, err := snapshots.Update(client, "{snapshotId}", opts).Extract()
 
 .. code-block:: java
 

@@ -4,11 +4,11 @@
 
 .. code-block:: go
 
-	server, err := Create(serviceClient, map[string]interface{}{
-		"name":      "{serverName}",
-		"imageRef":  "{imageId}",
-		"flavorRef": "{flavorId}",
-		}).Extract()
+  server, err := Create(serviceClient, map[string]interface{}{
+    "name":      "{serverName}",
+    "imageRef":  "{imageId}",
+    "flavorRef": "{flavorId}",
+  }).Extract()
 	
 .. code-block:: java
 

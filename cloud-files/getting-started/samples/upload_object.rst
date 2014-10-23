@@ -19,8 +19,8 @@
 
 .. code-block:: go
 
-	content, err := ioutil.ReadFile("{pathToFile}")
-	_, err := Create(serviceClient, "{containerName}", "{objectName}", content, nil).ExtractHeaders()
+  content, err := ioutil.ReadFile("{pathToFile}")
+  _, err := Create(serviceClient, "{containerName}", "{objectName}", content, nil).ExtractHeaders()
 
 .. code-block:: java
 
