@@ -46,10 +46,14 @@
   var dest = client.upload({
     container: 'sample-container-test',
     remote: 'somefile.txt'
-  }, function(err) {
-    if (err) {
-      // TODO handle as appropriate
-    }
+  });
+
+  dest.on('error', function(err) {
+    // TODO handle err as appropriate
+  });
+
+  dest.on('success', function(file) {
+    // TODO handle successful upload case
   });
 
   // pipe the source to the destination
