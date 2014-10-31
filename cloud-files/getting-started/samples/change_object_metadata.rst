@@ -8,7 +8,7 @@
 .. code-block:: go
 
   var metadata = map[string]string{"some-key": "some-data"}
-  _, err := Update(serviceClient, "{containerName}", "{objectName}", &UpdateOpts{Metadata: metadata}).ExtractHeaders()
+  _, err := objects.Update(serviceClient, "{containerName}", "{objectName}", objects.UpdateOpts{Metadata: metadata}).ExtractHeader()
 
 .. code-block:: java
 

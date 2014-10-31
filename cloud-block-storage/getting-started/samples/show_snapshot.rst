@@ -5,7 +5,7 @@
 
 .. code-block:: go
 
-  s, err := Get(client, "{snapshotId}").Extract()
+  s, err := snapshots.Get(client, "{snapshotId}").Extract()
 
 .. code-block:: java
 

@@ -5,7 +5,7 @@
 
 .. code-block:: go
 
-  _, err := Delete(serviceClient, "{containerName}", "{objectName}", nil).ExtractHeaders()
+  err := objects.Delete(serviceClient, "{containerName}", "{objectName}", nil).ExtractErr()
 
 .. code-block:: java
 

@@ -5,8 +5,7 @@
 
 .. code-block:: go
 
-  v, err := Get(client, "{volumeId}").Extract()
-
+  v, err := volumes.Get(client, "{volumeId}").Extract()
 
 .. code-block:: java
 

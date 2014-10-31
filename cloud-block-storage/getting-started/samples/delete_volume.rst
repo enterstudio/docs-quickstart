@@ -4,7 +4,7 @@
 
 .. code-block:: go
 
-  err := Delete(client, "{volumeId}")
+  err := volumes.Delete(client, "{volumeId}").ExtractErr()
 
 .. code-block:: java
 

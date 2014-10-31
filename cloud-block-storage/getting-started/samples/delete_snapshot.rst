@@ -4,7 +4,7 @@
 
 .. code-block:: go
 
-  err := Delete(client, "{snapshotId}")
+  err := snapshots.Delete(client, "{snapshotId}").ExtractErr()
 
 .. code-block:: java
 
