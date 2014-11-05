@@ -4,12 +4,12 @@
 
 .. code-block:: go
 
-  server, err := Create(serviceClient, map[string]interface{}{
-    "name":      "{serverName}",
-    "imageRef":  "{imageId}",
-    "flavorRef": "{flavorId}",
+  server, err := servers.Create(serviceClient, servers.CreateOpts{
+    Name:      "My new server",
+    ImageRef:  image.ID,
+    FlavorRef: flavor.ID,
   }).Extract()
-	
+
 .. code-block:: java
 
   ServerApi serverApi = novaApi.getServerApiForZone("{region}");

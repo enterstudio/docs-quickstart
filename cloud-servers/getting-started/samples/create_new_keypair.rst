@@ -4,7 +4,9 @@
 
 .. code-block:: go
 
-  // Not currently supported by this SDK
+  kp, err := keypairs.Create(serviceClient, oskeypairs.CreateOpts{
+    Name: "my-keypair",
+  }).Extract()
 
 .. code-block:: java
 

@@ -4,7 +4,7 @@
 
 .. code-block:: go
 
-	flavor, err := flavors.Get(serviceClient, "{imageId}").Extract()
+	flavor, err := flavors.Get(serviceClient, "{flavorId}").Extract()
 
 .. code-block:: java
 

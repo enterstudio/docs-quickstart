@@ -7,7 +7,7 @@
 
 .. code-block:: go
 
-  // Not currently supported by this SDK
+  err := servers.WaitForStatus(serviceClient, server.ID, "ACTIVE", 600)
 
 .. code-block:: java
 

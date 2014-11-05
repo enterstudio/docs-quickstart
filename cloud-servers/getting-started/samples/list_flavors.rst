@@ -4,9 +4,9 @@
 
 .. code-block:: go
 
-  flavors.List(serviceClient).EachPage(func (page pagination.Page) (bool, error) {
-    flavors, _ := ExtractFlavors(page)
-    // Use the page of []flavors.Flavors
+  err := flavors.List(serviceClient).EachPage(func (page pagination.Page) (bool, error) {
+    flavors, err := flavors.ExtractFlavors(page)
+    // Use the page of []flavors.Flavor
     return true, nil
   }
 

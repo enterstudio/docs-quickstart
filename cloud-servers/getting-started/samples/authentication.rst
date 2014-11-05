@@ -6,8 +6,19 @@
       Username = "{username}"
   };
   CloudServersProvider cloudServersProvider = new CloudServersProvider(cloudIdentity);
-			
+
 .. code-block:: go
+
+  import (
+    "github.com/rackspace/gophercloud"
+    "github.com/rackspace/gophercloud/rackspace"
+    "github.com/rackspace/gophercloud/rackspace/compute/v2/images"
+    "github.com/rackspace/gophercloud/rackspace/compute/v2/flavors"
+    "github.com/rackspace/gophercloud/rackspace/compute/v2/servers"
+    "github.com/rackspace/gophercloud/rackspace/compute/v2/keypairs"
+
+    oskeypairs "github.com/rackspace/gophercloud/openstack/compute/v2/extensions/keypairs"
+  )
 
   ao := gophercloud.AuthOptions{
     Username: "{username}",
@@ -15,7 +26,7 @@
   }
   provider, err := rackspace.AuthenticatedClient(ao)
 
-  client, err := rackspace.NewComputeV2(provider, gophercloud.EndpointOpts{
+  serviceClient, err := rackspace.NewComputeV2(provider, gophercloud.EndpointOpts{
     Region: "{region}",
   })
 

@@ -4,7 +4,12 @@
 
 .. code-block:: go
 
-  // Not currently supported by this SDK
+  server, err := servers.Create(serviceClient, servers.CreateOpts{
+    Name:      "My server",
+    ImageRef:  image.ID,
+    FlavorRef: flavor.ID,
+    KeyPair:   "my-keypair",
+  }).Extract()
 
 .. code-block:: java
 

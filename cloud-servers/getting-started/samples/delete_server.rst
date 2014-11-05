@@ -4,7 +4,7 @@
 
 .. code-block:: go
 
-	err := Delete(serviceClient, "{serverId}")
+	err := servers.Delete(serviceClient, server.ID)
 
 .. code-block:: java
 

@@ -4,7 +4,11 @@
 
 .. code-block:: go
 
-  // Not currently supported by this SDK
+  pubkey, err := ioutil.ReadFile("/home/my-user/.ssh/id_rsa.pub")
+  kp, err := keypairs.Create(serviceClient, oskeypairs.CreateOpts{
+    Name: "my-keypair",
+    PublicKey: string(pubkey),
+  }).Extract()
 
 .. code-block:: java
 

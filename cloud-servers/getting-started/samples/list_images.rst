@@ -4,8 +4,8 @@
 
 .. code-block:: go
 
-  images.List(serviceClient).EachPage(func (page pagination.Page) (bool, error) {
-    images, _ := ExtractImages(page)
+  err := images.List(serviceClient).EachPage(func (page pagination.Page) (bool, error) {
+    images, err := images.ExtractImages(page)
     // Use the page of []images.Image
     return true, nil
   }
