@@ -48,4 +48,3 @@
 
   curl -i -X PUT $ENDPOINT/{containerName} \
     -H "X-Auth-Token: $TOKEN"
-

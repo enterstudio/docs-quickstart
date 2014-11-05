@@ -19,8 +19,17 @@
 
 .. code-block:: go
 
-  content, err := ioutil.ReadFile("{pathToFile}")
-  _, err := Create(serviceClient, "{containerName}", "{objectName}", content, nil).ExtractHeaders()
+  f, err := os.Open("{pathToFile}")
+  defer f.Close()
+  reader := bufio.NewReader(f)
+
+  _, err := objects.Create(
+    serviceClient,
+    "{containerName}",
+    "{objectName}",
+    reader,
+    nil,
+  ).ExtractHeaders()
 
 .. code-block:: java
 

@@ -1,11 +1,11 @@
 .. code-block:: csharp
 
-  Dictionary<string,string> container = 
+  Dictionary<string,string> container =
         cloudFilesProvider.GetContainerHeader("{container_name}", "{region}");
-          
+
 .. code-block:: go
 
-  _, err := Get(serviceClient, "{containerName}").ExtractMetadata()
+  _, err := containers.Get(serviceClient, "{containerName}").ExtractMetadata()
 
 .. code-block:: java
 

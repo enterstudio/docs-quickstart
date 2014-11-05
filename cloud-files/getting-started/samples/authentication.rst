@@ -9,13 +9,25 @@
 
 .. code-block:: go
 
+  import (
+    "github.com/rackspace/gophercloud"
+    "github.com/rackspace/gophercloud/rackspace"
+    "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/containers"
+    "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/objects"
+    "github.com/rackspace/gophercloud/rackspace/objectstorage/v1/cdncontainers"
+  )
+
   ao := gophercloud.AuthOptions{
     Username: "{username}",
     APIKey: "{apiKey}",
   }
   provider, err := rackspace.AuthenticatedClient(ao)
 
-  client, err := rackspace.NewObjectStorageV1(provider, gophercloud.EndpointOpts{
+  serviceClient, err := rackspace.NewObjectStorageV1(provider, gophercloud.EndpointOpts{
+    Region: "{region}",
+  })
+
+  cdnClient, err := rackspace.NewObjectCDNV1(provider, gophercloud.EndpointOpts{
     Region: "{region}",
   })
 

@@ -5,7 +5,8 @@
 
 .. code-block:: go
 
-  // Not currently supported by this SDK
+  opts := cdncontainers.EnableOpts{CDNEnabled: false}
+  _, err := cdncontainers.Enable(cdnClient, "{containerName}", opts).ExtractHeader()
 
 .. code-block:: java
 
@@ -39,4 +40,3 @@
   curl -i -X POST $ENDPOINT/{containerName} /
     -H "X-Auth-Token: $TOKEN" \
     -H "X-CDN-Enabled: False"
-

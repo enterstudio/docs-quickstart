@@ -7,8 +7,13 @@
 
 .. code-block:: go
 
-  var metadata = map[string]string{"some-key": "some-data"}
-  _, err := objects.Update(serviceClient, "{containerName}", "{objectName}", objects.UpdateOpts{Metadata: metadata}).ExtractHeader()
+  metadata := map[string]string{"some-key": "some-data"}
+  _, err := objects.Update(
+    serviceClient,
+    "{containerName}",
+    "{objectName}",
+    objects.UpdateOpts{Metadata: metadata},
+  ).ExtractHeader()
 
 .. code-block:: java
 
@@ -58,4 +63,3 @@
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-Type: application/json" \
     -H "X-Object-Meta-Some-Key: some-value"
-

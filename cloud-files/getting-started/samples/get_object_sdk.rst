@@ -1,16 +1,19 @@
 .. code-block:: csharp
 
   cloudFilesProvider.GetObjectSaveToFile(
-	"{container_name}", 
-	"{output_folder}", 
-	"{object_name}", 
+	"{container_name}",
+	"{output_folder}",
+	"{object_name}",
 	"{output_filename}");
 
 .. code-block:: go
 
-  content, err := Download(serviceClient, "{containerName}", "{objectName}", nil).ExtractContent()
-  err := ioutil.WriteFile("{pathToFile}", []byte(content), 0644)
-			
+  result := objects.Download(serviceClient, "{containerName}", "{objectName}", nil)
+  content, err := result.ExtractContent()
+  // result.Body is also an io.ReadCloser of the file content that may be consumed as a stream.
+
+  err := ioutil.WriteFile("/tmp/somefile.txt", []byte(content), 0644)
+
 .. code-block:: java
 
   ObjectApi objectApi =
