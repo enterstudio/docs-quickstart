@@ -1,11 +1,11 @@
 .. code-block:: csharp
 
-  Snapshot snapshot = 
+  Snapshot snapshot =
 	new CloudBlockStorageProvider({cloudIdentity}).ShowSnapshot("{snapshotId}", "{region}");
 
 .. code-block:: go
 
-  s, err := snapshots.Get(client, "{snapshotId}").Extract()
+  s, err := snapshots.Get(serviceClient, "{snapshotId}").Extract()
 
 .. code-block:: java
 

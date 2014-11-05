@@ -4,7 +4,7 @@
 
 .. code-block:: go
 
-  volumes.List(client).EachPage(func(page pagination.Page) (bool, error) {
+  err := volumes.List(serviceClient).EachPage(func(page pagination.Page) (bool, error) {
     volumeList, err := volumes.ExtractVolumes(page)
     for _, v := range volumeList {
       // ...

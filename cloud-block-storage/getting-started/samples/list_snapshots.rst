@@ -4,7 +4,7 @@
 
 .. code-block:: go
 
-  snapshots.List(client).EachPage(func(page pagination.Page) (bool, error) {
+  err := snapshots.List(serviceClient).EachPage(func(page pagination.Page) (bool, error) {
     snapshotList, err := snapshots.ExtractSnapshots(page)
     for _, s := range snapshotList {
       // ...

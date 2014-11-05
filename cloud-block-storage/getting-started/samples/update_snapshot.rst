@@ -6,7 +6,7 @@
 
   // Only Name and Description may be updated
   opts := snapshots.UpdateOpts{Name: "new_name"}
-  s, err := snapshots.Update(client, "{snapshotId}", opts).Extract()
+  s, err := snapshots.Update(serviceClient, "{snapshotId}", opts).Extract()
 
 .. code-block:: java
 

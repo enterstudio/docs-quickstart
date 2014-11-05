@@ -1,16 +1,15 @@
 .. code-block:: csharp
 
   new CloudBlockStorageProvider({cloudIdentity}).CreateSnapshot(
-	"{volumeId}", 
-	displayName: "{name}", 
-	displayDescription: "{description}", 
+	"{volumeId}",
+	displayName: "{name}",
+	displayDescription: "{description}",
 	region: "{region}");
 
 .. code-block:: go
 
-  import "github.com/rackspace/gophercloud/blockstorage/v1/snapshots"
-  opts := snapshots.CreateOpts{VolumeID: "{volumeId}, Name: "{snapshotName}"}
-  s, err := snapshots.Create(client, opts).Extract()
+  opts := snapshots.CreateOpts{VolumeID: "{volumeId}", Name: "{snapshotName}"}
+  s, err := snapshots.Create(serviceClient, opts).Extract()
 
 .. code-block:: java
 

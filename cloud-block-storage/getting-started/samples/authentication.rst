@@ -10,13 +10,22 @@
 
 .. code-block:: go
 
+  import (
+    "github.com/rackspace/gophercloud"
+    "github.com/rackspace/gophercloud/rackspace"
+    "github.com/rackspace/gophercloud/rackspace/blockstorage/v1/snapshots"
+    "github.com/rackspace/gophercloud/rackspace/blockstorage/v1/volumes"
+
+    osvolumes "github.com/rackspace/gophercloud/openstack/blockstorage/v1/volumes"
+  )
+
   ao := gophercloud.AuthOptions{
     Username: "{username}",
     APIKey: "{apiKey}",
   }
   provider, err := rackspace.AuthenticatedClient(ao)
 
-  client, err := rackspace.NewBlockStorageV1(provider, gophercloud.EndpointOpts{
+  serviceClient, err := rackspace.NewBlockStorageV1(provider, gophercloud.EndpointOpts{
     Region: "{region}",
   })
 
