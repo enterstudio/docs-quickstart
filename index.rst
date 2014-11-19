@@ -150,6 +150,7 @@
                 <p>Cloud Monitoring helps you keep a keen eye on all of your resources. You can monitor activity on websites, 
                 web servers, routers, load balancers, and more.</p>
                 <ul class="piped-list">
+                    <li><a href="/docs/cloud-monitoring/getting-started/">Getting Started</a></li>                
                     <li><a href="http://api.rackspace.com/api-ref-monitoring.html">API Reference</a></li>
                     <li><a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html">Developer Guide</a></li>
                 </ul>
@@ -165,6 +166,7 @@
                 <p>Rackspace Auto Scale is a service that lets you configure automated scaling of resources in response to an 
                 increase or decrease in overall workload based on user-defined policies.</p>
                 <ul class="piped-list">
+                    <li><a href="/docs/auto-scale/getting-started/">Getting Started</a></li>                
                     <li><a href="http://api.rackspace.com/api-ref-auto-scale.html">API Reference</a></li>
                     <li><a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Overview.html">Developer Guide</a></li>
                 </ul>
@@ -180,6 +182,7 @@
                 <p>Cloud Queues is an open source, scalable, and highly available message and notifications service, 
                 based on the OpenStack Marconi project</p>
                 <ul class="piped-list">
+                    <li><a href="/docs/cloud-queues/getting-started/">Getting Started</a></li>
                     <li><a href="http://api.rackspace.com/api-ref-queues.html">API Reference</a></li>
                     <li><a href="http://docs.rackspace.com/queues/api/v1.0/cq-devguide/content/overview.html">Developer Guide</a></li>
                 </ul>
