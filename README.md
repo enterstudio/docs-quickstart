@@ -8,7 +8,7 @@ These are the "getting started" guides from [developer.rackspace.com](https://de
 
 This repository has been split from [the monolithic developer.rackspace.com repository](https://github.com/rackerlabs/developer.rackspace.com) during the transition to hosting on [deconst](http://deconst.devsupport.me/). Until the transition is complete, new work not related to working on deconst should be done on the parent repository.
 
-To bring this repository up to date:
+To bring this repository up to date, fork and clone the [the original repository](https://github.com/rackerlabs/developer.rackspace.com), then:
 
 ```bash
 # Add your fork of this repository as a remote.
