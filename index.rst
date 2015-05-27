@@ -38,6 +38,7 @@
   :class: product-image
 
 .. raw:: html
+
   Rackspace CDN
                </h2>
                <p>Rackspace CDN gives you the power to accelerate content on any public resource at Rackspace.</p>
