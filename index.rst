@@ -1,8 +1,3 @@
-.. Rackspace Developer Documentation documentation master file, created by
-    sphinx-quickstart on Thu Mar  6 14:14:55 2014.
-    You can adapt this file completely to your liking, but it should at least
-    contain the root `toctree` directive.
-
 .. raw:: html
 
     <div class="doc-index">
@@ -17,8 +12,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-servers.png %}" alt="" class="product-image"/>
-                    Auto Scale
+
+.. image:: /_images/cloud-servers.png
+  :class: product-image
+
+.. raw:: html
+
+  Auto Scale
                 </h2>
                 <p>Rackspace Auto Scale is a service that lets you configure automated scaling of resources in response to an
                 increase or decrease in overall workload based on user-defined policies.</p>
@@ -33,8 +33,12 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path rackspace-cdn.png %}" alt="" class="product-image"/>
-                    Rackspace CDN
+
+.. image:: /_images/rackspace-cdn.png
+  :class: product-image
+
+.. raw:: html
+  Rackspace CDN
                </h2>
                <p>Rackspace CDN gives you the power to accelerate content on any public resource at Rackspace.</p>
                <ul class="piped-list">
@@ -48,8 +52,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-backup.png %}" alt="" class="product-image"/>
-                    Cloud Backup
+
+.. image:: /_images/cloud-backup.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Backup
                 </h2>
                 <p>Cloud Backup is a file-based backup solution that allows customization of files, folders, schedule,
                 retention and notification. Restore your backed up data to any Cloud Server running Cloud Backup.</p>
@@ -63,8 +72,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-block-storage.png %}" alt="" class="product-image"/>
-                    Cloud Block Storage
+
+.. image:: /_images/cloud-block-storage.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Block Storage
                 </h2>
                 <p>Cloud Block Storage, powered by OpenStack®, delivers consistent performance for your
                 I/O-intensive applications. Choose the service that works best for you - Standard or SSD volumes.</p>
@@ -79,8 +93,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-databases.png %}" alt="" class="product-image"/>
-                    Cloud Databases
+
+.. image:: /_images/cloud-databases.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Databases
                 </h2>
                 <p>Cloud Databases, powered by OpenStack®, provides fast, scalable, fully managed hosting for your MySQL
                 instances using a REST-based API and open standards.</p>
@@ -95,8 +114,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-dns.png %}" alt="" class="product-image"/>
-                    Cloud DNS
+
+.. image:: /_images/cloud-dns.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud DNS
                 </h2>
                 <p>Cloud DNS automates and simplifies Domain Name System management. Using the Rackspace Cloud Control
                 Panel and REST-based API, you can list, add, modify, and remove domains, subdomains, and records, as
@@ -111,8 +135,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-files.png %}" alt="" class="product-image"/>
-                    Cloud Files
+
+.. image:: /_images/cloud-files.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Files
                 </h2>
                 <p>Cloud Files, powered by OpenStack®, provides an easy to use online storage for files and media
                 which can be delivered globally at blazing speeds over Akamai's content delivery network (CDN).</p>
@@ -127,8 +156,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                  <img src="{% asset_path cloud-identity.png %}" alt="" class="product-image"/>
-                  Cloud Identity
+
+.. image:: /_images/cloud-identity.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Identity
                 </h2>
                 <p>Cloud Identity provides authentication and authorization functionality for other Rackspace Cloud services.</p>
                 <ul class="piped-list">
@@ -141,8 +175,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-images.png %}" alt="" class="product-image"/>
-                    Cloud Images
+
+.. image:: /_images/cloud-images.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Images
                 </h2>
                 <p>Cloud Images, powered by OpenStack®, allows you to share, import, and export your virtual machine
                 images using a REST-based API.</p>
@@ -157,8 +196,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-load-balancer.png %}" alt="" class="product-image"/>
-                    Cloud Load Balancers
+
+.. image:: /_images/cloud-load-balancer.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Load Balancers
                 </h2>
                 <p>Mission-critical web-based applications and workloads require high availability. Load balancing
                 distributes workloads across two or more servers, network links, and other resources to maximize
@@ -173,8 +217,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-monitoring.png %}" alt="" class="product-image"/>
-                    Cloud Monitoring
+
+.. image:: /_images/cloud-monitoring.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Monitoring
                 </h2>
                 <p>Cloud Monitoring helps you keep a keen eye on all of your resources. You can monitor activity on websites,
                 web servers, routers, load balancers, and more.</p>
@@ -189,8 +238,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-servers.png %}" alt="" class="product-image"/>
-                    Cloud Networking
+
+.. image:: /_images/cloud-servers.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Networking
                 </h2>
                 <p>Rackspace's Cloud Networking is used to provide on-demand, scalable, and technology-agnostic network abstraction. It supports the creation of networks, subnets, ports, security groups and port traffic rules.</p>
                 <ul class="piped-list">
@@ -204,8 +258,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-queues.png %}" alt="" class="product-image"/>
-                    Cloud Queues
+
+.. image:: /_images/cloud-queues.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Queues
                 </h2>
                 <p>Cloud Queues is an open source, scalable, and highly available message and notifications service,
                 based on the OpenStack Marconi project</p>
@@ -220,8 +279,13 @@
         <div class="row">
             <div class="col-md-12">
                 <h2>
-                    <img src="{% asset_path cloud-servers.png%}" alt="" class="product-image"/>
-                    Cloud Servers
+
+.. image:: /_images/cloud-servers.png
+  :class: product-image
+
+.. raw:: html
+
+  Cloud Servers
                 </h2>
                 <p>Cloud Servers, powered by OpenStack®, are virtual machines running Linux or Windows Server in the
                 Rackspace Cloud. You can scale resources like CPU, memory, and storage up or down, depending on your
@@ -237,8 +301,13 @@
          <div class="row">
            <div class="col-md-12">
                <h2>
-                   <img src="{% asset_path cloud-load-balancer.png %}" alt="" class="product-image"/>
-                   Orchestration
+
+.. image:: /_images/cloud-load-balancer.png
+  :class: product-image
+
+.. raw:: html
+
+  Orchestration
                </h2>
                <p>Rackspace's Orchestration service provides a template-based way to describe a cloud application. These templates enable you to create the following resource types: instances, floating IPs, volumes, security groups, users, and so on. Also, Orchestration provides some more advanced functionality, such as instance high availability, instance auto-scaling, and nested stacks.</p>
                <ul class="piped-list">
@@ -252,8 +321,13 @@
     <div class="row">
         <div class="col-md-12">
             <h2>
-                <img src="{% asset_path cloud-servers.png %}" alt="" class="product-image"/>
-                Orchestration
+
+.. image:: /_images/cloud-servers.png
+  :class: product-image
+
+.. raw:: html
+
+  Orchestration
             </h2>
             <p>Rackspace's Orchestration service provides a template-based way to describe a cloud application. These templates enable you to create the following resource types: instances, floating IPs, volumes, security groups, users, and so on. Also, Orchestration provides some more advanced functionality, such as instance high availability, instance auto-scaling, and nested stacks.</p>
             <ul class="piped-list">
@@ -264,13 +338,6 @@
         </div>
     </div>
   </div>
-
-
-
-.. toctree::
-    :maxdepth: 2
-
-       mailgun
 
 .. toctree
     :maxdepth: 1
