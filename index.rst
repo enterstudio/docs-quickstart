@@ -1,3 +1,5 @@
+:deconsttitle: Rackspace Developer Center
+
 .. raw:: html
 
     <div class="doc-index">
