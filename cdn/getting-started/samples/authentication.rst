@@ -1,17 +1,20 @@
 .. code-block:: csharp
 
-  using OpenStack.Net;
-  using OpenStack.Services.Identity.V2;
-  using Rackspace.Security.Authentication;
+  using Marvin.JsonPatch;
+  using net.openstack.Core.Domain;
+  using net.openstack.Providers.Rackspace;
+  using OpenStack;
+  using OpenStack.ContentDeliveryNetworks.v1;
+  using System.Collections.Generic;
+  using Flavor = OpenStack.ContentDeliveryNetworks.v1.Flavor;
 
-  IIdentityService idservice =
-    new IdentityClient(new Uri("https://identity.api.rackspacecloud.com"));
-  PasswordCredentials pwdCred =
-    new PasswordCredentials("{username}", "{password}");
-  AuthenticationData authData = new AuthenticationData(pwdCred);
-  AuthenticationRequest request = new AuthenticationRequest(authData);
-  RackspaceAuthenticationService ras =
-    new RackspaceAuthenticationService(idservice, request);
+  var identity = new CloudIdentity
+  {
+      APIKey = "{apikey}",
+      Username = "{username}"
+  };
+  var authProvider = new CloudIdentityProvider(identity);
+  var cdnService = new ContentDeliveryNetworkService(authProvider, "{region}");
 
 .. code-block:: go
 

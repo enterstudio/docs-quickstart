@@ -1,9 +1,6 @@
 .. code-block:: csharp
 
-  CancellationToken cn = new CancellationToken();
-  var task = contentDeliveryClient.GetServiceAsync({serviceId}, cn);
-  task.Wait();
-  var result = task.Result;
+  Service service = await cdnService.GetServiceAsync("{serviceId}");
 
 .. code-block:: go
 

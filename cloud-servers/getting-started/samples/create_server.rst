@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  cloudServersProvider.CreateServer("{server_name}", "{image_id}", "{flavor_id}");
+  NewServer newServer = cloudServersProvider.CreateServer("{server_name}", "{image_id}", "{flavor_id}");
 
 .. code-block:: go
 

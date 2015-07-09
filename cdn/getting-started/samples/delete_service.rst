@@ -1,8 +1,7 @@
 .. code-block:: csharp
 
-  ContentDeliveryClient cdc = GetContentDeliveryClient();
-  CancellationToken cn = new CancellationToken();
-  await cdc.RemoveServiceAsync({serviceId}, cn);
+  await cdnService.DeleteServiceAsync("{serviceId}");
+  await cdnService.WaitForServiceDeletedAsync("{serviceId}");
 
 .. code-block:: go
 
