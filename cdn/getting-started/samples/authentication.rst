@@ -1,5 +1,6 @@
 .. code-block:: csharp
 
+  // Sample Project @ https://github.com/openstacknetsdk/Demos/tree/master/RackspaceQuickstart
   using Marvin.JsonPatch;
   using net.openstack.Core.Domain;
   using net.openstack.Providers.Rackspace;
