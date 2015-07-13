@@ -1,8 +1,6 @@
 .. code-block:: csharp
 
-  CancellationToken cn = new CancellationToken();
-  ReadOnlyCollectionPage<Service> x =
-    await contentDeliveryClient.ListServicesAsync(cn);
+  IPage<Service> services = await cdnService.ListServicesAsync();
 
 .. code-block:: go
 
