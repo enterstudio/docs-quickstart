@@ -169,8 +169,7 @@
                 </h2>
                 <p>Cloud Identity provides authentication and authorization functionality for other Rackspace Cloud services.</p>
                 <ul class="piped-list">
-                    <li><a href="http://api.rackspace.com/api-ref-backup.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content">Developer Guide</a></li>
+                    <li><a href="http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/QuickStart-000.html">Developer Guide</a></li>
                 </ul>
             </div>
         </div>
