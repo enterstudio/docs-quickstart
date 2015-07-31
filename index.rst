@@ -269,7 +269,7 @@
   Cloud Queues
                 </h2>
                 <p>Cloud Queues is an open source, scalable, and highly available message and notifications service,
-                based on the OpenStack Marconi project</p>
+                based on the OpenStack Zaqar project</p>
                 <ul class="piped-list">
                     <li><a href="/docs/cloud-queues/getting-started/">Getting Started</a></li>
                     <li><a href="http://api.rackspace.com/api-ref-queues.html">API Reference</a></li>
