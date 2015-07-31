@@ -21,6 +21,7 @@
 .. code-block:: java
 
   // Authentication in jclouds is lazy and happens on the first call to the cloud.
+  // Though the project name changed to Zaqar, use the original Marconi here.
   MarconiApi marconiApi = ContextBuilder.newBuilder("rackspace-cloudqueues-us")
       .credentials("{username}", "{apiKey}")
       .buildApi(MarconiApi.class);
