@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  // Not currently supported by this SDK
+  IPage<Network> networks = networkService.ListNetworksAsync();
 
 .. code-block:: go
 
