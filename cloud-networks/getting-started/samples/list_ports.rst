@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  // Not currently supported by this SDK
+  IPage<Port> ports = networkService.ListPortsAsync();
 
 .. code-block:: go
 
@@ -47,4 +47,3 @@
     -H "X-Auth-Token: $TOKEN" \
     -H "Content-type: application/json" \
     -H "Accept: application/json" | python -m json.tool
-
