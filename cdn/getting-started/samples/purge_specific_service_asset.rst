@@ -1,7 +1,6 @@
 .. code-block:: csharp
 
-  CancellationToken cn = new CancellationToken();
-  await cdc.RemoveAssetAsync({serviceId}, cn, {urlOfAsset});
+  await cdnService.PurgeCachedAssetAsync("{serviceId}", "{relativeUrlOfAsset}");
 
 .. code-block:: go
 

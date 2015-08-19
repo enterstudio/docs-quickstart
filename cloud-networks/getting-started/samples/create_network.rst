@@ -1,6 +1,7 @@
 .. code-block:: csharp
 
-  // Not currently supported by this SDK
+  var networkDefinition = new NetworkDefinition { Name = "{network-name}" };
+  var network = await networkService.CreateNetworkAsync(networkDefinition);
 
 .. code-block:: go
 
@@ -52,5 +53,3 @@
     -H "Content-type: application/json" \
     -d $'{"network": {"name": "MyNewNetwork"} }' \
     -H "Accept: application/json" | python -m json.tool
-
-

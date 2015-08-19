@@ -1,6 +1,11 @@
 .. code-block:: csharp
 
-  // Not currently supported by this SDK
+  var portDefinition = new PortCreateDefinition(network.Id)
+  {
+      DeviceId = "{device-id}",
+      DeviceOwner = "{device-owner}"
+  };
+  var port = await networkService.CreatePortAsync(portDefinition);
 
 .. code-block:: go
 
@@ -54,5 +59,3 @@
     -H "Content-type: application/json" \
     -d $'{"port": {"name": "NewPort"}, "network": "$NETWORK_ID"} ' \
     -H "Accept: application/json" | python -m json.tool
-
-

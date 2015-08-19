@@ -1,6 +1,7 @@
 .. code-block:: csharp
 
-  // Not currently supported by this SDK
+  var subnetDefinition = new SubnetCreateDefinition(network.Id, IPVersion.IPv4, "{cidr}}");
+  var subnet = await networkService.CreateSubnetAsync(subnetDefinition);
 
 .. code-block:: go
 

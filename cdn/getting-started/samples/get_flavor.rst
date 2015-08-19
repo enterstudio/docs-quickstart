@@ -1,7 +1,6 @@
 .. code-block:: csharp
 
-  CancellationToken cn = new CancellationToken();
-  Flavor flavor = await contentDeliverClient.GetFlavorAsync({flavorId}, cn);
+  Flavor flavor = await cdnService.GetFlavorAsync("{flavorId}");
 
 .. code-block:: go
 

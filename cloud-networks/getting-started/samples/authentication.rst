@@ -1,14 +1,12 @@
 .. code-block:: csharp
 
-  CloudIdentity cloudIdentity = new CloudIdentity()
+  var identity = new CloudIdentity
   {
       APIKey = "{apikey}",
       Username = "{username}"
   };
-  CloudMonitoringProvider cloudMonitoringProvider = new CloudMonitoringProvider(
-  cloudIdentity,
-  "{region}",
-  null);
+  var identityService = new CloudIdentityProvider(identity);
+  var networkService = new CloudNetworkService(identityService, "{region}");
 
 .. code-block:: go
 

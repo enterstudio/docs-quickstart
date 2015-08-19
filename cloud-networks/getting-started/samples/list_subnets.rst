@@ -1,6 +1,6 @@
 .. code-block:: csharp
 
-  // Not currently supported by this SDK
+  IPage<Subnet> subnets = networkService.ListSubnetsAsync();
 
 .. code-block:: go
 

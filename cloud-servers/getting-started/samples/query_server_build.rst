@@ -1,9 +1,6 @@
 .. code-block:: csharp
 
-  // You can wait for any number of states, e.g. Active, Reboot, etc.
-  ServerState[] errorStates = new ServerState[1] { ServerState.Active };
-  ServerState[] serverStates = new ServerState[1] { ServerState.Unknown };
-  cloudServersProvider.WaitForServerState("{server_id}", serverStates, errorStates);
+  Server server = cloudServersProvider.WaitForServerActive(newServer.Id);
 
 .. code-block:: go
 

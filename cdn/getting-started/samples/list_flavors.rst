@@ -1,15 +1,7 @@
 .. code-block:: csharp
 
-  ListFlavorsApiCall t =
-    await contentDeliveryClient.PrepareListFlavorsAsync(CancellationToken.None);
-  using (t)
-  {
-      Tuple<HttpResponseMessage, ReadOnlyCollectionPage<Flavor>> response =
-        await t.SendAsync(CancellationToken.None);
-      ReadOnlyCollection<Flavor> allFlavors =
-        await response.Item2.GetAllPagesAsync(CancellationToken.None, null);
-  }
-  
+  IEnumerable<Flavor> flavors = await cdnService.ListFlavorsAsync();
+
 .. code-block:: go
 
   err := flavors.List(client).EachPage(func(page pagination.Page) (bool, error) {
