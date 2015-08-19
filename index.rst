@@ -1,346 +1,394 @@
 :deconsttitle: Rackspace Developer Center
+:deconstdescription: Official documentation and user guides for Rackspace APIs and SDKs
 
 .. raw:: html
 
-    <div class="doc-index">
+   <div data-ng-controller="DocsHomeServicesCtrl">
+   <section class="docs-category compute" data-ng-show="isSectionActive('compute')">
+       <h2>Compute Services</h2>
+       <p>Cloud Servers, powered by OpenStack<sup>&reg;</sup>, are virtual machines running Linux or Windows Server in the Rackspace Cloud. You can scale resources like CPU, memory, and storage up or down, depending on your needs. Best of all, you can pay as you go.</p>
+       <div class="product-list">
+           <div class="product">
+               <div class="card blue">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Servers</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Explore our APIs</h1>
-                <p>With this developer documentation, we offer code snippets in the Getting Started links below so you can try our REST APIs in the language of your choice (shell, Java, Python, .NET, Node.js, PHP, and Ruby). To use these snippets to their full potential, be sure you have a Rackspace Cloud account. To see a snappy listing of all API calls, use the API Reference links. For a deeper dive into each product, go to a Developer Guide. We've built these docs for you and want to build with you, so let us know of any issues you find.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-servers.png
-  :class: product-image
-
-.. raw:: html
-
-  Auto Scale
-                </h2>
-                <p>Rackspace Auto Scale is a service that lets you configure automated scaling of resources in response to an
-                increase or decrease in overall workload based on user-defined policies.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/auto-scale/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref-auto-scale.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Overview.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/rackspace-cdn.png
-  :class: product-image
-
-.. raw:: html
-
-  Rackspace CDN
-               </h2>
-               <p>Rackspace CDN gives you the power to accelerate content on any public resource at Rackspace.</p>
-               <ul class="piped-list">
-                   <li><a href="/docs/cdn/getting-started/">Getting Started</a></li>
-                   <li><a href="http://api.rackspace.com/api-ref-raxCDN.html">API Reference</a></li>
-                   <li><a href="http://docs.rackspace.com/cdn/api/v1.0/cdn-devguide/content/Overview.html">Developer Guide</a></li>
-               </ul>
+                                       <li><a href="/docs/cloud-servers/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-backup.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Backup
-                </h2>
-                <p>Cloud Backup is a file-based backup solution that allows customization of files, folders, schedule,
-                retention and notification. Restore your backed up data to any Cloud Server running Cloud Backup.</p>
-                <ul class="piped-list">
-                    <li><a href="http://api.rackspace.com/api-ref-backup.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/overview.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-block-storage.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Block Storage
-                </h2>
-                <p>Cloud Block Storage, powered by OpenStack®, delivers consistent performance for your
-                I/O-intensive applications. Choose the service that works best for you - Standard or SSD volumes.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-block-storage/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref-blockstorage.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-databases.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Databases
-                </h2>
-                <p>Cloud Databases, powered by OpenStack®, provides fast, scalable, fully managed hosting for your MySQL
-                instances using a REST-based API and open standards.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-databases/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref-databases.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/overview.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-dns.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud DNS
-                </h2>
-                <p>Cloud DNS automates and simplifies Domain Name System management. Using the Rackspace Cloud Control
-                Panel and REST-based API, you can list, add, modify, and remove domains, subdomains, and records, as
-                well as import and export domains and records.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-dns/getting-started/">Getting Started</a></li>
-                    <li><a href="http://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/overview.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-files.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Files
-                </h2>
-                <p>Cloud Files, powered by OpenStack®, provides an easy to use online storage for files and media
-                which can be delivered globally at blazing speeds over Akamai's content delivery network (CDN).</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-files/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref-files.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-identity.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Identity
-                </h2>
-                <p>Cloud Identity provides authentication and authorization functionality for other Rackspace Cloud services.</p>
-                <ul class="piped-list">
-                    <li><a href="http://api.rackspace.com/api-ref-backup.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-images.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Images
-                </h2>
-                <p>Cloud Images, powered by OpenStack®, allows you to share, import, and export your virtual machine
-                images using a REST-based API.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-images/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref-images.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-load-balancer.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Load Balancers
-                </h2>
-                <p>Mission-critical web-based applications and workloads require high availability. Load balancing
-                distributes workloads across two or more servers, network links, and other resources to maximize
-                throughput, minimize response time and avoid overload.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-load-balancers/getting-started/">Getting Started</a></li>
-                    <li><a href="http://docs.rackspace.com/loadbalancers/api/v1.0/clb-getting-started/content/index.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-monitoring.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Monitoring
-                </h2>
-                <p>Cloud Monitoring helps you keep a keen eye on all of your resources. You can monitor activity on websites,
-                web servers, routers, load balancers, and more.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-monitoring/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref-monitoring.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-servers.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Networking
-                </h2>
-                <p>Rackspace's Cloud Networking is used to provide on-demand, scalable, and technology-agnostic network abstraction. It supports the creation of networks, subnets, ports, security groups and port traffic rules.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-networks/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref-networks.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/networks/api/v2/cn-gettingstarted/content/ch_preface.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-queues.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Queues
-                </h2>
-                <p>Cloud Queues is an open source, scalable, and highly available message and notifications service,
-                based on the OpenStack Marconi project</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-queues/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref-queues.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/queues/api/v1.0/cq-devguide/content/overview.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>
-
-.. image:: /_images/cloud-servers.png
-  :class: product-image
-
-.. raw:: html
-
-  Cloud Servers
-                </h2>
-                <p>Cloud Servers, powered by OpenStack®, are virtual machines running Linux or Windows Server in the
-                Rackspace Cloud. You can scale resources like CPU, memory, and storage up or down, depending on your
-                needs. Best of all, you can pay as you go.</p>
-                <ul class="piped-list">
-                    <li><a href="/docs/cloud-servers/getting-started/">Getting Started</a></li>
-                    <li><a href="http://api.rackspace.com/api-ref.html">API Reference</a></li>
-                    <li><a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html">Developer Guide</a></li>
-                </ul>
-            </div>
-        </div>
-
-         <div class="row">
-           <div class="col-md-12">
-               <h2>
-
-.. image:: /_images/cloud-load-balancer.png
-  :class: product-image
-
-.. raw:: html
-
-  Orchestration
-               </h2>
-               <p>Rackspace's Orchestration service provides a template-based way to describe a cloud application. These templates enable you to create the following resource types: instances, floating IPs, volumes, security groups, users, and so on. Also, Orchestration provides some more advanced functionality, such as instance high availability, instance auto-scaling, and nested stacks.</p>
-               <ul class="piped-list">
-                   <li><a href="/docs/orchestration/getting-started/">Getting Started</a></li>
-                   <li><a href="http://api.rackspace.com/api-ref-orchestration.html">API Reference</a></li>
-                   <li><a href="http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Orch_Overview.html">Developer Guide</a></li>
-               </ul>
+           <div class="product">
+               <div class="card blue">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Servers (Legacy)</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="">NEED LINK</a></li>
+                                       <li><a href="">NEED LINK</a></li>
+                                       <li><a href="">NEED LINK</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
            </div>
-     </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <h2>
-
-.. image:: /_images/cloud-servers.png
-  :class: product-image
-
-.. raw:: html
-
-  Orchestration
-            </h2>
-            <p>Rackspace's Orchestration service provides a template-based way to describe a cloud application. These templates enable you to create the following resource types: instances, floating IPs, volumes, security groups, users, and so on. Also, Orchestration provides some more advanced functionality, such as instance high availability, instance auto-scaling, and nested stacks.</p>
-            <ul class="piped-list">
-                <li><a href="/docs/orchestration/getting-started/">Getting Started</a></li>
-                <li><a href="http://api.rackspace.com/api-ref-orchestration.html">API Reference</a></li>
-                <li><a href="http://docs.rackspace.com/cas/api/v1.0/orchestration-devguide/content/Overview.html">Developer Guide</a></li>
-            </ul>
-        </div>
-    </div>
-  </div>
+           <div class="product">
+               <div class="card blue">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Images</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-images/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-images.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <section class="docs-category network" data-ng-show="isSectionActive('network')">
+       <h2>Network Services</h2>
+       <p>Rackspace's Cloud Network services are on-demand, scalable, and provide technology-agnostic network abstraction, load balancing, and DNS management. Protect your infrastructure with Cloud Load Balancers by distributing traffic efficiently. Use Cloud DNS to manage domains and subdomains.</p>
+       <div class="product-list">
+           <div class="product">
+               <div class="card green">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Networks</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-networks/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-networks.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/networks/api/v2/cn-gettingstarted/content/ch_preface.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card green">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Load Balancers</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-load-balancers/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://docs.rackspace.com/loadbalancers/api/v1.0/clb-getting-started/content/index.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card green">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud DNS</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-dns/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <section class="docs-category storage" data-ng-show="isSectionActive('storage')">
+       <h2>Storage Services</h2>
+       <p>With our storage services, you can get dependable and performant block storage, object storage, and backup solutions for your Cloud Servers. You can scale your storage independently from your compute resources while using high-performance storage for I/O-intensive applications or to serve databases. Plus, with Cloud Files, you can store and retrieve content in a secure system including a Content Delivery Network (CDN). If you want to enable CDN for your website resources beyond Cloud Files you can use the Rackspace CDN service which has finer control on caching rules, purging content, and specifying origins.</p>
+       <div class="product-list">
+           <div class="product">
+               <div class="card red">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Block Storage</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-block-storage/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-blockstorage.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card red">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Backup</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="http://api.rackspace.com/api-ref-backup.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card red">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Files</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-files/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-files.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card red">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud CDN</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cdn/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-raxCDN.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/cdn/api/v1.0/cdn-devguide/content/Overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <section class="docs-category data" data-ng-show="isSectionActive('data')">
+       <h2>Data Services</h2>
+       <p>Our data services enable powerful applications and data analysis by providing pre-configured, highly performant and available SQL and NoSQL data stores such as Hadoop, MySQL, Redis, and MongoDB.</p>
+       <div class="product-list">
+           <div class="product">
+               <div class="card yellow">
+                   <div class="card-content">
+                       <div class="card-title">Cloud Big Data</div>
+                       <div class="card-body">
+                           <ul>
+                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="">NEED LINK</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card yellow">
+                   <div class="card-content">
+                       <div class="card-title">Cloud Databases</div>
+                       <div class="card-body">
+                           <ul>
+                               <li><a href="/docs/cloud-databases/getting-started/">Getting Started</a></li>
+                               <li><a href="http://api.rackspace.com/api-ref-databases.html">API Reference</a></li>
+                               <li><a href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/overview.html">Developer Guide</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card yellow">
+                   <div class="card-content">
+                       <div class="card-title">ObjectRocket</div>
+                       <div class="card-body">
+                           <ul>
+                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="">NEED LINK</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card yellow">
+                   <div class="card-content">
+                       <div class="card-title">Redistogo</div>
+                       <div class="card-body">
+                           <ul>
+                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="">NEED LINK</a></li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <section class="docs-category infra" data-ng-show="isSectionActive('infra')">
+       <h2>Infrastructure &amp; Developer Tools</h2>
+       <p>This collection of powerful tools offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Autoscale to provide automatic scaling based on Cloud Monitoring information, in response to in increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available, scalable, and secure. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and protecting email reputation.</p>
+       <div class="product-list">
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Autoscale</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/auto-scale/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-auto-scale.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Monitoring</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-monitoring/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-monitoring.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Mailgun</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="">NEED LINK</a></li>
+                                       <li><a href="">NEED LINK</a></li>
+                                       <li><a href="">NEED LINK</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Queues</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-queues/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-queues.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/queues/api/v1.0/cq-devguide/content/overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Orchestration</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/orchestration/getting-started/">Getting Started</a></li>
+                                       <li><a href="http://api.rackspace.com/api-ref-orchestration.html">API Reference</a></li>
+                                       <li><a href="http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Orch_Overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   </div>
 
 .. toctree
     :maxdepth: 1
