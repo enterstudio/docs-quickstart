@@ -10,8 +10,7 @@ env:
 install:
 - pip install -e git+https://github.com/deconst/preparer-sphinx.git#egg=deconstrst
 script:
-- 'echo "Submitting content: ${DESC:-nowhere}"'
-- deconst-preparer-sphinx
+- script/cibuild
 notifications:
   slack:
     secure: Zf0gBe6CHH1izXy/E4lxEsCStg+D6F08+SCnQmLLiIJyVnzCp+73cgSbA6heQVcwQEFenFsb0mPs5kNLUpkZLXyUU/t9g1J1S9OdA0BL8YA1eh7WZD/fke51b1gLC4jyViR2yk190ZGS1prEBxTlmu6ydusziQkaJEABS1XHJRJz/d7bdgMVt5JivY1tG2dm3t2/AF8JQ9nGt8hBohjZBCWzK6QpciINy8h6QBpf29Xrrn6jmPLh1imxy5KzZ4sv2Fatxhw8Yi02+FEye1YRip54dyNcVUPoywA6rdSo9IEBCTAOM59uORSVOFjzc5/pN5nqL/Vr0vrK7lAxujmGENqMPj5lJWiiBTOJMMEqmmw8mvpBcTin8dBFE+RZ1olEHzqdcLrho+9PQk0iBM6LGyA4MQRaVgbLTYLZCgSHjtSQpq9GAvj51pUgLwCrI3oBhFRdPW7mCqEQHPLoq6iIiQVsY8o6a3A6Xnh1qsYuvoX2wSagoTaPdNMb3QYBYznmDRH3Wn3FcNxdm/fn2UDS27lGntnDAFjwJwTWBDjELduUC8Rv8bUZmszAr/h/9KZtjnjE3qggHpVnNkkTv6k6P8rz78BGpHuSP791oxCKaF8/cSYq6OqYUdLv8OsYctF5qa76o4a61b+IoCNI8T6BwHEq0zk00DY/TQQOv1lPo2g=
