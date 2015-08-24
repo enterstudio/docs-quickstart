@@ -73,7 +73,7 @@
    </section>
    <section class="docs-category network" data-ng-show="isSectionActive('network')">
        <h2>Network Services</h2>
-       <p>Rackspace's Cloud Network services are on-demand, scalable, and provide technology-agnostic network abstraction, load balancing, and DNS management. Protect your infrastructure with Cloud Load Balancers by distributing traffic efficiently. Use Cloud DNS to manage domains and subdomains.</p>
+       <p>Cloud Network services are on-demand, scalable, and provide technology-agnostic network abstraction, load balancing, and DNS management. Protect your infrastructure with Cloud Load Balancers by distributing traffic efficiently. Use Cloud DNS to manage domains and subdomains.</p>
        <div class="product-list">
            <div class="product">
                <div class="card green">
@@ -137,7 +137,7 @@
    </section>
    <section class="docs-category storage" data-ng-show="isSectionActive('storage')">
        <h2>Storage Services</h2>
-       <p>With our storage services, you can get dependable and performant block storage, object storage, and backup solutions for your Cloud Servers. You can scale your storage independently from your compute resources while using high-performance storage for I/O-intensive applications or to serve databases. Plus, with Cloud Files, you can store and retrieve content in a secure system including a Content Delivery Network (CDN). If you want to enable CDN for your website resources beyond Cloud Files you can use the Rackspace CDN service which has finer control on caching rules, purging content, and specifying origins.</p>
+       <p>With our storage services, you can get dependable and performant block storage, object storage, and backup solutions for your Cloud Servers. You can scale your storage independently from your compute resources while using high-performance storage for I/O-intensive applications or to serve databases. Plus, with Cloud Files, you can store and retrieve content over a Content Delivery Network (CDN). If you want to enable CDN for your website resources beyond Cloud Files you can use the Rackspace CDN service which has finer control on caching rules, purging content, and specifying origins.</p>
        <div class="product-list">
            <div class="product">
                <div class="card red">
@@ -221,8 +221,8 @@
        </div>
    </section>
    <section class="docs-category data" data-ng-show="isSectionActive('data')">
-       <h2>Data Services</h2>
-       <p>Our data services enable powerful applications and data analysis by providing pre-configured, highly performant and available SQL and NoSQL data stores such as Hadoop, MySQL, Redis, and MongoDB.</p>
+       <h2>Database Platform Services</h2>
+       <p>Our database platform services enable powerful applications and data analysis by providing pre-configured, highly performant and available SQL and NoSQL data stores such as Hadoop, MySQL, Redis, and MongoDB.</p>
        <div class="product-list">
            <div class="product">
                <div class="card yellow">
@@ -284,7 +284,7 @@
    </section>
    <section class="docs-category infra" data-ng-show="isSectionActive('infra')">
        <h2>Infrastructure &amp; Developer Tools</h2>
-       <p>This collection of powerful tools offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Autoscale to provide automatic scaling based on Cloud Monitoring information, in response to in increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available, scalable, and secure. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and protecting email reputation.</p>
+       <p>This collection of powerful tools offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Autoscale to provide automatic scaling based on Cloud Monitoring information, in response to in increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available and scalable. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and helping to protect email reputation.</p>
        <div class="product-list">
            <div class="product">
                <div class="card purple">
