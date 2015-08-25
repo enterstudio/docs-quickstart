@@ -19,7 +19,7 @@
                                <div class="list-column">
                                    <ul>
 
-                                       <li><a href="/docs/cloud-servers/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html">Developer Guide</a></li>
                                    </ul>
@@ -59,7 +59,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-images/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-images/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-images.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html">Developer Guide</a></li>
                                    </ul>
@@ -85,7 +85,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-networks/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-networks/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-networks.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/networks/api/v2/cn-gettingstarted/content/ch_preface.html">Developer Guide</a></li>
                                    </ul>
@@ -105,7 +105,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-load-balancers/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-load-balancers/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://docs.rackspace.com/loadbalancers/api/v1.0/clb-getting-started/content/index.html">Developer Guide</a></li>
                                    </ul>
                                </div>
@@ -124,7 +124,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-dns/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-dns/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/overview.html">Developer Guide</a></li>
                                    </ul>
                                </div>
@@ -149,7 +149,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-block-storage/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-block-storage/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-blockstorage.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html">Developer Guide</a></li>
                                    </ul>
@@ -188,7 +188,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-files/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-files/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-files.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html">Developer Guide</a></li>
                                    </ul>
@@ -208,7 +208,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cdn/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cdn/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-raxCDN.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/cdn/api/v1.0/cdn-devguide/content/Overview.html">Developer Guide</a></li>
                                    </ul>
@@ -244,7 +244,7 @@
                        <div class="card-title">Cloud Databases</div>
                        <div class="card-body">
                            <ul>
-                               <li><a href="/docs/cloud-databases/getting-started/">Getting Started</a></li>
+                               <li><a href="/docs/cloud-databases/getting-started/">SDK Quick Start</a></li>
                                <li><a href="http://api.rackspace.com/api-ref-databases.html">API Reference</a></li>
                                <li><a href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/overview.html">Developer Guide</a></li>
                            </ul>
@@ -296,7 +296,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/auto-scale/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/auto-scale/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-auto-scale.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Overview.html">Developer Guide</a></li>
                                    </ul>
@@ -316,7 +316,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-monitoring/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-monitoring/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-monitoring.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html">Developer Guide</a></li>
                                    </ul>
@@ -356,7 +356,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-queues/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-queues/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-queues.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/queues/api/v1.0/cq-devguide/content/overview.html">Developer Guide</a></li>
                                    </ul>
@@ -376,7 +376,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/orchestration/getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/orchestration/getting-started/">SDK Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-orchestration.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Orch_Overview.html">Developer Guide</a></li>
                                    </ul>
