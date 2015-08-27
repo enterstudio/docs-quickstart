@@ -231,7 +231,9 @@
            <div class="product">
                <div class="card yellow">
                    <div class="card-content">
-                       <div class="card-title">Cloud Big Data</div>
+                       <div class="card-title">
+                           <h4>Cloud Big Data</h4>
+                       </div>
                        <div class="card-body">
                            <ul>
                                <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-getting-started-2/content/CBD_Overview.html">Getting Started</a></li>
@@ -244,7 +246,9 @@
            <div class="product">
                <div class="card yellow">
                    <div class="card-content">
-                       <div class="card-title">Cloud Databases</div>
+                       <div class="card-title">
+                           <h4>Cloud Databases</h4>
+                       </div>
                        <div class="card-body">
                            <ul>
                                <li><a href="/docs/cloud-databases/getting-started/">Quick Start</a></li>
@@ -258,7 +262,9 @@
            <div class="product">
                <div class="card yellow">
                    <div class="card-content">
-                       <div class="card-title">ObjectRocket</div>
+                       <div class="card-title">
+                           <h4>ObjectRocket</h4>
+                       </div>
                        <div class="card-body">
                            <ul>
                                <li><a href="https://docs.objectrocket.com/getting_started.html">Getting Started</a></li>
@@ -271,7 +277,9 @@
            <div class="product">
                <div class="card yellow">
                    <div class="card-content">
-                       <div class="card-title">Redistogo</div>
+                       <div class="card-title">
+                           <h4>Redistogo</h4>
+                       </div>
                        <div class="card-body">
                            <ul>
                                <li><a href="http://redistogo.com/documentation">Documentation</a></li>
@@ -283,7 +291,7 @@
        </div>
    </section>
    <section class="docs-category infra" data-ng-show="isSectionActive('infra')">
-       <h2>Infrastructure</h2>
+       <h2>Infrastructure &amp; Developer Services</h2>
        <p>This collection of powerful tools offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Autoscale to provide automatic scaling based on Cloud Monitoring information, in response to in increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available and scalable. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and helping to protect email reputation.</p>
        <div class="product-list">
            <div class="product">
@@ -409,7 +417,7 @@
        </div>
    </section>
    <section class="docs-category dev-tools" id="sdks" data-ng-show="isSectionActive('dev-tools')">
-       <h2>Developer Tools</h2>
+       <h2>SDKs &amp; Tools</h2>
        <div class="product-list">
            <div class="product">
                <div class="card pink">
