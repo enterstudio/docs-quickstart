@@ -412,7 +412,7 @@
        <h2>Developer Tools</h2>
        <div class="product-list">
            <div class="product">
-               <div class="card purple">
+               <div class="card pink">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>CLI &ndash; Rack</h4>
@@ -433,7 +433,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card purple">
+               <div class="card pink">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Go &ndash; Gophercloud</h4>
@@ -455,7 +455,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card purple">
+               <div class="card pink">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Python &ndash; Pyrax</h4>
@@ -477,7 +477,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card purple">
+               <div class="card pink">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>.NET &ndash; Rackspace.NET</h4>
@@ -499,7 +499,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card purple">
+               <div class="card pink">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Java &ndash; JClouds</h4>
@@ -521,7 +521,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card purple">
+               <div class="card pink">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>PHP &ndash; PHP-Opencloud</h4>
@@ -543,7 +543,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card purple">
+               <div class="card pink">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Node.js &ndash; pkgcloud</h4>
@@ -565,7 +565,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card purple">
+               <div class="card pink">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Ruby &ndash; Fog</h4>
