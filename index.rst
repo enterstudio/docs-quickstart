@@ -22,6 +22,7 @@
                                        <li><a href="/docs/cloud-servers/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html">Developer Guide</a></li>
+                                       <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -62,6 +63,7 @@
                                        <li><a href="/docs/cloud-images/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-images.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html">Developer Guide</a></li>
+                                       <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -88,6 +90,7 @@
                                        <li><a href="/docs/cloud-networks/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-networks.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/networks/api/v2/cn-gettingstarted/content/ch_preface.html">Developer Guide</a></li>
+                                       <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -152,6 +155,7 @@
                                        <li><a href="/docs/cloud-block-storage/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-blockstorage.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -191,6 +195,7 @@
                                        <li><a href="/docs/cloud-files/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-files.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html">Developer Guide</a></li>
+                                       <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -283,7 +288,7 @@
        </div>
    </section>
    <section class="docs-category infra" data-ng-show="isSectionActive('infra')">
-       <h2>Infrastructure &amp; Developer Tools</h2>
+       <h2>Infrastructure</h2>
        <p>This collection of powerful tools offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Autoscale to provide automatic scaling based on Cloud Monitoring information, in response to in increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available and scalable. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and helping to protect email reputation.</p>
        <div class="product-list">
            <div class="product">
@@ -399,6 +404,186 @@
                                        <li><a href="/docs/orchestration/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-orchestration.html">API Reference</a></li>
                                        <li><a href="http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Orch_Overview.html">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+   <section class="docs-category dev-tools" id="sdks" data-ng-show="isSectionActive('dev-tools')">
+       <h2>Developer Tools</h2>
+       <div class="product-list">
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>CLI &ndash; Rack</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="https://github.com/rackspace/rack">Readme</a></li>
+                                       <li><a href="/docs/rack-cli/">Documentation</a></li>
+                                       <li><a href="https://github.com/rackspace/rack/releases">Release Notes</a></li>
+                                       <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Go &ndash; Gophercloud</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/sdks/golang" class="learn-more">Learn More</a></li>
+                                        <li><a href="/docs/cloud-servers/getting-started/?lang=go">Getting Started</a></li>
+                                        <li><a href="http://gophercloud.io/docs/">Documentation</a></li>
+                                        <li><a href="https://github.com/rackspace/gophercloud/blob/master/UPGRADING.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/gophercloud/releases.atom"></a></li>
+                                        <li><a href="http://gophercloud.io/">Community</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Python &ndash; Pyrax</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/sdks/python/">Learn More</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/?lang=python">Getting Started</a></li>
+                                       <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
+                                       <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
+                                       <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>.NET &ndash; Rackspace.NET</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/sdks/dot-net/"> Learn More</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/?lang=.net">Getting Started</a></li>
+                                       <li><a href="http://openstacknetsdk.org/docs">Documentation</a></li>
+                                       <li><a href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a>&nbsp;<a href="https://github.com/openstacknetsdk/openstack.net/releases.atom"></li>
+                                       <li><a href="https://github.com/openstacknetsdk/openstack.net/wiki">Community</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Java &ndash; JClouds</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                        <li><a href="/sdks/java">Learn More</a></li>
+                                        <li><a href="/docs/cloud-servers/getting-started/?lang=java">Getting Started</a></li>
+                                        <li><a href="http://jclouds.apache.org/guides/rackspace/">Documentation</a></li>
+                                        <li><a href="https://jclouds.apache.org/releasenotes/">Release Notes</a>&nbsp;<a href="http://jclouds.apache.org/releasenotes/atom.xml"></a></li>
+                                        <li><a href="https://jclouds.apache.org/community/">Community</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>PHP &ndash; PHP-Opencloud</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/sdks/php/">Learn More</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/?lang=php">Getting Started</a></li>
+                                       <li><a href="https://github.com/rackspace/php-opencloud/tree/master/docs/userguide">Documentation</a></li>
+                                       <li><a href="https://github.com/rackspace/php-opencloud/releases/">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/php-opencloud/releases.atom"></li>
+                                       <li><a href="https://github.com/rackspace/php-opencloud">Community</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Node.js &ndash; pkgcloud</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/sdks/python/">Learn More</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/?lang=python">Getting Started</a></li>
+                                       <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
+                                       <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
+                                       <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Ruby &ndash; Fog</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                        <li><a href="/sdks/ruby/">Learn More</a></li>
+                                        <li><a href="/docs/cloud-servers/getting-started/?lang=ruby">Getting Started</a></li>
+                                        <li><a href="https://github.com/fog/fog/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
+                                        <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<a href="https://github.com/fog/fog/releases.atom"></li>
+                                        <li><a href="http://fog.io/">Community</a></li>
                                    </ul>
                                </div>
                            </div>
