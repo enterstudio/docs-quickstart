@@ -292,7 +292,7 @@
    </section>
    <section class="docs-category infra" data-ng-show="isSectionActive('infra')">
        <h2>Infrastructure &amp; Developer Services</h2>
-       <p>This collection of powerful tools offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Autoscale to provide automatic scaling based on Cloud Monitoring information, in response to in increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available and scalable. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and helping to protect email reputation.</p>
+       <p>This collection of powerful services offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Autoscale to provide automatic scaling based on Cloud Monitoring information, in response to in increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available and scalable. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and helping to protect email reputation.</p>
        <div class="product-list">
            <div class="product">
                <div class="card purple">
@@ -417,7 +417,8 @@
        </div>
    </section>
    <section class="docs-category dev-tools" id="sdks" data-ng-show="isSectionActive('dev-tools')">
-       <h2>SDKs &amp; Tools</h2>
+       <h2>Software Development Kits &amp; Tools</h2>
+       <p>Rackspace provides supported Software Development Kits (SDKs) to give you access to our services in the language of your choice. We stand by our SDKs and CLI offerings by working side-by-side with community members to continually improve feature coverage and usability. Whether you are a polyglot, Java, Go, .NET, Python, PHP, or JavaScript developer, we speak your language.</p>
        <div class="product-list">
            <div class="product">
                <div class="card pink">
