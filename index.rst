@@ -40,9 +40,8 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="">NEED LINK</a></li>
-                                       <li><a href="">NEED LINK</a></li>
-                                       <li><a href="">NEED LINK</a></li>
+                                       <li><a href="http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/Overview-d1e70.html">API Developer Guide</a></li>
+                                       <li><a href="http://www.rackspace.com/knowledge_center/Frequently_Asked_Questions">FAQs</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -235,9 +234,8 @@
                        <div class="card-title">Cloud Big Data</div>
                        <div class="card-body">
                            <ul>
-                               <li><a href="">NEED LINK</a></li>
-                               <li><a href="">NEED LINK</a></li>
-                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-getting-started-2/content/CBD_Overview.html">Getting Started</a></li>
+                               <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-devguide-2/content/overview.html">API Developer Guide</a></li>
                            </ul>
                        </div>
                    </div>
@@ -263,9 +261,8 @@
                        <div class="card-title">ObjectRocket</div>
                        <div class="card-body">
                            <ul>
-                               <li><a href="">NEED LINK</a></li>
-                               <li><a href="">NEED LINK</a></li>
-                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="https://docs.objectrocket.com/getting_started.html">Getting Started</a></li>
+                               <li><a href="https://docs.objectrocket.com/index.html">Documentation</a></li>
                            </ul>
                        </div>
                    </div>
@@ -277,9 +274,7 @@
                        <div class="card-title">Redistogo</div>
                        <div class="card-body">
                            <ul>
-                               <li><a href="">NEED LINK</a></li>
-                               <li><a href="">NEED LINK</a></li>
-                               <li><a href="">NEED LINK</a></li>
+                               <li><a href="http://redistogo.com/documentation">Documentation</a></li>
                            </ul>
                        </div>
                    </div>
@@ -361,9 +356,9 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="">NEED LINK</a></li>
-                                       <li><a href="">NEED LINK</a></li>
-                                       <li><a href="">NEED LINK</a></li>
+                                       <li><a href="https://documentation.mailgun.com/quickstart.html">Quickstart Guide</a></li>
+                                       <li><a href="https://documentation.mailgun.com/user_manual.html">User Manual</a></li>
+                                       <li><a href="https://documentation.mailgun.com/api_reference.html">API Reference</a></li>
                                    </ul>
                                </div>
                            </div>
