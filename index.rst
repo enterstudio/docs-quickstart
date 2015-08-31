@@ -561,11 +561,11 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/sdks/python/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/?lang=python">Getting Started</a></li>
-                                       <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
-                                       <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
-                                       <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
+                                       <li><a href="/sdks/node-js/">Learn More</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/?lang=javascript">Getting Started</a></li>
+                                       <li><a href="https://github.com/pkgcloud/pkgcloud/tree/master/docs">Documentation</a></li>
+                                       <li><a href="https://github.com/pkgcloud/pkgcloud/blob/master/CHANGELOG.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
+                                       <li><a href="https://github.com/pkgcloud/pkgcloud">Community</a></li>
                                    </ul>
                                </div>
                            </div>
