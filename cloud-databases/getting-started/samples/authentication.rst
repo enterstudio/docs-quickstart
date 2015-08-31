@@ -31,7 +31,8 @@
   var rackspace = pkgcloud.database.createClient({
     provider: 'rackspace',
     username: '{username}',
-    apiKey: '{apiKey}'
+    apiKey: '{apiKey}',
+    region: '{region}'
   });
 
 .. code-block:: php
