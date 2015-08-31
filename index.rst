@@ -452,7 +452,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/golang" class="learn-more">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/getting-started/?lang=go">Getting Started</a></li>
+                                        <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="go">Getting Started</a></li>
                                         <li><a href="http://gophercloud.io/docs/">Documentation</a></li>
                                         <li><a href="https://github.com/rackspace/gophercloud/blob/master/UPGRADING.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/gophercloud/releases.atom"></a></li>
                                         <li><a href="http://gophercloud.io/">Community</a></li>
@@ -474,7 +474,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/python/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/?lang=python">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="python">Getting Started</a></li>
                                        <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
                                        <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
                                        <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
@@ -496,7 +496,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/dot-net/"> Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/?lang=.net">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="csharp">Getting Started</a></li>
                                        <li><a href="http://openstacknetsdk.org/docs">Documentation</a></li>
                                        <li><a href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a>&nbsp;<a href="https://github.com/openstacknetsdk/openstack.net/releases.atom"></li>
                                        <li><a href="https://github.com/openstacknetsdk/openstack.net/wiki">Community</a></li>
@@ -518,7 +518,7 @@
                                <div class="list-column">
                                    <ul>
                                         <li><a href="/sdks/java">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/getting-started/?lang=java">Getting Started</a></li>
+                                        <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="java">Getting Started</a></li>
                                         <li><a href="http://jclouds.apache.org/guides/rackspace/">Documentation</a></li>
                                         <li><a href="https://jclouds.apache.org/releasenotes/">Release Notes</a>&nbsp;<a href="http://jclouds.apache.org/releasenotes/atom.xml"></a></li>
                                         <li><a href="https://jclouds.apache.org/community/">Community</a></li>
@@ -540,7 +540,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/php/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/?lang=php">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="php">Getting Started</a></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud/tree/master/docs/userguide">Documentation</a></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud/releases/">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/php-opencloud/releases.atom"></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud">Community</a></li>
@@ -562,7 +562,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/node-js/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/?lang=javascript">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="javascript">Getting Started</a></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud/tree/master/docs">Documentation</a></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud/blob/master/CHANGELOG.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud">Community</a></li>
@@ -584,7 +584,7 @@
                                <div class="list-column">
                                    <ul>
                                         <li><a href="/sdks/ruby/">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/getting-started/?lang=ruby">Getting Started</a></li>
+                                        <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="ruby">Getting Started</a></li>
                                         <li><a href="https://github.com/fog/fog/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
                                         <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<a href="https://github.com/fog/fog/releases.atom"></li>
                                         <li><a href="http://fog.io/">Community</a></li>
