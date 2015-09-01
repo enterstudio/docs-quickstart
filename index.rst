@@ -142,7 +142,7 @@
        <p>With our storage services, you can get dependable and performant block storage, object storage, and backup solutions for your Cloud Servers. You can scale your storage independently from your compute resources while using high-performance storage for I/O-intensive applications or to serve databases. Plus, with Cloud Files, you can store and retrieve content over a Content Delivery Network (CDN). If you want to enable CDN for your website resources beyond Cloud Files you can use the Rackspace CDN service which has finer control on caching rules, purging content, and specifying origins.</p>
        <div class="product-list">
            <div class="product">
-               <div class="card red">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Cloud Block Storage</h4>
@@ -163,7 +163,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card red">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Cloud Backup</h4>
@@ -182,7 +182,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card red">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Cloud Files</h4>
@@ -203,7 +203,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card red">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Cloud CDN</h4>
@@ -229,7 +229,7 @@
        <p>Our database platform services enable powerful applications and data analysis by providing pre-configured, highly performant and available SQL and NoSQL data stores such as Hadoop, MySQL, Redis, and MongoDB.</p>
        <div class="product-list">
            <div class="product">
-               <div class="card yellow">
+               <div class="card teal">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Cloud Big Data</h4>
@@ -244,7 +244,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card yellow">
+               <div class="card teal">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Cloud Databases</h4>
@@ -260,7 +260,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card yellow">
+               <div class="card teal">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>ObjectRocket</h4>
@@ -275,7 +275,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card yellow">
+               <div class="card teal">
                    <div class="card-content">
                        <div class="card-title">
                            <h4>Redistogo</h4>
