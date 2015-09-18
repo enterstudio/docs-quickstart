@@ -4,6 +4,13 @@
 .. raw:: html
 
    <div data-ng-controller="DocsHomeServicesCtrl">
+   <div class="docs-banner">
+       <h4>Read the Cloud Infrastructure User Guide</h4>
+       <p>Discover the services at the heart of the Rackspace cloud: Servers, Networks, Images, Storage, Files. Understand how they work together to help you perform the tasks essential to your business. Learn how to interact with these core services and how the Rackspace cloud gives you a new way to get your work done.</p>
+       <p class="banner-button">
+            <a href="/docs/user-guides/infrastructure/" class="banner-button">Read the User Guide</a>
+       </p>
+   </div>
    <section class="docs-category compute" data-ng-show="isSectionActive('compute')">
        <h2>Compute Services</h2>
        <p>Cloud Servers, powered by OpenStack<sup>&reg;</sup>, are virtual machines running Linux or Windows Server in the Rackspace Cloud. You can scale resources like CPU, memory, and storage up or down, depending on your needs. Best of all, you can pay as you go.</p>
