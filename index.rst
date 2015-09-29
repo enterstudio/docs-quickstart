@@ -333,7 +333,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-monitoring/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-monitoring.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/cm/api/v1.0/cm-devguide/content/overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-monitoring/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
