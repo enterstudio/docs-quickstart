@@ -21,7 +21,7 @@
 
                                        <li><a href="/docs/cloud-servers/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/servers/api/v2/cs-devguide/content/ch_preface.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-servers/v2/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/compute/">User Guide</a></li>
                                    </ul>
                                </div>
@@ -61,7 +61,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-images/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-images.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/images/api/v2/ci-devguide/content/index.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-images/v2/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/compute/cloud-images-product-concepts/">User Guide</a></li>
                                    </ul>
                                </div>
@@ -88,7 +88,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-networks/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-networks.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/networks/api/v2/cn-gettingstarted/content/ch_preface.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-networks/v1/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/network/">User Guide</a></li>
                                    </ul>
                                </div>
@@ -108,7 +108,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cloud-load-balancers/getting-started/">Quick Start</a></li>
-                                       <li><a href="http://docs.rackspace.com/loadbalancers/api/v1.0/clb-getting-started/content/index.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-load-balancers/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -127,7 +127,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cloud-dns/getting-started/">Quick Start</a></li>
-                                       <li><a href="http://docs.rackspace.com/cdns/api/v1.0/cdns-devguide/content/overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-dns/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -153,7 +153,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-block-storage/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-blockstorage.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/cbs/api/v1.0/cbs-devguide/content/overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-block-storage/v1/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/storage/">User Guide</a></li>
                                    </ul>
                                </div>
@@ -173,7 +173,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="http://api.rackspace.com/api-ref-backup.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/rcbu/api/v1.0/rcbu-devguide/content/overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-backup/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -193,7 +193,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-files/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-files.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/files/api/v1/cf-devguide/content/Overview-d1e70.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-files/v1/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
                                </div>
@@ -214,7 +214,7 @@
                                    <ul>
                                        <li><a href="/docs/cdn/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-raxCDN.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/cdn/api/v1.0/cdn-devguide/content/Overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-cdn/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -237,7 +237,7 @@
                        <div class="card-body">
                            <ul>
                                <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-getting-started-2/content/CBD_Overview.html">Getting Started</a></li>
-                               <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-devguide-2/content/overview.html">API Developer Guide</a></li>
+                               <li><a href="/docs/cloud-big-data/v2/developer-guide/">API Developer Guide</a></li>
                            </ul>
                        </div>
                    </div>
@@ -253,7 +253,7 @@
                            <ul>
                                <li><a href="/docs/cloud-databases/getting-started/">Quick Start</a></li>
                                <li><a href="http://api.rackspace.com/api-ref-databases.html">API Reference</a></li>
-                               <li><a href="http://docs.rackspace.com/cdb/api/v1.0/cdb-devguide/content/overview.html">Developer Guide</a></li>
+                               <li><a href="/docs/cloud-databases/v1/developer-guide/">Developer Guide</a></li>
                            </ul>
                        </div>
                    </div>
@@ -306,7 +306,7 @@
                                    <ul>
                                        <li><a href="/docs/auto-scale/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-auto-scale.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/cas/api/v1.0/autoscale-devguide/content/Overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-autoscale/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -346,7 +346,7 @@
                                    <ul>
                                        <li><a href="http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/QuickStart-000.html">Quick Start</a></li>
                                        <li><a href="http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/API_Operations.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/Overview-d1e65.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-identity/v2/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -386,7 +386,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-queues/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-queues.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/queues/api/v1.0/cq-devguide/content/overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-queues/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -406,7 +406,7 @@
                                    <ul>
                                        <li><a href="/docs/orchestration/getting-started/">Quick Start</a></li>
                                        <li><a href="http://api.rackspace.com/api-ref-orchestration.html">API Reference</a></li>
-                                       <li><a href="http://docs.rackspace.com/orchestration/api/v1/orchestration-getting-started/content/Orch_Overview.html">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-orchestration/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
