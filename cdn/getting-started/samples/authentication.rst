@@ -54,7 +54,8 @@
   var rackspace = pkgcloud.cdn.createClient({
     provider: 'rackspace',
     username: '{username}',
-    apiKey: '{apiKey}'
+    apiKey: '{apiKey}',
+    region: '{region}'
   });
 
 .. code-block:: php
