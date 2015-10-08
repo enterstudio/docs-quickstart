@@ -156,8 +156,8 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="http://docs.rackspace.com/rackconnect/api/v3/rackconnect-gettingstarted/content/change_history.html">Quick Start</a></li>
-                                       <li><a href="/docs/rackconnect/v3/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="https://developer.rackspace.com/docs/rackconnect/v3/developer-guide/#developer-guide">Developer Guide</a></li>
+                                       <li><a href="/docs/rackconnect/v3/developer-guide/#api-reference">API Reference</a></li>
+                                       <li><a href="/docs/rackconnect/v3/developer-guide/#developer-guide">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -165,6 +165,7 @@
                    </div>
                </div>
            </div>
+        </div>
    </section>
    <section class="docs-category storage" data-ng-show="isSectionActive('storage')">
        <h2>Storage Services</h2>
