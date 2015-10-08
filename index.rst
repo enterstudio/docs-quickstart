@@ -165,7 +165,6 @@
                    </div>
                </div>
            </div>
-        </div>
    </section>
    <section class="docs-category storage" data-ng-show="isSectionActive('storage')">
        <h2>Storage Services</h2>
