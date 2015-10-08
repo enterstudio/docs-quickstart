@@ -145,6 +145,26 @@
                </div>
            </div>
        </div>
+          <div class="product">
+               <div class="card green">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Rackspace RackConnect</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="http://docs.rackspace.com/rackconnect/api/v3/rackconnect-gettingstarted/content/change_history.html">Quick Start</a></li>
+                                       <li><a href="/docs/rackconnect/v3/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="https://developer.rackspace.com/docs/rackconnect/v3/developer-guide/#developer-guide">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
    </section>
    <section class="docs-category storage" data-ng-show="isSectionActive('storage')">
        <h2>Storage Services</h2>
@@ -337,6 +357,26 @@
                                        <li><a href="/docs/cloud-monitoring/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4>Cloud Metrics</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="http://docs.rackspace.com/cmet/api/v1.0/cmet-gettingstarted/content/doc-change-history.html">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-metrics/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-metrics/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
