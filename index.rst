@@ -144,8 +144,7 @@
                    </div>
                </div>
            </div>
-       </div>
-          <div class="product">
+           <div class="product">
                <div class="card green">
                    <div class="card-content">
                        <div class="card-title">
@@ -165,7 +164,7 @@
                    </div>
                </div>
            </div>
-        </div>
+       </div>
    </section>
    <section class="docs-category storage" data-ng-show="isSectionActive('storage')">
        <h2>Storage Services</h2>
