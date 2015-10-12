@@ -394,7 +394,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="http://docs.rackspace.com/auth/api/v2.0/auth-client-devguide/content/QuickStart-000.html">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-identity/v2/developer-guide/#document-quickstart-guide">Quick Start</a></li>
                                        <li><a href="/docs/cloud-identity/v2/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-identity/v2/developer-guide/">Developer Guide</a></li>
                                    </ul>
