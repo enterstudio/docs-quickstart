@@ -457,6 +457,8 @@
                                        <li><a href="/docs/orchestration/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/user-guides/orchestration/">User Guide</a></li>
+                                       <li><a href="http://orchestration.rackspace.com/raxdox/">Template Reference</a></li>
                                    </ul>
                                </div>
                            </div>
