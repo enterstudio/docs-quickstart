@@ -483,7 +483,7 @@
                                        <li><a href="https://github.com/rackspace/rack">Readme</a></li>
                                        <li><a href="/docs/rack-cli/">Documentation</a></li>
                                        <li><a href="https://github.com/rackspace/rack/releases">Release Notes</a></li>
-                                       <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
+                                       <li><a href="https://github.com/rackspace/rack/issues">Community</a></li>
                                    </ul>
                                </div>
                            </div>
