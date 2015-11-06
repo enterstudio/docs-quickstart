@@ -28,6 +28,7 @@
 
                                        <li><a href="/docs/cloud-servers/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-servers/v2/developer-guide/#document-api-reference">API Reference</a></li>
+                                         <li><a href="/docs/cloud-servers/v2/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-servers/v2/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/compute/">User Guide</a></li>
                                    </ul>
@@ -68,6 +69,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-images/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-images/v2/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-images/v2/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-images/v2/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/compute/cloud-images-product-concepts/">User Guide</a></li>
                                    </ul>
@@ -95,6 +97,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-networks/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-networks/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-networks/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-networks/v1/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/network/">User Guide</a></li>
                                    </ul>
@@ -116,6 +119,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-load-balancers/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-load-balancers/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-load-balancers/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-load-balancers/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
@@ -136,6 +140,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-dns/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-dns/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-dns/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-dns/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
@@ -182,6 +187,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-block-storage/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-block-storage/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-block-storage/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-block-storage/v1/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/storage/">User Guide</a></li>
                                    </ul>
@@ -202,6 +208,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cloud-backup/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-backup/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-backup/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
@@ -222,6 +229,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-files/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-files/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-files/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-files/v1/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
@@ -243,6 +251,7 @@
                                    <ul>
                                        <li><a href="/docs/cdn/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-cdn/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-cdn/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-cdn/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
@@ -267,6 +276,7 @@
                            <ul>
                                <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-getting-started-2/content/CBD_Overview.html">Getting Started</a></li>
                                <li><a href="/docs/cloud-big-data/v2/developer-guide/#document-api-reference">API Reference</a></li>
+                               <li><a href="/docs/cloud-big-data/v2/developer-guide/#document-release-notes">Release Notes</a></li>
                                <li><a href="/docs/cloud-big-data/v2/developer-guide/">Developer Guide</a></li>
                            </ul>
                        </div>
@@ -283,6 +293,7 @@
                            <ul>
                                <li><a href="/docs/cloud-databases/getting-started/">Quick Start</a></li>
                                <li><a href="/docs/cloud-databases/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                               <li><a href="/docs/cloud-databases/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                <li><a href="/docs/cloud-databases/v1/developer-guide/">Developer Guide</a></li>
                            </ul>
                        </div>
@@ -356,6 +367,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-monitoring/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-monitoring/v1/developer-guide//developer-guide/#release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
@@ -436,6 +448,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-queues/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-queues/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                        <li><a href="/docs/cloud-queues/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-queues/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
@@ -456,6 +469,7 @@
                                    <ul>
                                        <li><a href="/docs/orchestration/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-orchestration/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/orchestration/">User Guide</a></li>
                                        <li><a href="http://orchestration.rackspace.com/raxdox/">Template Reference</a></li>
