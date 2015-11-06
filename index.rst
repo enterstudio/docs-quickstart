@@ -367,7 +367,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-monitoring/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-monitoring/v1/developer-guide//developer-guide/#release-notes">Release Notes</a></li>
+                                       <li><a href="/docs/cloud-monitoring/v1/developer-guide/developer-guide/#release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
