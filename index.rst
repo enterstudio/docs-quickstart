@@ -386,9 +386,9 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="http://docs.rackspace.com/cmet/api/v1.0/cmet-gettingstarted/content/doc-change-history.html">Quick Start</a></li>
-                                       <li><a href="/docs/cloud-metrics/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-metrics/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="http://docs.rackspace.com/cmet/api/v2.0/cmet-gettingstarted/content/doc-change-history.html">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-metrics/v2/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-metrics/v2/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
