@@ -149,3 +149,5 @@ Delete service
 To delete a service and purge all its assets in the process:
 
 .. include:: samples/delete_service.rst
+
+.. include:: ../../_common/moreinfo.rst
