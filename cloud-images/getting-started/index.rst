@@ -85,3 +85,5 @@ Both users can also list all of the members for a given image:
 If you're an image **producer** and you want to unshare an image from another user, you can delete the image member:
 
 .. include:: samples/delete_image_member.rst
+
+.. include:: ../../_common/moreinfo.rst
