@@ -140,3 +140,5 @@ Delete role from user
 ---------------------
 
 .. include:: samples/delete_role_from_user.rst
+
+.. include:: ../../_common/moreinfo.rst
