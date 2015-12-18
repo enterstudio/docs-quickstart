@@ -2,11 +2,22 @@
 
 More information
 ================
-This Quickstart is intentionally very brief, demonstrating only a few basic operations. 
-If you want to know more, these are some good places to continue exploring:
+This Quickstart is intentionally very brief,
+demonstrating only a few basic operations.
+If you want to know more about interacting with Rackspace cloud services,
+these are some good places to continue exploring:
 
-* http://developer.rackspace.com/ links to all our Software Development Kits. It also offers developer-focused support resources such as our IRC channel.
+* `Developer documentation <https://developer.rackspace.com/docs/>`_
+  provides detailed explanations and extensive examples to help you use
+  Rackspace-supported Software Development Kits and APIs.
+  It also links to developer-focused support resources such as our
+  `IRC channel <https://webchat.freenode.net/?channels=rackspace>`_.
 
-* http://docs.rackspace.com/ links to all our API reference documentation, where you can find additional examples and extended explanations of key concepts. It also links to our documentation for Cloud Control Panel users.
+* `Developer forum <https://community.rackspace.com/developers/default>`_
+  is a place to discuss your questions and concerns with a community of Rackers,
+  Rackspace customers, and others interested in developing software in the cloud.
 
-* https://community.rackspace.com/developers/default is a forum where you can discuss your questions and concerns with a community of Rackers, Rackspace customers, and others interested in developing software in the cloud.
+* `Support documentation <https://community.rackspace.com/developers/default>`_
+  provides short tutorials, FAQs, and basic startup guidance.
+  Its primary focus is on the
+  `Cloud Control Panel <https://mycloud.rackspace.com/>`_.
