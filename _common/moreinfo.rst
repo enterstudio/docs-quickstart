@@ -17,7 +17,7 @@ these are some good places to continue exploring:
   is a place to discuss your questions and concerns with a community of Rackers,
   Rackspace customers, and others interested in developing software in the cloud.
 
-* `Support documentation <https://community.rackspace.com/developers/default>`_
+* `Support documentation <http://www.rackspace.com/knowledge_center/>`_
   provides short tutorials, FAQs, and basic startup guidance.
   Its primary focus is on the
   `Cloud Control Panel <https://mycloud.rackspace.com/>`_.
