@@ -6,12 +6,10 @@ Rackspace Auto Scale is a service that lets you configure automated scaling of r
 
 To use Auto Scale, you define a scaling group consisting of cloud servers and cloud load balancers. Then you define policies, either schedule-based or monitoring-based. For monitoring-based policies, you define cloud monitoring alerts to watch the group's activity, and you define scaling rules to change the scaling group's configuration in response to alerts. For schedule-based policies, you simply set a schedule. Because you can change a scaling group's configuration in response to changing workloads, you can begin with a minimal cloud configuration and grow only when the cost of that growth is justified.
 
-Assumptions
-------------
-This guide assumes the reader has working familiarity with (at the very least):
-
-* `Cloud Servers </docs/cloud-servers/getting-started/>`_
-* `Cloud Monitoring </docs/cloud-monitoring/getting-started/>`_
+Before beginning to work with Auto Scale,
+you should be familiar with
+`Cloud Servers </docs/cloud-servers/getting-started/>`_ and
+`Cloud Monitoring </docs/cloud-monitoring/getting-started/>`_.
 
 Concepts
 ========
@@ -47,7 +45,7 @@ Use the API
 Some of the basic operations you can perform with this API are described below.
 
 Scaling Groups
------------------
+--------------
 Create an autoscaling group.
 
 .. include:: samples/create_scaling_group.rst
@@ -73,7 +71,7 @@ Delete the autoscaling group.
 .. include:: samples/delete_scaling_group.rst
 
 Policies
-----------
+--------
 To create an autoscale policy that will
 
 * Add one server
@@ -102,7 +100,7 @@ To delete an autoscaling policy:
 .. include:: samples/delete_scaling_policy.rst
 
 Webhooks
----------
+--------
 To trigger autoscale actions, you can create a webhook:
 
 .. include:: samples/create_scaling_webhook.rst
