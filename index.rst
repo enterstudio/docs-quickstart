@@ -386,7 +386,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/metrics/v2/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/metrics/v2/developer-guide/#getting-started">Getting Started</a></li>
                                        <li><a href="/docs/metrics/v2/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/metrics/v2/developer-guide/">Developer Guide</a></li>
                                    </ul>
