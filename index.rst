@@ -359,7 +359,7 @@
                <div class="card purple">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-cloud-monitoring">Cloud Monitoring</h4>
+                           <h4 id="docs-cloud-monitoring">Rackspace Monitoring</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
@@ -386,7 +386,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="http://docs.rackspace.com/cmet/api/v2.0/cmet-gettingstarted/content/doc-change-history.html">Quick Start</a></li>
+                                       <li><a href="/docs/metrics/v2/developer-guide/#getting-started">Getting Started</a></li>
                                        <li><a href="/docs/metrics/v2/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/metrics/v2/developer-guide/">Developer Guide</a></li>
                                    </ul>
