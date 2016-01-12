@@ -42,13 +42,14 @@
                <div class="card blue">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="doc-cloud-servers-legacy">Cloud Servers (Legacy)</h4>
+                           <h4 id="doc-cloud-servers-legacy">First Gen Cloud Servers</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
                                <div class="list-column">
                                    <ul>
                                        <li><a href="http://docs.rackspace.com/servers/api/v1.0/cs-devguide/content/Overview-d1e70.html">Developer Guide</a></li>
+                                       <li><a href="https://6266fae112c61ca2a24b-0b7d389aeec8162360b1800f389138d1.ssl.cf1.rackcdn.com/cs-firstgen-devguide-20160112.pdf">Developer Guide PDF</a></li>
                                        <li><a href="http://www.rackspace.com/knowledge_center/Frequently_Asked_Questions">FAQs</a></li>
                                    </ul>
                                </div>
