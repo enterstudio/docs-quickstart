@@ -473,7 +473,7 @@
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/orchestration/">User Guide</a></li>
-                                       <li><a href="http://orchestration.rackspace.com/raxdox/">Template Reference</a></li>
+                                       <li><a href="https://developer.rackspace.com/docs/cloud-orchestration/v1/resources-reference/">Resource Reference</a></li>
                                    </ul>
                                </div>
                            </div>
