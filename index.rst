@@ -481,6 +481,26 @@
                    </div>
                </div>
            </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4 id="docs-cloud-keep">Cloud Keep</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-keep/v1/developer-guide/#document-getting-started">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-keep/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-keep/v1/developer-guide/">Developer Guide</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
        </div>
    </section>
    <section class="docs-category dev-tools" id="sdks" data-ng-show="isSectionActive('dev-tools')">
