@@ -370,6 +370,7 @@
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/#release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-monitoring/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-monitoring/v1/developer-guide/#document-tech-ref">Technical Reference</a></li>
                                    </ul>
                                </div>
                            </div>
