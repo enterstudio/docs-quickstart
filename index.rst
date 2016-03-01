@@ -506,29 +506,64 @@
                <div class="card purple">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-private-cloud">Private Cloud</h4>
+                           <h4 id="docs-private-cloud">Rackspace Private Cloud</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
                                <div class="list-column">
-                                   <h5><a href="/docs/private-cloud/rpc/v11/">Rackspace Private Cloud v11</a></h5>
+                                   <h5>Rackspace Private Cloud v11</h5>
                                    <ul>
                                      <li><a href="/docs/private-cloud/rpc/v11/rpc-admin/">Administrator Guide</a></li>
                                      <li><a href="/docs/private-cloud/rpc/v11/rpc-faq-external/">Technical FAQ</a></li>
                                      <li><a href="/docs/private-cloud/rpc/v11/rpc-ops/">Operations Guide</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-releasenotes">Release Notes</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-swift">Standalone Object Storage Guide</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-upgrade">Upgrade Guide</a></li>
                                    </ul>
-                                   <h5><a href="/docs/private-cloud/rpc/v10/">Rackspace Private Cloud v10</a></h5>
+                                   <h5>Rackspace Private Cloud v10</h5>
                                    <ul>
-                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-admin/">Administrator Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-faq-external/">Technical FAQ</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-ops/">Operations Guide</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-v10-op-user-guide/">Operator and User Guide</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-v10-swift/">Object Storage Deployment Guide</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-v10-releasenotes-external/">Release Notes</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-v10-faq-external/">Technical FAQ</a></li>
                                    </ul>
-                                   <h5>Other</h5>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4 id="docs-private-cloud-vmware">Managed VMWare Services</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
                                    <ul>
-                                     <li><a href="/docs/private-cloud/red-hat/rpcr-arch/">Rackspace Private Cloud Powered by Red Hat</a></li>
                                      <li><a href="/docs/private-cloud/dedicated-vcloud/vcenter-handbook/">vCenter Customer Handbook</a></li>
                                      <li><a href="/docs/private-cloud/dedicated-vcloud/vcloud-handbook/">vCloud Customer Handbook – v1.0</a></li>
                                      <li><a href="/docs/private-cloud/dedicated-vcloud/vcloud-handbook-v1.5/">vCloud Customer Handbook – v1.5</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card purple">
+                   <div class="card-content">
+                       <div class="card-title">
+                           <h4 id="docs-private-cloud-red-hat">Rackspace Private Cloud Powered by Red Hat</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                     <li><a href="/docs/private-cloud/red-hat/rpcr-arch/">Features and Architecture Guide</a></li>
                                    </ul>
                                </div>
                            </div>
