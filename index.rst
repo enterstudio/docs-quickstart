@@ -366,7 +366,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/rackspace-monitoring/v1/developer-guide/#getting-started/">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-monitoring/v1/developer/getting-started/">Quick Start</a></li>
                                        <li><a href="/docs/rackspace-monitoring/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/rackspace-monitoring/v1/developer-guide/#release-notes">Release Notes</a></li>
                                        <li><a href="/docs/rackspace-monitoring/v1/developer-guide/">Developer Guide</a></li>
