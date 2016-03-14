@@ -1,6 +1,6 @@
 # Quickstart Guides
 
-[![Build Status](https://travis-ci.org/rackerlabs/docs-quickstart.svg?branch=master)](https://travis-ci.org/rackerlabs/docs-quickstart)
+[![Build Status](https://build.developer.rackspace.com/rackerlabs/docs-quickstart/badge?branch=master)](https://build.developer.rackspace.com/rackerlabs/docs-quickstart/)
 
 These are the "getting started" guides from [developer.rackspace.com](https://developer.rackspace.com). They're intended to demonstrate the basic operations and flow of working with Rackspace services in each of our supported SDKs.
 
