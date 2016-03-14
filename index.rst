@@ -154,6 +154,27 @@
                <div class="card green">
                    <div class="card-content">
                        <div class="card-title">
+                           <h4 id="docs-cloud-dns">Managed DNS (EA)</h4>
+                       </div>
+                       <div class="card-body">
+                           <div class="list">
+                               <div class="list-column">
+                                   <ul>
+                                       <li><a href="/docs/cloud-dns/v2/developer-guide/#getting-started">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-dns/v2/developer-guide/#developer-guide">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-dns/v2/developer-guide/#api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-dns/v2/developer-guide/#release-notes">Release Notes</a></li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="product">
+               <div class="card green">
+                   <div class="card-content">
+                       <div class="card-title">
                            <h4 id="docs-cloud-rackconnect">Rackspace RackConnect</h4>
                        </div>
                        <div class="card-body">
