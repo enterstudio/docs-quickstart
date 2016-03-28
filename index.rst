@@ -763,7 +763,7 @@
                                    <ul>
                                         <li><a href="/sdks/ruby/">Learn More</a></li>
                                         <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="ruby">Getting Started</a></li>
-                                        <li><a href="https://github.com/fog/fog/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
+                                        <li><a href="https://github.com/fog/fog-rackspace/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
                                         <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<a href="https://github.com/fog/fog/releases.atom"></li>
                                         <li><a href="http://fog.io/">Community</a></li>
                                    </ul>
