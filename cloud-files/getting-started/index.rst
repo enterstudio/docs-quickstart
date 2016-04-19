@@ -1,4 +1,8 @@
-.. _quickstart:
+
+
+
+
+
 ==========================
 Quickstart for Cloud Files
 ==========================

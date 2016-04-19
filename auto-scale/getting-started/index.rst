@@ -1,10 +1,25 @@
-.. _quickstart:
-=========================
-Quickstart for Auto Scale
-=========================
-Rackspace Auto Scale is a service that lets you configure automated scaling of resources in response to an increase or decrease in overall workload based on user-defined policies. You can set up a schedule for launching Auto Scale or define an event that is triggered by Cloud Monitoring. You can also specify a minimum and maximum number of cloud servers, the amount of resources that you want to increase or decrease, and the thresholds in Cloud Monitoring that trigger the scaling activities.
 
-To use Auto Scale, you define a scaling group consisting of cloud servers and cloud load balancers. Then you define policies, either schedule-based or monitoring-based. For monitoring-based policies, you define cloud monitoring alerts to watch the group's activity, and you define scaling rules to change the scaling group's configuration in response to alerts. For schedule-based policies, you simply set a schedule. Because you can change a scaling group's configuration in response to changing workloads, you can begin with a minimal cloud configuration and grow only when the cost of that growth is justified.
+
+
+
+==========================
+Quickstart for Auto Scale
+==========================
+
+.. toctree:: :hidden:
+   :maxdepth: 2
+
+Rackspace Auto Scale is a service that lets you configure automated scaling of resources 
+in response to an increase or decrease in overall workload based on user-defined policies. 
+You can set up a schedule for launching Auto Scale or define an event that is triggered by 
+Cloud Monitoring. You can also specify a minimum and maximum number of cloud servers, 
+the amount of resources that you want to increase or decrease, and the thresholds in 
+Cloud Monitoring that trigger the scaling activities.
+
+To use Auto Scale, you define a scaling group consisting of cloud servers and cloud load 
+balancers. Then you define policies, either schedule-based or monitoring-based. For 
+monitoring-based policies, you define cloud monitoring alerts to watch the group's activity, 
+and you define scaling rules to change the scaling group's configuration in response to alerts. For schedule-based policies, you simply set a schedule. Because you can change a scaling group's configuration in response to changing workloads, you can begin with a minimal cloud configuration and grow only when the cost of that growth is justified.
 
 Before beginning to work with Auto Scale,
 you should be familiar with
@@ -12,7 +27,8 @@ you should be familiar with
 `Cloud Monitoring </docs/rackspace-monitoring/getting-started/>`_.
 
 Concepts
-========
+---------
+
 To use this service effectively, you should understand how these key ideas are used in this context:
 
 capability URL
@@ -23,8 +39,9 @@ capability URL
 scaling group
     Specifies the basic elements of the Auto Scale configuration.
     It manages how many servers can participate in the scaling group.
-    It also specifies information related to load balancers if your configuration uses a load balancer.
-    When you create a scaling group, you specify the details for the group configuration and the launch configuration.
+    It also specifies information related to load balancers if your configuration uses a 
+    load balancer. When you create a scaling group, you specify the details for the group 
+    configuration and the launch configuration.
 
 scaling policy
     Defines the scaling activity that will take place, as well as when and how that scaling activity will take place.
@@ -41,11 +58,13 @@ webhook
 .. include::  samples/authentication.rst
 
 Use the API
-===========
+---------------
+
 Some of the basic operations you can perform with this API are described below.
 
 Scaling Groups
---------------
+~~~~~~~~~~~~~~~~~
+
 Create an autoscaling group.
 
 .. include:: samples/create_scaling_group.rst
@@ -71,7 +90,8 @@ Delete the autoscaling group.
 .. include:: samples/delete_scaling_group.rst
 
 Policies
---------
+~~~~~~~~~~~~
+
 To create an autoscale policy that will
 
 * Add one server
@@ -100,7 +120,8 @@ To delete an autoscaling policy:
 .. include:: samples/delete_scaling_policy.rst
 
 Webhooks
---------
+~~~~~~~~~~~
+
 To trigger autoscale actions, you can create a webhook:
 
 .. include:: samples/create_scaling_webhook.rst
