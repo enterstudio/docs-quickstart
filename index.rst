@@ -547,11 +547,20 @@
                <div class="card purple">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-private-cloud">Rackspace Private Cloud</h4>
+                           <h4 id="docs-private-cloud">Rackspace Private Cloud powered by OpenStack</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
                                <div class="list-column">
+                                  <h5>Rackspace Private Cloud v12</h5>
+                                   <ul>
+                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-admin/">Administrator Guide</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-faq-external/">Technical FAQ</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-ops/">Operations Guide</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-releasenotes">Release Notes</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-swift">Standalone Object Storage Guide</a></li>
+                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-upgrade">Upgrade Guide</a></li>
+                                   </ul>
                                    <h5>Rackspace Private Cloud v11</h5>
                                    <ul>
                                      <li><a href="/docs/private-cloud/rpc/v11/rpc-admin/">Administrator Guide</a></li>
