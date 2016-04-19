@@ -1,7 +1,8 @@
-.. _authenticate:
+
 
 Authentication
-~~~~~~~~~~~~~~
+-----------------
+
 To use this service you have to authenticate first. To do this, you will need your Rackspace username and API key.
 Your username is the one you use to login to the Cloud Control Panel at http://mycloud.rackspace.com/.
 
