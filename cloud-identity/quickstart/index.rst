@@ -1,4 +1,7 @@
-.. _quickstart:
+
+
+
+
 =============================
 Quickstart for Cloud Identity
 =============================
@@ -13,10 +16,6 @@ such as provisioning a server or creating a load balancer.
 Based on the OpenStack Identity service (codenamed Keystone), Rackspace Cloud
 Identity also offers user management and basic RBAC functionality for
 fine-grained access control.
-
-.. include:: ../../_common/authenticate.rst
-
-.. include::  samples/authentication.rst
 
 Setup
 =====
