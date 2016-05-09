@@ -26,7 +26,7 @@
                                <div class="list-column">
                                    <ul>
 
-                                       <li><a href="/docs/cloud-servers/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-servers/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-servers/v2/developer-guide/#document-api-reference">API Reference</a></li>
                                          <li><a href="/docs/cloud-servers/v2/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-servers/v2/developer-guide/">Developer Guide</a></li>
@@ -68,7 +68,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-images/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-images/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-images/v2/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-images/v2/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-images/v2/developer-guide/">Developer Guide</a></li>
@@ -96,7 +96,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-networks/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-networks/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-networks/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-networks/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-networks/v1/developer-guide/">Developer Guide</a></li>
@@ -118,7 +118,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-load-balancers/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-load-balancers/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-load-balancers/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-load-balancers/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-load-balancers/v1/developer-guide/">Developer Guide</a></li>
@@ -139,7 +139,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-dns/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-dns/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-dns/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-dns/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-dns/v1/developer-guide/">Developer Guide</a></li>
@@ -181,7 +181,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="http://docs.rackspace.com/rackconnect/api/v3/rackconnect-gettingstarted/content/change_history.html">Quick Start</a></li>
+                                       <li><a href="http://docs.rackspace.com/rackconnect/api/v3/rackconnect-gettingstarted/content/change_history.html">Quickstart</a></li>
                                        <li><a href="/docs/rackconnect/v3/developer-guide/#api-reference">API Reference</a></li>
                                        <li><a href="/docs/rackconnect/v3/developer-guide/#developer-guide">Developer Guide</a></li>
                                    </ul>
@@ -207,7 +207,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-block-storage/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-block-storage/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-block-storage/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-block-storage/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-block-storage/v1/developer-guide/">Developer Guide</a></li>
@@ -249,7 +249,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-files/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-files/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-files/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-files/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-files/v1/developer-guide/">Developer Guide</a></li>
@@ -271,7 +271,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cdn/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cdn/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-cdn/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-cdn/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-cdn/v1/developer-guide/">Developer Guide</a></li>
@@ -313,7 +313,7 @@
                        </div>
                        <div class="card-body">
                            <ul>
-                               <li><a href="/docs/cloud-databases/getting-started/">Quick Start</a></li>
+                               <li><a href="/docs/cloud-databases/quickstart/">Quickstart</a></li>
                                <li><a href="/docs/cloud-databases/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                <li><a href="/docs/cloud-databases/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                <li><a href="/docs/cloud-databases/v1/developer-guide/">Developer Guide</a></li>
@@ -367,7 +367,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/auto-scale/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/auto-scale/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-autoscale/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-autoscale/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
@@ -387,7 +387,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/rackspace-monitoring/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/rackspace-monitoring/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/rackspace-monitoring/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/rackspace-monitoring/v1/developer-guide/#release-notes">Release Notes</a></li>
                                        <li><a href="/docs/rackspace-monitoring/v1/developer-guide/">Developer Guide</a></li>
@@ -429,7 +429,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-identity/v2/developer-guide/#document-quickstart-guide">Quick Start Guide</a></li>
+                                       <li><a href="/docs/cloud-identity/v2/developer-guide/#document-quickstart-guide">Quickstart Guide</a></li>
                                        <li><a href="/docs/cloud-identity/v2/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-identity/v2/developer-guide/">Developer Guide</a></li>
                                    </ul>
@@ -469,7 +469,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-queues/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/cloud-queues/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-queues/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                         <li><a href="/docs/cloud-queues/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-queues/v1/developer-guide/">Developer Guide</a></li>
@@ -490,7 +490,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/orchestration/getting-started/">Quick Start</a></li>
+                                       <li><a href="/docs/orchestration/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/developer-guide/">Developer Guide</a></li>
@@ -659,7 +659,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/golang" class="learn-more">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="go">Getting Started</a></li>
+                                        <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="go">Getting Started</a></li>
                                         <li><a href="http://gophercloud.io/docs/">Documentation</a></li>
                                         <li><a href="https://github.com/rackspace/gophercloud/blob/master/UPGRADING.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/gophercloud/releases.atom"></a></li>
                                         <li><a href="http://gophercloud.io/">Community</a></li>
@@ -681,7 +681,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/python/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="python">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="python">Getting Started</a></li>
                                        <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
                                        <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
                                        <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
@@ -703,7 +703,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/dot-net/"> Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="csharp">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="csharp">Getting Started</a></li>
                                        <li><a href="http://openstacknetsdk.org/docs">Documentation</a></li>
                                        <li><a href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a>&nbsp;<a href="https://github.com/openstacknetsdk/openstack.net/releases.atom"></li>
                                        <li><a href="https://github.com/openstacknetsdk/openstack.net/wiki">Community</a></li>
@@ -725,7 +725,7 @@
                                <div class="list-column">
                                    <ul>
                                         <li><a href="/sdks/java">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="java">Getting Started</a></li>
+                                        <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="java">Getting Started</a></li>
                                         <li><a href="http://jclouds.apache.org/guides/rackspace/">Documentation</a></li>
                                         <li><a href="https://jclouds.apache.org/releasenotes/">Release Notes</a>&nbsp;<a href="http://jclouds.apache.org/releasenotes/atom.xml"></a></li>
                                         <li><a href="https://jclouds.apache.org/community/">Community</a></li>
@@ -747,7 +747,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/php/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="php">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="php">Getting Started</a></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud/tree/master/docs/userguide">Documentation</a></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud/releases/">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/php-opencloud/releases.atom"></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud">Community</a></li>
@@ -769,7 +769,7 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/sdks/node-js/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="javascript">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="javascript">Getting Started</a></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud/tree/master/docs">Documentation</a></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud/blob/master/CHANGELOG.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud">Community</a></li>
@@ -791,7 +791,7 @@
                                <div class="list-column">
                                    <ul>
                                         <li><a href="/sdks/ruby/">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/getting-started/" data-drc-language-selector="ruby">Getting Started</a></li>
+                                        <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="ruby">Getting Started</a></li>
                                         <li><a href="https://github.com/fog/fog-rackspace/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
                                         <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<a href="https://github.com/fog/fog/releases.atom"></li>
                                         <li><a href="http://fog.io/">Community</a></li>

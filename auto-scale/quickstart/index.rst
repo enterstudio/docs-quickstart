@@ -8,8 +8,8 @@ To use Auto Scale, you define a scaling group consisting of cloud servers and cl
 
 Before beginning to work with Auto Scale,
 you should be familiar with
-`Cloud Servers </docs/cloud-servers/getting-started/>`_ and
-`Cloud Monitoring </docs/rackspace-monitoring/getting-started/>`_.
+`Cloud Servers </docs/cloud-servers/quickstart/>`_ and
+`Cloud Monitoring </docs/rackspace-monitoring/quickstart/>`_.
 
 Concepts
 ========
