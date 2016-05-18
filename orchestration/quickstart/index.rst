@@ -1,4 +1,7 @@
-.. _quickstart:
+
+
+
+
 ==================================
 Quickstart for Cloud Orchestration
 ==================================

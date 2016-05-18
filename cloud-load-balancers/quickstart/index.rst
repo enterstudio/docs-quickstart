@@ -1,4 +1,7 @@
-.. _quickstart:
+
+
+
+
 ===================================
 Quickstart for Cloud Load Balancers
 ===================================
@@ -28,6 +31,7 @@ Some of the basic operations you can perform with this API are described below.
 
 Set up your load balancer
 -------------------------
+
 Create a load balancer
 ~~~~~~~~~~~~~~~~~~~~~~
 When creating a load balancer, there are a few mandatory parameters that you need

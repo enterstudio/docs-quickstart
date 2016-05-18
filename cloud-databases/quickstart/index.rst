@@ -1,5 +1,7 @@
-.. _quickstart:
-==============================
+
+
+
+
 Quickstart for Cloud Databases
 ==============================
 
