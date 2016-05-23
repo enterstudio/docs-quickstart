@@ -1,6 +1,26 @@
 .. code-block:: csharp
 
-  // This is not supported through the .NET SDK at this time
+  var cloudFilesProvider = new CloudFilesProvider(cloudIdentity);
+
+  // Create or initialize your account's key used to generate temp urls
+  // This is one-time setup and only needs to be performed once.
+  const string accountTempUrlHeader = "Temp-Url-Key";
+  var accountMetadata = cloudFilesProvider.GetAccountMetaData("{region}");
+  string tempUrlKey;
+  if (!accountMetadata.ContainsKey(accountTempUrlHeader))
+  {
+      tempUrlKey = Guid.NewGuid().ToString();
+      var tempUrlMetadata = new Dictionary<string, string> { {accountTempUrlHeader, tempUrlKey} };
+      cloudFilesProvider.UpdateAccountMetadata(tempUrlMetadata, "{region}");
+  }
+  else
+  {
+      tempUrlKey = accountMetadata[accountTempUrlHeader];
+  }
+
+  // Generate a public URL for a cloud file which is good for 1 hour
+  DateTimeOffset expiration = DateTimeOffset.UtcNow + TimeSpan.FromHours(1);
+  Uri tempUrl = cloudFilesProvider.CreateTemporaryPublicUri(HttpMethod.GET, "{container-name}", "{object-name}", tempUrlKey, expiration, "{region}");
 
 .. code-block:: go
 
