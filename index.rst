@@ -587,7 +587,7 @@
                <div class="card purple">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-private-cloud-vmware">Managed VMWare Services</h4>
+                           <h4 id="docs-managed-vmware-services">Managed VMWare Services</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
