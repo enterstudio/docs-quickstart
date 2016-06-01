@@ -593,9 +593,9 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                     <li><a href="/docs/private-cloud/dedicated-vcloud/vcenter-handbook/">vCenter Customer Handbook</a></li>
-                                     <li><a href="/docs/private-cloud/dedicated-vcloud/vcloud-handbook/">vCloud Customer Handbook – v1.0</a></li>
-                                     <li><a href="/docs/private-cloud/dedicated-vcloud/vcloud-handbook-v1.5/">vCloud Customer Handbook – v1.5</a></li>
+                                     <li><a href="/docs/managed-vmware-services/vcenter/">vCenter Customer Handbook</a></li>
+                                     <li><a href="/docs/managed-vmware-services/vcloud/v1/">vCloud Customer Handbook – v1.0</a></li>
+                                     <li><a href="/docs/managed-vmware-services/vcloud/v1.5/">vCloud Customer Handbook – v1.5</a></li>
                                    </ul>
                                </div>
                            </div>
