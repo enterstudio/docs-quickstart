@@ -181,9 +181,8 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="http://docs.rackspace.com/rackconnect/api/v3/rackconnect-gettingstarted/content/change_history.html">Quickstart</a></li>
-                                       <li><a href="/docs/rackconnect/v3/developer-guide/#api-reference">API Reference</a></li>
-                                       <li><a href="/docs/rackconnect/v3/developer-guide/#developer-guide">Developer Guide</a></li>
+                                       <li><a href="https://support.rackspace.com/how-to/rackconnect-faq/">FAQ</a></li>
+                                       <li><a href="http://docs.rcv3.apiary.io">API Reference</a></li>
                                    </ul>
                                </div>
                            </div>
