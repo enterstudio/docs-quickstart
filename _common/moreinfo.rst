@@ -1,4 +1,4 @@
-.. _moreinfo:
+
 
 More information
 ================
@@ -18,7 +18,7 @@ explore the following sites:
   Rackspace employees, Rackspace customers,
   and others who are interested in developing software in the cloud.
 
-* `Support documentation <http://www.rackspace.com/knowledge_center/>`_
+* `Support documentation <https://support.rackspace.com/how-to/>`_
   provides short tutorials, FAQ documents, and basic startup guidance.
   Its primary focus is the
   `Cloud Control Panel <https://mycloud.rackspace.com/>`_.

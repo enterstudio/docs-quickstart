@@ -1,4 +1,7 @@
-.. _quickstart:
+
+
+
+
 ===================================
 Quickstart for Cloud Load Balancers
 ===================================
@@ -28,6 +31,7 @@ Some of the basic operations you can perform with this API are described below.
 
 Set up your load balancer
 -------------------------
+
 Create a load balancer
 ~~~~~~~~~~~~~~~~~~~~~~
 When creating a load balancer, there are a few mandatory parameters that you need
@@ -50,7 +54,7 @@ servers or databases you want guarded. These are known as nodes.
 
 The above sample retrieves two cloud servers using their unique IDs.
 You can obtain a server's ID by following the steps outlined in the
-`Quickstart for Cloud Servers </docs/cloud-servers/getting-started/>`_
+`Quickstart for Cloud Servers </docs/cloud-servers/quickstart/>`_
 for retrieving servers based on arbitrary properties.
 
 Now that you have your servers, you can create your nodes and add them to the load

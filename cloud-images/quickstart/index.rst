@@ -1,4 +1,7 @@
-.. _quickstart:
+
+
+
+
 ===========================
 Quickstart for Cloud Images
 ===========================
@@ -21,6 +24,7 @@ Image Member
 .. include:: ../../_common/authenticate.rst
 
 .. include::  samples/authentication.rst
+
 
 Image operations
 ================
