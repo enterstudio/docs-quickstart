@@ -119,13 +119,9 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cloud-load-balancers/quickstart/">SDK Quickstart</a></li>
-                                       <li>API documentation
-                                           <ul>
-                                               <li><a href="/docs/cloud-load-balancers/v1/getting-started">Getting Started</a></li>
-                                               <li><a href="/docs/cloud-load-balancers/v1/api-reference">Reference</a></li>
-                                               <li><a href="/docs/cloud-load-balancers/v1/release-notes">Release Notes</a></li>
-                                           </ul>
-                                       </li>
+                                       <li><a href="/docs/cloud-load-balancers/v1/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-load-balancers/v1/api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-load-balancers/v1/release-notes">Release Notes</a></li>
                                        <li><a href="https://support.rackspace.com/how-to/cloud-load-balancers/">How-To Articles</a></li>
                                    </ul>
                                </div>
