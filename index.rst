@@ -99,7 +99,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                     <li><a href="/docs/cloud-networks/v2/developer-guide/#getting-started/>Getting Started</a></li>
+                                     <li><a href="/docs/cloud-networks/quickstart/>Quickstart</a></li>
                                        <li><a href="/docs/cloud-networks/v2/developer-guide/#document-api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-networks/v2/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-networks/v2/developer-guide/">Developer Guide</a></li>
@@ -482,7 +482,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-queues/v1/developer-guide/#getting-started">Getting Started</li>
+                                       <li><a href="/docs/cloud-queues/quickstart">Quickstart</li>
                                        <li><a href="/docs/cloud-queues/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                         <li><a href="/docs/cloud-queues/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-queues/v1/developer-guide/">Developer Guide</a></li>
