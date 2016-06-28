@@ -84,7 +84,10 @@
    </section>
    <section class="docs-category network" data-ng-show="isSectionActive('network')">
        <h2>Network Services</h2>
-       <p>Cloud networking services are on-demand and scalable, and provide technology-agnostic network abstraction, load balancing, and DNS management. Protect your infrastructure with Cloud Load Balancers by distributing traffic efficiently. Use Cloud DNS to manage domains and subdomains.</p>
+       <p>Cloud networking services are on-demand and scalable, and provide
+       technology-agnostic network abstraction, load balancing, and DNS
+       management. Protect your infrastructure with Cloud Load Balancers by
+       distributing traffic efficiently. Use Cloud DNS to manage domains and subdomains.</p>
        <div class="product-list">
            <div class="product">
                <div class="card green">
@@ -96,10 +99,10 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-networks/quickstart/">Quickstart</a></li>
-                                       <li><a href="/docs/cloud-networks/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-networks/v1/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cloud-networks/v1/developer-guide/">Developer Guide</a></li>
+                                     <li><a href="/docs/cloud-networks/v2/developer-guide/#getting-started">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-networks/v2/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-networks/v2/developer-guide/#document-release-notes">Release Notes</a></li>
+                                       <li><a href="/docs/cloud-networks/v2/developer-guide/">Developer Guide</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/network/">User Guide</a></li>
                                    </ul>
                                </div>
@@ -118,9 +121,9 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
+                                        <li><a href="/docs/cloud-load-balancers/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-load-balancers/v1/getting-started">API Getting Started</a></li>
                                        <li><a href="/docs/cloud-load-balancers/v1/api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-load-balancers/quickstart/">SDK Quickstart</a></li>
                                        <li><a href="/docs/cloud-load-balancers/v1/release-notes">Release Notes</a></li>
                                        <li><a href="https://support.rackspace.com/how-to/cloud-load-balancers/">How-To Articles</a></li>
                                    </ul>
@@ -155,7 +158,7 @@
                <div class="card green">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-cloud-dns">Managed DNS (EA)</h4>
+                           <h4 id="docs-managed-dns">Managed DNS (EA)</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
@@ -265,16 +268,16 @@
                <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-cloud-cdn">Rackspace CDN</h4>
+                           <h4 id="docs-cdn">Rackspace CDN</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cdn/quickstart/">Quickstart</a></li>
-                                       <li><a href="/docs/cloud-cdn/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-cdn/v1/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cloud-cdn/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/cdn/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cdn/v1/developer-guide/#document-release-notes">Release Notes</a></li>
+                                       <li><a href="/docs/cdn/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -355,7 +358,17 @@
    </section>
    <section class="docs-category infra" data-ng-show="isSectionActive('infra')">
        <h2>Infrastructure &amp; Developer Services</h2>
-       <p>This collection of powerful services offers multiple utilities that work well with Rackspace Cloud resources. Cloud Identity is your starting point for accessing any cloud resource. Use Auto Scale to provide automatic scaling based on Cloud Monitoring information, in response to an increase or decrease of overall workload, defined by your policies. Cloud Orchestration provides templates for building entire applications that are highly available and scalable. Use Cloud Queues as a notifications service, with basic components offering the flexibility to use different messaging patterns. Mailgun provides your application access to send or receive email, either through SMTP or the Mailgun API, while verifying the domain and helping to protect email reputation.</p>
+       <p>This collection of powerful services offers multiple utilities that
+       work well with Rackspace Cloud resources. Cloud Identity is your starting
+       point for accessing any cloud resource. Use Auto Scale to provide
+       automatic scaling based on Cloud Monitoring information, in response to
+       an increase or decrease of overall workload, defined by your policies.
+       Cloud Orchestration provides templates for building entire applications
+       that are highly available and scalable. Use Cloud Queues as a
+       notifications service, with basic components offering the flexibility to
+       use different messaging patterns. Mailgun provides your application
+       access to send or receive email, either through SMTP or the Mailgun API,
+       while verifying the domain and helping to protect email reputation.</p>
        <div class="product-list">
            <div class="product">
                <div class="card purple">
@@ -368,8 +381,8 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/auto-scale/quickstart/">Quickstart</a></li>
-                                       <li><a href="/docs/cloud-autoscale/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-autoscale/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/autoscale/v1/developer-guide/#document-api-reference">API Reference</a></li>
+                                       <li><a href="/docs/autoscale/v1/developer-guide/">Developer Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -469,7 +482,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-queues/quickstart/">Quickstart</a></li>
+                                       <li><a href="/docs/cloud-queues/v1/developer-guide/#getting-started">Getting Started</li>
                                        <li><a href="/docs/cloud-queues/v1/developer-guide/#document-api-reference">API Reference</a></li>
                                         <li><a href="/docs/cloud-queues/v1/developer-guide/#document-release-notes">Release Notes</a></li>
                                        <li><a href="/docs/cloud-queues/v1/developer-guide/">Developer Guide</a></li>
@@ -527,7 +540,7 @@
                <div class="card purple">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-cloud-keep">Cloud Feeds</h4>
+                           <h4 id="docs-cloud-feeds">Cloud Feeds</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
@@ -658,8 +671,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/sdks/golang" class="learn-more">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="go">Getting Started</a></li>
+                                       <li><a href="/sdks/golang" class="learn-more">Getting Started</a></li>
                                         <li><a href="http://gophercloud.io/docs/">Documentation</a></li>
                                         <li><a href="https://github.com/rackspace/gophercloud/blob/master/UPGRADING.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/gophercloud/releases.atom"></a></li>
                                         <li><a href="http://gophercloud.io/">Community</a></li>
@@ -680,8 +692,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/sdks/python/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="python">Getting Started</a></li>
+                                       <li><a href="/sdks/python/">Getting Started</a></li>
                                        <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
                                        <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
                                        <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
@@ -702,8 +713,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/sdks/dot-net/"> Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="csharp">Getting Started</a></li>
+                                       <li><a href="/sdks/dot-net/">Getting Started</a></li>
                                        <li><a href="http://openstacknetsdk.org/docs">Documentation</a></li>
                                        <li><a href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a>&nbsp;<a href="https://github.com/openstacknetsdk/openstack.net/releases.atom"></li>
                                        <li><a href="https://github.com/openstacknetsdk/openstack.net/wiki">Community</a></li>
@@ -724,8 +734,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                        <li><a href="/sdks/java">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="java">Getting Started</a></li>
+                                        <li><a href="/sdks/java">Getting Started</a></li>
                                         <li><a href="http://jclouds.apache.org/guides/rackspace/">Documentation</a></li>
                                         <li><a href="https://jclouds.apache.org/releasenotes/">Release Notes</a>&nbsp;<a href="http://jclouds.apache.org/releasenotes/atom.xml"></a></li>
                                         <li><a href="https://jclouds.apache.org/community/">Community</a></li>
@@ -746,8 +755,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/sdks/php/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="php">Getting Started</a></li>
+                                       <li><a href="/sdks/php/">Getting Started</a></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud/tree/master/docs/userguide">Documentation</a></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud/releases/">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/php-opencloud/releases.atom"></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud">Community</a></li>
@@ -768,8 +776,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/sdks/node-js/">Learn More</a></li>
-                                       <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="javascript">Getting Started</a></li>
+                                       <li><a href="/sdks/node-js/">Getting Started</a></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud/tree/master/docs">Documentation</a></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud/blob/master/CHANGELOG.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud">Community</a></li>
@@ -790,10 +797,9 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                        <li><a href="/sdks/ruby/">Learn More</a></li>
-                                        <li><a href="/docs/cloud-servers/quickstart/" data-drc-language-selector="ruby">Getting Started</a></li>
+                                        <li><a href="/sdks/ruby/">Getting Started</a></li>
                                         <li><a href="https://github.com/fog/fog-rackspace/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
-                                        <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<a href="https://github.com/fog/fog/releases.atom"></li>
+                                        <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<href="https://github.com/fog/fog/releases.atom"></li>
                                         <li><a href="http://fog.io/">Community</a></li>
                                    </ul>
                                </div>
