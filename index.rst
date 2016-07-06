@@ -115,7 +115,7 @@
                <div class="card green">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-cloud-load-balancers">Cloud Load Balancers</h4>
+                           <h4 id="docs-cloud-load-balancers">Cloud Load Balancers v1.0</h4>
                        </div>
                        <div class="card-body">
                            <div class="list">
