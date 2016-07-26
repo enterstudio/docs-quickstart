@@ -1,26 +1,25 @@
-# Quickstart Guides
+# SDK Quickstart Guides and Rackspace developer documentation menu
 
 [![Build Status](https://build.developer.rackspace.com/rackerlabs/docs-quickstart/badge?branch=master)](https://build.developer.rackspace.com/rackerlabs/docs-quickstart/)
 
-These are the "getting started" guides from [developer.rackspace.com](https://developer.rackspace.com). They're intended to demonstrate the basic operations and flow of working with Rackspace services in each of our supported SDKs.
+This repository contains the source files that generate the following
+Rackspace developer documentation:
 
-## Updating from Upstream
+* [SDK Quickstart Guides](https://developer.rackspace.com/docs/#sdks)
 
-This repository has been split from [the monolithic developer.rackspace.com repository](https://github.com/rackerlabs/developer.rackspace.com) during the transition to hosting on [deconst](http://deconst.devsupport.me/). Until the transition is complete, new work not related to working on deconst should be done on the parent repository.
+* [Rackspace developer documentation menu](https://developer.rackspace.com/docs/)
 
-To bring this repository up to date, fork and clone the [the original repository](https://github.com/rackerlabs/developer.rackspace.com), then:
 
-```bash
-# Add your fork of this repository as a remote.
-git remote add docs-quickstart git@github.com:${GITHUB_USERNAME}/docs-quickstart.git
+When you commit changes to the master branch of this repository, the
+[Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-cloud-load-balancers/)
+builds the documentation. Successful builds are deployed to production.
 
-# Split or re-split the quickstart directory onto its own branch.
-git checkout master
-git subtree split --prefix=src/docs --branch=docs-only
+### Support and feedback
 
-# Push the newly updated branch to your fork.
-git checkout docs-only
-git push -u docs-quickstart docs-only:upstream-update
-```
+We welcome feedback, comments, and bug reports. Follow the
+[contributor guidelines](CONTRIBUTING.md)
+to propose a source file change, or [submit a GitHub issue](https://github.com/rackerlabs/docs-quickstart/issues/new)
+to request an update or to provide feedback.
 
-Finally, open a [pull request](https://github.com/rackerlabs/docs-quickstart/compare) between the branch you just pushed and the `master` branch on this repository and merge it to complete the update.
+You can also contact the [Rackspace Developer Experience team](mailto:developerexperience@rackspace.com:) directly for general issues
+or questions about the content.
