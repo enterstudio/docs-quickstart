@@ -27,9 +27,9 @@
                                    <ul>
 
                                        <li><a href="/docs/cloud-servers/quickstart/">Quickstart</a></li>
-                                       <li><a href="/docs/cloud-servers/v2/developer-guide/#document-api-reference">API Reference</a></li>
-                                         <li><a href="/docs/cloud-servers/v2/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cloud-servers/v2/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-servers/v2/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-servers/v2/api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-servers/v2/release-notes">Release Notes</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/cloud-config/compute/">User Guide</a></li>
                                    </ul>
                                </div>
