@@ -4,9 +4,8 @@ To contribute content to this repository (repo), use the GitHub workflow describ
 To follow the entire contribution process, go to
 [CONTRIBUTING.md](CONTRIBUTING.md).
 
-**Note:** This workflow shows how to make changes to the repo from the command line by
-using git commands. If you do not want to use the command line, you can use GitHub Desktop
-or another GitHub GUI instead to accomplish the steps.
+**Note:** This workflow shows how to make changes to the repo from the command line by using ``git`` commands. If you do not want to use the command line, you
+can use GitHub Desktop or another GitHub GUI instead to accomplish the steps.
 
 
 ## Prerequisite
@@ -17,17 +16,17 @@ or another GitHub GUI instead to accomplish the steps.
 
 1. Create a fork of this repo.
 
-2. Use the ssh URL for the forked repo to clone it to your local system.
+2. Use the SSH URL for the forked repo to clone it to your local system.
 
     ```bash
-    git clone git@github.com:my-github-username/docs-cloud-files.git
+    git clone git@github.com:Your-github-username/docs-quickstart.git
     ```
 
 3. Track the upstream repo
 
     ```bash
-    cd docs-cloud-files
-    git remote add --track master upstream git@github.com:rackerlabs/docs-cloud-files.git
+    cd docs-quickstart
+    git remote add --track master upstream git@github.com:rackerlabs/docs-quickstart.git
     ```
     Start new changes with the following steps.
 
@@ -53,9 +52,7 @@ or another GitHub GUI instead to accomplish the steps.
    ```bash
    git add .
    ```
-   **Note::** This is a potentially dangerous command. Consider adding each
-   changed file separately, or verify that you really wanted to add every
-   changed file before you commit.
+   **Note::** This command is a potentially dangerous command. Consider adding each changed file separately (for example, ``git add <file-name>``), or verify that you really wanted to add every changed file before you commit.
 
 8. Commit the changed files.
     ```bash
@@ -69,18 +66,18 @@ or another GitHub GUI instead to accomplish the steps.
 
 10. Create a pull request (PR) to the upstream repo for your branch
 
-    a. Go to https://github.com/rackerlabs/docs-cloud-files
+    a. Go to https://github.com/rackerlabs/docs-quickstart
 
     b. Click **Create pull request**.
 
     c. If this PR is related to an outstanding github
-       [GitHub issue](https://github.com/rackerlabs/docs-cloud-files/issues),
-       include a link to that GitHub issue in the comment
+       [GitHub issue](https://github.com/rackerlabs/docs-quickstart/issues),
+       include a link to that GitHub issue in the PR comment
 
-11. The Information Development team will review your pull request.
+11. The Information Development team reviews the PR.
 
-12. If necessary, incorporate changes from the review, make updates to your PR by adding
-    more commits.
+12. If necessary, incorporate changes from the review, and update the PR by
+    adding more commits.
 
     ```bash
     git add .
@@ -106,8 +103,8 @@ or another GitHub GUI instead to accomplish the steps.
     b. Follow the steps to [resolve a merge conflict from the command line]
        (https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/).
 
-15. When content is approved and you have resolved any conflicts, the
-    Information Development team will merge your pull request.
+15. After the content is approved and you have resolved any conflicts, the
+    Developer Experience team merges your PR.
 
 16. Update your repo
 
@@ -119,7 +116,7 @@ or another GitHub GUI instead to accomplish the steps.
 
 ## Tip
 
-To see repository status in your prompt and to activate auto-completion,
+To see the repository status in your prompt and to activate auto-completion,
 perform the following steps:
 
 1. Download
@@ -130,7 +127,8 @@ and save it in your home directory as ``.git-prompt.sh``.
 [git-completion.bash](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
 and save it in your home directory as ``.git-completion.bash``.
 
-1. Add the following to your ``.bash_profile`` in your home directory
+1. Add the following lines to the ``.bash_profile`` file in your home
+   directory
 
    ```bash
    GIT_PS1_SHOWDIRTYSTATE=1

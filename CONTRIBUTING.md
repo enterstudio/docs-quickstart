@@ -1,7 +1,7 @@
-## Contributing
+# Contributing
 
 These guidelines provide the general process for contributing to the SDK Quickstart guides
-and the [Racspace Developer documentation menu](https://developer.rackspace.com/docs).
+and the [Rackspace Developer documentation menu](https://developer.rackspace.com/docs).
 
 Contributions are submitted, reviewed, and accepted by using GitHub pull requests.
 To update existing source files or add new ones, follow the [GitHub workflow](GITHUBING.md)
@@ -9,8 +9,8 @@ for this repository.
 
 - [Project description](#project-description)
 - [General style guidelines](#general-style-guidelines)
-- [Updating SDK Quickstart documentation](#updating-the-sdk-quickstart-documentation)
-- [Updating the landing page](#updating-the-documentation-menu)
+- [Updating the SDK Quickstart documentation](#updating-the-sdk-quickstart-documentation)
+- [Updating the documentation menu](#updating-the-documentation-menu)
 - [Submitting changes](#submitting-changes)
 - [Previewing changes](#previewing-changes)
 
@@ -18,25 +18,25 @@ for this repository.
 
 This project is developed and built by using the
 [Python Sphinx documentation generator](http://sphinx-doc.org/). Content is
-written in [reStructuredText](http://sphinx-doc.org/rest.html), which is the markup syntax and
-parser component of [Python Docutils](http://docutils.sourceforge.net/index.html).
+written in [reStructuredText](http://sphinx-doc.org/rest.HTML), which is the markup syntax and
+parser component of [Python Docutils](http://docutils.sourceforge.net/index.HTML).
 
 ### Rackspace SDK Quickstart guides
 
-The Rackspace SDK documentation describes the basic operations and flow of working with Rackspace services in each of our supported SDKs. In this project, the documentation source files are organized in folders by product name,
-for example the Cloud Servers SDK source files are in [cloud-servers/quickstart](https://github.com/rackerlabs/docs-quickstart/tree/master/cloud-servers/quickstart).
+The Rackspace SDK Quickstart guides describe the basic operations and flow of working with Rackspace services in each of our supported SDKs. In this project, the documentation source files are organized in folders by product name
+for example, the Cloud Servers SDK Quickstart source files are in [cloud-servers/quickstart](https://github.com/rackerlabs/docs-quickstart/tree/master/cloud-servers/quickstart).
 
-For details on updating the SDK documentation, see
-[SDK Quickstart Documentation Conventions](quickstart-doc-conventions.rst).
+For guidelines on updating the SDK Quickstart documentation, see
+[SDK quickstart documentation conventions](quickstart-doc-conventions.rst).
 
 ### Rackspace developer documentation menu
 
-The source for the Rackspace Developer documentation menu is an html fragment embedded in the
-[index.rst](https://github.com/rackerlabs/docs-quickstart/blob/master/index.rst).
+The source for the Rackspace Developer documentation menu is an HTML fragment embedded in the
+[index.rst](https://github.com/rackerlabs/docs-quickstart/blob/master/index.rst) file.
 The stylesheet for the landing page is delivered from a Cloud Files store.
-Stylesheet source files are maintained in the [nexus-control Github repository](http://www.rackergps.com/).
+Stylesheet source files are maintained in the [nexus-control Github repository]https://github.com/rackerlabs/nexus-control).
 
-The menu is divided into the following categories:
+The documentation menu is divided into the following categories:
 
 - Compute
 - Network
@@ -46,9 +46,8 @@ The menu is divided into the following categories:
 - SDKs & Tools
 
 
-In the html source, each category is contained within a section. Each section
-has one or more product cards with a title and list of documentation resources as shown in
-the following html source fragment:
+In the HTML source, each category is contained within a section. Each section
+has one or more product cards with a title and list of documentation resources as shown in the following HTML source fragment:
 
 ```
    <section class="docs-category cloudapiinternal">
@@ -84,9 +83,14 @@ the following html source fragment:
 
 ## Updating the SDK Quickstart documentation
 
-See [SDK Quickstart Documentation Conventions](sdk-documentation-conventions.rst).
+For guidelines, see [SDK quickstart documentation conventions](sdk-documentation-conventions.rst). When you are ready to
+submit and preview your changes, return to this topic.
+
 
 ## Updating the documentation menu
+
+The following guidelines provide information about updating the documentation
+menu.
 
 * Update the [menu source file](https://github.com/rackerlabs/docs-quickstart/blob/master/index.rst)
   using any plain text editor.
@@ -94,9 +98,7 @@ See [SDK Quickstart Documentation Conventions](sdk-documentation-conventions.rst
 
 ### Add a new content category
 
-To add a new content category, you have to create a new section, color-coded heading style,
-and also update the category selection menu in the left navigation. If you need a
-new category, open an [issue](https://github.com/rackerlabs/docs-quickstart/issues/new)
+Adding a new content category requires adding a new section and color-coded heading style and updating the category selection menu in the left navigation pane. If you need a new category, open an [issue](https://github.com/rackerlabs/docs-quickstart/issues/new)
 so that the work can be scheduled by the Engineering and UX design teams.
 
 ### Add a new product
@@ -105,19 +107,18 @@ When you add a new product, use the official Rackspace product name, and update 
 if the name changes.
 
 1. Copy the code for an existing product card.
-2. Paste the code in the category and location desired.
-3. Update the title, card color, H4 anchor id (``<h4 id="doc-cloud-servers-legacy"``),
+2. Paste the code in the appropriate category and location.
+3. Update the title, card color, H4 anchor ID (``<h4 id="doc-cloud-servers-legacy"``),
    and the list items as needed.
 
-**Note:** The *anchor id* enables bookmark links to a specific product menu, for example
-to link directly to the Rackspace Private Cloud docs, append the
-anchor id ``docs-private-cloud`` to the landing page URL
-``https://developer.rackspace.com/docs#docs-private-cloud``. Make sure that the anchor
-id for the new product is unique.
+**Note:** The *anchor ID* enables bookmark links to a specific product menu.
+For example, to link directly to the Rackspace Private Cloud docs,
+you append the anchor ID ``docs-private-cloud`` to the landing page URL
+``https://developer.rackspace.com/docs#docs-private-cloud``. Ensure that the anchor ID for the new product is unique.
 
 ### Delete a category or product
 
-Delete the html section or product card that you don't need.
+Delete the HTML section or product card that you don't need.
 
 ### Commit your changes
 
@@ -133,27 +134,35 @@ When you've completed your changes, submit a pull request so that someone on the
 - More complex changes or additions require both technical and editorial
   review.
 
-Depending on the review feedback, you might be asked to make additional changes.
+After you submit the PR, the Strider build runs and creates a content preview that you can access by clicking the preview link added in a PR comment.
 
-After content has been reviewed and approved, the updates can be merged to the
-master branch. The merge triggers the build and deploy process. Typically, new
-content is available on developer.rackspace.com within a minute or two after it
-is merged. Larger updates might take a bit longer.
+**Note:**
 
+  If the build fails, click the **details** link in the PR, or the
+  build badge at the top of this page. If you get a 404, try to
+  [log in](https://build.developer.racksapce.com/)
+  with your GitHub credentials. If you still get a 404 or if you need help
+  resolving the build problem, open an [issue](https://github.com/rackerlabs/docs-quickstart/issues/new) to
+  request assistance.
+
+When the PR is reviewed, you might be asked to update the PR with
+additional changes. For more information, see [Github workflow](GITHUBING.md).
+
+After content has been reviewed and approved, the Developer Experience team merges the updates into the master branch. The merge triggers the build and deploy process. Typically, new content is available on **developer.rackspace.com** within a minute or two after it is merged. Larger updates might take longer.
 
 ## Previewing changes
 
 When you submit a pull request, the Strider build process creates a preview of your
 changes in a staging environment.
 
-After the build process completes, the following message displays in the pull request
-comments with a link to the content: ``Your content preview is now ready.``
+After the build process is complete, the following message is displayed in the pull request comments with a link to the content: ``Your content preview is
+now ready.``
 
-You can also build the project locally using the
+You can also build the project locally by using the
 [Sphinx documentation generator](http://sphinx-doc.org/). For details, see
 [Building from source](https://github.com/rackerlabs/docs-rackspace/blob/master/doc/tools/build-from-source.rst).
 
 
 ### Support and feedback
 
-If you find a problem, open a GitHub [issue](https://github.com/rackerlabs/docs-cloud-cdn/issues).
+If you find a problem, open a GitHub [issue](https://github.com/rackerlabs/docs-quickstart/issues).

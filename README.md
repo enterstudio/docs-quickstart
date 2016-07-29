@@ -1,18 +1,21 @@
-# SDK Quickstart Guides and Rackspace developer documentation menu
+# SDK Quickstart guides and Rackspace developer documentation menu
 
 [![Build Status](https://build.developer.rackspace.com/rackerlabs/docs-quickstart/badge?branch=master)](https://build.developer.rackspace.com/rackerlabs/docs-quickstart/)
 
 This repository contains the source files that generate the following
 Rackspace developer documentation:
 
-* [SDK Quickstart Guides](https://developer.rackspace.com/docs/#sdks)
+* [SDK Quickstart guides](https://developer.rackspace.com/docs/#sdks)
 
 * [Rackspace developer documentation menu](https://developer.rackspace.com/docs/)
 
 
 When you commit changes to the master branch of this repository, the
-[Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-cloud-load-balancers/)
+[Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-quickstart/)
 builds the documentation. Successful builds are deployed to production.
+
+**Note:**
+   For information about handling build failures, see [Submitting changes][CONTRIBUTING.md] in the Contributing guidelines.
 
 ### Support and feedback
 
