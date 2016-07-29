@@ -45,7 +45,6 @@ The documentation menu is divided into the following categories:
 - Infrastructure & Developer Services
 - SDKs & Tools
 
-
 In the HTML source, each category is contained within a section. Each section
 has one or more product cards with a title and list of documentation resources as shown in the following HTML source fragment:
 
@@ -98,8 +97,7 @@ menu.
 
 ### Add a new content category
 
-Adding a new content category requires adding a new section and color-coded heading style and updating the category selection menu in the left navigation pane. If you need a new category, open an [issue](https://github.com/rackerlabs/docs-quickstart/issues/new)
-so that the work can be scheduled by the Engineering and UX design teams.
+Adding a new content category requires adding a new section and color-coded heading style and updating the category selection menu in the left navigation pane. If you need a new category, open an [issue](https://github.com/rackerlabs/docs-quickstart/issues/new) so that the work can be scheduled by the Engineering and UX design teams.
 
 ### Add a new product
 
@@ -111,9 +109,7 @@ if the name changes.
 3. Update the title, card color, H4 anchor ID (``<h4 id="doc-cloud-servers-legacy"``),
    and the list items as needed.
 
-**Note:** The *anchor ID* enables bookmark links to a specific product menu.
-For example, to link directly to the Rackspace Private Cloud docs,
-you append the anchor ID ``docs-private-cloud`` to the landing page URL
+**Note:** The *anchor ID* enables bookmark links to a specific product menu. For example, to link directly to the Rackspace Private Cloud docs, you append the anchor ID ``docs-private-cloud`` to the landing page URL
 ``https://developer.rackspace.com/docs#docs-private-cloud``. Ensure that the anchor ID for the new product is unique.
 
 ### Delete a category or product
@@ -136,14 +132,8 @@ When you've completed your changes, submit a pull request so that someone on the
 
 After you submit the PR, the Strider build runs and creates a content preview that you can access by clicking the preview link added in a PR comment.
 
-**Note:**
-
-  If the build fails, click the **details** link in the PR, or the
-  build badge at the top of this page. If you get a 404, try to
-  [log in](https://build.developer.racksapce.com/)
-  with your GitHub credentials. If you still get a 404 or if you need help
-  resolving the build problem, open an [issue](https://github.com/rackerlabs/docs-quickstart/issues/new) to
-  request assistance.
+**Note:**  If the build fails, click the **details** link in the PR, or the build badge at the top of this page. If you get a 404, try to [log in](https://build.developer.racksapce.com/)
+with your GitHub credentials. If you still get a 404 or if you need help resolving the build problem, open a GitHub  [issue](https://github.com/rackerlabs/docs-quickstart/issues/new).
 
 When the PR is reviewed, you might be asked to update the PR with
 additional changes. For more information, see [Github workflow](GITHUBING.md).

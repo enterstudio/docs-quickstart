@@ -1,7 +1,5 @@
 :orphan:
-
-SDK Quickstart documentation conventions
-==============================================
+# SDK Quickstart documentation conventions
 
 The SDK Quickstart guides are written in a narrative format with the same use
 cases across all the SDKs. For an example of documentation that follows this
@@ -137,11 +135,6 @@ Variables
 In general, assume that the snippets you use within the samples of a
 single guide share some scope. This means that you can save a server to a
 ``server`` variable and then reference ``server.id`` in a later sample because
-each snippet fits into a larger narrative flow.
-
-Variable names should also be made consistent across a sample's languages, but
-made to fit within the native language's prevailing idioms. For example, if
-Ruby introduces a ``@load_balancer``, Python can use ``self.load_balancer``,
 and Java can use ``loadBalancer``.
 
 Don't use a variable before it's declared. Users should be able to use
@@ -157,15 +150,12 @@ For shell snippets, use ``UPPERCASE`` names for environment variables so that
 they stand out clearly, and enclose all headers in double quotation marks.
 
 Java-specific code conventions
-----------------------------------
-
-**Java**
+------------------------------
 
 * Comment all references to regions and zones as follows::
 
     // jclouds refers to "regions" as "zones"
     VolumeApi volumeApi = cinderApi.getVolumeApi(REGION);
-
 
 * Pass the appropriate API to all static methods::
 

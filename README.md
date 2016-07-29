@@ -11,6 +11,7 @@ Rackspace developer documentation:
 
 
 When you commit changes to the master branch of this repository, the
+
 [Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-quickstart/)
 builds the documentation. Successful builds are deployed to production.
 
