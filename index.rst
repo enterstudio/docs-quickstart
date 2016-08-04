@@ -164,10 +164,9 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-dns/v2/developer-guide/#getting-started">Getting Started</a></li>
-                                       <li><a href="/docs/cloud-dns/v2/developer-guide/#developer-guide">Developer Guide</a></li>
-                                       <li><a href="/docs/cloud-dns/v2/developer-guide/#api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-dns/v2/developer-guide/#release-notes">Release Notes</a></li>
+                                       <li><a href="/docs/cloud-dns/v2/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-dns/v2/api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-dns/v2/release-notes">Release Notes</a></li>
                                    </ul>
                                </div>
                            </div>
