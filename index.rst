@@ -278,7 +278,7 @@
                                        <li><a href="/docs/cdn/v1/getting-started">API Getting Started</a></li>
                                        <li><a href="/docs/cdn/v1/api-reference">API Reference</a></li>
                                        <li><a href="/docs/cdn/v1/release-notes">Release Notes</a></li>
-                                       <li><a href="https://support.rackspace.com/how-to/rackpspace-cdn/">How-To Articles</a></li>
+                                       <li><a href="https://support.rackspace.com/how-to/rackspace-cdn/">How-To Articles</a></li>
                                    </ul>
                                </div>
                            </div>
