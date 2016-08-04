@@ -275,9 +275,10 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cdn/quickstart/">Quickstart</a></li>
-                                       <li><a href="/docs/cdn/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cdn/v1/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cdn/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/cdn/v1/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cdn/v1/api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cdn/v1/release-notes">Release Notes</a></li>
+                                       <li><a href="https://support.rackspace.com/how-to/rackpspace-cdn/">How-To Articles</a></li>
                                    </ul>
                                </div>
                            </div>
