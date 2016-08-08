@@ -1,4 +1,5 @@
 :orphan:
+
 # SDK Quickstart documentation conventions
 
 The SDK Quickstart guides are written in a narrative format with the same use
@@ -6,6 +7,7 @@ cases across all the SDKs. For an example of documentation that follows this
 literate flow, see the `Mailgun documentation`_.
 
 .. _Mailgun documentation: http://documentation.mailgun.com/quickstart.html#sending-messages
+
 
 Code blocks go in the following order::
 
@@ -22,6 +24,7 @@ Code blocks go in the following order::
   .. code-block:: ruby
 
   .. code-block:: sh
+
 
 If you want to add code samples for a new language, insert the language
 alphabetically.

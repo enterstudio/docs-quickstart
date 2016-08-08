@@ -504,10 +504,10 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/orchestration/quickstart/">Quickstart</a></li>
-                                       <li><a href="/docs/cloud-orchestration/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-orchestration/v1/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cloud-orchestration/v1/developer-guide/">Developer Guide</a></li>
-                                       <li><a href="/docs/user-guides/orchestration/">User Guide</a></li>
+                                       <li><a href="/docs/cloud-orchestration/v1/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-orchestration/v1/api-reference">API Reference</li>
+                                       <li><a href="/docs/cloud-orchestration/v1/release-notes">Release Notes</a></li>
+                                       <li><a href="/docs/user-guides/orchestration/">Template User Guide</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/resources-reference/">Resource Reference</a></li>
                                    </ul>
                                </div>
