@@ -210,10 +210,10 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cloud-block-storage/quickstart/">Quickstart</a></li>
-                                       <li><a href="/docs/cloud-block-storage/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-block-storage/v1/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cloud-block-storage/v1/developer-guide/">Developer Guide</a></li>
-                                       <li><a href="/docs/user-guides/infrastructure/cloud-config/storage/">User Guide</a></li>
+                                       <li><a href="/docs/cloud-block-storage/v1/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-block-storage/v1/api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-block-storage/v1/release-notes">Release Notes</a></li>
+                                       <li><a href="https://support.rackspace.com/how-to/cloud-block-storage/">How-To Articles</a></li>
                                    </ul>
                                </div>
                            </div>
