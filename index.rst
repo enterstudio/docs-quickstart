@@ -231,9 +231,10 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-backup/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-backup/v1/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cloud-backup/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-backup/v1/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-backup/v1/api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-backup/v1/release-notes">Release Notes</a></li>
+                                       <li><a href="https://support.rackspace.com/how-to/cloud-backup/">How-To Articles</a></li>
                                    </ul>
                                </div>
                            </div>
