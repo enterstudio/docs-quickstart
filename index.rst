@@ -443,9 +443,9 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-identity/v2/developer-guide/#document-quickstart-guide">Quickstart Guide</a></li>
-                                       <li><a href="/docs/cloud-identity/v2/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-identity/v2/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="docs/cloud-identity/quickstart/#">Quickstart</a></li>
+                                       <li><a href="/docs/cloud-identity/v2/getting-started>API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-identity/v2/api-reference">API Reference</a></li>
                                    </ul>
                                </div>
                            </div>
