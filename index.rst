@@ -214,6 +214,7 @@
                                        <li><a href="/docs/cloud-block-storage/v1/api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-block-storage/v1/release-notes">Release Notes</a></li>
                                        <li><a href="https://support.rackspace.com/how-to/cloud-block-storage/">How-To Articles</a></li>
+                                       <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -253,9 +254,11 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cloud-files/quickstart/">Quickstart</a></li>
-                                       <li><a href="/docs/cloud-files/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-files/v1/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cloud-files/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-files/v1/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-files/v1/storage-api-reference">Storage API Reference</a></li>
+                                       <li><a href="/docs/cloud-files/v1/cdn-api-reference">CDN API Reference</a></li>
+                                       <li><a href="/docs/cloud-files/v1/release-notes">Release Notes</a></li>
+                                       <li><a href="https://support.rackspace.com/how-to/cloud-files/">How-To Articles</a></li>
                                        <li><a href="/docs/user-guides/infrastructure/">User Guide</a></li>
                                    </ul>
                                </div>
