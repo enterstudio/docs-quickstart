@@ -255,6 +255,7 @@
                                    <ul>
                                        <li><a href="/docs/cloud-files/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-files/v1/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-files/v1/use-cases">Use cases</a></li>
                                        <li><a href="/docs/cloud-files/v1/storage-api-reference">Storage API Reference</a></li>
                                        <li><a href="/docs/cloud-files/v1/cdn-api-reference">CDN API Reference</a></li>
                                        <li><a href="/docs/cloud-files/v1/release-notes">Release Notes</a></li>
