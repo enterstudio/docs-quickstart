@@ -25,7 +25,6 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-
                                        <li><a href="/docs/cloud-servers/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-servers/v2/getting-started">API Getting Started</a></li>
                                        <li><a href="/docs/cloud-servers/v2/api-reference">API Reference</a></li>
@@ -488,9 +487,9 @@
                                <div class="list-column">
                                    <ul>
                                        <li><a href="/docs/cloud-queues/quickstart">Quickstart</li>
-                                       <li><a href="/docs/cloud-queues/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                        <li><a href="/docs/cloud-queues/v1/developer-guide/#document-release-notes">Release Notes</a></li>
-                                       <li><a href="/docs/cloud-queues/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-queues/v1/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/cloud-queues/v1/api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-queues/v1/release-notes">Release Notes</a></li>
                                    </ul>
                                </div>
                            </div>
