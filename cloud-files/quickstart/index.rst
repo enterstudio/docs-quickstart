@@ -74,6 +74,14 @@ To upload objects into a container:
 
 .. include:: samples/upload_object.rst
 
+Upload objects to a subdirectory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+While you cannot create nested containers, Cloud Files does support subdirectories, or subfolders. Objects are uploaded to a subdirectory through a special naming convention, by including the subdirectory path in the object name, separating path segments with the forward slash character ``/``.
+
+For example, if you want the relative URL of the object to be ``/images/kittens/thumbnails/kitty.png``, upload the object to a container using that relative path as the object name.
+
+.. include:: samples/subdirectory.rst
+
 Change object metadata
 ------------------------
 To change object metadata:
