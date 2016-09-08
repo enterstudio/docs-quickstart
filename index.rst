@@ -146,7 +146,7 @@
                                        <li><a href="/docs/cloud-dns/v1/getting-started/">API Getting Started</a></li>
                                        <li><a href="/docs/cloud-dns/v1/api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-dns/v1/release-notes">Release Notes</a></li>
-                                       
+
                                    </ul>
                                </div>
                            </div>
@@ -325,7 +325,7 @@
                                <li><a href="/docs/cloud-databases/v1/getting-started">API Getting Started</a></li>
                                <li><a href="/docs/cloud-databases/v1/api-reference">API Reference</a></li>
                                <li><a href="/docs/cloud-databases/v1/release-notes">Release Notes</a></li>
-                               <li><a href="https://support.rackspace.com/how-to/cloud-databases/">How-To Articles</a></li>                           
+                               <li><a href="https://support.rackspace.com/how-to/cloud-databases/">How-To Articles</a></li>
                            </ul>
                        </div>
                    </div>
@@ -532,9 +532,9 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-keep/v1/developer-guide/#document-getting-started">Getting Started</a></li>
-                                       <li><a href="/docs/cloud-keep/v1/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-keep/v1/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/cloud-keep/v1/getting-started">Getting Started</a></li>
+                                       <li><a href="/docs/cloud-keep/v1/api-reference">API Reference</a></li>
+                                       <li><a href="/docs/cloud-keep/v1/release-notes/">Release Notes</a></li>
                                    </ul>
                                </div>
                            </div>
