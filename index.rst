@@ -284,10 +284,9 @@
                        </div>
                        <div class="card-body">
                            <ul>
-                               <li><a href="http://docs.rackspace.com/cbd/api/v1.0/cbd-getting-started-2/content/CBD_Overview.html">Getting Started</a></li>
-                               <li><a href="/docs/cloud-big-data/v2/developer-guide/#document-api-reference">API Reference</a></li>
-                               <li><a href="/docs/cloud-big-data/v2/developer-guide/#document-release-notes">Release Notes</a></li>
-                               <li><a href="/docs/cloud-big-data/v2/developer-guide/">Developer Guide</a></li>
+                               <li><a href="/docs/cloud-big-data/v2/getting-started">API Getting Started</a></li>
+                               <li><a href="/docs/cloud-big-data/v2/api-reference">API Reference</a></li>
+                               <li><a href="/docs/cloud-big-data/v2/release-notes/">Release Notes</a></li>
                            </ul>
                        </div>
                    </div>
