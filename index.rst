@@ -408,9 +408,10 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/metrics/v2/developer-guide/#getting-started">Getting Started</a></li>
-                                       <li><a href="/docs/metrics/v2/developer-guide/#document-api-reference">API Reference</a></li>
-                                       <li><a href="/docs/metrics/v2/developer-guide/">Developer Guide</a></li>
+                                       <li><a href="/docs/metrics/v2/getting-started">API Getting Started</a></li>
+                                       <li><a href="/docs/metrics/v2/query-api-reference">Query API Reference</a></li>
+                                       <li><a href="/docs/metrics/v2/ingestion-api-reference">Ingestion API Reference</a></li>
+                                       <li><a href="https://support.rackspace.com/how-to/rackspace-metrics/">How-To Articles</a></li>
                                    </ul>
                                </div>
                            </div>
