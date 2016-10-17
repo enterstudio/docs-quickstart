@@ -4,19 +4,125 @@
 .. raw:: html
 
    <div data-ng-controller="DocsHomeServicesCtrl">
-   <div class="docs-banner">
-       <h4>Read the Cloud Infrastructure User Guide</h4>
-       <p>Discover the services at the heart of the Rackspace cloud: Servers, Networks, Images, Storage, Files. Understand how they work together to help you perform the tasks essential to your business. Learn how to interact with these core services and how the Rackspace cloud gives you a new way to get your work done.</p>
-       <p class="banner-button">
-            <a href="/docs/user-guides/infrastructure/" class="banner-button">Read the User Guide</a>
-       </p>
-   </div>
+   <section class="docs-category cloud" data-ng-show="isSectionActive('cloud')">
+      <h2>Cloud Services</h2>
+      <p>Rackspace supports private, public, hybrid, and multi-cloud solutions.
+      Rackspace Private Cloud powered by OpenStack, RedHat, VMWare, or Microsoft
+      provide a single-tenant environment with dedicated or virtualized servers
+      for maximum security, in or out of your data center. Rackspace public
+      cloud provides a multi-tenant environment with pay-as-you-grow
+      scalability, ideal for heavy or unpredictable traffic. Managed VMWare
+      services offers customizable, single-tenant infrastructure and help
+      architecting, deploying, and troubleshooting your hosted VMware
+      environment
+      </p>
+      <div class="product-list">
+         <div class="product">
+             <div class="card blue">
+                 <div class="card-content">
+                     <div class="card-title">
+                         <h4 id="docs-private-cloud">Rackspace Private Cloud powered by OpenStack</h4>
+                     </div>
+                     <div class="card-body">
+                         <div class="list">
+                             <div class="list-column">
+                                <h5>Rackspace Private Cloud v13</h5>
+                                  <ul>
+                                    <li><a href="/docs/private-cloud/rpc/v13/rpc-admin/">Administrator Guide</a></li>
+                                    <li><a href="/docs/private-cloud/rpc/v13/rpc-faq-external/">Technical FAQ</a></li>
+                                    <li><a href="/docs/private-cloud/rpc/v13/rpc-ops/">Operations Guide</a></li>
+                                    <li><a href="/docs/private-cloud/rpc/v13/rpc-releasenotes">Release Notes</a></li>
+                                    <li><a href="/docs/private-cloud/rpc/v13/rpc-swift">Standalone Object Storage Guide</a></li>
+                                    <li><a href="/docs/private-cloud/rpc/v13/rpc-upgrade">Upgrade Guide</a></li>
+                                  </ul>
+                                <h5>Rackspace Private Cloud v12</h5>
+                                 <ul>
+                                   <li><a href="/docs/private-cloud/rpc/v12/rpc-admin/">Administrator Guide</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v12/rpc-faq-external/">Technical FAQ</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v12/rpc-ops/">Operations Guide</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v12/rpc-releasenotes">Release Notes</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v12/rpc-swift">Standalone Object Storage Guide</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v12/rpc-upgrade">Upgrade Guide</a></li>
+                                 </ul>
+                                 <h5>Rackspace Private Cloud v11</h5>
+                                 <ul>
+                                   <li><a href="/docs/private-cloud/rpc/v11/rpc-admin/">Administrator Guide</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v11/rpc-faq-external/">Technical FAQ</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v11/rpc-ops/">Operations Guide</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v11/rpc-releasenotes">Release Notes</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v11/rpc-swift">Standalone Object Storage Guide</a></li>
+                                   <li><a href="/docs/private-cloud/rpc/v11/rpc-upgrade">Upgrade Guide</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="product">
+             <div class="card blue">
+                 <div class="card-content">
+                     <div class="card-title">
+                         <h4 id="docs-private-cloud-red-hat">Rackspace Private Cloud Powered by Red Hat</h4>
+                     </div>
+                     <div class="card-body">
+                         <div class="list">
+                             <div class="list-column">
+                                 <ul>
+                                   <li><a href="/docs/private-cloud/red-hat/rpcr-arch/">Features and Architecture Guide</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="product">
+             <div class="card blue">
+                 <div class="card-content">
+                     <div class="card-title">
+                         <h4 id="docs-managed-vmware-services">Managed VMWare Services</h4>
+                     </div>
+                     <div class="card-body">
+                         <div class="list">
+                             <div class="list-column">
+                                 <ul>
+                                   <li><a href="/docs/managed-vmware-services/vcenter/">vCenter Customer Handbook</a></li>
+                                  <li><a href="/docs/managed-vmware-services/vcloud/v1.5/">vCloud Customer Handbook – v1.5</a></li>
+                                   <li><a href="/docs/managed-vmware-services/vcloud/v1/">vCloud Customer Handbook – v1.0</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="product">
+             <div class="card blue">
+                 <div class="card-content">
+                     <div class="card-title">
+                         <h4 id="docs-public-cloud">Rackspace Public Cloud</h4>
+                     </div>
+                     <div class="card-body">
+                         <div class="list">
+                             <div class="list-column">
+                                 <ul>
+                                   <li><a href="/docs/user-guides/infrastructure/">Guide to Core Infrastructure Services</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+      </div>
+   </section>
    <section class="docs-category compute" data-ng-show="isSectionActive('compute')">
        <h2>Compute Services</h2>
        <p>Cloud Servers, powered by OpenStack<sup>&reg;</sup>, are virtual machines running Linux or Windows Server in the Rackspace Cloud. You can scale resources like CPU, memory, and storage up or down, depending on your needs. Best of all, you can pay as you go.</p>
        <div class="product-list">
            <div class="product">
-               <div class="card blue">
+               <div class="card green">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-servers">Cloud Servers</h4>
@@ -38,7 +144,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card blue">
+               <div class="card green">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-images">Cloud Images</h4>
@@ -69,7 +175,7 @@
        distributing traffic efficiently. Use Cloud DNS to manage domains and subdomains.</p>
        <div class="product-list">
            <div class="product">
-               <div class="card green">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-networks">Cloud Networks</h4>
@@ -91,7 +197,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card green">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-load-balancers">Cloud Load Balancers v1.0</h4>
@@ -113,7 +219,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card green">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-dns">Cloud DNS</h4>
@@ -135,7 +241,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card green">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-managed-dns">Managed DNS (EA)</h4>
@@ -155,7 +261,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card green">
+               <div class="card yellow">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-rackconnect">Rackspace RackConnect</h4>
@@ -175,12 +281,23 @@
            </div>
        </div>
    </section>
-   <section class="docs-category storage" data-ng-show="isSectionActive('storage')">
-       <h2>Storage Services</h2>
-       <p>With our storage services, you can get dependable and high-performing block storage, object storage, and backup solutions for Cloud Servers. You can scale your storage independently from your compute resources while using high-performance storage for I/O-intensive applications or to serve databases. Plus, with Cloud Files, you can store and retrieve content over a Content Delivery Network (CDN). If you want to enable CDN for your website resources beyond Cloud Files you can use the Rackspace CDN service which has finer control on caching rules, purging content, and specifying origins.</p>
+   <section class="docs-category storagedata" data-ng-show="isSectionActive('storagedata')">
+       <h2>Storage and Data Services</h2>
+       <p>With our storage services, you can get dependable and high-performing
+       block storage, object storage, and backup solutions for Cloud Servers.
+       You can scale your storage independently from your compute resources
+       while using high-performance storage for I/O-intensive applications or
+       to serve databases. Plus, with Cloud Files, you can store and retrieve
+       content over a Content Delivery Network (CDN). If you want to enable CDN
+       for your website resources beyond Cloud Files you can use the Rackspace
+       CDN service which has finer control on caching rules, purging content,
+       and specifying origins.</p>
+       <p>Our database platform services enable powerful applications and data
+       analysis by providing preconfigured, high-performing, and available SQL
+       and NoSQL data stores such as Hadoop, MySQL, Redis, and MongoDB.</p>
        <div class="product-list">
            <div class="product">
-               <div class="card yellow">
+               <div class="card teal">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-block-storage">Cloud Block Storage</h4>
@@ -203,7 +320,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card yellow">
+               <div class="card teal">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-backup">Cloud Backup</h4>
@@ -224,7 +341,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card yellow">
+               <div class="card teal">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cloud-files">Cloud Files</h4>
@@ -249,7 +366,7 @@
                </div>
            </div>
            <div class="product">
-               <div class="card yellow">
+               <div class="card teal">
                    <div class="card-content">
                        <div class="card-title">
                            <h4 id="docs-cdn">Rackspace CDN</h4>
@@ -270,12 +387,6 @@
                    </div>
                </div>
            </div>
-       </div>
-   </section>
-   <section class="docs-category data" data-ng-show="isSectionActive('data')">
-       <h2>Database Platform Services</h2>
-       <p>Our database platform services enable powerful applications and data analysis by providing preconfigured, high-performing, and available SQL and NoSQL data stores such as Hadoop, MySQL, Redis, and MongoDB.</p>
-       <div class="product-list">
            <div class="product">
                <div class="card teal">
                    <div class="card-content">
@@ -469,7 +580,7 @@
                            <div class="list">
                                <div class="list-column">
                                    <ul>
-                                       <li><a href="/docs/cloud-queues/quickstart">Quickstart</li>
+                                       <li><a href="/docs/cloud-queues/quickstart">Quickstart</a></li>
                                        <li><a href="/docs/cloud-queues/v1/getting-started">API Getting Started</a></li>
                                        <li><a href="/docs/cloud-queues/v1/api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-queues/v1/release-notes">Release Notes</a></li>
@@ -492,7 +603,7 @@
                                    <ul>
                                        <li><a href="/docs/orchestration/quickstart/">Quickstart</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/getting-started">API Getting Started</a></li>
-                                       <li><a href="/docs/cloud-orchestration/v1/api-reference">API Reference</li>
+                                       <li><a href="/docs/cloud-orchestration/v1/api-reference">API Reference</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/release-notes">Release Notes</a></li>
                                        <li><a href="/docs/user-guides/orchestration/">Template User Guide</a></li>
                                        <li><a href="/docs/cloud-orchestration/v1/resources-reference/">Resource Reference</a></li>
@@ -543,97 +654,10 @@
                    </div>
                </div>
            </div>
-           <div class="product">
-               <div class="card purple">
-                   <div class="card-content">
-                       <div class="card-title">
-                           <h4 id="docs-private-cloud">Rackspace Private Cloud powered by OpenStack</h4>
-                       </div>
-                       <div class="card-body">
-                           <div class="list">
-                               <div class="list-column">
-                                  <h5>Rackspace Private Cloud v13</h5>
-                                    <ul>
-                                      <li><a href="/docs/private-cloud/rpc/v13/rpc-admin/">Administrator Guide</a></li>
-                                      <li><a href="/docs/private-cloud/rpc/v13/rpc-faq-external/">Technical FAQ</a></li>
-                                      <li><a href="/docs/private-cloud/rpc/v13/rpc-ops/">Operations Guide</a></li>
-                                      <li><a href="/docs/private-cloud/rpc/v13/rpc-releasenotes">Release Notes</a></li>
-                                      <li><a href="/docs/private-cloud/rpc/v13/rpc-swift">Standalone Object Storage Guide</a></li>
-                                      <li><a href="/docs/private-cloud/rpc/v13/rpc-upgrade">Upgrade Guide</a></li>
-                                    </ul>
-                                  <h5>Rackspace Private Cloud v12</h5>
-                                   <ul>
-                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-admin/">Administrator Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-faq-external/">Technical FAQ</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-ops/">Operations Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-releasenotes">Release Notes</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-swift">Standalone Object Storage Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v12/rpc-upgrade">Upgrade Guide</a></li>
-                                   </ul>
-                                   <h5>Rackspace Private Cloud v11</h5>
-                                   <ul>
-                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-admin/">Administrator Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-faq-external/">Technical FAQ</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-ops/">Operations Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-releasenotes">Release Notes</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-swift">Standalone Object Storage Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v11/rpc-upgrade">Upgrade Guide</a></li>
-                                   </ul>
-                                   <h5>Rackspace Private Cloud v10</h5>
-                                   <ul>
-                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-v10-op-user-guide/">Operator and User Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-v10-swift/">Object Storage Deployment Guide</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-v10-releasenotes-external/">Release Notes</a></li>
-                                     <li><a href="/docs/private-cloud/rpc/v10/rpc-v10-faq-external/">Technical FAQ</a></li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="product">
-               <div class="card purple">
-                   <div class="card-content">
-                       <div class="card-title">
-                           <h4 id="docs-managed-vmware-services">Managed VMWare Services</h4>
-                       </div>
-                       <div class="card-body">
-                           <div class="list">
-                               <div class="list-column">
-                                   <ul>
-                                     <li><a href="/docs/managed-vmware-services/vcenter/">vCenter Customer Handbook</a></li>
-                                     <li><a href="/docs/managed-vmware-services/vcloud/v1/">vCloud Customer Handbook – v1.0</a></li>
-                                     <li><a href="/docs/managed-vmware-services/vcloud/v1.5/">vCloud Customer Handbook – v1.5</a></li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="product">
-               <div class="card purple">
-                   <div class="card-content">
-                       <div class="card-title">
-                           <h4 id="docs-private-cloud-red-hat">Rackspace Private Cloud Powered by Red Hat</h4>
-                       </div>
-                       <div class="card-body">
-                           <div class="list">
-                               <div class="list-column">
-                                   <ul>
-                                     <li><a href="/docs/private-cloud/red-hat/rpcr-arch/">Features and Architecture Guide</a></li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
        </div>
    </section>
-   <section class="docs-category dev-tools" id="sdks" data-ng-show="isSectionActive('dev-tools')">
-       <h2>Software Development Kits &amp; Tools</h2>
+   <section class="docs-category dev-tools" data-ng-show="isSectionActive('dev-tools')">
+       <h2 id="sdks">Software Development Kits &amp; Tools</h2>
        <p>Rackspace provides supported Software Development Kits (SDKs) to give you access to our services in the language of your choice. We stand by our SDKs and CLI offerings by working side-by-side with community members to continually improve feature coverage and usability. Whether you are a Java, Go, .NET, Python, PHP, or JavaScript developer, or a polyglot, we speak your language.</p>
        <div class="product-list">
            <div class="product">
@@ -690,7 +714,7 @@
                                    <ul>
                                        <li><a href="/sdks/python/">Getting Started</a></li>
                                        <li><a href="https://github.com/rackspace/pyrax/tree/master/docs">Documentation</a></li>
-                                       <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
+                                       <li><a href="https://github.com/rackspace/pyrax/blob/master/RELEASENOTES.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></a></li>
                                        <li><a href="https://github.com/rackspace/pyrax/issues">Community</a></li>
                                    </ul>
                                </div>
@@ -711,7 +735,7 @@
                                    <ul>
                                        <li><a href="/sdks/dot-net/">Getting Started</a></li>
                                        <li><a href="http://openstacknetsdk.org/docs">Documentation</a></li>
-                                       <li><a href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a>&nbsp;<a href="https://github.com/openstacknetsdk/openstack.net/releases.atom"></li>
+                                       <li><a href="https://github.com/openstacknetsdk/openstack.net/releases">Release Notes</a>&nbsp;<a href="https://github.com/openstacknetsdk/openstack.net/releases.atom"></a></li>
                                        <li><a href="https://github.com/openstacknetsdk/openstack.net/wiki">Community</a></li>
                                    </ul>
                                </div>
@@ -753,7 +777,7 @@
                                    <ul>
                                        <li><a href="/sdks/php/">Getting Started</a></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud/tree/master/docs/userguide">Documentation</a></li>
-                                       <li><a href="https://github.com/rackspace/php-opencloud/releases/">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/php-opencloud/releases.atom"></li>
+                                       <li><a href="https://github.com/rackspace/php-opencloud/releases/">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/php-opencloud/releases.atom"></a></li>
                                        <li><a href="https://github.com/rackspace/php-opencloud">Community</a></li>
                                    </ul>
                                </div>
@@ -774,7 +798,7 @@
                                    <ul>
                                        <li><a href="/sdks/node-js/">Getting Started</a></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud/tree/master/docs">Documentation</a></li>
-                                       <li><a href="https://github.com/pkgcloud/pkgcloud/blob/master/CHANGELOG.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></li>
+                                       <li><a href="https://github.com/pkgcloud/pkgcloud/blob/master/CHANGELOG.md">Release Notes</a>&nbsp;<a href="https://github.com/rackspace/pyrax/releases.atom"></a></li>
                                        <li><a href="https://github.com/pkgcloud/pkgcloud">Community</a></li>
                                    </ul>
                                </div>
@@ -795,7 +819,7 @@
                                    <ul>
                                         <li><a href="/sdks/ruby/">Getting Started</a></li>
                                         <li><a href="https://github.com/fog/fog-rackspace/tree/master/lib/fog/rackspace/docs">Documentation</a></li>
-                                        <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<href="https://github.com/fog/fog/releases.atom"></li>
+                                        <li><a href="https://github.com/fog/fog/releases">Release Notes</a>&nbsp;<a href="https://github.com/fog/fog/releases.atom"></a></li>
                                         <li><a href="http://fog.io/">Community</a></li>
                                    </ul>
                                </div>
