@@ -76,6 +76,22 @@
                      </div>
                  </div>
              </div>
+             <div class="card blue">
+                 <div class="card-content">
+                     <div class="card-title">
+                         <h4 id="docs-public-cloud">Rackspace Public Cloud</h4>
+                     </div>
+                     <div class="card-body">
+                         <div class="list">
+                             <div class="list-column">
+                                 <ul>
+                                   <li><a href="/docs/user-guides/infrastructure/">Guide to Core Infrastructure Services</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
          </div>
          <div class="product">
              <div class="card blue">
@@ -90,24 +106,6 @@
                                    <li><a href="/docs/managed-vmware-services/vcenter/">vCenter Customer Handbook</a></li>
                                   <li><a href="/docs/managed-vmware-services/vcloud/v1.5/">vCloud Customer Handbook – v1.5</a></li>
                                    <li><a href="/docs/managed-vmware-services/vcloud/v1/">vCloud Customer Handbook – v1.0</a></li>
-                                 </ul>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="product">
-             <div class="card blue">
-                 <div class="card-content">
-                     <div class="card-title">
-                         <h4 id="docs-public-cloud">Rackspace Public Cloud</h4>
-                     </div>
-                     <div class="card-body">
-                         <div class="list">
-                             <div class="list-column">
-                                 <ul>
-                                   <li><a href="/docs/user-guides/infrastructure/">Guide to Core Infrastructure Services</a></li>
                                  </ul>
                              </div>
                          </div>
