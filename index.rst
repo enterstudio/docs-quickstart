@@ -12,7 +12,7 @@
       for maximum security, in or out of your data center. Rackspace public
       cloud provides a multi-tenant environment with pay-as-you-grow
       scalability, ideal for heavy or unpredictable traffic. Managed VMWare
-      services offers customizable, single-tenant infrastructure and help
+      services offer customizable, single-tenant infrastructure and help
       architecting, deploying, and troubleshooting your hosted VMware
       environment
       </p>
