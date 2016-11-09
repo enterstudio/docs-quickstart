@@ -616,26 +616,6 @@
                <div class="card purple">
                    <div class="card-content">
                        <div class="card-title">
-                           <h4 id="docs-cloud-keep">Cloud Keep</h4>
-                       </div>
-                       <div class="card-body">
-                           <div class="list">
-                               <div class="list-column">
-                                   <ul>
-                                       <li><a href="/docs/cloud-keep/v1/getting-started">Getting Started</a></li>
-                                       <li><a href="/docs/cloud-keep/v1/api-reference">API Reference</a></li>
-                                       <li><a href="/docs/cloud-keep/v1/release-notes/">Release Notes</a></li>
-                                   </ul>
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-           </div>
-           <div class="product">
-               <div class="card purple">
-                   <div class="card-content">
-                       <div class="card-title">
                            <h4 id="docs-cloud-feeds">Cloud Feeds</h4>
                        </div>
                        <div class="card-body">
