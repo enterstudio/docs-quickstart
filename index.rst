@@ -7,14 +7,14 @@
    <section class="docs-category cloud" data-ng-show="isSectionActive('cloud')">
       <h2>Cloud Services</h2>
       <p>Rackspace supports private, public, hybrid, and multi-cloud solutions.
-      Rackspace Private Cloud powered by OpenStack, RedHat, VMWare, or Microsoft
+      Rackspace Private Cloud powered by OpenStack, RedHat, VMware, or Microsoft
       provide a single-tenant environment with dedicated or virtualized servers
       for maximum security, in or out of your data center. Rackspace public
       cloud provides a multi-tenant environment with pay-as-you-grow
-      scalability, ideal for heavy or unpredictable traffic. Managed VMWare
+      scalability, ideal for heavy or unpredictable traffic. Managed VMware
       services offer customizable, single-tenant infrastructure and help
       architecting, deploying, and troubleshooting your hosted VMware
-      environment
+      environment.
       </p>
       <div class="product-list">
          <div class="product">
@@ -97,7 +97,7 @@
              <div class="card blue">
                  <div class="card-content">
                      <div class="card-title">
-                         <h4 id="docs-managed-vmware-services">Managed VMWare Services</h4>
+                         <h4 id="docs-managed-vmware-services">Managed VMware Services</h4>
                      </div>
                      <div class="card-body">
                          <div class="list">
