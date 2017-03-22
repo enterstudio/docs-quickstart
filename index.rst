@@ -29,21 +29,18 @@
                                 <h5>Rackspace Private Cloud v13</h5>
                                   <ul>
                                     <li><a href="/docs/private-cloud/rpc/v13/rpc-faq-external/">Technical FAQ</a></li>
-                                    <li><a href="/docs/private-cloud/rpc/v13/rpc-ops/">Operations Guide</a></li>
                                     <li><a href="/docs/private-cloud/rpc/v13/rpc-releasenotes">Release Notes</a></li>
                                     <li><a href="/docs/private-cloud/rpc/v13/rpc-swift">Standalone Object Storage Guide</a></li>
                                   </ul>
                                 <h5>Rackspace Private Cloud v12</h5>
                                  <ul>
                                    <li><a href="/docs/private-cloud/rpc/v12/rpc-faq-external/">Technical FAQ</a></li>
-                                   <li><a href="/docs/private-cloud/rpc/v12/rpc-ops/">Operations Guide</a></li>
                                    <li><a href="/docs/private-cloud/rpc/v12/rpc-releasenotes">Release Notes</a></li>
                                    <li><a href="/docs/private-cloud/rpc/v12/rpc-swift">Standalone Object Storage Guide</a></li>
                                  </ul>
                                  <h5>Rackspace Private Cloud v11</h5>
                                  <ul>
                                    <li><a href="/docs/private-cloud/rpc/v11/rpc-faq-external/">Technical FAQ</a></li>
-                                   <li><a href="/docs/private-cloud/rpc/v11/rpc-ops/">Operations Guide</a></li>
                                    <li><a href="/docs/private-cloud/rpc/v11/rpc-releasenotes">Release Notes</a></li>
                                    <li><a href="/docs/private-cloud/rpc/v11/rpc-swift">Standalone Object Storage Guide</a></li>
                                  </ul>
